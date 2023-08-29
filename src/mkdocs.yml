@@ -1,4 +1,40 @@
+# Informations générales
 site_name: Mulot NSI
+site_url: https://www.mulot-nsi.fr
+site_author: Yannick Mulot
 
+
+# Arborescence de navigation
+nav:
+  - Accueil: index.md
+  - SNT:
+      - Chapitre 1 - Internet:
+          - TP1 - Naissance d'Internet: snt/seq01_internet/tp1_naissance_internet.md
+
+
+# Configuration du thème
 theme:
   name: material
+  language: fr
+  features:
+    - navigation.footer
+    # - navigation.indexes
+    # - navigation.sections
+    - navigation.tabs
+    # - navigation.instant
+  palette:
+    primary: deep purple
+
+
+# Plugins
+plugins:
+  - minify:
+      minify_html: true
+
+
+# Extensions
+markdown_extensions:
+  # - abbr
+  - admonition
+  # - pymdownx.details
+  # - pymdownx.superfences
