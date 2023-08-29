@@ -2,6 +2,13 @@
 
 Nouvelle version du site web pour l'année scolaire 2023-2024.
 
+## Développement
+Lancement du serveur de développement :
+
+```bash
+(cd src ; mkdocs serve)
+```
+
 ## Déploiement
 
 Le site web est hébergé sur Vercel.
