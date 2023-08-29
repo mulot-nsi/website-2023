@@ -6,7 +6,7 @@ authors = ["Yannick Mulot <yannick.mulot@ac-creteil.fr>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 mkdocs-material = "^9.2.5"
 mkdocs-minify-plugin = "^0.7.1"
 
