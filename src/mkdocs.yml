@@ -8,9 +8,12 @@ site_author: Yannick Mulot
 nav:
   - Accueil: index.md
   - SNT:
+      - snt/index.md
       - Chapitre 1 - Internet:
-          - TP1 - Naissance d'Internet: snt/seq01_internet/tp1_naissance_internet.md
-
+          - snt/01-internet/index.md
+          - TP1 - Naissance d'Internet: snt/01-internet/tp1-naissance-internet.md
+  - NSI 1RE:
+      - nsi1re/index.md
 
 # Configuration du thème
 theme:
@@ -18,19 +21,30 @@ theme:
   language: fr
   features:
     - navigation.footer
-    # - navigation.indexes
+    - navigation.indexes
     # - navigation.sections
     - navigation.tabs
     # - navigation.instant
+  font:
+    text: Roboto
   palette:
-    primary: deep purple
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 
 # Plugins
 plugins:
   - minify:
       minify_html: true
-
+  - search
 
 # Extensions
 markdown_extensions:
