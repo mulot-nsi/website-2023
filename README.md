@@ -2,6 +2,12 @@
 
 Nouvelle version du site web pour l'année scolaire 2023-2024.
 
+# Documentation
+
+- [MKDocs](https://www.mkdocs.org/)
+- [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+- [Markdown extensions](https://facelessuser.github.io/pymdown-extensions/)
+
 ## Développement
 Lancement du serveur de développement :
 

@@ -48,7 +48,9 @@ plugins:
 
 # Extensions
 markdown_extensions:
+  - attr_list
   # - abbr
   - admonition
+  - md_in_html
   # - pymdownx.details
   # - pymdownx.superfences
