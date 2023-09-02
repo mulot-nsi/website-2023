@@ -7,125 +7,130 @@ description: Recherche de l'origine du réseau Internet
 
 ## Introduction
 
-<figure markdown>
-  ![Image title](/snt/01-internet/images/ancetre-internet.webp)
-  <figcaption>Quel est l'ancêtre du réseau Internet ?</figcaption>
-</figure>
+![Image title](images/reseau.png)
 
-
-Ces travaux pratiques consistent à rechercher de l'origine du réseau Internet.
+Ces travaux pratiques consistent à découvrir le réseau informatique à l'origine du réseau Internet.
 Pour celà, vous devrez répondre à trois questions en effectuant des recherches sur le Web.
-Les réponses seront à rédiger dans un document numérique qui devra être transmis à votre enseignant avant la fin de l'heure.
+Les réponses aux questions seront à rédiger dans un document numérique qui devra être rendu avant la fin de l'heure.
 
-Pour votre enseignant, ces travaux pratiques ont pour objectif de : 
- 
-- mesurer votre maîtrise des outils numériques (ordinateur et logiciels)
-- mesurer votre capacité à suivre des consignes
-- mesurer votre capacité à faire des recherches sur le Web
-- mesurer votre degré d'autonomie
-- vérifier vos accès à l'ENT et Pronote
-- vous présenter une façon de rendre un devoir en utilisant Pronote
+!!! success "Objectifs" 
+
+    - mesurer votre maîtrise des outils numériques (ordinateur et logiciels)
+    - mesurer votre capacité à suivre des consignes
+    - mesurer votre capacité à faire des recherches sur le Web
+    - mesurer votre capacité à travailler en autonomie
+    - vérifier vos accès à l'ENT et à Pronote
+    - rendre un devoir en utilisant Pronote
 
 ## Préparation
 
 ### Espace de travail
 
-Afin de ne pas mélanger vos productions entre les différentes matières. 
-Pour celà, vous allez créer des dossiers afin de les y ranger. 
+Afin vos productions numériques ne soient pas mélangées entre les différentes matières et travaux pratiques, 
+vous allez créer des dossiers afin de les organiser. 
 
-!!! note "Organiser son espace de travail"
+!!! note "Organisation de l'espace travail"
 
-    1. Depuis le bureau, cliquer sur l'icône intitulée **Zone personnelle**
+    1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
     2. Une fois dans votre zone personnelle, créez un nouveau dossier nommé **SNT**
     3. Entrez dans le dossier **SNT** et créez-y un nouveau dossier nommé **Internet**
+
+!!! warning "Attention au risque de perte de fichiers"
+
+    Veillez à **toujours** enregistrer vos fichiers dans le dossier **Zone personnelle** (ou un de ses sous-dossiers).
+    Ceux-ci seront alors accessibles depuis n'importe quel ordinateur du lycée.
+    Tout fichier enregistré ailleurs que ce dossier sera irrémédiablement perdu.
+
 
 
 ### Document de réponse
 
 Avant de démarrer vos recherches, préparez votre document de réponse. 
-Les réponses devront être saisies à l'aide une application de traitement de texte.
-Vous utiliserez l'application **LibreOffice Writer**.
+Les réponses devront être saisies à l'aide de l'application de traitement de texte **LibreOffice Writer**.
 
-!!! note "Créer un nouveau document texte sous LibreOffice"
+!!! note "Création d'un nouveau document texte"
 
     1. Lancez l'application **LibreOffice Writer**
-    2. **Enregistrez** immédiatement votre document dans le répertoire `Zone personnelle/SNT/Internet` créé précédemment.
-       Vous êtes libre de nommer le fichier comme vous le souhaitez.
+    2. Enregistrez **immédiatement** votre document dans le dossier `SNT/Internet` créé précédemment.
+       Vous êtes libre du choix de son nom.
 
-Ain de facilité de pouvoir identifier rapidement l'auteur et le contenu de votre docum,entm, celui-ci devra comporter
-en en-téte les informationa suivantes ;
+Afin de rendre vos productions écrites pleinement identifiables, veillez à les introduire avec les informations ci-après.
+La mise en forme est libre.
 
-!!! info "En-téte du document"
+!!! info "Informations d'identification"
 
-    - Le nom, le prénom et la classe
-    - Un Titre (à vous de choisir celui que vous jugerez le plus approprié)
-    - La date de rédaction
+    - votre nom et prénom
+    - votre classe
+    - la matière
+    - un titre (à vous de choisir celui que vous jugerez le plus approprié)
+    - la date de rédaction
 
-## Recherches sur le Web
+## Travail de recherche
 
-Les questions auxauelles vous devez répondre sont les suivantes :
+Les questions auxquelles il vous faut répondre en effectuant vos recherches sur le Web sont les suivantes :
    
-   - Quel réseau informatique est considéré comme l'ancêtre d'Internet ? Par qui a-t-il été créé ?
-   - À quelle époque ce réseau a-t-il été créé ? Quel était le contexte mondial ?
-   - Pourquoi ce réseau a-t-il été créé ?
+!!! question "Questions"
 
-Vous pouvez effectuer vos recherches n'importe où sur le Web. Chaque réponse devra respecter les contraintes suivantes :
+    1. Quel réseau informatique est considéré comme l'ancêtre d'Internet ? Quand et par qui a-t-il été créé ?
+    2. Pour quelle(s) raison(s) ce réseau a-t-il été créé ?
+    3. Comment ce réseau est-il devenu le réseau Intenet ?
 
-   - Indiquer le nom du site (ou des sites) où les informations ont été trouvées
-   - Répondre avec vos mots et ne pas copier/coller les informations trouvées
+Vous êtes libre d'effectuer vos recherches n'importe où sur le Web. 
+Chaque réponse devra respecter les contraintes suivantes :
 
-!!! danger "Plagier est interdit"
+!!! info "Consignes de réponse"
 
-    Le plagiat est interdit. Vous devez toujours répondre avec vos mots. Donc attention à l'usage du copier/coller.
+    - Recopier la question 
+    - Répondre avec vos mots et ne pas copier/coller les informations trouvées
+    - Indiquer l'URL de la page (où des pages) où les informations ont été trouvées
 
-!!! warning "Enregistrer régulièrement le travail"
+!!! danger "Attention au plagiat"
 
-    Enregitres régulierment votre fichiuer sous peine perdre votre travail en cas d'interupption de l'application.
-    Pour celà, vous avez le choix entre :
-    
-    - cliauer sur l'entrée du menu **Fichier > Enregistrer** 
-    - utiliser le raccourci clavier ++ctrl+S++
+    Le plagiat est le fait de présenter comme sien un travail ou une idée empruntée à autrui.
+    Dans le cas présent, vous devez reformuler les informations trouvées et ne pas simplement les copier/coller.
 
+!!! warning "Attention aux risques de perte du travail"
 
-## Envoi du travail
+    Vous pouvez à tout moment être victime d'une défaillance matérielle ou logicielle.
+    Dans ce cas, tout le travail resté dans la mémoire de l'ordinateur sera perdu. Pour vous protéger, **enregistrez très régulièrement** :
 
-#### Conversion au format PDF
+    - en utilisant le raccourci clavier : <kbd>Ctrl</kbd> + <kbd>S</kbd>
+    - en utilisant l'entrée du menu : **Fichier > Enregistrer** 
 
-Avant de transmettre votre document à l'enseignant, vous devez le convertir au format **PDF**. Pour cela :
+## Envoi du document
 
-- Enregistrer votre document
-- Toujours dans LibreOffice, cliquer sur `Fichier > Exporter vers > Exporter directement au format PDF`
-- Nommer le document PDF en respectant la structure suivante : `NOM_Prénom_Classe_Objetdutravail` <br/>
-  Exemple : `DUPOT_Jean_2NDE1_SNTNaissanceInternet.pdf`
+### Conversion au format PDF
 
-### Dépôt d'un devoir
+Avant de transmettre votre document à l'enseignant, vous devez l'exporter au format **PDF**. 
+Ce format présent l'avantage d'être lisible sur n'impoorte quel appareil ou directement depuis un navigateur Web.
 
-Une fois votre fichier convertit au format PDF, il vous faut l'envoyer à botre enseigant. Pour celà, vous allez utiliser Pronote.
+!!! note "Export au format PDF"
 
-!!! note "Rendre un devoir sur Pronote"
+    1. Enregistrez votre document : <kbd>Ctrl</kbd> + <kbd>S</kbd>
+    2. Dans LibreOffice, cliquez sur l'entrée du menu : **Fichier > Exporter vers > Exporter directement au format PDF**
+    3. Nommez le document PDF en respectant la structure suivante : <br/>
+       `{classe}_{nom}_{prénom}_naissanceinternet.pdf` <br/>
+       Exemple : *Louis Pouzin de la seconde 1* → `SEC01_pouzin_louis_naissanceinternet.pdf`
 
-    1. Connectes-vous à l'**ENT** : https://ent.iledefrance.fr
-    2. Accedez à l'application **Pronote**
-    3. Un devoir à rendre a été crée par votre enseignant et est identifiable par un bouton **Déposer ma copie**. Trouvez-le
+### Dépôt du travail
+
+Une fois votre fichier converti au format PDF, vous allez l'envoyer à votre enseignant. Pour celà, nous utiliserons Pronote.
+
+!!! note "Dépôt d'une copie sur Pronote"
+
+    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    2. Accédez à l'application **Pronote**
+    3. Un *travail à faire* en SNT a été créé par votre enseignant. Il est identifiable sur la page d'accueil par un bouton :<br /> 
+       **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
     4. Cliquez sur le bouton **Déposer ma copie**
-
-Connectez-vous à Pronote
-L'envoyer en cliquant sur Déposer ma copie
+    5. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
 
 
+## Travail complémentaire
 
+Vous avez terminé ? Profitez du temps restant pour effectuer les modifications suivantes :
 
+!!! note "Mise en forme"
 
-
-
-
-La manière de rendre un devoir peut varier selon la matière :
-- L'applictaion casier
-- via un exercice de l'a
-- En pièce jointe d'une message
-
-
-## Illustrations et mise en page
-
-Revoir la mise en forme du document en illustrant chaque réponse par une image trouvée sur le Web.
-Envoyer la nouvelle version du document à l'enseignant, toujours au format PDF, en respectant les règles de rédaction d'un message.
+    - Ajustez la mise en forme de votre document en illustrant chaque réponse par une image trouvée sur le Web
+    - Déposez la nouvelle version de votre document au format PDF dans Pronote

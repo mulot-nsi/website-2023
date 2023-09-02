@@ -3,7 +3,6 @@ site_name: Mulot NSI
 site_url: https://www.mulot-nsi.fr
 site_author: Yannick Mulot
 
-
 # Arborescence de navigation
 nav:
   - Accueil: index.md
@@ -39,18 +38,18 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 
-
 # Plugins
 plugins:
   - minify:
       minify_html: true
   - search
 
-# Extensions
+# Extensions Markdown
 markdown_extensions:
-  - attr_list
-  # - abbr
+  - abbr
   - admonition
+  - attr_list
   - md_in_html
-  # - pymdownx.details
-  # - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
