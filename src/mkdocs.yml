@@ -13,12 +13,17 @@ nav:
           - TP1 - Naissance d'Internet: snt/01-internet/tp1-naissance-internet.md
   - NSI 1RE:
       - nsi1re/index.md
+      - Chapitre 1 - Langages du Web:
+          - TP1 - Création d'une page web: nsi1re/01-langages-web/tp1-creation-page-web.md
+          - Projet - Présentez-vous: nsi1re/01-langages-web/prj-presentez-vous.md
 
 # Configuration du thème
 theme:
   name: material
   language: fr
   features:
+    - content.code.annotate
+    - content.code.copy
     - navigation.footer
     - navigation.indexes
     # - navigation.sections
@@ -50,6 +55,14 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
