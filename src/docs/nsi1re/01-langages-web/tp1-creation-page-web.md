@@ -51,7 +51,7 @@ Writer permettant de créer des **documents texte**.
 Un fichier texte (aussi appelé *texte brut*) ne comporte aucune mise en forme du texte (choix et taille de police, gras,
 italique, paragraphes, ...).
 
-Un éditeur de texte est disponible dans tout système d'exploitation. Sous Windows, il s'agit du **Bloc-notes** qui 
+Un éditeur de texte est disponible dans tout système d'exploitation. Sous Windows, il s'agit du **Bloc-notes** qui
 permet l'écriture de n'importe quel code informatique. Il lui manque cependant beaucoup de fonctionnalités utiles au
 développement telles que : la coloration syntaxique ou la détection des erreurs à la saisie.
 
@@ -99,8 +99,8 @@ Corps de la page
 
 ### Modification du contenu
 
-Vous allez maintenant modifier le contenu de la page web en agissant sur son code source et en observant le résultat dans
-le navigateur web.
+Vous allez maintenant modifier le contenu de la page web en agissant sur son code source et en observant le résultat
+dans le navigateur web.
 
 !!! note "Modification de la page web"
 
@@ -166,16 +166,14 @@ propriétés CSS.
 
 #### Propriétés CSS
 
-| Propriété                | Description             | Documentation                                                                           |
-|:-------------------------|:------------------------|:----------------------------------------------------------------------------------------|
-| `#!css color:`           | Couleur du texte        | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}           |
-| `#!css backround:`       | Style de l'arrière plan | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/background){:target="_blank"}      |
-| `#!css text-align:`      | Alignement du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}      |
-| `#!css text-decoration:` | Décoration du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
-| `#!css font-size:`       | Taille du texte         | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
-| `#!css width:`           | Largeur d'un élément    | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}           |
-
-
+| Propriété                | Description             | Documentation                                                                          |
+|:-------------------------|:------------------------|:---------------------------------------------------------------------------------------|
+| `#!css color:`           | Couleur du texte        | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}          |
+| `#!css backround:`       | Style de l'arrière plan | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/background){:target="_blank"}     |
+| `#!css text-align:`      | Alignement du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}     |
+| `#!css text-decoration:` | Décoration du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank" |
+| `#!css font-size:`       | Taille du texte         | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}      |
+| `#!css width:`           | Largeur d'un élément    | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}          |
 
 ## Ressources
 
