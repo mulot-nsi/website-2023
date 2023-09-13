@@ -146,6 +146,11 @@ Cependant, vous devez obligatoirement faire usage des sélecteurs et propriété
     | Alignement du texte | `#!css text-align:` | Pour centrer du texte ou des images          |
     | Largeur             | `#!css width:`      | À utiliser pour fixer la largeur des images. |
 
+!!! warning "Feuille de style unique"
+    
+    **Attention**, vous n'avez droit qu'à un seul fichier CSS pour mettre en forme votre mini-site.
+    À vous de définir astucieusement vos sélecteurs CSS afin que certains styles ne s'appliquent qu'à l'une ou l'autre des pages.
+
 ### Contraintes de qualité
 
 Les langages HTML et CSS sont très permissifs. Pour s'assurer de la qualité de votre code, voici les contraintes de
