@@ -166,14 +166,14 @@ propriétés CSS.
 
 #### Propriétés CSS
 
-| Propriété                | Description             | Documentation                                                                          |
-|:-------------------------|:------------------------|:---------------------------------------------------------------------------------------|
-| `#!css color:`           | Couleur du texte        | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}          |
-| `#!css backround:`       | Style de l'arrière plan | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/background){:target="_blank"}     |
-| `#!css text-align:`      | Alignement du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}     |
-| `#!css text-decoration:` | Décoration du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank" |
-| `#!css font-size:`       | Taille du texte         | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}      |
-| `#!css width:`           | Largeur d'un élément    | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}          |
+| Propriété                | Description             | Documentation                                                                           |
+|:-------------------------|:------------------------|:----------------------------------------------------------------------------------------|
+| `#!css color:`           | Couleur du texte        | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}           |
+| `#!css backround:`       | Style de l'arrière plan | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/background){:target="_blank"}      |
+| `#!css text-align:`      | Alignement du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}      |
+| `#!css text-decoration:` | Décoration du texte     | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
+| `#!css font-size:`       | Taille du texte         | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
+| `#!css width:`           | Largeur d'un élément    | [voir](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}           |
 
 ## Ressources
 
