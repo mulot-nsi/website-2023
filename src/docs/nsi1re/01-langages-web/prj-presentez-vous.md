@@ -68,6 +68,16 @@ Les fichiers de votre projet doivent être rangés dans un dosser à votre nom.
     └── ???.html
     ```
 
+!!! warning "Tout en minuscules"
+    
+    Veillez à ce que vos noms de fichiers et de dossiers soient en minuscules.
+    Tout devrait bien fonctionner bien sous Windows ou MacOS.
+    Cependant, certains systèmes d'exploitation comme Linux ont un système de fichiers sensible à la casse (qui distingue les minuscules des majuscules).
+    
+    En cas de sensibilité à la casse, avoir des images stockées dans le dossier `Images/...` et les appeler en HTML avec le chemin `images/...` provoquera une anomalie.
+    
+
+
 ??? example "Exemple d'arborescence"
 
     Je suis [Tim Berners-Lee](https://fr.wikipedia.org/wiki/Tim_Berners-Lee){:target="_blank"} l'inventeur du web. 
