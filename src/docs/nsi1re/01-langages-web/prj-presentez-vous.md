@@ -99,13 +99,31 @@ Cependant, vous devez obligatoirement utiliser les éléments de la liste suivan
     | Sous-titre                       | `#!html <h2></h2>`                                         |                                                                                                                                                 |
     | Paragraphe                       | `#!html <p></p>`                                           |                                                                                                                                                 |
     | Fort ou emphase                  | `#!html <strong></strong>` ou `#!html <em></em>`           | L'un ou l'autre                                                                                                                                 |
-    | Image                            | `#!html <img src="" alt="" />`                             | N'oubliez pas l'attribut `alt`.<br/>Pas d'images externes. Toutes les images doivent être enregistrées dans le dossier `images`                 |
+    | Image                            | `#!html <img src="" alt="">`                               | N'oubliez pas l'attribut `alt`.<br/>Pas d'images externes. Toutes les images doivent être enregistrées dans le dossier `images`                 |
     | Lien hypertexte                  | `#!html <a href="url"></a>`                                | N'oubliez pas la navigation entre les deux pages.<br/>Vous devez avoir au moins un lien sortant (pointant vers un site web autre que le vôtre). |
     | Liste à puces ou liste numérotée | `#!html <ul><li></li></ul>` ou `#!html <ol><li></li></ol>` | L'un ou l'autre                                                                                                                                 |
     | Tableau                          | `#!html <table></table>`                                   |                                                                                                                                                 |
     | Titre                            | `#!html <title></title>`                                   | Présent sur les deux pages                                                                                                                      |
-    | Métadonnée description           | `#!html <meta name="description" content="" />`            | Présent sur les deux pages                                                                                                                      |
-    | Liens vers ressource CSS         | `#!html <link rel="stylesheet" href="" />`                 | Présent sur les deux pages                                                                                                                      | 
+    | Métadonnée description           | `#!html <meta name="description" content="...">`           | Présent sur les deux pages. Description de votre page à saisir dans l'attribut `content`                                                        |
+    | Liens vers une ressource CSS     | `#!html <link rel="stylesheet" href="">`                   | Présent sur les deux pages                                                                                                                      | 
+
+??? tip "Code HTML de base d'une page web"
+
+    Pour rappel, voici le code HTML minimal permettant la création d'une page web :
+
+    ```html
+    <!doctype html>
+    <html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Titre de la page</title>
+    </head>
+    <body>
+        Contenu de la page
+    </body>
+    </html>
+    ```
+
 
 ### Contraintes de code CSS
 
@@ -139,6 +157,7 @@ qualité à respecter pour chacun d'eux :
 
         - Le code HTML de chaque page web doit être indenté de façon à ce qu'on puisse bien identifier l'ouverture et la fermeture des balises
         - Le code HTML devra être vérifié en chargeant vos pages sur le site [W3C Markup Validation Service](https://validator.w3.org/#validate_by_upload+with_options). Elles ne devront comporter aucune erreur
+        - Si vous avez l'anomalie *<< Trailing slash on void elements has no effect and interacts badly with unquoted attribute values >>*, supprimez le `/` de fin des balises auto-fermantes (`meta`, `link`, `ìmg`, ...)
 
     === "Langage CSS"
 
