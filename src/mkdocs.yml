@@ -16,6 +16,8 @@ nav:
       - Chapitre 1 - Langages du Web:
           - TP1 - Création d'une page web: nsi1re/01-langages-web/tp1-creation-page-web.md
           - Projet - Présentez-vous: nsi1re/01-langages-web/prj-presentez-vous.md
+      - Chapitre 2 - Les ordinateurs:
+          - TP1 - Interpréteur de commandes: nsi1re/02-ordinateurs/tp1-cli.md
 
 # Configuration du thème
 theme:
