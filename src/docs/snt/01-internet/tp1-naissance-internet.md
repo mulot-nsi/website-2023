@@ -3,11 +3,11 @@ title: Internet - TP1 Naissance d'Internet
 description: Recherche de l'origine du réseau Internet
 ---
 
-# TP1 - Naissance d'Internet
+# Naissance d'Internet
+
+![Réseau Arpanet](images/reseau.png)
 
 ## Introduction
-
-![Image title](images/reseau.png)
 
 Ces travaux pratiques consistent à découvrir le réseau informatique à l'origine du réseau Internet.
 Pour celà, vous devrez répondre à trois questions en effectuant des recherches sur le Web.
