@@ -11,6 +11,7 @@ nav:
       - Chapitre 1 - Internet:
           - snt/01-internet/index.md
           - TP1 - Naissance d'Internet: snt/01-internet/tp1-naissance-internet.md
+          - TP2 - Simulation d'un réseau: snt/01-internet/tp2-simulation-reseau.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
@@ -30,6 +31,7 @@ theme:
     - navigation.indexes
     # - navigation.sections
     - navigation.tabs
+    - navigation.top
     # - navigation.instant
   font:
     text: Roboto
