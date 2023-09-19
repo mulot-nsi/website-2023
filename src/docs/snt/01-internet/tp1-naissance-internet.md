@@ -13,7 +13,7 @@ Ces travaux pratiques consistent à découvrir le réseau informatique à l'orig
 Pour celà, vous devrez répondre à trois questions en effectuant des recherches sur le Web.
 Les réponses aux questions seront à rédiger dans un document numérique qui devra être rendu avant la fin de l'heure.
 
-!!! success "Objectifs" 
+!!! success "Objectifs"
 
     - mesurer votre maîtrise des outils numériques (ordinateur et logiciels)
     - mesurer votre capacité à suivre des consignes
@@ -26,8 +26,8 @@ Les réponses aux questions seront à rédiger dans un document numérique qui d
 
 ### Espace de travail
 
-Afin vos productions numériques ne soient pas mélangées entre les différentes matières et travaux pratiques, 
-vous allez créer des dossiers afin de les organiser. 
+Vous allez créer quelques dossiers afin de ne pas mélanger vos productions numériques entre vos différentes matières et
+travaux pratiques.
 
 !!! note "Organisation de l'espace travail"
 
@@ -41,11 +41,9 @@ vous allez créer des dossiers afin de les organiser.
     Ceux-ci seront alors accessibles depuis n'importe quel ordinateur du lycée.
     Tout fichier enregistré ailleurs que ce dossier sera irrémédiablement perdu.
 
-
-
 ### Document de réponse
 
-Avant de démarrer vos recherches, préparez votre document de réponse. 
+Avant de démarrer vos recherches, préparez votre document de réponse.
 Les réponses devront être saisies à l'aide de l'application de traitement de texte **LibreOffice Writer**.
 
 !!! note "Création d'un nouveau document texte"
@@ -54,7 +52,8 @@ Les réponses devront être saisies à l'aide de l'application de traitement de 
     2. Enregistrez **immédiatement** votre document dans le dossier `SNT/Internet` créé précédemment.
        Vous êtes libre du choix de son nom.
 
-Afin de rendre vos productions écrites pleinement identifiables, veillez à les introduire avec les informations ci-après.
+Afin de rendre vos productions écrites pleinement identifiables, veillez à les introduire avec les informations
+ci-après.
 La mise en forme est libre.
 
 !!! info "Informations d'identification"
@@ -68,14 +67,14 @@ La mise en forme est libre.
 ## Travail de recherche
 
 Les questions auxquelles il vous faut répondre en effectuant vos recherches sur le Web sont les suivantes :
-   
+
 !!! question "Questions"
 
     1. Quel réseau informatique est considéré comme l'ancêtre d'Internet ? Quand et par qui a-t-il été créé ?
     2. Pour quelle(s) raison(s) ce réseau a-t-il été créé ?
     3. Comment ce réseau est-il devenu le réseau Intenet ?
 
-Vous êtes libre d'effectuer vos recherches n'importe où sur le Web. 
+Vous êtes libre d'effectuer vos recherches n'importe où sur le Web.
 Chaque réponse devra respecter les contraintes suivantes :
 
 !!! info "Consignes de réponse"
@@ -101,7 +100,7 @@ Chaque réponse devra respecter les contraintes suivantes :
 
 ### Conversion au format PDF
 
-Avant de transmettre votre document à l'enseignant, vous devez l'exporter au format **PDF**. 
+Avant de transmettre votre document à l'enseignant, vous devez l'exporter au format **PDF**.
 Ce format présent l'avantage d'être lisible sur n'impoorte quel appareil ou directement depuis un navigateur Web.
 
 !!! note "Export au format PDF"
@@ -114,7 +113,8 @@ Ce format présent l'avantage d'être lisible sur n'impoorte quel appareil ou di
 
 ### Dépôt du travail
 
-Une fois votre fichier converti au format PDF, vous allez l'envoyer à votre enseignant. Pour celà, nous utiliserons Pronote.
+Une fois votre fichier converti au format PDF, vous allez l'envoyer à votre enseignant. Pour celà, nous utiliserons
+Pronote.
 
 !!! note "Dépôt d'une copie sur Pronote"
 
@@ -124,7 +124,6 @@ Une fois votre fichier converti au format PDF, vous allez l'envoyer à votre ens
        **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
     4. Cliquez sur le bouton **Déposer ma copie**
     5. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
-
 
 ## Travail complémentaire
 
