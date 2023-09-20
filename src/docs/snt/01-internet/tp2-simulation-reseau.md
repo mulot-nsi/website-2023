@@ -1,6 +1,6 @@
 ---
-title: Internet - TP1 Naissance d'Internet
-description: Recherche de l'origine du réseau Internet
+title: Internet - TP2 Simulation d'un réseau
+description: Construction et simulation d'un réseau informatique
 ---
 
 # Simulation d'un réseau
@@ -27,7 +27,7 @@ travaux pratiques.
 
     1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
     2. Une fois dans votre zone personnelle, créez un nouveau dossier nommé **SNT** s'il n'existe pas déjà
-    3. Entrez dans le dossier **SNT** et créez-y un nouveau dossier nommé **Réseau**
+    3. Entrez dans le dossier **SNT** et créez-y un nouveau dossier nommé **Internet** s'il n'existe pas déjà
 
 ??? warning "Attention au risque de perte de fichiers"
 
@@ -326,3 +326,32 @@ les ordinateurs de chaque réseau.
     2. Tester un ping du portable **A1** vers le portable **B3**
     3. Au lieu d'utiliser la commande `ping`, utilisez cette fois la commande `traceroute` vers le portable **B3**
     4. Essayez de comprendre l'utilité de cette commande
+
+## Envoi du travail
+
+### Enregistrement du réseau
+
+Suivez les instructions ci-dessous afin d'enregistrer votre réseau Filius dans votre zone personnelle.
+
+!!! note "Enregistrement"
+
+    1. Retournez au mode construction en cliquant sur le **marteau**
+    2. Cliquez sur la disquette *(l'icône avec un objet rectangulaire noir)*
+    3. Dans la fenêtre d'enregistrement, cliquez sur l'icône en forme de maison
+    4. Accédez au répertoire  `zone personnelle/SNT/Internet`
+    5. Enregistrez votre réseau en lui donnant le nom de votre choix
+
+
+### Dépôt du travail
+
+Suivez les instructions ci-dessous afin d'envoyer votre travail via Pronote.
+
+!!! note "Dépôt d'une copie sur Pronote"
+
+    1. Quitter le mode simulation en cliquant 
+    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    2. Accédez à l'application **Pronote**
+    3. Un *travail à faire* en SNT a été créé par votre enseignant. Il est identifiable sur la page d'accueil par un bouton :<br /> 
+       **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
+    4. Cliquez sur le bouton **Déposer ma copie**
+    5. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
