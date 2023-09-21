@@ -273,7 +273,7 @@ Nous souhaitons maintenant agrandir notre réseau en le connectant à un nouveau
 
     Le portable **A1** arrive-t-il à communiquer avec le portable **B3** ? Non car malgré une connexion directe,
     ces machines n'appartiennent pas au même résau. 
-    En effet, les machines du réseau A ont toutes une adresse IP commençant par `192.168.1` alors que celle du réseau B voient leur adresse IP commencer par `192.1683.2` 
+    En effet, les machines du réseau A ont toutes une adresse IP commençant par `192.168.1` alors que celle du réseau B voient leur adresse IP commencer par `192.168.2` 
     Il existe un équipement permettant de connecter correctement deux ou plusieurs réseaux : le **routeur** 
 
 ### Ajout du routeur
