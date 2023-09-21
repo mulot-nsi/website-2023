@@ -355,3 +355,13 @@ Suivez les instructions ci-dessous afin d'envoyer votre travail via Pronote.
        **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
     4. Cliquez sur le bouton **Déposer ma copie**
     5. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
+
+### Questionnaire
+
+Afin de vérifier votre compréhension de ces travaux pratiques, veuillez répondre au questionnaire Pronote suivant :
+
+!!! note "Questionnaire de vérification"
+
+    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    2. Accédez à l'application **Pronote**
+    3. Depuis l'accueil, lancez le questionnaire intitulé **SNT01 - TP2 Construction d'un réseau**
