@@ -12,28 +12,28 @@ Vous découvrirez comment mettre en réseau des ordinateurs ainsi que le rôle d
 
 !!! success "Objectifs"
 
-    - comprendre ce qu'est une adresse IP
-    - comprendre le rôle d'un commutateur ethernet (ou *switch* en anglais)
-    - comprendre le rôle d'un routeur
+    - Comprendre ce qu'est une adresse IP
+    - Comprendre le rôle d'un commutateur ethernet (ou *switch* en anglais)
+    - Comprendre le rôle d'un routeur
 
 ## Préparation
 
 ### Espace de travail
 
-Vous allez créer quelques dossiers afin de ne pas mélanger vos productions numériques entre vos différentes matières et
+Vous allez créer des dossiers afin de ne pas mélanger vos productions numériques entre vos différentes matières et
 travaux pratiques.
 
 !!! note "Organisation de l'espace travail"
 
     1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-    2. Une fois dans votre zone personnelle, créez un nouveau dossier nommé **SNT** s'il n'existe pas déjà
-    3. Entrez dans le dossier **SNT** et créez-y un nouveau dossier nommé **Internet** s'il n'existe pas déjà
+    2. Une fois dans votre zone personnelle, créez un nouveau dossier nommé **SNT** *(s'il n'existe pas déjà)*
+    3. Entrez dans le dossier **SNT** et créez-y un nouveau dossier nommé **Internet** *(s'il n'existe pas déjà)*
 
 ??? warning "Attention au risque de perte de fichiers"
 
     Pensez à **toujours** enregistrer vos fichiers dans le dossier **Zone personnelle** (ou un de ses sous-dossiers).
     Ceux-ci seront alors accessibles depuis n'importe quel ordinateur du lycée.
-    Tout fichier enregistré ailleurs que ce dossier sera irrémédiablement perdu.
+    Tout fichier enregistré ailleurs sera perdu.
 
 ### Logiciel de simulation de réseau
 
@@ -42,8 +42,9 @@ Le logiciel à utiliser se nomme **Filius** et est disponible sur les ordinateur
 
 !!! note "Lancement de Filius"
 
-    1. Localisez et lancez le logiciel **Filius**
-    2. **Attention, n'allez pas trop vite** ! Si un choix de langue vous est proposé, choisissez le Français
+    1. Recherchez `filius` en utilisant le champ de recherche de la barre de tâches Windows
+    2. Lancez l'application **Filius**
+    3. **Attention, n'allez pas trop vite** ! Si un choix de langue vous est proposé, choisissez le Français
 
 ## Deux machines en réseau
 
@@ -70,11 +71,11 @@ Tout ordinateur relié à un réseau informatique est appelé **hôte**.
     
     1. Pour terminer la construction, connectez les ordinateurs à l'aide d'un **câble ethernet**
 
-??? warning "Attention la saisie des adresses IP"
+??? warning "Attention à la saisie des adresses IP"
 
     Vérifiez bien les adresses IP saisies. Une erreur fréquente est de saisir `192.168.0.10` au lieu de `192.168.1.10`.
 
-!!! info "L'adresse IP"
+!!! info "Cours - L'adresse IP"
 
     Une adresse IP est un numéro d'identification unique attribué à une machine faisant partie d'un réseau informatique.
     Elle est généralement représentée en notation décimale avec quatre nombres compris entre 0 et 255, séparés par des points.
@@ -114,15 +115,15 @@ réseau informatique.
 
     1. Lancez l'application **ligne de commande** installée sur la machine **A1**<br>
        *(toutes les commandes de ces travaux pratiques devront être lancées uniquement depuis la machine A1)*
-    2. Exécutez la commande **help** en l'écrivant au clavier et en appuyant sur la touche *entrée*<br>
+    2. Exécutez la commande `help` en l'écrivant au clavier et en appuyant sur la touche ++enter++<br>
        *(les mêmes informations affichées lors du lancement de l'application ligne de commande doivent se réafficher.)*
-    3. Dans la liste des commandes, retrouvez celle nommée `ipconfig`. Lisez sa courte description
+    3. Dans la liste des commandes, retrouvez celle nommée `ipconfig`. Lisez simplement sa courte description
 
     <figure markdown>
       ![Installation sous Filius](images/filius_command_line.png)
     </figure>
 
-!!! info "Les commandes"
+??? info "Culture générale - Les commandes"
 
     L'ensemble des commandes listées existent réellement. Elles peuvent être exécutées, pour la plupart, depuis tout ordinateur Windows via l'application **Commandes Windows**.
 
@@ -163,13 +164,13 @@ Il existe une commande pour celà, la commande `ping`.
 
 Pour fonctionner, la commande `ping` nécessite qu'on lui indique l'adresse IP de l'hôte pour lequel on souhaite vérifier
 la connectivité sur le réseau.
-On dit que la commande **ping** prend un **argument**, c'est-à-dire qu'il est nécessaire de lui fournir une information
+On dit que la commande `ping` prend un **argument**, c'est-à-dire qu'il est nécessaire de lui fournir une information
 supplémentaire.
 
 ??? example "Exemple d'utilisation de la commande `ping`"
 
     Depuis un hôte **X**, nous souhaitons tester la connectivité avec un hôte **Y** d'adresse IP `10.0.0.99`.
-    Pour celà, nous écririons l'appel de la commande `ping` ainsi : 
+    Pour celà, nous écririons l'appel de la commande `ping` avec comme **argument** l'adresse IP de la machine **Y** : 
 
     ```
     ping 10.0.0.99
@@ -199,7 +200,7 @@ supplémentaire.
     ```
 
     Si vous observez la ligne surlignée, vous constatez l'hôte **A1**, d'où vous utilisez la ligne de commande, a transmis 4 paquets de données à l'hôte **A2**.
-    Ceux-ci ayant bien été reçus, il y a connectivité réseau entre **A1** et **A2**.
+    Ceux-ci ayant bien été reçus, il y a donc connectivité réseau entre **A1** et **A2**.
 
 ## Réseau de plusieurs machines
 
@@ -232,7 +233,7 @@ Un nouvel équipement est donc nécessaire pour pouvoir les relier tous les troi
 
 !!! question "Choix des adresses IP"
 
-    Les adresses IP n'ont pas été choisies au hasard. Qu'observez-vous celles des machines **A1**, **A2** et **A3** ? Qu'ont-elles en commun ?
+    Les adresses IP n'ont pas été choisies au hasard. Qu'observez-vous concernant celles des machines **A1**, **A2** et **A3** ? Qu'ont-elles en commun ?
     Gardez la réponse pour vous, des explications vous seront données dans l'exercice suivant.
 
 ## Réseau de réseaux
@@ -265,35 +266,40 @@ Nous souhaitons maintenant agrandir notre réseau en le connectant à un nouveau
 
 !!! note "Connexion des deux réseaux"
 
-    1. À l'aide d'un câble, connectez directement les switchs entre eux
+    1. À l'aide d'un câble ethernet, connectez directement les switchs entre eux
     2. Lancez la simulation
-    3. Testez un ping du portable **A1** vers le portable **B3**
+    3. Testez un ping du portable **A1** vers le portable **B3** *(consultez le résultat attendu ci-après en cas de problème)*
 
-??? failure "Résultat attendu"
+??? success "Résultat attendu"
 
     Le portable **A1** arrive-t-il à communiquer avec le portable **B3** ? Non car malgré une connexion directe,
-    ces machines n'appartiennent pas au même résau. 
-    En effet, les machines du réseau A ont toutes une adresse IP commençant par `192.168.1` alors que celle du réseau B voient leur adresse IP commencer par `192.168.2` 
-    Il existe un équipement permettant de connecter correctement deux ou plusieurs réseaux : le **routeur** 
+    ces machines n'appartiennent pas au même résau.
+
+    En effet, les machines du réseau A ont toutes une adresse IP commençant par `192.168.1` alors que celles du réseau B voient leur adresse IP commencer par `192.168.2`.
+    
+    Pour connecter correctement deux ou plusieurs réseaux distincts il existe un équipement : le **routeur** 
 
 ### Ajout du routeur
 
-Les machines du réseau A ne peuvent pas communiquer avec le réseau B malgré une connection direct entre les switchs.
-En effet, des machines sont considérées du même réseau, et peuvent alors communiquer entre elles, que si leur adresse IP
-partagent le même préfixe :
+Les machines du réseau A ne peuvent pas communiquer avec le réseau B malgré une connection directe entre les switchs.
+En effet, des machines sont considérées du même réseau, et peuvent alors communiquer entre elles, que si leurs
+adresses IP partagent le même préfixe :
 
-- `192.168.1` pour le réseau A 
-- `192.168.2` pour le réseau B
+- Le préfixe `192.168.1` pour le réseau A
+- Le préfixe `192.168.2` pour le réseau B
 
 Pour lier deux réseaux, il est nécessaire d'utiliser un **routeur**.
+Cet équipement a la particularité de disposer de plusieurs interfaces réseaux.
+Dans le cas présent, il disposera de deux interfaces réseaux :
+une première pour avoir une adresse IP dans le réseau A et une seconde pour avoir une adresse IP dans le réseau B.
 
 !!! note "Modification du réseau"
 
     1. Retournez au mode construction en cliquant sur le **marteau**
-    2. Supprimez le câble entre les deux switchs 
+    2. Supprimez le câble entre les deux switchs *(clic droit sur un des switchs puis « Supprimer tous les cables »)*
     3. Ajoutez un **routeur** et indiquer qu'il possède 2 interfaces 
-    4. Donnez l'adresse IP `192.168.1.1` à la première interface 
-    5. Donnez l'adresse IP `192.168.2.1` à la seconde interface 
+    4. Donnez l'adresse IP `192.168.1.1` à la première interface *(c'est l'adresse IP du routeur dans le réseau A)*
+    5. Donnez l'adresse IP `192.168.2.1` à la seconde interface *(c'est l'adresse IP du routeur dans le réseau B)*
     6. Connectez **en premier** le switch du réseau **A** au routeur 
     7. Connectez ensuite le switch du réseau **B** au routeur
 
@@ -301,27 +307,27 @@ Pour lier deux réseaux, il est nécessaire d'utiliser un **routeur**.
       ![Deux réseaux connectés par un routeur](images/filius_router_network.png)
     </figure>
 
-Il reste maintenant à ajuster un dernier point de configuration. La valeur de la **passerelle** doit être renseignée pour
+Il reste maintenant à ajuster un dernier point de configuration. La valeur de la **passerelle** doit être renseignée
+pour
 les ordinateurs de chaque réseau.
 
 !!! note "Configuration de la passerelle"
 
-    - Renseignez l'adresse IP `192.168.1.1` pour la passerelle des ordinateurs **A1**, **A2** et **A3**
-    - Renseignez l'adresse IP `192.168.2.1` pour la passerelle des ordinateurs **B1**, **B2** et **B3**
+    - Renseignez l'adresse IP `192.168.1.1` pour la propriété « passerelle » des ordinateurs **A1**, **A2** et **A3**
+    - Renseignez l'adresse IP `192.168.2.1` pour la propriété « passerelle » des ordinateurs **B1**, **B2** et **B3**
 
     <figure markdown>
       ![La passerelle](images/filius_gateway.png)
     </figure>
 
+!!! info "Cours - La passerelle"
 
-!!! info "La passerelle"
+    La **passerelle** permet d'indiquer à une machine où transmettre les paquets si l'adresse IP du destinataire ne fait
+    pas partie de son réseau. Nous avons renseigné ici pour chacune des machines l'adresse IP du routeur. 
 
-    La **passerelle** permet d'indiquer à aux machines où transmettre les paquets si l'adresse IP du destinataire ne fait
-    pas partie de leur réseau. Nous avons renseigné ici pour chacune des machines l'adresse IP du routeur. 
-
-    Mais pourquoi deux adresses IP distinctes ?
-    C'est parce que le routeur dispose de deux interfaces, une pour se connecter au réseau A
-    et une autre pour se connecter au réseau B. Son rôle est alors de faire le pont entre les deux réseaux.
+    Pour rappel, le routeur dispose de deux interfaces, une pour disposer d'une adresse IP sur réseau A
+    et une autre pour disposer d'une adresse IP sur le réseau B. 
+    Son rôle est alors de faire le **pont entre les deux réseaux**.
 
 ### Connectivité
 
@@ -332,6 +338,20 @@ les ordinateurs de chaque réseau.
     3. Au lieu d'utiliser la commande `ping`, utilisez cette fois la commande `traceroute` vers le portable **B3**
     4. Essayez de comprendre l'utilité de cette commande
 
+??? success "Résultat attendu"
+
+    En lançant la commande `traceroute` avec comme argument `192.168.2.30`, vous devriez obtenir un affichage proche de celui-ci :
+
+    ```
+    /> traceroute 192.168.2.30
+    Établissement de la connexion avec 192.168.2.30 (en 20 sauts max.). 
+     1 192.168.1.1
+     2 192.168.2.30
+    ```
+
+    La commande `traceroute` permet de suivre le trajet des paquets sur le réseau.
+    Ils ont traversé un équipement d'adresse IP `192.168.1.1` avant d'atteindre la machine **B3** d'adresse IP `192.168.2.30`.
+
 ## Envoi du travail
 
 ### Enregistrement du réseau
@@ -339,13 +359,11 @@ les ordinateurs de chaque réseau.
 Suivez les instructions ci-dessous afin d'enregistrer votre réseau Filius dans votre zone personnelle.
 
 !!! note "Enregistrement"
-
     1. Retournez au mode construction en cliquant sur le **marteau**
-    2. Cliquez sur la disquette *(l'icône avec un objet rectangulaire noir)*
+    2. Cliquez sur la **disquette** <br>![Disquette](images/filius_save.png)
     3. Dans la fenêtre d'enregistrement, cliquez sur l'icône en forme de maison
-    4. Accédez au répertoire  `zone personnelle/SNT/Internet`
+    4. Accédez au dossier  `zone personnelle/SNT/Internet`
     5. Enregistrez votre réseau en lui donnant le nom de votre choix
-
 
 ### Dépôt du travail
 
@@ -354,12 +372,12 @@ Suivez les instructions ci-dessous afin d'envoyer votre travail via Pronote.
 !!! note "Dépôt d'une copie sur Pronote"
 
     1. Quitter le mode simulation en cliquant 
-    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
-    2. Accédez à l'application **Pronote**
-    3. Un *travail à faire* en SNT a été créé par votre enseignant. Il est identifiable sur la page d'accueil par un bouton :<br /> 
-       **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
-    4. Cliquez sur le bouton **Déposer ma copie**
-    5. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
+    2. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    3. Accédez à l'application **Pronote**
+    4. Depuis l'accueil, recherchez le devoir **SNT01 - TP2 Simulation d'un réseau**
+    5. Cliquez sur le bouton **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
+    6. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
+    7. Choisissez le fichier Filius de votre réseau enregistré précédemment
 
 ### Questionnaire
 
@@ -369,4 +387,14 @@ Afin de vérifier votre compréhension de ces travaux pratiques, veuillez répon
 
     1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
     2. Accédez à l'application **Pronote**
-    3. Depuis l'accueil, lancez le questionnaire intitulé **SNT01 - TP2 Construction d'un réseau**
+    3. Depuis l'accueil, recherchez le QCM intitulé **SNT01 - TP2 Simulation d'un réseau**
+    4. Cliquez sur le bouton 
+       **Exécuter le QCM**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
+
+### Vérification
+
+Une fois que votre réseau fonctionne, qu'il a été déposé sur Pronote et que vous avez répondu au QCM, appelez votre enseignant afin qu'il puisse vérifier vos résultats.
+
+??? tip "Bonus"
+
+    Exercez-vous à la programmation Python de façon ludique sur [Pyrates](https://py-rates.fr/){:target="_blank"}
