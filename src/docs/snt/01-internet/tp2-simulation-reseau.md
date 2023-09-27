@@ -309,6 +309,11 @@ les ordinateurs de chaque réseau.
     - Renseignez l'adresse IP `192.168.1.1` pour la passerelle des ordinateurs **A1**, **A2** et **A3**
     - Renseignez l'adresse IP `192.168.2.1` pour la passerelle des ordinateurs **B1**, **B2** et **B3**
 
+    <figure markdown>
+      ![La passerelle](images/filius_gateway.png)
+    </figure>
+
+
 !!! info "La passerelle"
 
     La **passerelle** permet d'indiquer à aux machines où transmettre les paquets si l'adresse IP du destinataire ne fait
