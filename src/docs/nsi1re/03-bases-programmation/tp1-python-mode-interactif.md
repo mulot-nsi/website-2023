@@ -357,5 +357,14 @@ Toutes les commandes ci-après provoquent une anomalie ou un comportement inatte
     - `#!python 'A' < 65`
     - `#!python math.sqrt(4)`
     - `#!python 2,5`
-    - `#!python import math` <br /> `math.cos(math.radians(90))`
+    - `#!python import math` <br> `math.cos(math.radians(90))` <br> *(on rappelle que le cosinus de 90 degrés vaut 0)*
     - `#!python 0.1 + 0.2 == 0.3`
+
+## Conclusion
+
+Une fois que vous avez terminé ces travaux pratiques, **appelez votre enseignant** afin qu'il puisse répondre à vos interrogations.
+Vous pourrez ensuite vous exercer au langage Python en lançant l'activité bonus, **uniquement avec l'accord de votre enseignant**.
+
+??? tip "Bonus"
+
+    Exercez-vous à la programmation Python de façon ludique avec [Pyrates](https://py-rates.fr/){:target="_blank"}.
