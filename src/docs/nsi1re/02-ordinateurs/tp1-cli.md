@@ -56,7 +56,7 @@ Parcourez attentivement cette liste et comprenez le rôle de chaque commande ava
 
 ## Instructions
 
-### Fichiers et dossiers
+### Déplacements
 
 !!! note "Déplacement dans une arborescence"
 
@@ -65,6 +65,12 @@ Parcourez attentivement cette liste et comprenez le rôle de chaque commande ava
     3. Comment auriez-vous pu faire ça en une seule étape ?
     4. Listez le contenu du dossier `root`
     5. Listez le contenu du dossier `root` avec l'option `-al`
+
+!!! tip "Conseil"
+    
+    Vous pouvez à tout moment utiliser la touche ++tab++ pour compléter la saisie d'un nom de fichier ou de répertoire.
+
+### Création d'éléments
 
 !!! note "Création de dossiers"
 
@@ -82,13 +88,12 @@ Parcourez attentivement cette liste et comprenez le rôle de chaque commande ava
     3. Listez le contenu du dossier `home`. Un fichier nommé `salutations.txt` doit être maintenant présent
     4. Affichez le contenu du fichier `salutation.txt`
 
-??? tip "Conseil"
-    
-    Vous pouvez utiliser la touche ++tab++ pour compléter la saisie d'un nom de fichier ou de répertoire.
+### Modification d'éléments
 
 !!! note "Déplacement d'un fichier"
 
-    1. Déplacez le fichier `salutations.txt` dans le dossier `chapitre_1`
+    1. Déplacez le fichier `salutations.txt` dans le dossier `chapitre_1`<br>
+       *(Soyez rigoureux sur la saisie du chemin de destination car si le dossier n'existe pas, il pourrait y avoir renommage au lieu de déplacement)* 
     2. Créez un dossier `archives` dans le dossier `premiere_nsi`
     3. Copiez le fichier `salutations.txt` dans le dossier `archives` en le renommant `salutations_v1.txt`
 
@@ -104,3 +109,18 @@ Parcourez attentivement cette liste et comprenez le rôle de chaque commande ava
     1. Enlevez les droits en lecture au fichier `salutations_v1.txt` pour tous les utilisateurs en utilisant la commande `chmod`
     2. Vérifiez les droits du fichier en utilisant la commande `ls -l`
     3. Redonnez les droits en lecture au fichier `salutations_v1.txt` à votre utilisateur uniquement
+
+
+## Conclusion
+
+### Questionnaire
+
+Afin de vérifier votre compréhension de ces travaux pratiques, veuillez répondre au questionnaire Pronote suivant :
+
+!!! note "Questionnaire de vérification"
+
+    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    2. Accédez à l'application **Pronote**
+    3. Depuis l'accueil, recherchez le QCM intitulé **NSI1RE02 - TP1 - Interpréteur de commandes**
+    4. Cliquez sur le bouton 
+       **Exécuter le QCM**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
