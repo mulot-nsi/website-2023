@@ -29,12 +29,12 @@ Vous allez créer des dossiers afin de ne pas mélanger vos productions numériq
 
         1. Lancez l'**explorateur de fichiers**
         2. Accédez au dossier **Documents**
-        3. Créez un dossier nommé **SNT** s'il n'existe pas
+        3. Créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
 
     === "Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans votre zone personnelle, créez un dossier nommé **SNT** s'il n'existe pas
+        2. Dans votre zone personnelle, créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
 
 ### Version du système d'exploitation
 
