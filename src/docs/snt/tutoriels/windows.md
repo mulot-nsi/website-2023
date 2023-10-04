@@ -3,7 +3,7 @@ title: Tutoriel - Windows
 description: Quelques fonctionnalités du système d'exploitation Windows
 ---
 
-# Windows
+# L'environnement Windows
 
 ## Introduction
 
@@ -60,7 +60,8 @@ Il est donc essentiel de connaître la version du système d'exploitation exécu
 !!! note "Mise en pratique"
 
     Si vous ne la connaissez pas déjà, récupérez la version de votre système d'exploitation en utilisant l'une des deux méthodes.
-    Il vous faut savoir si vous êtes sous **Windows 10** ou **Windows 11**.
+    Il vous faut simplement savoir si vous êtes sous **Windows 10** ou **Windows 11**.
+    C'est important l'accès aux fonctionnalités varie selon que vous soyez sur l'une ou l'autre des versions.
 
 ## L'explorateur de fichiers
 
@@ -73,7 +74,7 @@ application :
 
 !!! info "Méthodes de lancement de l'explorateur de fichiers"
 
-    - Par l'**icône**   présente dans la barre des tâches ;
+    - Par l'**icône** :material-folder-outline: présente dans la barre des tâches ;
     - Par un clic droit sur le **menu démarrer** (icône :fontawesome-brands-windows:) puis **Explorateur de fichiers** ;
     - Par le **raccourci clavier** <span class=keys><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>.
 
@@ -117,8 +118,8 @@ La création d'un fichier texte s'effectue depuis le menu contextuel par un clic
     1. Placez-vous dans votre dossier **Tutoriels**
     2. Cliquez avec le bouton droit pour ouvrir le menu contextuel
     3. Choisissez **Nouveau ▸ Document texte**
-    4. Créez un nouveau document texte nommé **fable** (*une extension `.txt` sera automatiquement ajoutée*)
-    5. Ouvrez le fichier **fable.txt** avec l'application **Bloc-notes** (*double-cliquez sur le fichier*)
+    4. Créez un nouveau document texte nommé **fable**
+    5. Ouvrez le fichier **fable** avec l'application **Bloc-notes** (*double-cliquez sur le fichier*)
     6. Copiez <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>C</kbd></span> puis coller <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd></span> le texte suivant :
        ```
        La Cigale, ayant chanté
@@ -126,7 +127,7 @@ La création d'un fichier texte s'effectue depuis le menu contextuel par un clic
        Se trouva fort dépourvue
        Quand la bise fut venue
        ```
-    7. Observez la présence du caractère `*` dans la barre de titre de l'application : `*fable.txt`<br>
+    7. Observez la présence du caractère `*` dans la barre de titre de l'application : `*fable`<br>
        Cela signifie que les modifications apportées au fichier n'ont pas encore été enregistrées.
     8. Enregistrez le fichier à l'aide du raccourci clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>S</kbd></span>
 
@@ -146,10 +147,10 @@ La fonction copier-coller existe sous l'explorateur de fichiers :
 
 !!! note "Mise en pratique"
 
-    1. Sélectionner le fichier **fable.txt**
+    1. Sélectionner le fichier **fable**
     2. Copier le fichier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>C</kbd></span>
     3. Coller le fichier au même endroit <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd></span><br>
-       Celui-ci est automatiquement nommé **fable - Copie.txt**
+       Celui-ci est automatiquement nommé **fable - Copie**
 
 ### Extensions de fichiers
 
@@ -182,7 +183,10 @@ Voici comment la désactiver :
 
 !!! note "Mise en pratique"
 
-    Rendez visibles les extensions de fichier.
+    Rendez visibles les extensions de fichier. Dans votre répertoire de travail, vous devriez voir apparaître les fichiers suivants :
+    
+    - `fable.txt`
+    - `fable - Copie.txt`
 
 ### Renommage d'un fichier ou d'un dossier
 
