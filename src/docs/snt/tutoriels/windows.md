@@ -25,13 +25,13 @@ Vous allez créer des dossiers afin de ne pas mélanger vos productions numériq
 
 !!! note "Organisation de l'espace travail"
 
-    === "Ordinateur portable"
+    === ":material-laptop: Ordinateur portable"
 
         1. Lancez l'**explorateur de fichiers**
         2. Accédez au dossier **Documents**
         3. Créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
 
-    === "Ordinateur fixe"
+    === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
         2. Dans votre zone personnelle, créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
@@ -137,7 +137,7 @@ La création d'un fichier texte s'effectue depuis le menu contextuel par un clic
     Sachez qu'une multitude d'événements ont pour conséquence le redémarrage ou l'extinction de votre ordinateur.
     Dans cette situation, tout le travail non sauvegardé est **irrémédiablement perdu**.
 
-    Tout travail doit être enregistré **régulièrement** et cette opération est facilitée le raccourci
+    Tout travail doit être enregistré **régulièrement** et cette opération est facilitée par le raccourci
     clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>S</kbd></span>
 
 
@@ -147,9 +147,9 @@ La fonction copier-coller existe sous l'explorateur de fichiers :
 
 !!! note "Mise en pratique"
 
-    1. Sélectionner le fichier **fable**
-    2. Copier le fichier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>C</kbd></span>
-    3. Coller le fichier au même endroit <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd></span><br>
+    1. Sélectionnez le fichier **fable**
+    2. Copiez le fichier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>C</kbd></span>
+    3. Collez le fichier au même endroit <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>V</kbd></span><br>
        Celui-ci est automatiquement nommé **fable - Copie**
 
 ### Extensions de fichiers
@@ -162,24 +162,25 @@ Voici comment la désactiver :
 
     === "Windows 11 (méthode 1)"
 
-        - Lancez l'explorateur de fichiers
-        - Cliquez sur **Afficher ▸ Afficher**
-        - Activez l'option **Extensions de noms de fichiers**
+        - Lancer l'explorateur de fichiers
+        - Cliquer sur **Afficher ▸ Afficher** dans la barre d'outils<br>
+          *(Si vous ne voyez pas « Afficher », élargissez votre fenêtre au maximum ou cliquez sur les « ... »)*
+        - Activer l'option **Extensions de noms de fichiers**
 
     === "Windows 11 - (méthode 2)"
 
-        - Lancez l'explorateur de fichiers
-        - Cliquez sur **...** dans la barre d'outils
-        - Cliquez sur **Options**
-        - Cliquez sur l'onglet **Affichage**
-        - Dans les paramètres avancés, décochez l'option **Masquer les extensions des fichiers dont le type est connu**
-        - Cliquez sur **OK**
+        - Lancer l'explorateur de fichiers
+        - Cliquer sur **...** dans la barre d'outils
+        - Cliquer sur **Options**
+        - Cliquer sur l'onglet **Affichage**
+        - Dans les paramètres avancés, décocher l'option **Masquer les extensions des fichiers dont le type est connu**
+        - Cliquer sur **OK**
 
     === "Windows 10"
 
-        - Lancez l'explorateur de fichiers
-        - Cliquez sur l'onglet **Affichage**
-        - Cochez la case **Extensions de noms de fichiers**
+        - Lancer l'explorateur de fichiers
+        - Cliquer sur l'onglet **Affichage**
+        - Cocher la case **Extensions de noms de fichiers**
 
 !!! note "Mise en pratique"
 

@@ -30,14 +30,14 @@ travaux pratiques.
 
 !!! note "Organisation de l'espace travail"
 
-    === "Ordinateur portable"
+    === ":material-laptop: Ordinateur portable"
 
         1. Lancez l'**explorateur de fichiers**
         2. Accédez au dossier **Documents**
         3. Créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
         4. Entrez dans le dossier **SNT** et créez-y le dossier **Tutoriels** *(s'il n'existe pas déjà)*
 
-    === "Ordinateur fixe"
+    === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
         2. Dans votre zone personnelle, créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
@@ -131,14 +131,24 @@ Sous windows, des combinaisons de touches clavier permettent d'insérer certains
 
 
 !!! note "Mise en pratique"
+    === ":material-laptop: Ordinateur portable"
+        1. Lancez l'application de traitement de texte de votre choix
+        2. Ouvrez le fichier nommé **special** créé dans l'exercice précédent
+        3. Gardez pressées les touches ++alt++ et ++fn++
+        4. Saisissez, à l'aide du pavé numérique, le nombre 181 : ++1++ ++8++ ++1++ <br>
+           *(Ce sont les nombres écrits en mauve et non en blanc sur votre clavier)*
+        5. Relâchez les touches ++alt++ et ++fn++
+        6. Testez d'autres caractères accentués
+        7. Enregistrez le fichier ++ctrl+s++
 
-    1. Lancez l'application de traitement de texte de votre choix
-    2. Ouvrez le fichier nommé **special** créé dans l'exercice précédent
-    3. Gardez pressée la touche ++alt++
-    4. Saisissez, à l'aide du pavé numérique, le nombre 181 : ++1++ ++8++ ++1++
-    5. Relâchez la touche ++alt++
-    6. Testez d'autres caractères accentués
-    7. Enregistrez le fichier ++ctrl+s++
+    === ":material-desktop-tower: Ordinateur fixe"
+        1. Lancez l'application de traitement de texte de votre choix
+        2. Ouvrez le fichier nommé **special** créé dans l'exercice précédent
+        3. Gardez pressée la touche ++alt++
+        4. Saisissez, à l'aide du pavé numérique, le nombre 181 : ++1++ ++8++ ++1++
+        5. Relâchez la touche ++alt++
+        6. Testez d'autres caractères accentués
+        7. Enregistrez le fichier ++ctrl+s++
 
 ### Emojis :smiley:
 

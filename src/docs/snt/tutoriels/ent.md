@@ -17,6 +17,10 @@ Ce tutoriel a pour objectif de vous familiariser avec l'utilisation de certaines
   ![Espace documentation](images/documents.png)
 </figure>
 
+!!! warning "Non fonctionnel"
+
+    À ce jour, ces fonctionnalités ne sont plus actives dans l'ENT
+
 L'application **Espace documentaire** est comparable à Google Drive ou Microsoft One Drive. Elle permet le stockage de vos fichiers, tout comme la création de nouveaux documents.
 Si vous souhaitez disposer de fichiers présents sur les ordinateurs de lycée, ne vous les envoyez pas à vous-même via la messagerie, utilisez plutôt l'espace documentation.
 
