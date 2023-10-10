@@ -24,8 +24,9 @@ nav:
       - Chapitre 2 - Architecture des ordinateurs:
           - TP1 - Interpréteur de commandes: nsi1re/02-ordinateurs/tp1-cli.md
       - Chapitre 3 - Bases de la programmation:
-          - TP1 - Python en mode interactif: nsi1re/03-bases-programmation/tp1-python-mode-interactif.md
-          - TP2 - Python en mode script: nsi1re/03-bases-programmation/tp2-python-mode-script.md
+          - TP1 - Mode interactif: nsi1re/03-bases-programmation/tp1-python-mode-interactif.md
+          - TP2 - Mode script: nsi1re/03-bases-programmation/tp2-python-mode-script.md
+          - TP3 - Module Turtle: nsi1re/03-bases-programmation/tp3-turtle.md
 
 # Configuration du thème
 theme:
