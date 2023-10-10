@@ -19,23 +19,6 @@ Ce tutoriel a pour objectif d'améliorer votre maîtrise de certaines fonctionna
 
 ## Préparation
 
-### Espace de travail
-
-Vous allez créer des dossiers afin de ne pas mélanger vos productions numériques entre vos différentes matières et travaux pratiques.
-
-!!! note "Organisation de l'espace travail"
-
-    === ":material-laptop: Ordinateur portable"
-
-        1. Lancez l'**explorateur de fichiers**
-        2. Accédez au dossier **Documents**
-        3. Créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
-
-    === ":material-desktop-tower: Ordinateur fixe"
-
-        1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans votre zone personnelle, créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
-
 ### Version du système d'exploitation
 
 Selon la version de votre système d'exploitation, la disponibilité ou l'accès à certaines fonctionnalités peut
@@ -48,14 +31,14 @@ Il est donc essentiel de connaître la version du système d'exploitation exécu
 
         *(Attention, cette méthode ne fonctionne pas sur les ordinateurs du lycée)*
 
-        1. Appuyez sur <span class=keys><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>R</kbd></span>
-        2. Écrivez *« winver »* dans le champ de saisie **Ouvrir**
-        3. Cliquez sur **OK**
+        1. Appuyer sur <span class=keys><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>R</kbd></span>
+        2. Écrire *« winver »* dans le champ de saisie **Ouvrir**
+        3. Cliquer sur **OK**
 
     === "Méthode 2"
 
-        1. Lancez l'application **Invite de commandes**
-        2. Écrivez *« winver »* et appuyez sur ++return++
+        1. Lancer l'application **Invite de commandes**
+        2. Écrire *« winver »* et appuyez sur ++return++
 
 !!! note "Mise en pratique"
 
@@ -105,8 +88,21 @@ comme : ouvrir, modifier, imprimer, copier, coller, ...
 
 !!! note "Mise en pratique"
 
-    1. Placez-vous dans votre dossier **SNT**
-    2. Créez-y le dossier **Tutoriels** en utilisant le raccourci clavier
+    === ":material-laptop: Ordinateur portable"
+
+        1. Lancez l'**explorateur de fichiers**
+        2. Accédez au dossier **Documents**
+        3. Créez le dossier **SNT** *(s'il n'existe pas déjà)*
+        4. Entrez dans le dossier **SNT**
+        3. Créez-y le dossier **Tutoriels** en utilisant le raccourci clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>⇧ Maj</kbd><span>+</span><kbd>N</kbd></span> 
+
+    === ":material-desktop-tower: Ordinateur fixe"
+
+        1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
+        2. Dans votre zone personnelle, créez le dossier **SNT** *(s'il n'existe pas déjà)*
+        3. Entrez dans le dossier **SNT**
+        4. Créez-y le dossier **Tutoriels** en utilisant le raccourci clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>⇧ Maj</kbd><span>+</span><kbd>N</kbd></span>
+
 
 ### Création d'un fichier texte
 
@@ -208,10 +204,10 @@ Les fichiers et dossiers peuvent être sélectionnés de plusieurs façons :
 
 !!! info "Méthodes de sélection"
 
-    - En gardant pressé le bouton gauche de souris depuis une zone vide et en la faisant glisser de manière à ce qu'un carré de sélection apparaisse (*sélection d'éléments consécutifs*)
-    - En cliquant du bouton gauche sur le premier élément souhaité pour le sélectionner, puis clic gauche sur le dernier tout en pressant la touche <span class=keys><kbd>⇧ Maj</kbd></span> (*sélection d'éléments consécutifs*)
-    - En gardant enfoncée la touche <span class=keys><kbd>Ctrl</kbd></span> et en cliquant un à un sur les éléments à sélectionner. Cliquer à nouveau sur un élément permet de le désélectionner (*sélection d'éléments distincts*)
-    - En utilisant le raccourci clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>A</kbd></span> (*sélection de tous les éléments*)
+    - Garder pressé le bouton gauche de souris depuis une zone vide.<br>Faire glisser la souris de manière à ce qu'un carré de sélection apparaisse *(sélection d'éléments consécutifs)*
+    - Sélectionner par un clic gauche le premier élément souhaité.<br>Maintenir pressée la touche <span class=keys><kbd>⇧ Maj</kbd></span> et cliquer sur le dernier élément souhaité *(sélection d'éléments consécutifs)*
+    - Maintenir pressée la touche <span class=keys><kbd>Ctrl</kbd></span> et cliquer un à un sur les éléments à sélectionner.<br>Cliquer à nouveau sur un élément permet de le désélectionner (*sélection d'éléments distincts*)
+    - Utiliser le raccourci clavier <span class=keys><kbd>Ctrl</kbd><span>+</span><kbd>A</kbd></span> (*sélection de tous les éléments*)
 
 !!! note "Mise en pratique"
 
@@ -264,22 +260,22 @@ La conversion d'un contenu au format en PDF s'effectue toujours depuis l'applica
 
 ??? info "Export PDF depuis Microsoft Word"
 
-    - Enregistrez avant toute chose votre document au format **Document Word (*.docx)**<br>
+    - Enregistrer avant toute chose le document au format **Document Word (*.docx)**<br>
       *(pour rappel, un fichier PDF n'est pas modifiable)*
-    - Enregistrez de nouveau votre fichier via la fonction **Enregistrer sous...**
-    - Choisissez le format de fichier **PDF**
+    - Enregistrer de nouveau votre fichier via la fonction **Enregistrer sous...**
+    - Choisir le format de fichier **PDF** au lieu de *Document Word (.docx)*
 
 ??? info "Export PDF depuis LibreOffice Writer"
 
-    - Enregistrez avant toute chose le fichier au format **Texte ODF (*.odt)**<br>
+    - Enregistrer avant toute chose le document au format **Texte ODF (*.odt)**<br>
       *(pour rappel, un fichier PDF n'est pas modifiable)*
-    - Cliquez sur l'entrée **Fichier** du menu
-    - Choisissez l'option **Exporter vers ▸ Exporter directement au format PDF**
+    - Cliquer sur l'entrée **Fichier** du menu
+    - Choisir l'option **Exporter vers ▸ Exporter directement au format PDF**
 
 ??? info "Export PDF depuis n'importe quelle application"
 
-    - Trouvez et exécutez la fonction **Imprimer**
-    - Sélectionnez l'imprimante **Microsoft print to PDF**
+    - Trouver et exécuter la fonction **Imprimer**
+    - Sélectionner l'imprimante **Microsoft print to PDF**
 
 !!! note "Mise en pratique"
 
@@ -298,19 +294,19 @@ Voici les instructions selon la version du système d'exploitation de l'ordinate
 
     === "Windows 11"
 
-        - Lancez l'explorateur de fichiers
-        - Identifiez le dossier à compresser
-        - Cliquez une seule fois avec le bouton gauche sur le dossier pour le sélectionner
-        - Cliquez avec le bouton droit sur le dossier
-        - Choisissez l'option **Compresser dans le fichier ZIP**
+        - Lancer l'explorateur de fichiers
+        - Identifier le dossier à compresser
+        - Cliquer une seule fois avec le bouton gauche sur le dossier pour le sélectionner
+        - Cliquer avec le bouton droit sur le dossier
+        - Choisir l'option **Compresser dans le fichier ZIP**
     
     === "Windows 10"
 
-        - Lancez l'explorateur de fichiers
-        - Identifiez le dossier à compresser
-        - Cliquez une seule fois avec le bouton gauche sur le dossier pour le sélectionner
-        - Cliquez avec le bouton droit sur le dossier
-        - Choisissez l'option **Envoyer vers ▸ Dossier compressé**
+        - Lancer l'explorateur de fichiers
+        - Identifier le dossier à compresser
+        - Cliquer une seule fois avec le bouton gauche sur le dossier pour le sélectionner
+        - Cliquer avec le bouton droit sur le dossier
+        - Choisir l'option **Envoyer vers ▸ Dossier compressé**
 
 !!! note "Mise en pratique"
 

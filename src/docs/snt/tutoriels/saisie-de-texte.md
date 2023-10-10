@@ -156,7 +156,7 @@ Il est possible d'insérer des émojis sous Windows grâce au raccourci clavier 
 
 !!! note "Mise en pratique"
 
-    1. Lancer une application de traitement de texte
+    1. Lancez une application de traitement de texte
     2. Ouvrez le fichier nommé **special** créé dans l'exercice précédent
     3. Testez la saisie d'émojis <span class=keys><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>;</kbd></span>
     4. Enregistrez le fichier ++ctrl+s++

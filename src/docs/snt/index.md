@@ -3,12 +3,12 @@
 ## Accueil
 
 ### Tutoriels
-- [L'environnement windows](/snt/tutoriels/windows/)
-- [Saisir du texte](/snt/tutoriels/saisie-de-texte/)
-- [L'Environnement Numérique de Travail (ENT)](/snt/tutoriels/ent/)
+- [L'environnement windows](tutoriels/windows.md)
+- [Saisir du texte](tutoriels/saisie-de-texte.md)
+- [L'Environnement Numérique de Travail (ENT)](tutoriels/ent.md)
 
 ## Chapitre 1 - Internet
 
 ### Travaux pratiques
-- [TP1 - Naissance d'Internet](/snt/01-internet/tp1-naissance-internet/)
-- [TP2 - Simulation d'un réseau](/snt/01-internet/tp2-simulation-reseau/)
+- [TP1 - Naissance d'Internet](01-internet/tp1-naissance-internet.md)
+- [TP2 - Simulation d'un réseau](01-internet/tp2-simulation-reseau.md)
