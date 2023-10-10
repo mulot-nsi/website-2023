@@ -45,10 +45,18 @@ Cet IDE a été conçu pour l'apprentissage du langage Python.
     Thonny devrait normalement être déjà installé sur votre ordinateur portable.
     Si ce n'est pas le cas ou si vous utilisez un ordinateur fixe du lycée, voici les instructions pour l'installer :
     
-    1. Rendez vous sur le site officiel
+    1. Rendez vous sur le [site officiel](https://thonny.org/){:targer="_blank"}
     2. Approchez la souris de *« Windows »* dans la zone de téléchargement
     3. Téléchargez la version *« Portable variant with 64-bit Python 3.10 »*
-    4. Décompressez l'archive ZIP dans le répertoire de votre choix
+    4. Décompressez l'archive ZIP téléchargée
+    5. Déplacez le dossier décompressé dans votre dossier **Documents**
+    6. Lancez Thonny en double-cliquant sur l'exécutable `Thonny.exe`
+
+!!! danger "Ne perdez pas de temps !"
+    
+    Thonny peut être long à télécharger et décompresser.
+    Ne perdez pas de temps et commencez immédiatement les travaux pratiques en utilisant l'interpréteur Python en ligne [Basthon](https://console.basthon.fr/){:target="_blank"}.
+    Une fois Thonny prêt, lancez-le.
 
 ## Calculateur d'âge
 
