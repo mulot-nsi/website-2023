@@ -18,7 +18,7 @@ nav:
           - TP2 - Simulation d'un réseau: snt/01-internet/tp2-simulation-reseau.md
       - Chapitre 2 - Le Web:
           - TP1 - Langage HTML: snt/02-web/tp1-langage-html.md
-          - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
+          # - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
