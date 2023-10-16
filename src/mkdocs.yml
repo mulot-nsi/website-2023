@@ -16,6 +16,9 @@ nav:
           - snt/01-internet/index.md
           - TP1 - Naissance d'Internet: snt/01-internet/tp1-naissance-internet.md
           - TP2 - Simulation d'un réseau: snt/01-internet/tp2-simulation-reseau.md
+      - Chapitre 2 - Le Web:
+          - TP1 - Langage HTML: snt/02-web/tp1-langage-html.md
+          - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
@@ -69,8 +72,8 @@ markdown_extensions:
   - md_in_html
   - pymdownx.details
   - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
