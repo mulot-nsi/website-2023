@@ -19,7 +19,7 @@ export const PracticeTitle = () => <>🛠 Mise en pratique</>
 
 ### Objectif
 
-Lors du [TP précédent](seq01_tp1_langage_html.mdx), nous avons utilisé le langage HTML (*HyperText Markup Language*) afin de définir le **contenu** et la **structure** d'un document web.
+Lors du [TP précédent](tp1-langage-html.md), nous avons utilisé le langage HTML (*HyperText Markup Language*) afin de définir le **contenu** et la **structure** d'un document web.
 Cette fois-ci, l'objectif est de **mettre en forme** un document web déjà existant. Pour cela, nous allons utiliser le langage CSS (pour *Cascading Style Sheets* ou *feuilles de style en cascade* en français).
 
 :::danger Travail à rendre
@@ -56,7 +56,7 @@ Afin de ne pas mélanger les productions entre les travaux pratiques, mettre à 
 ### Téléchargement des fichiers
 Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
-1. Récupérer l'archive zip contenant les fichiers du TP : [📦 télécharger](/downloads/SNT02_TP2.zip)
+1. Récupérer l'archive zip contenant les fichiers du TP : [📦 télécharger](assets/SNT02_TP2.zip){:download}
 2. Ouvrir le fichier ZIP (le navigateur l'ouvre automatiquement ou au clic sur le fichier téléchargé)
 3. Sélectionner tous les fichiers et dossiers `CTRL+A`
 4. Copier `CTRL+C`
