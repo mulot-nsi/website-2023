@@ -602,3 +602,44 @@ Une fois, les développements terminés, ne plus afficher la valeur stockée en 
         >>> abs(10 - 8)
         2
         ```
+
+??? success "Solution"
+
+    ```Python
+    import random
+    
+    nombre_secret = random.randint(1, 100)
+    
+    # Debug
+    # print(nombre_secret)
+    
+    # On initialise la proposition du joueur à -1
+    # pour pouvoir entrer dans la boucle de jeu.
+    nombre_utilisateur = -1
+    tentative = 0
+    
+    while nombre_utilisateur != nombre_secret:
+        nombre_utilisateur = int(input('Saisir un nombre : '))
+        tentative  += 1
+        message = ""
+        
+        # On vérifie si la proposition du joueur est
+        # plus grande ou plus petite que le nombre secret
+        if nombre_utilisateur > nombre_secret:
+            message = "Plus petit"
+        elif nombre_utilisateur < nombre_secret:
+            message = "Plus grand"
+            
+        # S'il y a un début de message, c'est que l'utilisateur
+        # n'a pas trouvé le nombre secret. Dans ce cas, on vérifie
+        # sa distance par rapport au nombre secret
+        if message:
+            distance = abs(nombre_utilisateur - nombre_secret)
+            if distance <= 2:
+                message += ", tu brûles !"
+            elif distance <= 10:
+                message += ", tu chauffes !"
+            print(message)
+            
+    print("Bravo, tu as trouvé en", tentative, "tentative(s)")
+    ```
