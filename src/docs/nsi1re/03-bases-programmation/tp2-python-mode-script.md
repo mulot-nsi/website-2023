@@ -535,6 +535,31 @@ Les indications *« Plus petit »* ou *« plus grand »* seront affichées aprè
             i = i + 1
         ```
 
+??? success "Solution partielle"
+
+    Compléter la solution en remplaçant les `...` par le code adéquat :
+
+    ```python
+    import random
+    
+    nombre_secret = random.randint(..., ...)
+    nombre_utilisateur = -1
+    
+    # Debug
+    #print(nombre_secret)
+    
+    while nombre_utilisateur != ...:
+        nombre_utilisateur = int(input('Saisir un nombre : '))
+        
+        if nombre_utilisateur > nombre_secret:
+            print(...)
+        elif ...:
+            print("Plus grand")
+            
+    print("Bravo !")
+    ```
+
+
 ### Version 3 - Affiner les messages
 
 Modifier le programme de manière à apporter des indications supplémentaires à l'utilisateur s'il s'approche de l'entier à trouver :
