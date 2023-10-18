@@ -455,6 +455,20 @@ Cet IDE a été conçu pour l'apprentissage du langage Python.
     - Il n'est pas nécessaire de vérifier la saisie de l'utilisateur pour cet exercice
     - Pour celles et ceux qui les connaissent, ne pas utiliser les opérateurs booléens `not`, `and` et `or`
 
+??? success "Solution"
+
+    ```python
+    temperature = int(input("Saisir une température : "))
+    
+    if temperature >= 100:
+        print("L'eau est à l'état gazeux")
+    elif temperature <= 0:
+        print("L'eau est à l'état solide")
+    else:
+        print("L'eau est à l'état liquide")
+    ```
+
+
 ## Le nombre secret
 
 !!! success "Objectif"
