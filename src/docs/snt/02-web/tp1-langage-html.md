@@ -268,7 +268,7 @@ Vous allez maintenant créer une page web dédiée à la description de votre fi
 !!! question "Pas de film préféré ?"
 
     À défaut d'avoir un film préféré, décrire le film *Intouchables*. C'est actuellement le 3<sup>ème</sup> film ayant
-    totalisé le plus d'entrées en France à ce jour avec 19 490 688 d'entrées.
+    totalisé le plus d'entrées en France à ce jour avec 19 490 688 entrées.
 
 !!! note "Création d'une nouvelle page web"
 
@@ -324,9 +324,10 @@ En HTML, il est possible de créer des éléments de titre au sein d'une page gr
     3. Enregistrez vos modifications et visualisez le résultat dans le navigateur    
 
 !!! example "Exemple de titre principal"
-```html
-<h1>La Belle et la Bête</h1>
-```
+
+    ```html
+    <h1>La Belle et la Bête</h1>
+    ```
 
 !!! note "Définition des titres secondaires"
 
@@ -335,7 +336,7 @@ En HTML, il est possible de créer des éléments de titre au sein d'une page gr
         - Informations générales
         - Résumé
         - Sources d'information
-    2. Visualiser le résultat *(toujours en enregistrant et actualisant)*
+    2. Visualiser le résultat *(toujors en enregistrant et actualisant)*
 
 !!! example "Exemple de titre secondaire"
 
