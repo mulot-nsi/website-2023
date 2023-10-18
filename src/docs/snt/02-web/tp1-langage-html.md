@@ -27,13 +27,13 @@ travaux pratiques.
 
         1. Lancez l'**explorateur de fichiers**
         2. Accédez au dossier **Documents**
-        3. Créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
+        3. S'il n'y a pas de dossier nommé **SNT**, créez-le
         4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans votre zone personnelle, créez un dossier nommé **SNT** *(s'il n'existe pas déjà)*
+        2. Dans votre zone personnelle, s'il n'y a pas de dossier nommé **SNT**, créez-le
         4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
 
 ## Code source d'une page web
@@ -51,9 +51,9 @@ C'est une application capable d'afficher une page web à partir de son code HTML
 
     Il est possible de visualiser le code source de n'importe quelle page web directement depuis un navigateur web.
 
-    1. Rendez-vous sur la page de démonstration : [demo.html](exemples/demo.html){:target="_blank"}
-    2. Utilisez le raccourci clavier ++ctrl+u++
-    3. Essayez de faire la distinction entre le contenu et le code permettant de structurer ce contenu
+    1. Rendez-vous sur la page de démonstration : [demo.html](assets/demo.html){:target="_blank"}
+    2. Une fois sur cette page, utilisez le raccourci clavier ++ctrl+u++
+    3. Observez et essayez de faire la distinction entre le contenu et le code permettant de structurer ce contenu
 
 !!! info "Cours - Les balises HTML"
 
@@ -111,21 +111,23 @@ d'affichage correspondant à une portion du code source.
 
 !!! note "Inspection du code source"
 
-    1. Rendez-vous sur la page de démonstration : [demo.html](exemples/demo.html){:target="_blank"}
-    2. Lancez l'inspecteur de code source en utilisant l'une des méthodes suivantes :
+    1. Retournez sur la page de démonstration : [demo.html](assets/demo.html){:target="_blank"}
+    2. Depuis cette page, lancez l'inspecteur de code source en utilisant l'une des méthodes suivantes :
         - Faire un clic droit sur la page puis « Inspecter »
         - Utiliser le raccourci clavier ++ctrl+shift+i++
-    3. Identifiez les balises permettant la construction de la liste à puces<br>*(la liste des techniques d'accès au code source de la page [demo.html](exemples/demo.html){:target="_blank"})*
+    3. Identifiez les balises permettant la construction de la liste à puces<br>*(la liste des techniques d'accès au code source de la page [demo.html](assets/demo.html){:target="_blank"})*
+
+    ![Inspecteur](images/inspecteur.png)
 
 ## Création d'une page web
 
-Vous allez créer votre première page web. Pour cela, vous pouvez simplement utiliser l'application Bloc-notes pour l'
-écriture du code.
+Vous allez créer votre première page web.
+Pour cela, vous pouvez simplement utiliser l'application **Bloc-notes** pour l'écriture du code.
 La visualisation de la page se fera dans un navigateur Web.
 
 !!! note "Création d'un page web"
 
-    1. Lancez l'application Bloc-notes
+    1. Lancez l'application **Bloc-notes**
     2. Copiez/collez le code HTML suivant :
         ```html
         <!doctype html>
@@ -138,11 +140,14 @@ La visualisation de la page se fera dans un navigateur Web.
             </head>
             <body>
                 <h1>Bienvenue</h1>
-                <p>Bonjour, ceci est <br> ma première page HTML !</p>
+                <p>
+                  Bonjour, ceci est <br> ma première page HTML !
+                </p>
             </body>
         </html>
         ```
-    3. Enregistrez le fichier dans le dossier **SNT/web** en utilisant le raccourci clavier ++ctrl+s++ et en le nommant **page.html**
+    3. Enregistrez le fichier dans le dossier **SNT/web** en le nommant **page.html** et<br> en choisissant **(\*.\*)** comme type de fichier<br>
+    ![Inspecteur](images/enregistrement.png)
     4. Lancez l'explorateur de fichiers et déplacez-vous dans le dossier **SNT/web**
     5. Double-cliquez sur le fichier **page.html**, un navigateur Web doit se lancer automatiquement et présenter le contenu de celle-ci
 
@@ -171,13 +176,14 @@ Aucune des données renseignées n'est directement visible pour l'internaute à 
 
 !!! note "Modification du titre d'une page web"
 
-    1. Retournez dans l'application **Bloc-notes** en utilisant le raccourci clavier ++alt+tab++
-    2. Retrouvez le texte « Ma page ! » situé au niveau des balises `#!html <title></title>`.
-    3. Remplacez « Ma page ! » par le texte de votre choix
-    4. Enregistrez vos modifications en utilisant le raccourci clavier ++ctrl+s++
-    5. Retournez dans le navigateur avec le raccourci clavier ++alt+tab++
-    6. Rechargez la page afin de rendre visible vos modifications.<br>
-       Pour cela, appuyez sur la touche ++f5++ ou utilisez le raccourci clavier ++ctrl+r++ 
+    1. Retournez au **Bloc-notes** avec le fichier **page.html** ouvert
+    2. Retrouvez le texte **« Ma page ! »** au sein du code. Il est situé au niveau des balises `#!html <title></title>`.
+    3. Remplacez **« Ma page ! »** par le texte de votre choix
+    4. Enregistrez vos modifications (++ctrl+s++)
+    5. Retournez dans le **navigateur web** avec la page **page.html** ouverte
+    6. Rechargez cette page afin de rendre visible vos modifications :
+        - en appuyant sur la touche ++f5++
+        - ou en utilisant le raccourci clavier ++ctrl+r++ 
     7. Localisez l'endroit, dans tout le navigateur, où est affiché votre nouveau titre (cherchez bien 🧐 !). 
        <br>Constatez-vous le changement ?
 
@@ -189,7 +195,7 @@ navigateur Web.
 
 !!! note "Saisie d'un nouveau texte"
 
-    1. Remplacer le contenu des balises `#!html <p></p>` *(sans supprimer celles-ci)* par cet extrait de *La Cigale et la Fourmi* de Jean de La Fontaine :
+    1. Remplacez le contenu des balises `#!html <p></p>` *(sans supprimer celles-ci)* par cet extrait de *La Cigale et la Fourmi* de Jean de La Fontaine :
     ```
     La Cigale, ayant chanté
     Tout l'été,
@@ -210,7 +216,7 @@ navigateur Web.
     ```
     
     3. Enregistrez votre fichier (++ctrl+s++)
-    4. Retournez dans le navigateur (++alt+tab++)
+    4. Retournez dans le navigateur
     5. Actualisez la page (++f5++ ou ++ctrl+r++)
     6. Qu'observez-vous ?
 
