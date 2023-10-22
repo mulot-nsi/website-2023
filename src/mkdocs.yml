@@ -18,7 +18,7 @@ nav:
           - TP2 - Simulation d'un réseau: snt/01-internet/tp2-simulation-reseau.md
       - Chapitre 2 - Le Web:
           - TP1 - Langage HTML: snt/02-web/tp1-langage-html.md
-          # - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
+          - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
@@ -79,16 +79,21 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.keys
+  - pymdownx.keys:
+      key_map:
+        shift: Maj
+        control: Ctrl
+        option: Opti
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
 
 extra_javascript:
-  - javascripts/katex.js
+  - assets/js/katex.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra_css:
+  - assets/css/style.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css

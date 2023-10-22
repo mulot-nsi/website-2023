@@ -1,0 +1,6 @@
+.md-typeset .keys .key-control:before,
+.md-typeset .keys .key-left-control:before,
+.md-typeset .keys .key-right-control:before {
+    content: "";
+    padding-right: 0;
+}

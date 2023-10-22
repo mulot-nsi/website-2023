@@ -1,337 +1,329 @@
 ---
-sidebar_position: 2
-sidebar_label: TP2 - Le Langage CSS
-slug: /snt/web/tp2-langage-css
-description: Étude du langage CSS
+title: Le langage CSS
+description: Découverte du langage CSS
 ---
 
 # Le langage CSS
 
-import FileExplorer from '@site/src/components/FileExplorer';
+## Introduction
 
-export const FichierHTML = () => <code>index.html</code>
+Lors du [précédent TP](tp1-langage-html.md), nous avons utilisé le langage HTML (*HyperText Markup Language*) afin de
+définir le **contenu** et la **structure** d'un document web.
+Cette fois-ci, l'objectif est de **mettre en forme** un document web déjà existant. Pour cela, nous allons utiliser le
+langage CSS (pour *Cascading Style Sheets* ou *feuilles de style en cascade* en français).
 
-export const FichierCSS = () => <code>style.css</code>
+!!! success "Objectifs"
 
-export const PracticeTitle = () => <>🛠 Mise en pratique</>
+    - Savoir le rôle du langage CSS
+    - Savoir faire la distinction entre le langage HTML et le langage CSS
+    - Comprendre la structure du lmnagage CSS
+    - Savoir ce qu'est n selecteur de classe
+    - Savoir ce qu'est n selecteur de type
+    - Savoir ce qu'est une propriété CSS
+    - Savoir ce qu;est un style CSS
+    - Savoir compresser et envoyer un dossier au format ZIP
 
-## 👨‍🏫 Introduction
 
-### Objectif
+!!! danger "Travail à rendre"
 
-Lors du [TP précédent](tp1-langage-html.md), nous avons utilisé le langage HTML (*HyperText Markup Language*) afin de définir le **contenu** et la **structure** d'un document web.
-Cette fois-ci, l'objectif est de **mettre en forme** un document web déjà existant. Pour cela, nous allons utiliser le langage CSS (pour *Cascading Style Sheets* ou *feuilles de style en cascade* en français).
+    Les travaux réalisés dans le cadre de ce TP est à rendre en fin de séance selon les modalités suivantes.
 
-:::danger Travail à rendre
-Le travail effectué dans le cadre de ce TP est à rendre en fin de séance selon les modalités suivantes :
-- Envoyer **obligatoirement** vos fichiers sous forme d'une archive au format ZIP
-- Effectuer le rendu **uniquement** depuis l'application **Exercices** de l'ENT, via l'exercice intitulé **[2TP2] Le langage CSS - Rendu**
-:::
 
-### Préparation
+## Préparation
 
-Afin de ne pas mélanger les productions entre les travaux pratiques, mettre à jour les dossiers SNT selon l'ordinateur utilisé :
+### Espace de travail
 
-<details>
-    <summary>💻 Ordinateur portable</summary>
+Vous allez créer des dossiers afin de ne pas mélanger vos productions numériques entre vos différentes matières et
+travaux pratiques.
 
-1. Lancer <FileExplorer />
-2. Se rendre dans le dossier **Mes documents**
-3. Créer le dossier **SNT** s'il n'existe pas déjà (clic droit, *Nouveau > Dossier*)
-4. Dans le dossier **SNT**, créer le dossier **Web** s'il n'existe pas déjà
-5. Dans le dossier **Web**, créer le dossier **langage_css**
+!!! note "Organisation de l'espace travail"
 
-</details>
+    === ":material-laptop: Ordinateur portable"
 
-<details>
-    <summary>🖥 Ordinateur fixe des salles informatiques</summary>
+        1. Lancez l'**explorateur de fichiers**
+        2. Accédez au dossier **Documents**
+        3. S'il n'y a pas de dossier nommé **SNT**, créez-le
+        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
 
-1. Depuis le bureau, cliquer sur l'icône intitulée **Zone personnelle**
-2. Créer le dossier **SNT** s'il n'existe pas déjà (clic droit, *Nouveau > Dossier*)
-3. Dans le dossier **SNT**, créer le dossier **Web** s'il n'existe pas déjà
-4. Dans le dossier **Web**, créer le dossier **langage_css**
+    === ":material-desktop-tower: Ordinateur fixe"
 
-</details>
+        1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
+        2. Dans votre zone personnelle, s'il n'y a pas de dossier nommé **SNT**, créez-le
+        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
 
 ### Téléchargement des fichiers
+
 Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
-1. Récupérer l'archive zip contenant les fichiers du TP : [📦 télécharger](assets/SNT02_TP2.zip){:download}
-2. Ouvrir le fichier ZIP (le navigateur l'ouvre automatiquement ou au clic sur le fichier téléchargé)
-3. Sélectionner tous les fichiers et dossiers `CTRL+A`
-4. Copier `CTRL+C`
-5. Coller `CTRL+V` les fichiers dans le dossier `SNT\Web\langage_css`
+!!! note "Récupération des fichiers"
 
-## ✍️ Partie 1 - Application des styles
+    1. Récupérer l'archive zip contenant les fichiers du TP : [📦 télécharger](assets/SNT02_TP2.zip){:download}
+    2. Ouvrir le fichier ZIP (le navigateur l'ouvre automatiquement ou au clic sur le fichier téléchargé)
+    3. Sélectionner tous les fichiers et dossiers (++ctrl+a++)
+    4. Copier (++ctrl+c++)
+    5. Coller les fichiers dans le dossier **SNT/Web/langage_css** (++ctrl+v++)
 
-### 1.1. Feuille de style externe
+## Application des styles
+
+### Feuille de style externe
 
 Le document web pour lequel nous allons définir le style réside dans le fichier <FichierHTML />.
 L'ensemble du code CSS sera écrit dans un fichier déjà présent et nommé <FichierCSS />.
 Ce fichier est une feuille de style dite externe car le code CSS se trouve à l'extérieur du fichier <FichierHTML />.
 
-:::tip en savoir plus
-Pour définir nos styles CSS, nous n'utiliserons qu'une seule des trois méthodes possibles :
-- Utiliser l'attribut `style` des balises HTML ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/style))
-- Utiliser la balise `<style></style>` (*feuille de style interne*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style))
-- Utiliser un lien vers une ressource externe (*feuille de style externe*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link))
-:::
+!!! tip "En savoir plus"
+    
+    Pour définir nos styles CSS, nous n'utiliserons qu'une seule des trois méthodes possibles :
 
-#### <PracticeTitle />
+    - Utiliser l'attribut `style` des balises HTML ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/style))
+    - Utiliser la balise `#!html <style></style>` (*feuille de style interne*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style))
+    - Utiliser un lien vers une ressource externe (*feuille de style externe*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link))
 
-1. Lancer <FileExplorer />
-2. Se rendre dans le répertoire `SNT\Web\langage_css`
-3. Double-cliquer sur le fichier <FichierHTML /> pour qu'il s'ouvre dans un navigateur web
-4. Lancer l'application Notepad++
-5. Ouvrir le fichier <FichierHTML /> depuis Notepad++ (Menu *Fichier > Ouvrir* ou `CTRL+O`)
-7. **Chercher** les balises `<head> ... </head>`
-8. **Ajouter** la balise `<link href="style.css" rel="stylesheet">` entre les balises `<head></head>`
-9. Votre code HTML doit maintenant ressembler à ceci :
-```html
-<head>
-    <meta charset="utf-8">
-    <title>PMDb - Personal Movie Database</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-```
-10. **Enregistrer** le fichier `CTRL+S`
-11. **Retourner** dans le navigateur web
-12. **Rafraichir** la page (`F5` ou `CTRL+R`). Des changements doivent être observables.
+!!! note "Ajouter une feuille de style"
 
-:::info Bilan
-Le document web <FichierHTML /> est maintenant relié au fichier <FichierCSS />.
-Le fichier  <FichierCSS /> est appelé **feuille de style**.
-Il contient des instructions en **langage CSS** ayant pour finalité la **mise en forme** le document web.
-:::
+    1. Lancez **l'explorateur de fichiers**
+    2. Rendez-vous dans le répertoire **SNT\Web\langage_css**
+    3. Double-cliquez sur le fichier **index.html** pour qu'il s'ouvre dans un navigateur web
+    4. Lancez l'application Bloc Note
+    5. Ouvrez le fichier **index.html** depuis Notepad++ (Menu *Fichier > Ouvrir* ou `CTRL+O`)
+    6. **Cherchez** les balises `#!html <head> ... </head>`
+    7. **Ajoutez** la balise `#!html <link href="style.css" rel="stylesheet">` entre les balises `#!html <head></head>`
+    8. Votre code HTML doit maintenant ressembler à ceci :
+    ```html
+    <head>
+        <meta charset="utf-8">
+        <title>PMDb - Personal Movie Database</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    ```
+    9. **Enregistrer** le fichier `CTRL+S`
+    10. **Retourner** dans le navigateur web
+    11. **Rafraichir** la page (`F5` ou `CTRL+R`). Des changements doivent être observables.
 
-### 1.2. Sélecteur de type
+!!! info "Bilan"
+    
+    Le document web <FichierHTML /> est maintenant relié au fichier <FichierCSS />.
+    Le fichier  <FichierCSS /> est appelé **feuille de style**.
+    Il contient des instructions en **langage CSS** ayant pour finalité la **mise en forme** le document web.
+
+### Sélecteur de type
 
 Nous allons étudier plus en détail la feuille de style pour identifier le code CSS responsable des changements observés.
 
-#### <PracticeTitle /> (1/2)
+!!! note "Observer le langage CSS"
 
-1. Retourner dans l'application Notepad++
-2. Ouvrir le fichier <FichierCSS />
-3. Vous devez voir en début de fichier du code similaire à celui-ci :
+    1. Retourner dans l'application Notepad++
+    2. Ouvrir le fichier <FichierCSS />
+    3. Vous devez voir en début de fichier du code similaire à celui-ci :
+    
+    ```css
+    body {
+        margin: 0;
+        background-color: purple;
+    }
+    
+    header {
+        background-color: #121212;
+        color: white;
+        padding: 20px;
+    }
+    ```
 
-```css
-body {
-    margin: 0;
-    background-color: purple;
-}
+!!! info "Explications"
 
-header {
-    background-color: #121212;
-    color: white;
-    padding: 20px;
-}
-```
+    Une feuille de styles contient un ensemble de **déclarations**. Chaque déclaration est constituée de deux parties :
 
-#### 💡 Explications
+    - Un **sélecteur**, qui permet de sélectionner **la balise** de l'élément à mettre en forme
+    - Un **ensemble de règles** entre des accolades `{ }`. Les règles permettent d'ajuster des **propriétés** de mise en forme
 
-Une feuille de styles contient un ensemble de **déclarations**.
-Chaque déclaration est constituée de deux parties :
+    <figure markdown>
+        ![selecteur_type](images/css_selecteur_type.png)
+        <figcaption>Exemple de déclaration CSS ciblant la balise </em><code>body</code></figcaption>
+    </figure>
 
-- Un **sélecteur**, qui permet de sélectionner **la balise** de l'élément à mettre en forme
-- Un **ensemble de règles** entre des accolades `{ }`. Les règles permettent d'ajuster des **propriétés** de mise en forme
+    Dans le cas ci-dessus, il est question du **sélecteur** `body`.
+    Il s'agit d'un **sélecteur de type**, c'est-à-dire qu'il permet de cibler la balise de type `<body>` qui se verra alors appliquer l'ensemble des règles définies (marge à 0 et couleur de fond à violet).
 
-<div style={{textAlign:'Center', marginBottom:'2em'}}>
-    <img
-        src={require('./assets/css_selecteur_type.png').default}
-        style={{border:'1px solid black', padding:'20px'}}
-        alt="Syntaxe CSS"
-    />
-    <br />
-    <em>Exemple de déclaration CSS ciblant la balise </em><code>body</code>
-</div>
+!!! note "Création d'un style"
 
-Dans le cas ci-dessus, il est question du **sélecteur** `body`.
-Il s'agit d'un **sélecteur de type**, c'est-à-dire qu'il permet de cibler la balise de type `<body>` qui se verra alors appliquer l'ensemble des règles définies (marge à 0 et couleur de fond à violet).
+    Nous allons déclarer un style CSS dont le sélecteur va cibler le balise `<h1>` correspondant au titre principale de notre document (*« Intouchable »*).
 
-#### <PracticeTitle /> (2/2)
+    1. Retourner dans l'application Notepad++
+    2. Revenir au fichier <FichierCSS /> (si besoin, Menu *Fichier > Ouvrir* ou `CTRL+O`)
+    3. **Ajouter** la déclaration CSS suivante (*vous pouvez l'ajouter n'importe où, mais si vous doutez, ajoutez-la en fin de fichier*) :
 
-Nous allons déclarer un style CSS dont le sélecteur va cibler le balise `<h1>` correspondant au titre principale de notre document (*« Intouchable »*).
+    ```css
+    h1 {
+        color: red;
+    }
+    ```
 
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierCSS /> (si besoin, Menu *Fichier > Ouvrir* ou `CTRL+O`)
-3. **Ajouter** la déclaration CSS suivante (*vous pouvez l'ajouter n'importe où, mais si vous doutez, ajoutez-la en fin de fichier*) :
-```css
-h1 {
-    color: red;
-}
-```
-4. **Enregistrer** le fichier `CTRL+S`
-5. Retourner dans le navigateur web
-6. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable au niveau du titre principal
+    4. **Enregistrer** le fichier `CTRL+S`
+    5. Retourner dans le navigateur web
+    6. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable au niveau du titre principal
 
-### 1.3. Sélecteur de classe
+### Sélecteur de classe
 
-Avec le sélecteur de type, il n'est pas possible de choisir précisément l'élément sur lequel nous souhaitons appliquer un style.
+Avec le sélecteur de type, il n'est pas possible de choisir précisément l'élément sur lequel nous souhaitons appliquer
+un style.
 Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
-#### <PracticeTitle /> (1/2)
+!!! note "Mise en pratique"
 
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierCSS />
-3. **Rechercher** la déclaration CSS ayant pour sélecteur **.logo** :
+    1. Retourner dans l'application Notepad++
+    2. Revenir au fichier <FichierCSS />
+    3. **Rechercher** la déclaration CSS ayant pour sélecteur **.logo** :
 
-```css
-.logo {
-    background-color: #f5c518;
-    ...
-    justify-content: center;
-}
-```
+    ```css
+    .logo {
+        background-color: #f5c518;
+    
+        ...
+        justify-content: center
+    ;
+    }
+    ```
 
-Le sélecteur `.logo` ne correspond à aucune balise HTML. Son nom est **précédé d'un point**.
-Ceci signifie qu'il est question d'un **sélecteur de classe**.
-Celui-ci cible les balises dont l'attribut `class` a pour valeur `logo`.
+    Le sélecteur `.logo` ne correspond à aucune balise HTML. Son nom est **précédé d'un point**.
+    Ceci signifie qu'il est question d'un **sélecteur de classe**.
+    Celui-ci cible les balises dont l'attribut `class` a pour valeur `logo`.
 
-<div style={{textAlign:'Center', marginBottom:'2em'}}>
-    <img
-        src={require('./assets/css_selecteur_classe.png').default}
-        style={{border:'1px solid black', padding:'20px'}}
-        alt="Syntaxe CSS"
-    />
-    <br />
-    <em>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>special</code>
-</div>
+    <figure markdown>
+        ![selecteur_type](images/css_selecteur_classe.png)
+        <figcaption>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>special</code></figcaption>
+    </figure>
 
 
-#### <PracticeTitle /> (2/2)
+!!! note "Application du sélecteur"
 
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierHTML />
-3. **Chercher** à proximité de la balise **ouvrante** `<body>` la ligne :
-```html
-<a href="https://www.imdb.com/video/vi59285529">PMDb</a>
-```
-4. **Ajouter** l'attribut `class="logo"` à cette balise `<a>`
-5. Votre code HTML doit maintenant ressembler à ceci :
-```html
-<a class="logo" href="https://www.imdb.com/video/vi59285529">PMDb</a>
-```
-6. Enregistrer les modifications `CTRL+S`
-7. Retourner dans le navigateur web
-8. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable tout en haut de la page
+    1. Retourner dans l'application Notepad++
+    2. Revenir au fichier <FichierHTML />
+    3. **Chercher** à proximité de la balise **ouvrante** `<body>` la ligne :
+    ```html
+    <a href="https://www.imdb.com/video/vi59285529">PMDb</a>
+    ```
+    4. **Ajouter** l'attribut `class="logo"` à cette balise `<a>`
+    5. Votre code HTML doit maintenant ressembler à ceci :
+    ```html
+    <a class="logo" href="https://www.imdb.com/video/vi59285529">PMDb</a>
+    ```
+    6. Enregistrer les modifications `CTRL+S`
+    7. Retourner dans le navigateur web
+    8. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable tout en haut de la page
 
-:::info Bilan
-Pour qu'un style s'applique à une balise, il faut pouvoir la cibler finement.
-Pour cela, nous avons étudié deux sélecteurs :
+!!! info "Bilan"
 
-- les **sélecteurs de type** qui ciblent un type de balise précis
-- les **sélecteurs de classe** qui ciblent les balises dont l'attribut `class` a une valeur précise
-:::
+    Pour qu'un style s'applique à une balise, il faut pouvoir la cibler finement.
+    Pour cela, nous avons étudié deux sélecteurs :
 
-## 🌈 Partie 2 - Propriétés CSS
+    - les **sélecteurs de type** qui ciblent un type de balise précis
+    - les **sélecteurs de classe** qui ciblent les balises dont l'attribut `class` a une valeur précise
 
-### 2.1. Gestion des couleurs
 
-#### 💡 Principe
+## Propriétés CSS
 
-Les propriétés CSS `background-color` et `color` permettent d'ajuster respectivement la **couleur de fond** d'un élément et la **couleur du texte** contenu par celui-ci.
-Pour choisir une couleur, il est possible d'utiliser un **nom** (par exemple `red`) ou un **code hexadécimal** (par exemple `#ff0000`).
+### Gestion des couleurs
+
+Les propriétés CSS `background-color` et `color` permettent d'ajuster respectivement la **couleur de fond** d'un élément
+et la **couleur du texte** contenu par celui-ci.
+Pour choisir une couleur, il est possible d'utiliser un **nom** (par exemple `red`) ou un **code hexadécimal** (par
+exemple `#ff0000`).
 
 Une liste de noms de couleurs est disponible sur [Wikipédia](https://fr.wikipedia.org/wiki/Couleur_du_Web).
-Il est aussi possible d'obtenir le code hexadécimal de n'importe quelle couleur en utilisant un [outil de gestion des couleurs](https://mdn.github.io/css-examples/tools/color-picker/).
+Il est aussi possible d'obtenir le code hexadécimal de n'importe quelle couleur en utilisant
+un [outil de gestion des couleurs](https://mdn.github.io/css-examples/tools/color-picker/).
 
-#### 📖 Propriétés CSS
-| Propriété          | Description                         | Référence                                                                 |
-|--------------------|-------------------------------------|---------------------------------------------------------------------------|
-| `background-color` | Couleur d'arrière-plan d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color) |
-| `color`            | Couleur du texte d'un élément       | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color)            |
+!!! info "Propriétés CSS"
 
-<details>
-    <summary>👨‍🏫 Exemple d'utilisation</summary>
+    | Propriété          | Description                         | Référence                                                                 |
+    |--------------------|-------------------------------------|---------------------------------------------------------------------------|
+    | `background-color` | Couleur d'arrière-plan d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color) |
+    | `color`            | Couleur du texte d'un élément       | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color)            |
 
-Voici **un exemple** de déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du contenu de la balise `body` (donc de tout le document HTML).
-Le texte entre `/* */` est un commentaire. Les commentaires permettent d'ajouter des précisions sans conséquence sur la mise en forme CSS.
+??? example "Exemple"
 
-```css
-body {
-   background-color: yellow; /* couleur de fond jaune  */
-   color: #ffba00;           /* couleur du texte jaune */
-}
-```
-
-</details>
-
-#### <PracticeTitle />
-
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierCSS />
-3. **Modifier** la déclaration CSS ciblant la balise `body` de façon à modifier uniquement la **couleur d'arrière-plan** de votre document HTML (*inspirez-vous de l'exemple d'utilisation*)
-4. **Ajouter** une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque sous-titre (*inspirez-vous de l'exemple d'utilisation et de ce qui a été fait pour* `h1`)
+    Voici **un exemple** de déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du
+    contenu de la balise `body` (donc de tout le document HTML).
+    Le texte entre `/* */` est un commentaire. Les commentaires permettent d'ajouter des précisions sans conséquence sur la
+  ![css_selecteur_type.png](images%2Fcss_selecteur_type.png)  mise en forme CSS.
+    
+    ```css
+    body {
+        background-color: yellow; /* couleur de fond jaune  */
+        color: #ffba00; /* couleur du texte jaune */
+    }
+    ```
 
 
+!!! note "Mise en pratique"
 
+    1. Retourner dans l'application Notepad++
+    2. Revenir au fichier <FichierCSS />
+    3. **Modifier** la déclaration CSS ciblant la balise `body` de façon à modifier uniquement la **couleur d'arrière-plan**
+      de votre document HTML (*inspirez-vous de l'exemple d'utilisation*)
+    4. **Ajouter** une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
+      sous-titre (*inspirez-vous de l'exemple d'utilisation et de ce qui a été fait pour* `h1`)
 
-### 2.2. Gestion du texte
+### Gestion du texte
 
-#### 💡 Principe
-Les propriétés CSS `font-size` et `text-decoration` permettent respectivement d'ajuster la taille du texte et la décoration du texte (soulignement).
+Les propriétés CSS `font-size` et `text-decoration` permettent respectivement d'ajuster la taille du texte et la
+décoration du texte (soulignement).
 
-#### 📖 Propriétés CSS
-| Propriété         | Description                   | Référence                                                                |
-|-------------------|-------------------------------|--------------------------------------------------------------------------|
-| `font-size`       | Taille du texte d'un élément  | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)       |
-| `text-decoration` | Soulignement d'un élément     | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration) |
+!!! info "Propriétés CSS"
 
-<details>
-    <summary>👨‍🏫 Exemple d'utilisation</summary>
+    | Propriété         | Description                  | Référence                                                                |
+    |-------------------|------------------------------|--------------------------------------------------------------------------|
+    | `font-size`       | Taille du texte d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)       |
+    | `text-decoration` | Soulignement d'un élément    | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration) |
 
-Voici **un exemple** de déclaration permettant de grossir et souligner le texte de toute balise de classe `super` (c'est-à-dire ayant l'attribut `class="super"`) :
+??? example "Exemple"
 
-```css
-.super {
-    font-size: 150px;            /* taille en pixels */
-    text-decoration: underline;  /* soulignement */
-}
-```
+    Voici **un exemple** de déclaration permettant de grossir et souligner le texte de toute balise de classe `super` (
+    c'est-à-dire ayant l'attribut `class="super"`) :
+    
+    ```css
+    .super {
+        font-size: 150px; /* taille en pixels */
+        text-decoration: underline; /* soulignement */
+    }
+    ```
 
-</details>
+!!! note "Mise en pratique"
 
+    1. Retourner dans l'application Notepad++
+    2. Revenir au fichier <FichierCSS />
+    3. **Modifier** la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
+    4. **Modifier** la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
 
-#### <PracticeTitle />
-
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierCSS />
-3. **Modifier** la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
-4. **Modifier** la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
-
-### 2.3. Gestion des dimensions
-
-#### 💡 Principe
+### Gestion des dimensions
 
 Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la largeur et la hauteur d'un élément.
 
-#### 📖 Propriétés CSS
-| Propriété | Description          | Référence                                                       |
-|-----------|----------------------|-----------------------------------------------------------------|
-| `width`   | Largeur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width)  |
-| `height`  | Hauteur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height) |
+!!! info "Propriétés CSS"
 
+    | Propriété | Description          | Référence                                                       |
+    |-----------|----------------------|-----------------------------------------------------------------|
+    | `width`   | Largeur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width)  |
+    | `height`  | Hauteur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height) |
 
+??? example "Exemple"
 
-<details>
-    <summary>👨‍🏫 Exemple d'utilisation</summary>
-
-Voici ci-dessous un exemple de déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10 pixels de large:
-
-```css
-.icone {
-    width: 10px; /* largeur de l'élément en pixels */
-}
-```
-
-</details>
+    Voici ci-dessous un exemple de déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10
+    pixels de large:
+    
+    ```css
+    .icone {
+        width: 10px; /* largeur de l'élément en pixels */
+    }
+    ```
 
 
 #### <PracticeTitle />
 
 1. Retourner dans l'application Notepad++
 2. Revenir au fichier <FichierCSS />
-3. **Ajouter** une déclaration CSS permettant de fixer la largeur (`width`) de tout élément de classe `affiche` à 150 pixels de large.
+3. **Ajouter** une déclaration CSS permettant de fixer la largeur (`width`) de tout élément de classe `affiche` à 150
+   pixels de large.
 
 <details>
     <summary>💡 Solution</summary>
@@ -348,26 +340,25 @@ Pour cela vous devez utiliser le sélecteur de classe `.affiche` et fixer la pro
 
 4. Enregistrer le fichier `CTRL+S`
 5. Revenir au fichier <FichierHTML />
-6. **Rechercher** la seule balise `<img>` présente dans le document et qui correspond à l'élément **image** de l'affiche du film
+6. **Rechercher** la seule balise `<img>` présente dans le document et qui correspond à l'élément **image** de l'affiche
+   du film
 7. **Modifier** la balise pour lui ajouter la classe `affiche`
 
-<details>
-    <summary>💡 Solution</summary>
 
-Après modification, le code HTML de la balise `img` doit être similaire à ceci :
+!!! success "Solution"
+   
+    Après modification, le code HTML de la balise `img` doit être similaire à ceci :
 
-```html
-<img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable" />
-```
+    ```html
+    <img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
+    ```
 
-</details>
 
 8. **Enregistrer** le fichier `CTRL+S`
 9. Retourner dans le navigateur web
 10. Rafraichir la page, un changement doit être observable au niveau de l'affiche du film
 
-
-### 2.4 Expérimentation
+### Expérimentation
 
 Vous avez terminé et il reste plus de 5 minutes avant la fin de la séance ? Bravo !
 Il vous reste encore beaucoup à découvrir et d'autres propriétés peuvent se révéler intéressantes :
@@ -381,16 +372,15 @@ Il vous reste encore beaucoup à découvrir et d'autres propriétés peuvent se 
 
 #### <PracticeTitle />
 
-Tester chacune de ces propriétés. Ne pas hésiter à s'inspirer des exemples interactifs présentés sur les pages de référence.
+Tester chacune de ces propriétés. Ne pas hésiter à s'inspirer des exemples interactifs présentés sur les pages de
+référence.
 
-
-
-
-## 📦 Envoi du travail
+## Envoi du travail
 
 ### Création du fichier ZIP
 
-Pour faciliter le partage de plusieurs fichiers et dossiers, il est de regrouper l'ensemble dans un seul fichier au format ZIP.
+Pour faciliter le partage de plusieurs fichiers et dossiers, il est de regrouper l'ensemble dans un seul fichier au
+format ZIP.
 Lire les instructions selon l'ordinateur utilisés :
 
 <details>
