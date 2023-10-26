@@ -7,27 +7,24 @@ description: Découverte du langage CSS
 
 ## Introduction
 
-Lors du [précédent TP](tp1-langage-html.md), nous avons utilisé le langage HTML (*HyperText Markup Language*) afin de
-définir le **contenu** et la **structure** d'un document web.
-Cette fois-ci, l'objectif est de **mettre en forme** un document web déjà existant. Pour cela, nous allons utiliser le
-langage CSS (pour *Cascading Style Sheets* ou *feuilles de style en cascade* en français).
+L’activité « [:material-link: TP1 - Langage HTML](tp1-langage-html.md) » a consisté à utiliser le langage HTML pour définir le **contenu
+et la structure** d'une page web.
 
-!!! success "Objectifs"
+Ces travaux pratiques ont pour objectif de vous faire découvrir la **mise en forme** d'une page web.
+Pour cela, vous apprendrez à utiliser le langage CSS *(Cascading Style Sheets)* aussi appelé *feuilles de style* en français.
 
-    - Savoir le rôle du langage CSS
+!!! target "Objectifs"
+
+    - Comprendre le rôle du langage CSS
     - Savoir faire la distinction entre le langage HTML et le langage CSS
-    - Comprendre la structure du lmnagage CSS
-    - Savoir ce qu'est n selecteur de classe
-    - Savoir ce qu'est n selecteur de type
+    - Comprendre la structure du langage CSS
+    - Savoir ce qu'est un selecteur de type
+    - Savoir ce qu'est un selecteur de classe
     - Savoir ce qu'est une propriété CSS
-    - Savoir ce qu;est un style CSS
-    - Savoir compresser et envoyer un dossier au format ZIP
-
 
 !!! danger "Travail à rendre"
 
     Les travaux réalisés dans le cadre de ce TP est à rendre en fin de séance selon les modalités suivantes.
-
 
 ## Préparation
 
@@ -41,15 +38,17 @@ travaux pratiques.
     === ":material-laptop: Ordinateur portable"
 
         1. Lancez l'**explorateur de fichiers**
-        2. Accédez au dossier **Documents**
-        3. S'il n'y a pas de dossier nommé **SNT**, créez-le
-        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
+        2. Accédez au dossier `Documents`
+        3. Dans le dossier `Documents`, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        4. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        5. Dans le dossier `web`, créez le dossier `langage_css`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans votre zone personnelle, s'il n'y a pas de dossier nommé **SNT**, créez-le
-        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
+        2. Dans la **zone personnelle**, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        4. Dans le dossier `web`, créez le dossier `langage_css`
 
 ### Téléchargement des fichiers
 
@@ -57,66 +56,76 @@ Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
 !!! note "Récupération des fichiers"
 
-    1. Récupérer l'archive zip contenant les fichiers du TP : [📦 télécharger](assets/SNT02_TP2.zip){:download}
-    2. Ouvrir le fichier ZIP (le navigateur l'ouvre automatiquement ou au clic sur le fichier téléchargé)
-    3. Sélectionner tous les fichiers et dossiers (++ctrl+a++)
-    4. Copier (++ctrl+c++)
-    5. Coller les fichiers dans le dossier **SNT/Web/langage_css** (++ctrl+v++)
+    1. Téléchargez le fichier ZIP contenant les fichiers nécessaires à ce TP : [:material-download: télécharger](assets/SNT02_TP2.zip){:download="SNT02_TP2.zip"}
+    2. Ouvrez le fichier ZIP<br>*(le navigateur l'ouvre automatiquement ou cliquez sur le fichier téléchargé)*
+    3. Sélectionnez tous les fichiers et dossiers - ++ctrl+a++
+    4. Copiez tous les fichiers et dossiers - ++ctrl+c++
+    5. Collez les fichiers dans le dossier `SNT\Web\langage_css` - ++ctrl+v++
 
 ## Application des styles
 
-### Feuille de style externe
+### Association d'un fichier CSS
 
-Le document web pour lequel nous allons définir le style réside dans le fichier <FichierHTML />.
-L'ensemble du code CSS sera écrit dans un fichier déjà présent et nommé <FichierCSS />.
-Ce fichier est une feuille de style dite externe car le code CSS se trouve à l'extérieur du fichier <FichierHTML />.
+Le fichier `index.html` correspond à la page web à mettre en forme.
+L'ensemble des règles de mise en forme CSS sont écrites dans le fichier `style.css`.
+Ce fichier est une **feuille de style**. Celle-ci est dite «&nbsp;externe&nbsp;» car les règles de mise en forme sont définies à l'extérieur de la page web.
 
-!!! tip "En savoir plus"
-    
-    Pour définir nos styles CSS, nous n'utiliserons qu'une seule des trois méthodes possibles :
+!!! info "Culture numérique"
 
-    - Utiliser l'attribut `style` des balises HTML ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/style))
-    - Utiliser la balise `#!html <style></style>` (*feuille de style interne*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style))
-    - Utiliser un lien vers une ressource externe (*feuille de style externe*) ([référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link))
+    Pour définir la mise en forme des éléments d'une page web, il existe plusieurs méthodes :
 
-!!! note "Ajouter une feuille de style"
+    - Utiliser l'attribut `style` des balises HTML ([:material-link: référence](https://developer.mozilla.org/fr/docs/Web/HTML/Global_attributes/style){:target="_blank"})
+    - Utiliser la balise HTML `#!html <style></style>` sur la page à mettre en forme (*feuille de style interne*) ([:material-link: référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style){:target="_blank"})
+    - Utiliser un lien vers une ressource externe à la page à mettre en forme (*feuille de style externe*) ([:material-link: référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link){:target="_blank"})
+
+Dans le cadre de ces travaux pratiques, nous n'utiliserons que la méthode de la **feuille de style externe**.
+Vous allez maintenant procéder à l'association d'une feuille de style à une page web :
+
+!!! note "Visualisation de la page web à styliser"
 
     1. Lancez **l'explorateur de fichiers**
-    2. Rendez-vous dans le répertoire **SNT\Web\langage_css**
-    3. Double-cliquez sur le fichier **index.html** pour qu'il s'ouvre dans un navigateur web
-    4. Lancez l'application Bloc Note
-    5. Ouvrez le fichier **index.html** depuis Notepad++ (Menu *Fichier > Ouvrir* ou `CTRL+O`)
-    6. **Cherchez** les balises `#!html <head> ... </head>`
-    7. **Ajoutez** la balise `#!html <link href="style.css" rel="stylesheet">` entre les balises `#!html <head></head>`
-    8. Votre code HTML doit maintenant ressembler à ceci :
-    ```html
-    <head>
-        <meta charset="utf-8">
-        <title>PMDb - Personal Movie Database</title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    ```
-    9. **Enregistrer** le fichier `CTRL+S`
-    10. **Retourner** dans le navigateur web
-    11. **Rafraichir** la page (`F5` ou `CTRL+R`). Des changements doivent être observables.
+    2. Placez-vous dans le dossier `SNT\web\langage_css`
+    3. Double-cliquez sur le fichier `index.html` afin de l'ouvrir dans un navigateur web
+    4. Gardez le navigateur ouvert
 
-!!! info "Bilan"
-    
-    Le document web <FichierHTML /> est maintenant relié au fichier <FichierCSS />.
-    Le fichier  <FichierCSS /> est appelé **feuille de style**.
-    Il contient des instructions en **langage CSS** ayant pour finalité la **mise en forme** le document web.
+!!! note "Association d'une feuille de style"
+
+    4. Lancez l'application **Bloc-notes**
+    5. Ouvrez le fichier `index.html` - ++ctrl+o++
+    6. Cherchez les balises `#!html <head> ... </head>`
+    7. Ajoutez le code HTML ci-dessous entre les balises `#!html <head> ... </head>` : 
+       ``` html
+       <link href="style.css" rel="stylesheet">
+       ```
+      Le code HTML de l'en-tête doit maintenant ressembler à ceci :
+       ``` html hl_lines="4"
+       <head>
+           <meta charset="utf-8">
+           <title>PMDb - Personal Movie Database</title>
+           <link href="style.css" rel="stylesheet">
+       </head>
+       ```
+    9. Enregistrez vos modifications - ++ctrl+s++
+    10. Retournez dans le navigateur web
+    11. Rafraichissez la page `index.html` - ++f5++ ou ++ctrl+r++<br> 
+        *(des changements doivent être observables)*
+
+!!! tip "Cours - La feuille de style"
+
+    La page web `index.html` est maintenant reliée au fichier `style.css`.
+    Le fichier `style.css` est appelé **feuille de style**.
+    Celle-ci contient des règles de mise en forme écrites en **langage CSS**.
 
 ### Sélecteur de type
 
-Nous allons étudier plus en détail la feuille de style pour identifier le code CSS responsable des changements observés.
+Nous allons étudier plus en détail la feuille de style `style.css` afin comprendre les principes et la syntaxe du langage CSS.
 
-!!! note "Observer le langage CSS"
+!!! note "Découverte du langage CSS"
 
-    1. Retourner dans l'application Notepad++
-    2. Ouvrir le fichier <FichierCSS />
-    3. Vous devez voir en début de fichier du code similaire à celui-ci :
-    
-    ```css
+    1. Retournez à l'application **Bloc-notes**
+    2. Ouvrez le fichier `style.css` - ++ctrl+o++
+    3. Le code présent au début de fichier doit être similaire à celui-ci :
+    ``` css
     body {
         margin: 0;
         background-color: purple;
@@ -129,12 +138,12 @@ Nous allons étudier plus en détail la feuille de style pour identifier le code
     }
     ```
 
-!!! info "Explications"
+!!! tip "Cours - Le langage CSS"
 
     Une feuille de styles contient un ensemble de **déclarations**. Chaque déclaration est constituée de deux parties :
 
-    - Un **sélecteur**, qui permet de sélectionner **la balise** de l'élément à mettre en forme
-    - Un **ensemble de règles** entre des accolades `{ }`. Les règles permettent d'ajuster des **propriétés** de mise en forme
+    - Un **sélecteur**, qui permet de sélectionner la **balise** de l'élément à mettre en forme
+    - Un **ensemble de règles** entre accolades `{ }`. Les règles permettent d'ajuster les **valeurs** des **propriétés** de mise en forme
 
     <figure markdown>
         ![selecteur_type](images/css_selecteur_type.png)
@@ -193,7 +202,6 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
         <figcaption>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>special</code></figcaption>
     </figure>
 
-
 !!! note "Application du sélecteur"
 
     1. Retourner dans l'application Notepad++
@@ -218,7 +226,6 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
     - les **sélecteurs de type** qui ciblent un type de balise précis
     - les **sélecteurs de classe** qui ciblent les balises dont l'attribut `class` a une valeur précise
-
 
 ## Propriétés CSS
 
@@ -245,15 +252,15 @@ un [outil de gestion des couleurs](https://mdn.github.io/css-examples/tools/colo
     Voici **un exemple** de déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du
     contenu de la balise `body` (donc de tout le document HTML).
     Le texte entre `/* */` est un commentaire. Les commentaires permettent d'ajouter des précisions sans conséquence sur la
-  ![css_selecteur_type.png](images%2Fcss_selecteur_type.png)  mise en forme CSS.
-    
+
+![css_selecteur_type.png](images%2Fcss_selecteur_type.png)  mise en forme CSS.
+
     ```css
     body {
         background-color: yellow; /* couleur de fond jaune  */
         color: #ffba00; /* couleur du texte jaune */
     }
     ```
-
 
 !!! note "Mise en pratique"
 
@@ -317,7 +324,6 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
     }
     ```
 
-
 #### <PracticeTitle />
 
 1. Retourner dans l'application Notepad++
@@ -344,15 +350,13 @@ Pour cela vous devez utiliser le sélecteur de classe `.affiche` et fixer la pro
    du film
 7. **Modifier** la balise pour lui ajouter la classe `affiche`
 
-
 !!! success "Solution"
-   
+
     Après modification, le code HTML de la balise `img` doit être similaire à ceci :
 
     ```html
     <img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
     ```
-
 
 8. **Enregistrer** le fichier `CTRL+S`
 9. Retourner dans le navigateur web
