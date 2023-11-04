@@ -1,3 +1,35 @@
+.shortcut {
+    float: right;
+}
+
+.icon {
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 1em;
+}
+
+.icon.onedrive {
+    background-image: url("../images/onedrive_icon.svg");
+    width: 2.5ex;
+}
+
+.icon.file-explorer {
+    background-image: url("../images/explorer_icon.png");
+    background-size: contain;
+    width: 2ex;
+}
+
+.pronote-button {
+    background-color: #ebdbff;
+    border-radius: 10px;
+    color: #4a1b7f;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 20px;
+}
+
+
 .md-typeset .keys .key-control:before,
 .md-typeset .keys .key-left-control:before,
 .md-typeset .keys .key-right-control:before {
@@ -6,19 +38,22 @@
 }
 
 :root {
-  --md-admonition-icon--target: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bullseye-arrow</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z" /></svg>')
+    --md-admonition-icon--target: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bullseye-arrow</title><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,10.84 21.79,9.69 21.39,8.61L19.79,10.21C19.93,10.8 20,11.4 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.6,4 13.2,4.07 13.79,4.21L15.4,2.6C14.31,2.21 13.16,2 12,2M19,2L15,6V7.5L12.45,10.05C12.3,10 12.15,10 12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12C14,11.85 14,11.7 13.95,11.55L16.5,9H18L22,5H19V2M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12H16A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8V6Z" /></svg>')
 }
+
 .md-typeset .admonition.target,
 .md-typeset details.target {
-  border-color: #64dd17;
+    border-color: #64dd17;
 }
+
 .md-typeset .target > .admonition-title,
 .md-typeset .target > summary {
-  background-color: #64dd171a;
+    background-color: #64dd171a;
 }
+
 .md-typeset .target > .admonition-title::before,
 .md-typeset .target > summary::before {
-  background-color: #64dd17;
-  -webkit-mask-image: var(--md-admonition-icon--target);
-          mask-image: var(--md-admonition-icon--target);
+    background-color: #64dd17;
+    -webkit-mask-image: var(--md-admonition-icon--target);
+    mask-image: var(--md-admonition-icon--target);
 }

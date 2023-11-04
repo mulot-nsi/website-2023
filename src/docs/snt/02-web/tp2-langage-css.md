@@ -7,24 +7,21 @@ description: Découverte du langage CSS
 
 ## Introduction
 
-L’activité « [:material-link: TP1 - Langage HTML](tp1-langage-html.md) » a consisté à utiliser le langage HTML pour définir le **contenu
+L’activité « [:material-link: TP1 - Langage HTML](tp1-langage-html.md) » a consisté à utiliser le langage HTML pour
+définir le **contenu
 et la structure** d'une page web.
 
 Ces travaux pratiques ont pour objectif de vous faire découvrir la **mise en forme** d'une page web.
-Pour cela, vous apprendrez à utiliser le langage CSS *(Cascading Style Sheets)* aussi appelé *feuilles de style* en français.
+Pour cela, vous apprendrez à utiliser le langage CSS *(Cascading Style Sheets)* aussi appelé *feuilles de style* en
+français.
 
 !!! target "Objectifs"
 
     - Comprendre le rôle du langage CSS
     - Savoir faire la distinction entre le langage HTML et le langage CSS
     - Comprendre la structure du langage CSS
-    - Savoir ce qu'est un selecteur de type
-    - Savoir ce qu'est un selecteur de classe
+    - Savoir ce qu'est un selecteur
     - Savoir ce qu'est une propriété CSS
-
-!!! danger "Travail à rendre"
-
-    Les travaux réalisés dans le cadre de ce TP est à rendre en fin de séance selon les modalités suivantes.
 
 ## Préparation
 
@@ -37,9 +34,10 @@ travaux pratiques.
 
     === ":material-laptop: Ordinateur portable"
 
-        1. Lancez l'**explorateur de fichiers**
-        2. Accédez au dossier `Documents`
-        3. Dans le dossier `Documents`, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
+           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
+        2. Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
+        3. Dans le dossier `OneDrive`, s'il n'y a pas de dossier nommé `SNT`, créez-le
         4. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
         5. Dans le dossier `web`, créez le dossier `langage_css`
 
@@ -58,9 +56,9 @@ Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
     1. Téléchargez le fichier ZIP contenant les fichiers nécessaires à ce TP : [:material-download: télécharger](assets/SNT02_TP2.zip){:download="SNT02_TP2.zip"}
     2. Ouvrez le fichier ZIP<br>*(le navigateur l'ouvre automatiquement ou cliquez sur le fichier téléchargé)*
-    3. Sélectionnez tous les fichiers et dossiers - ++ctrl+a++
-    4. Copiez tous les fichiers et dossiers - ++ctrl+c++
-    5. Collez les fichiers dans le dossier `SNT\Web\langage_css` - ++ctrl+v++
+    3. Sélectionnez tous les fichiers et dossiers  <span class="shortcut">++ctrl+a++</span>
+    4. Copiez tous les fichiers et dossiers <span class="shortcut">++ctrl+c++</span>
+    5. Collez les fichiers dans le dossier `SNT\Web\langage_css` <span class="shortcut">++ctrl+v++</span>
 
 ## Application des styles
 
@@ -68,7 +66,8 @@ Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
 Le fichier `index.html` correspond à la page web à mettre en forme.
 L'ensemble des règles de mise en forme CSS sont écrites dans le fichier `style.css`.
-Ce fichier est une **feuille de style**. Celle-ci est dite «&nbsp;externe&nbsp;» car les règles de mise en forme sont définies à l'extérieur de la page web.
+Ce fichier est une **feuille de style**. Celle-ci est dite «&nbsp;externe&nbsp;» car les règles de mise en forme sont
+définies à l'extérieur de la page web.
 
 !!! info "Culture numérique"
 
@@ -78,26 +77,27 @@ Ce fichier est une **feuille de style**. Celle-ci est dite «&nbsp;externe&nbsp;
     - Utiliser la balise HTML `#!html <style></style>` sur la page à mettre en forme (*feuille de style interne*) ([:material-link: référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/style){:target="_blank"})
     - Utiliser un lien vers une ressource externe à la page à mettre en forme (*feuille de style externe*) ([:material-link: référence](https://developer.mozilla.org/fr/docs/Web/HTML/Element/link){:target="_blank"})
 
-Dans le cadre de ces travaux pratiques, nous n'utiliserons que la méthode de la **feuille de style externe**.
+Dans le cadre de ces travaux pratiques, nous n'utiliserons que la méthode de la feuille de style **externe**.
 Vous allez maintenant procéder à l'association d'une feuille de style à une page web :
 
 !!! note "Visualisation de la page web à styliser"
 
-    1. Lancez **l'explorateur de fichiers**
+    1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
+       <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
     2. Placez-vous dans le dossier `SNT\web\langage_css`
     3. Double-cliquez sur le fichier `index.html` afin de l'ouvrir dans un navigateur web
     4. Gardez le navigateur ouvert
 
-!!! note "Association d'une feuille de style"
+!!! note "Association d'une feuille de style à la page web"
 
     4. Lancez l'application **Bloc-notes**
-    5. Ouvrez le fichier `index.html` - ++ctrl+o++
-    6. Cherchez les balises `#!html <head> ... </head>`
-    7. Ajoutez le code HTML ci-dessous entre les balises `#!html <head> ... </head>` : 
+    5. Ouvrez le fichier `index.html` <span class="shortcut">++ctrl+o++</span>
+    6. Cherchez le couple de balises `#!html <head> ... </head>`
+    7. Insérez le code HTML ci-dessous n'importe où entre les balises `#!html <head> ... </head>` : 
        ``` html
        <link href="style.css" rel="stylesheet">
        ```
-      Le code HTML de l'en-tête doit maintenant ressembler à ceci :
+      Le code de l'en-tête de la page web doit maintenant ressembler à ceci :
        ``` html hl_lines="4"
        <head>
            <meta charset="utf-8">
@@ -105,9 +105,9 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
            <link href="style.css" rel="stylesheet">
        </head>
        ```
-    9. Enregistrez vos modifications - ++ctrl+s++
+    9. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     10. Retournez dans le navigateur web
-    11. Rafraichissez la page `index.html` - ++f5++ ou ++ctrl+r++<br> 
+    11. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
         *(des changements doivent être observables)*
 
 !!! tip "Cours - La feuille de style"
@@ -118,13 +118,14 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
 
 ### Sélecteur de type
 
-Nous allons étudier plus en détail la feuille de style `style.css` afin comprendre les principes et la syntaxe du langage CSS.
+Nous allons étudier plus en détail la feuille de style `style.css` afin comprendre les principes et la syntaxe du
+langage CSS.
 
 !!! note "Découverte du langage CSS"
 
     1. Retournez à l'application **Bloc-notes**
-    2. Ouvrez le fichier `style.css` - ++ctrl+o++
-    3. Le code présent au début de fichier doit être similaire à celui-ci :
+    2. Ouvrez le fichier `style.css` <span class="shortcut">++ctrl+o++</span>
+    3. Le code présent au début du fichier doit être similaire à celui-ci :
     ``` css
     body {
         margin: 0;
@@ -153,13 +154,16 @@ Nous allons étudier plus en détail la feuille de style `style.css` afin compre
     Dans le cas ci-dessus, il est question du **sélecteur** `body`.
     Il s'agit d'un **sélecteur de type**, c'est-à-dire qu'il permet de cibler la balise de type `<body>` qui se verra alors appliquer l'ensemble des règles définies (marge à 0 et couleur de fond à violet).
 
+Vous allez maintenant déclarer un style CSS dont le sélecteur va cibler la balise `<h1>` de la page web.
+Celle-ci est utilisée pour structurer le titre principal de la page (*« Intouchable »*).
+
+<span style="color:red">**Mettre un visuel**</span>
+
 !!! note "Création d'un style"
 
-    Nous allons déclarer un style CSS dont le sélecteur va cibler le balise `<h1>` correspondant au titre principale de notre document (*« Intouchable »*).
-
-    1. Retourner dans l'application Notepad++
-    2. Revenir au fichier <FichierCSS /> (si besoin, Menu *Fichier > Ouvrir* ou `CTRL+O`)
-    3. **Ajouter** la déclaration CSS suivante (*vous pouvez l'ajouter n'importe où, mais si vous doutez, ajoutez-la en fin de fichier*) :
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `style.css`
+    3. Ajoutez la déclaration CSS ci-dessous à la fin de ce fichier<br>*(les espacements et les sauts de ligne n'ont pas d'importance)* :
 
     ```css
     h1 {
@@ -167,9 +171,10 @@ Nous allons étudier plus en détail la feuille de style `style.css` afin compre
     }
     ```
 
-    4. **Enregistrer** le fichier `CTRL+S`
-    5. Retourner dans le navigateur web
-    6. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable au niveau du titre principal
+    4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    5. Retournez dans le navigateur web
+    6. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
+       *(des changements doivent être observables)*
 
 ### Sélecteur de classe
 
@@ -179,23 +184,24 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
 !!! note "Mise en pratique"
 
-    1. Retourner dans l'application Notepad++
-    2. Revenir au fichier <FichierCSS />
-    3. **Rechercher** la déclaration CSS ayant pour sélecteur **.logo** :
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `style.css`
+    3. Recherchez la déclaration CSS ayant pour sélecteur `.logo` :
 
     ```css
     .logo {
         background-color: #f5c518;
-    
         ...
-        justify-content: center
-    ;
+        justify-content: center;
     }
     ```
 
-    Le sélecteur `.logo` ne correspond à aucune balise HTML. Son nom est **précédé d'un point**.
-    Ceci signifie qu'il est question d'un **sélecteur de classe**.
-    Celui-ci cible les balises dont l'attribut `class` a pour valeur `logo`.
+!!! tip "Cours - Le sélecteur de classe"
+
+    Le sélecteur `.logo` ne correspond à aucune balise HTML. 
+    Vous observerez que son nom est précédé d'un **point**.
+    Cela signifie qu'il s'agit d'un **sélecteur de classe**.
+    Ce sélecteur permet de cibler toutes les balises dont l'attribut `class` a pour valeur `logo`.
 
     <figure markdown>
         ![selecteur_type](images/css_selecteur_classe.png)
@@ -204,20 +210,20 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
 !!! note "Application du sélecteur"
 
-    1. Retourner dans l'application Notepad++
-    2. Revenir au fichier <FichierHTML />
-    3. **Chercher** à proximité de la balise **ouvrante** `<body>` la ligne :
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `index.html`
+    3. Recherchez la ligne suivante :
     ```html
     <a href="https://www.imdb.com/video/vi59285529">PMDb</a>
     ```
-    4. **Ajouter** l'attribut `class="logo"` à cette balise `<a>`
-    5. Votre code HTML doit maintenant ressembler à ceci :
+    4. Modifiez la balise `#!html <a>` en lui ajoutant l'attribut `#!html class="logo"` comme ceci :
     ```html
     <a class="logo" href="https://www.imdb.com/video/vi59285529">PMDb</a>
     ```
-    6. Enregistrer les modifications `CTRL+S`
-    7. Retourner dans le navigateur web
-    8. Rafraichir la page (`F5` ou `CTRL+R`), un changement doit être observable tout en haut de la page
+    5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    6. Retournez dans le navigateur web
+    7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
+       *(des changements doivent être observables)*
 
 !!! info "Bilan"
 
@@ -233,74 +239,83 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
 Les propriétés CSS `background-color` et `color` permettent d'ajuster respectivement la **couleur de fond** d'un élément
 et la **couleur du texte** contenu par celui-ci.
-Pour choisir une couleur, il est possible d'utiliser un **nom** (par exemple `red`) ou un **code hexadécimal** (par
-exemple `#ff0000`).
 
-Une liste de noms de couleurs est disponible sur [Wikipédia](https://fr.wikipedia.org/wiki/Couleur_du_Web).
-Il est aussi possible d'obtenir le code hexadécimal de n'importe quelle couleur en utilisant
-un [outil de gestion des couleurs](https://mdn.github.io/css-examples/tools/color-picker/).
+Pour la couleur, il est possible de renseigner son **nom** (par exemple `red`), en le choisissant parmi une
+[:material-link: liste de noms de couleur](https://fr.wikipedia.org/wiki/Couleur_du_Web){:target="_blank"} prédéfinis.
+
+Il est également possible définir une couleur à partir d'un code numérique appelé **code hexadécimal**
+(par exemple `#ff0000`).
+Des [:material-link: outils en ligne](https://mdn.github.io/css-examples/tools/color-picker/){:target="_blank"}
+permettent d'obtenir facilement ce code.
 
 !!! info "Propriétés CSS"
 
-    | Propriété          | Description                         | Référence                                                                 |
-    |--------------------|-------------------------------------|---------------------------------------------------------------------------|
-    | `background-color` | Couleur d'arrière-plan d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color) |
-    | `color`            | Couleur du texte d'un élément       | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color)            |
+    | Propriété          | Description                         | Référence                                                                                                   |
+    |--------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------|
+    | `background-color` | Couleur d'arrière-plan d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"} |
+    | `color`            | Couleur du texte d'un élément       | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}            |
 
-??? example "Exemple"
+!!! example "Exemple"
 
-    Voici **un exemple** de déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du
+    Voici une déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du
     contenu de la balise `body` (donc de tout le document HTML).
-    Le texte entre `/* */` est un commentaire. Les commentaires permettent d'ajouter des précisions sans conséquence sur la
-
-![css_selecteur_type.png](images%2Fcss_selecteur_type.png)  mise en forme CSS.
 
     ```css
     body {
         background-color: yellow; /* couleur de fond jaune  */
-        color: #ffba00; /* couleur du texte jaune */
+        color: #ffba00;           /* couleur du texte jaune */
     }
     ```
 
+    Observez les textes entre `/* */`. Il s'agit de commentaires. 
+    Les commentaires sont à destination des humains, ils ne sont pas pris en compte par la machine et n'ont aucun
+    impact sur la mise en forme.
+
 !!! note "Mise en pratique"
 
-    1. Retourner dans l'application Notepad++
-    2. Revenir au fichier <FichierCSS />
-    3. **Modifier** la déclaration CSS ciblant la balise `body` de façon à modifier uniquement la **couleur d'arrière-plan**
-      de votre document HTML (*inspirez-vous de l'exemple d'utilisation*)
-    4. **Ajouter** une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
-      sous-titre (*inspirez-vous de l'exemple d'utilisation et de ce qui a été fait pour* `h1`)
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `style.css`
+    3. Modifiez la déclaration CSS ciblant la balise `body` de façon à modifier **uniquement la couleur d'arrière-plan**
+       de la page web *(inspirez-vous de l'exemple d'utilisation)*
+    4. Ajoutez une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
+       sous-titre *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
+    5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    6. Retournez dans le navigateur web
+    7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
 
 ### Gestion du texte
 
-Les propriétés CSS `font-size` et `text-decoration` permettent respectivement d'ajuster la taille du texte et la
-décoration du texte (soulignement).
+Les propriétés CSS `font-size` et `text-decoration` permettent respectivement d'ajuster la **taille** du texte et la
+**décoration** du texte *(soulignement)*.
 
 !!! info "Propriétés CSS"
 
-    | Propriété         | Description                  | Référence                                                                |
-    |-------------------|------------------------------|--------------------------------------------------------------------------|
-    | `font-size`       | Taille du texte d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size)       |
-    | `text-decoration` | Soulignement d'un élément    | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration) |
+    | Propriété         | Description                  | Référence                                                                                                  |
+    |-------------------|------------------------------|------------------------------------------------------------------------------------------------------------|
+    | `font-size`       | Taille du texte d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
+    | `text-decoration` | Soulignement d'un élément    | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
 
-??? example "Exemple"
+!!! example "Exemple"
 
-    Voici **un exemple** de déclaration permettant de grossir et souligner le texte de toute balise de classe `super` (
-    c'est-à-dire ayant l'attribut `class="super"`) :
+    Voici une déclaration CSS permettant de grossir et souligner le texte de toute balise de classe `super`,
+    c'est-à-dire ayant l'attribut `class="super"` :
     
     ```css
     .super {
-        font-size: 150px; /* taille en pixels */
+        font-size: 150px;           /* taille en pixels */
         text-decoration: underline; /* soulignement */
     }
     ```
 
 !!! note "Mise en pratique"
 
-    1. Retourner dans l'application Notepad++
-    2. Revenir au fichier <FichierCSS />
-    3. **Modifier** la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
-    4. **Modifier** la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `style.css`
+    3. Modifiez la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
+    4. Modifiez la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
+    5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    6. Retournez dans le navigateur web
+    7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
 
 ### Gestion des dimensions
 
@@ -308,15 +323,14 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
 
 !!! info "Propriétés CSS"
 
-    | Propriété | Description          | Référence                                                       |
-    |-----------|----------------------|-----------------------------------------------------------------|
-    | `width`   | Largeur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width)  |
-    | `height`  | Hauteur d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height) |
+    | Propriété | Description          | Référence                                                                                         |
+    |-----------|----------------------|---------------------------------------------------------------------------------------------------|
+    | `width`   | Largeur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}  |
+    | `height`  | Hauteur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height){:target="_blank"} |
 
-??? example "Exemple"
+!!! example "Exemple"
 
-    Voici ci-dessous un exemple de déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10
-    pixels de large:
+    Voici une déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10 pixels de large:
     
     ```css
     .icone {
@@ -324,55 +338,53 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
     }
     ```
 
-#### <PracticeTitle />
+!!! note "Mise en pratique"
 
-1. Retourner dans l'application Notepad++
-2. Revenir au fichier <FichierCSS />
-3. **Ajouter** une déclaration CSS permettant de fixer la largeur (`width`) de tout élément de classe `affiche` à 150
-   pixels de large.
+    1. Retournez à l'application **Bloc-notes**
+    2. Consultez le fichier `style.css`
+    3. **Ajoutez** une déclaration CSS permettant de fixer la largeur `width` de tout élément de classe `affiche`
+       à 150 pixels de large.
+    4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    5. Toujours depuis l'application Bloc-notes, consultez le fichier `index.html`
+    6. Recherchez la seule balise `<img>` présente dans la page<br>
+       *(celle-ci correspond à l'élément image de l'affiche du film)*
+    7. Modifiez la balise `<img>` pour lui ajouter la classe `affiche`<br>
+      *(revoir la section « [Sélecteur de classe](#selecteur-de-classe) » si vous avez des difficultés)*
+    8. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    9. Retournez dans le navigateur web
+    10. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
 
-<details>
-    <summary>💡 Solution</summary>
+??? success "Solution"
 
-Pour cela vous devez utiliser le sélecteur de classe `.affiche` et fixer la propriété `width` à `150px`.
+    === ":material-file-outline: `style.css`"
+        
+        Déclaration à ajouter à la feuille de style :
 
-```css
-.affiche {
-    width: 150px;
-}
-```
+        ```css
+        .affiche {
+            width: 150px;
+        }
+        ```
 
-</details>
+    === ":material-file-code-outline: `index.html`"
 
-4. Enregistrer le fichier `CTRL+S`
-5. Revenir au fichier <FichierHTML />
-6. **Rechercher** la seule balise `<img>` présente dans le document et qui correspond à l'élément **image** de l'affiche
-   du film
-7. **Modifier** la balise pour lui ajouter la classe `affiche`
+        Modification à apporter à la balise `<img>` :
 
-!!! success "Solution"
-
-    Après modification, le code HTML de la balise `img` doit être similaire à ceci :
-
-    ```html
-    <img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
-    ```
-
-8. **Enregistrer** le fichier `CTRL+S`
-9. Retourner dans le navigateur web
-10. Rafraichir la page, un changement doit être observable au niveau de l'affiche du film
+        ```html
+        <img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
+        ```
 
 ### Expérimentation
 
 Vous avez terminé et il reste plus de 5 minutes avant la fin de la séance ? Bravo !
 Il vous reste encore beaucoup à découvrir et d'autres propriétés peuvent se révéler intéressantes :
 
-| Propriété          | Description                       | Référence                                                                 |
-|--------------------|-----------------------------------|---------------------------------------------------------------------------|
-| `text-align`       | Alignement du texte               | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-align)       |
-| `border`           | Bordure autour d'un élément       | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/border)           |
-| `margin-bottom`    | Marge inférieure d'un élément     | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/margin-bottom)    |
-| `background-image` | Image d'arrière-plan d'un élément | [Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-image) |
+| Propriété          | Description                       | Référence                                                                                                   |
+|--------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------|
+| `text-align`       | Alignement du texte               | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}       |
+| `border`           | Bordure autour d'un élément       | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/border){:target="_blank"}           |
+| `margin-bottom`    | Marge inférieure d'un élément     | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/margin-bottom){:target="_blank"}    |
+| `background-image` | Image d'arrière-plan d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-image){:target="_blank"} |
 
 #### <PracticeTitle />
 
@@ -381,40 +393,40 @@ référence.
 
 ## Envoi du travail
 
-### Création du fichier ZIP
+### Création d'un fichier ZIP
 
-Pour faciliter le partage de plusieurs fichiers et dossiers, il est de regrouper l'ensemble dans un seul fichier au
-format ZIP.
-Lire les instructions selon l'ordinateur utilisés :
+Pour faciliter l'envoi de plusieurs fichiers et dossiers, il est possible de tous les regrouper dans un unique fichier
+au format ZIP. Suivez les instructions selon l'ordinateur utilisé :
 
-<details>
-    <summary>💻 Ordinateur portable (Windows 11)</summary>
+!!! info "Création d'un fichier ZIP"
 
-1. Lancer <FileExplorer />
-2. Se rendre dans le dossier `SNT\Web`
-3. Cliquer une seule fois avec le bouton **gauche** sur le dossier `langage_css` pour le sélectionner
-4. Cliquer avec le bouton **droit** sur le dossier `langage_css`
-5. Choisir l'option **Compresser dans le fichier ZIP**
-6. Nommer le fichier *nom*_*prenom*_tp_css.zip
+    === ":material-laptop: Ordinateur portable"
 
-</details>
+        - Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
+          <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
+        - Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
+        - Accédez au dossier `SNT\web`
+        - Effectuez un clic droit sur le dossier `langage_css` afin d'afficher son menu contextuel
+        - Choisissez l'option :material-folder-zip-outline: **Compresser dans un fichier ZIP**
+        - Conservez `langage_css` comme nom de fichier
+    
+    === ":material-desktop-tower: Ordinateur fixe"
 
-<details>
-    <summary>🖥 Ordinateur fixe des salles informatiques (Windows 10)</summary>
+        - Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
+        - Depuis votre dossier personnel, accédez au dossier `SNT\web`
+        - Effectuez un clic droit sur le dossier `langage_css` afin d'afficher son menu contextuel
+        - Choisissez l'option **Envoyer vers ▸ Dossier compressé**
+        - Conservez `langage_css` comme nom de fichier
 
-1. Lancer <FileExplorer />
-2. Se rendre dans le dossier `SNT\Web`
-3. Cliquer une seule fois avec le bouton **gauche** sur le dossier `langage_css` pour le sélectionner
-4. Cliquer avec le bouton **droit** sur le dossier `langage_css`
-5. Choisir l'option **Envoyer vers** puis **Dossier compressé**
-6. Nommer le fichier *nom*_*prenom*_tp_css.zip
+### Envoi du fichier ZIP
 
-</details>
+Une fois votre fichier ZIP créé, vous pouvez le déposer sur Pronote.
 
-### Transmission du fichier ZIP
+!!! info "Dépot du travail sur Pronote"
 
-1. Se connecter à l'ENT
-2. Accéder à l'application **Exercices**
-3. Cliquer sur l'exercice **[2TP2] Le langage CSS - Rendu**
-4. Choisir le fichier ZIP créé précédemment pour envoi
-5. Valider l'envoi du devoir
+    1. Connectez-vous à l'ENT : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    3. Accédez à l'application **Pronote**
+    4. Depuis l'accueil, recherchez le devoir **SNT02 - TP2 Langage CSS**
+    5. Cliquez sur le bouton <span class="pronote-button">Déposer ma copie</span>
+    6. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
+    7. Déposez votre fichier ZIP
