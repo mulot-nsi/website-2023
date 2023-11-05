@@ -239,7 +239,8 @@ Celle-ci a pour paramètres la position *(x, y)* du coin inférieur gauche du to
 ### Tracé d'une maison
 
 Vous avez résolu les premiers sous-problèmes.
-Vous êtes maintenant en mesure d'implémenter la `maison` en suivant la description donnée par la *docstring* et en
+Vous êtes maintenant en mesure d'implémenter la fonction `maison` en suivant la description donnée par la *docstring* et
+en
 utilisant les fonctions `mur` et `toit`.
 
 !!! note "Instructions"
@@ -247,7 +248,8 @@ utilisant les fonctions `mur` et `toit`.
     1. Ouvrez le fichier `paysage.py`
     2. Modifiez **uniquement** le corps de la fonction `maison` pour effectuer le tracé. 
        Celui-ci devra se faire en appelant les fonctions `toit` et `mur` avec des arguments en accord avec la description des dimensions de la maison indiquées dans la *docstring*
-    3. Exécutez le fichier `paysage.py` pour vérifier le tracé
+    3. N'oubliez pas de supprimer l'instruction `#!python pass`
+    4. Exécutez le fichier `paysage.py` pour vérifier le tracé
 
 ??? success "Affichage attendu"
 
@@ -294,8 +296,8 @@ Mais quelle est la finalité de la condition `#!python if __name__ == "__main__"
 
 Avant toute chose, pour simplifier, considérez que tout fichier Python est
 un [:material-book-open-variant: module](https://docs.python.org/fr/3.9/tutorial/modules.html){:target="_blank"}.
-Un module peut être directement **exécuté**, c'est-à-dire que son fichier est celui à partir duquel vous lancez l'
-interpréteur Python.
+Un module peut être directement **exécuté**, c'est-à-dire que son fichier est celui à partir duquel vous lancez
+l'interpréteur Python.
 Mais un module peut aussi être **importé**, c'est-à-dire qu'il est inclus dans un autre module via
 l'instruction `#!python import`.
 
@@ -368,28 +370,71 @@ C'est le rôle de ces quelques lignes à la fin du fichier `paysage_absolu.py`.
 
 ### Tracé du paysage
 
-Compléter la procédure `dessiner_paysage()` en suivant la description donnée par la *Docstring*.
-Les tests de cette procédure devront cette fois s'effectuer depuis le fichier `main.py`.
+Vous allez maintenant implémenter la fonction `dessiner_paysage` en suivant la description donnée par la *docstring*,
+c'est-à-dire dessiner trois maisons.
+Vous êtes libre de leur positionnement. Pour vérifier le tracé, vous exécuterez cette fois-ci le fichier `main.py`.
 
-<h4>Tracé paramétrable d'une maison</h4>
+!!! note "Instructions"
 
-Modifier la procédure `maison()` de façon à pouvoir passer en argument le nombre d'étages de la maison grâce au
-paramètre `etage`.
-Ci-dessous le rendu généré par les tests avec le rendu d'une maison à deux étages.
+    1. Ouvrez le fichier `paysage.py`
+    2. Modifiez **uniquement** le corps de la fonction `dessiner_paysage` pour effectuer le tracé
+    3. N'oubliez pas de supprimer l'instruction `#!python pass`
+    4. Exécutez le fichier `main.py` pour vérifier le tracé
 
-<figure markdown>
-![Rendu final](images/absolu_final.png)
-</figure>
+## Évolutions
 
-## Amélioration
+Vous pensez peut-être qu'il aurait plus simple de faire tous les tracés directement, sans décomposer et passer par des
+fonctions. Cependant, cette décomposition nous permet la modification ou l'ajout de maisons sans la moindre duplication de code.
+Celle-ci sera encore plus appréciable maintenant qu'il va être question de faire évoluer le tracé.
 
 ### Gestion des étages
 
+Vous allez modifier la procédure `maison` de façon à indiquer le nombre d'étages de la maison grâce au
+paramètre `etages` :
+
+```python
+def maison(x, y, etages):
+    """
+    Dessine une maison de 200px de largeur. 
+    Le mur fait 100px de hauteur et le toit, 50px de hauteur.
+    
+    x      -- position x du coin inférieur gauche de la maison
+    y      -- position y du coin inférieur gauche de la maison
+    etages -- nombre d'étages de la maison
+    """
+```
+
+Les tests seront modifiés de façon à prendre en compte ce nouveau paramètre :
+
+```python hl_lines="5"
+if __name__ == "__main__":
+    aide.grille()
+    mur(-300, 0, 200, 100)
+    toit(-300, 150, 200, 50)
+    maison(0, 0, 2)
+    turtle.mainloop()
+```
+
+!!! note "Instructions"
+
+    1. Ouvrez le fichier `paysage.py`
+    2. Modifiez les tests en ajoutant l'argument `2` *(pour 2 étage)* à l'appel de fonction `maison`
+    3. Modifiez les paramètre et le corps de la fonction `maison` pour gérer les étages
+    4. Exécutez le fichier `paysage.py` pour vérifier le tracé
+
+??? success "Affichage attendu"
+
+    <figure markdown>
+        ![Rendu final](images/absolu_final.png)
+    </figure>
+
 ### Suggestions
 
+Vous avez terminé ? Voici quelques suggestions pour faire évoluer le tracé de votre paysage et vous avancer pour le
+prochain projet :
+
 - Personnaliser le tracé de la maison
-- Tracé une porte
-- Tracé une ou plusieur fenetre
-- Tracé le paysage de facon aléatoire
-- Imaginer un algorithme pour un tracé aléatoire du paysage plus armonieux
-- Imaginer d'autre détails à vos maisom
+- Tracer une porte
+- Tracer des fenêtres et rendre paramétrable leur nombre
+- Tracer le paysage de facon aléatoire
+- Concevoir un algorithme de tracé aléatoire plus harmonieux
