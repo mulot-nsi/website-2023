@@ -1,4 +1,4 @@
-# Méthodes de tracé
+# Tracé alternatif
 
 ## Introduction
 

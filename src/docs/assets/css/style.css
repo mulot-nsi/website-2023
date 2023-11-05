@@ -1,3 +1,17 @@
+.missing {
+    border: 5px solid red;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+figure.illustration img {
+    width: 75%;
+    margin: 0 auto;
+}
+
 .shortcut {
     float: right;
 }
