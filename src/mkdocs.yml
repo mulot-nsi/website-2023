@@ -30,8 +30,11 @@ nav:
           - TP1 - Mode interactif: nsi1re/03-bases-programmation/tp1-python-mode-interactif.md
           - TP2 - Mode script: nsi1re/03-bases-programmation/tp2-python-mode-script.md
           - TP3 - Module Turtle: nsi1re/03-bases-programmation/tp3-turtle.md
+      - Chapitre 4 - Les fonctions:
+          - TP1 - Méthodes de tracé: nsi1re/04-fonctions/tp1-methodes-trace.md
+          - Projet - Génération d'un paysage: nsi1re/04-fonctions/prj-paysage.md
 
-# Configuration du thème
+      # Configuration du thème
 theme:
   name: material
   language: fr

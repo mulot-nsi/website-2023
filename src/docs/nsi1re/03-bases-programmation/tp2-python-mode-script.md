@@ -11,7 +11,7 @@ L'objectif de ces travaux pratiques est d'utiliser Python en mode script.
 Il ne s'agit plus d'interagir directement avec l'interpréteur Python, mais d'écrire votre programme dans un fichier texte.
 L'interpréteur sera solliciter pour lire votre fichier et exécuter les instructions qu'il contient.
 
-### Préparation
+## Préparation
 
 ### Espace de travail
 
