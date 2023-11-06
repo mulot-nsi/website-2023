@@ -64,7 +64,10 @@ Pour réaliser ces travaux pratiques, il est nécessaire de disposer de certains
 
 Voici une illustration d'une décomposition possible du tracé de plusieurs maisons :
 
-<p class="missing">Ajouter l'illustation</p>
+<figure markdown>
+![Décomposition d'un problème en sous-problèmes](images/decomposition.svg)
+</figure>
+
 
 Nous souhaitons tracer un nombre quelconque de maisons identiques.
 Pour cela, un premier niveau de décomposition pourrait être de *« tracer une seule maison »*.
