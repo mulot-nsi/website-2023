@@ -32,7 +32,6 @@ nav:
           - TP3 - Module Turtle: nsi1re/03-bases-programmation/tp3-turtle.md
       - Chapitre 4 - Les fonctions:
           - TP1 - Décomposition : nsi1re/04-fonctions/tp1-decompostion-en-sous-problemes.md
-          - TP2 - Tracé alternatif: nsi1re/04-fonctions/tp2-trace-alternatif.md
           - Projet - Paysage généré: nsi1re/04-fonctions/prj-paysage.md
 
       # Configuration du thème

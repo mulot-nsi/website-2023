@@ -4,14 +4,14 @@
 
 L'une des compétences à acquérir dans le cadre de la spécialité NSI est de savoir
 *« décomposer un problème en sous-problèmes »*.
+Ces travaux pratiques consistent à dessiner un ensemble de maisons, mais pas n'importe comment.
 
 <figure class="illustration" markdown>
 ![Maisons](images/maisons.png)
 </figure>
 
-Ces travaux pratiques consistent à dessiner un ensemble de maisons, mais pas n'importe comment.
 L'objectif n'est pas d'apprendre à réaliser une image sous Turle, mais de comprendre
-l'intérêt et la manière de décomposer le problème *« dessiner un ensemble de maisons »* en sous-problèmes plus simples à
+l'intérêt et la façon de décomposer le problème *« dessiner un ensemble de maisons »* en sous-problèmes plus simples à
 résoudre.
 
 !!! target "Objectifs"
@@ -92,22 +92,22 @@ Le fichier `paysage.py` contient la définition de quatre procédures :
 !!! info "Procédure ou fonction ?"
 
     Pour rappel, une **procédure** désigne une fonction ne renvoyant aucune valeur (donc sans instruction `#!python return`).
-    Cependant, par souci de simplicité, nous n'utiliserons que le terme **fonction** pour le reste de l'énoncé. 
+    Cependant, par souci de simplicité, nous n'utiliserons que le terme **fonction** pour la suite de l'énoncé. 
 
 Ces fonctions sont en charge d'un tracé allant du plus spécifique avec `#!python mur()` et `#!python toit()`, au plus
 général avec `#!python dessiner_paysage()`.
 
 Chaque fonction dispose d'une *docstring* décrivant le comportement attendu et le rôle de chaque paramètre.
 
-Les fonctions `#!python mur()` et `#!python toit()` ne disposent que du code de positionnement de la tortue.
-Le tracé sera à implémenter. Les fonctions `#!python maison()` et `#!python dessiner_paysage()` ne disposent que de
+Les fonctions `#!python mur()` et `#!python toit()` ne disposent que du code de positionnement de la tortue,
+le tracé reste à implémenter. Les fonctions `#!python maison()` et `#!python dessiner_paysage()` ne disposent que de
 l'instruction `#!python pass`. Chaque instruction `#!python pass` sera à remplacer par l'implémentation répondant aux
 spécifications de chaque *docstring*.
 
 !!! info "L'instruction Python `#!python pass`"
 
     L'instruction `#!python pass` est spécifique au langage Python. Elle signifie *« ne rien faire »*.
-    Elle est éviter que l'interpréteur ne signale une erreur en cas de bloc vide ou, dans le cas présent, pour signaler un bloc de code à écrire.
+    Elle permet d'éviter que l'interpréteur ne signale une erreur en cas de bloc vide ou, dans le cas présent, de signaler un bloc de code à écrire.
 
     [:material-book-open-variant: L'instruction pass](https://docs.python.org/fr/3.9/tutorial/controlflow.html?highlight=pass#pass-statements){:target="_blank"}
 
@@ -132,8 +132,9 @@ Il serait judicieux de le factoriser en créant une fonction dédiée au positio
     2. Exécutez-le et mémorisez le déplacement de la tortue. La tortue devra se déplacer de la même manière après vos modifications
     3. Créez la fonction `#!python positionner` ayant deux paramètres `x` et `y` correspondant aux nouvelles coordonnées de la tortue.
        Écrivez sa définition à la suite des instructions d'import.
-    4. Ajoutez la *docstring* suivante à la fonction : « Positionne la tortue aux coordonnées (x, y). »
-    5. Remplacez l'ancien code de positionnement par un appel à la fonction `positionner()` 
+    4. Ajoutez en *docstring* le texte suivant : « Positionne la tortue aux coordonnées (x, y). »
+    5. Remplacez l'ancien code de positionnement par un appel à la fonction `positionner()`
+    6. Exécutez le fichier `paysage.py` et vérifiez que le déplacement de la tortue n'ait pas changé
 
 ??? success "Solution"
 
@@ -166,7 +167,7 @@ Celle-ci a pour paramètres la position *(x, y)* du coin inférieur gauche du mu
 Le tracé du mur doit se faire en utilisant **uniquement** la fonction
 [:material-book-open-variant: goto](https://docs.python.org/fr/3.9/library/turtle.html#turtle.goto){:target="_blank"} du
 module `turtle`.
-Pour le tracer, vous devrez donc calculer des coordonnées de chaque point du rectangle formant le mur.
+Vous devrez donc calculer les coordonnées de chaque point du rectangle formant le mur pour déplacer la tortue.
 
 ??? info "Conseils"
 
@@ -298,75 +299,76 @@ Avant toute chose, pour simplifier, considérez que tout fichier Python est
 un [:material-book-open-variant: module](https://docs.python.org/fr/3.9/tutorial/modules.html){:target="_blank"}.
 Un module peut être directement **exécuté**, c'est-à-dire que son fichier est celui à partir duquel vous lancez
 l'interpréteur Python.
-Mais un module peut aussi être **importé**, c'est-à-dire qu'il est inclus dans un autre module via
+Un module peut aussi être **importé**, c'est-à-dire qu'il est inclus dans un autre module via
 l'instruction `#!python import`.
 
-La variable `#!python  __name__` permet de savoir, au sein d'un module, si celui-ci est exécuté ou importé.
-En effet Python, définit une variable `#!python  __name__` automatiquement dans chaque module.
+La variable `#!python  __name__` permet de savoir si un module est exécuté ou importé.
+En effet Python, définit une variable `#!python  __name__` automatiquement pour chaque module.
 Celle-ci a pour valeur la chaîne de caractères `#!python  "__main__"` si le module est exécuté, ou le nom du module si
-importé.
+celui-ci est importé.
 
-!!! info "Cas de l'exécution du fichier `paysage_absolu.py`"
+!!! info "Cas de l'exécution du fichier `paysage.py`"
 
     Si un ficher (ou module) est exécuté, alors la variable `__name__` aura pour valeur la chaîne de caractères `#!python "__main__"`.
 
-    Ainsi, lorsqu'on lance l'interpréteur Python à partir du fichier `paysage_absolu.py`, la valeur de `__name__` à
-    l'intérieur du module `paysage_absolu.py` sera `#!python "__main__"`.
+    Ainsi, lorsqu'on lance l'interpréteur Python à partir du fichier `paysage.py`, la valeur de `__name__` à
+    l'intérieur du module `paysage.py` sera `#!python "__main__"`.
 
-    === ":material-file-outline: `paysage_absolu.py`"
+    === ":material-file-outline: `paysage.py`"
         
         ```python
         print(__name__)
         if __name__ == "__main__":
-            print("Exécution code paysage absolu")
+            print("Exécution code paysage")
         ```
 
     === ":material-console: Console"
         
         ```
-        > python paysage_absolu.py
+        > python paysage.py
         __main__
-        Exécution code paysage absolu
+        Exécution code paysage
         ```
 
-!!! info "Cas de l'import du fichier `paysage_absolu.py`"
+!!! info "Cas de l'import du fichier `paysage.py`"
 
     Si un fichier (ou module) est importé, alors la variable `__name__` aura pour valeur le nom du module importé.
     
-    Ainsi, si on importe `paysage_absolu`, la valeur de `__name__` à l'intérieur de `paysage_absolu.py` sera `#!python "paysage_absolu"`.
+    Ainsi, si on importe `paysage` et que l'exécution se fait depuis un autre module, alors la valeur de `__name__` à l'intérieur de `paysage.py` sera `#!python "paysage"`.
 
 
     === ":material-file-outline: `main.py`"
 
         ```python
-        import paysage_absolu
+        import paysage
 
         print("Exécution code main")
         ```
 
 
-    === ":material-file-outline: `paysage_absolu.py`"
+    === ":material-file-outline: `paysage.py`"
         
         ```python
         print(__name__)
         if __name__ == "__main__":
             # Dans le cas d'un import, cette portion de code ne sera pas exécutée 
-            # car __name__ ==  "paysage_absolu" donc différent de "__main__"
+            # car __name__ ==  "paysage" donc différent de "__main__"
             print("Exécution du code")
         ```
 
     === ":material-console: Console"
-        
+        Notez que c'est le module `main.py` qui est maintenant exécuté, le module `paysage` y étant importé :        
+
         ```
         > python main.py
-        paysage_absolu
+        paysage
         Exécution code main
         ```
 
 Dans le cadre de ces travaux pratiques, le point de départ du programme final sera le fichier `main.py` d'où sera
-importé `paysage_absolu`.
-Mais avant d'en arriver là, nous souhaitions pouvoir tester les fonctions du module `paysage_absolu`.
-C'est le rôle de ces quelques lignes à la fin du fichier `paysage_absolu.py`.
+importé `paysage`.
+Mais avant d'en arriver là, nous souhaitions pouvoir tester les fonctions du module `paysage`.
+C'est le rôle de ces quelques lignes à la fin du fichier `paysage.py`.
 
 ### Tracé du paysage
 
@@ -383,8 +385,10 @@ Vous êtes libre de leur positionnement. Pour vérifier le tracé, vous exécute
 
 ## Évolutions
 
-Vous pensez peut-être qu'il aurait plus simple de faire tous les tracés directement, sans décomposer et passer par des
-fonctions. Cependant, cette décomposition nous permet la modification ou l'ajout de maisons sans la moindre duplication de code.
+Vous pensez peut-être qu'il aurait été plus simple d'effectuer tous les tracés directement, sans décomposer et passer
+par des fonctions.
+Ne perdez pas de vue que c'est grâce à cette décomposition que vous pouvez modifier ou ajouter des maisons sans aucune
+duplication de code.
 Celle-ci sera encore plus appréciable maintenant qu'il va être question de faire évoluer le tracé.
 
 ### Gestion des étages
@@ -418,7 +422,7 @@ if __name__ == "__main__":
 !!! note "Instructions"
 
     1. Ouvrez le fichier `paysage.py`
-    2. Modifiez les tests en ajoutant l'argument `2` *(pour 2 étage)* à l'appel de fonction `maison`
+    2. Modifiez les tests en ajoutant l'argument `2` *(pour deux étages)* à l'appel de fonction `maison`
     3. Modifiez les paramètre et le corps de la fonction `maison` pour gérer les étages
     4. Exécutez le fichier `paysage.py` pour vérifier le tracé
 
