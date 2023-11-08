@@ -25,16 +25,19 @@ travaux pratiques.
 
     === ":material-laptop: Ordinateur portable"
 
-        1. Lancez l'**explorateur de fichiers**
-        2. Accédez au dossier **Documents**
-        3. S'il n'y a pas de dossier nommé **SNT**, créez-le
-        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
+        1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
+           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
+        2. Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
+        3. Dans le dossier `OneDrive`, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        4. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        5. Dans le dossier `web`, créez le dossier `langage_html`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans votre zone personnelle, s'il n'y a pas de dossier nommé **SNT**, créez-le
-        4. Entrez dans le dossier **SNT** et créez-y le dossier **web**
+        2. Dans la **zone personnelle**, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        4. Dans le dossier `web`, créez le dossier `langage_html`
 
 ## Code source d'une page web
 
@@ -51,14 +54,14 @@ C'est une application capable d'afficher une page web à partir de son code HTML
 
     Il est possible de visualiser le code source de n'importe quelle page web directement depuis un navigateur web.
 
-    1. Rendez-vous sur la page de démonstration : [demo.html](assets/demo.html){:target="_blank"}
+    1. Rendez-vous sur la page de démonstration en cliquant sur ce lien : [:material-link: demo.html](assets/demo.html){:target="_blank"}
     2. Une fois sur cette page, utilisez le raccourci clavier ++ctrl+u++
     3. Observez et essayez de faire la distinction entre le contenu et le code permettant de structurer ce contenu
 
 !!! info "Cours - Les balises HTML"
 
     En observant le code source, vous devriez avoir constaté que certaines portions de texte telles que `<body>`, `<p>` ou `<strong>` sont mises en valeur.
-    Ces textes sont appelés **balise**. Ils constituent le langage HTML et permettent de définir et structurer le contenu d'une page web.
+    Ces textes sont des « **balises** ». Ils constituent le langage HTML et permettent de définir et structurer le contenu d'une page web.
 
 !!! example "Exemple - L'élément paragraphe"
 
@@ -111,11 +114,12 @@ d'affichage correspondant à une portion du code source.
 
 !!! note "Inspection du code source"
 
-    1. Retournez sur la page de démonstration : [demo.html](assets/demo.html){:target="_blank"}
+    1. Retournez sur la page de démonstration : [:material-link: demo.html](assets/demo.html){:target="_blank"}
     2. Depuis cette page, lancez l'inspecteur de code source en utilisant l'une des méthodes suivantes :
         - Faire un clic droit sur la page puis « Inspecter »
         - Utiliser le raccourci clavier ++ctrl+shift+i++
-    3. Identifiez les balises permettant la construction de la liste à puces<br>*(la liste des techniques d'accès au code source de la page [demo.html](assets/demo.html){:target="_blank"})*
+    3. Identifiez les balises permettant la construction de la liste à puces<br>
+       *(visuellement, c'est la liste des techniques d'accès au code source d'une page web)*
 
     ![Inspecteur](images/inspecteur.png)
 
@@ -146,10 +150,13 @@ La visualisation de la page se fera dans un navigateur Web.
             </body>
         </html>
         ```
-    3. Enregistrez le fichier dans le dossier **SNT/web** en le nommant **page.html** et<br> en choisissant **(\*.\*)** comme type de fichier<br>
-    ![Inspecteur](images/enregistrement.png)
-    4. Lancez l'explorateur de fichiers et déplacez-vous dans le dossier **SNT/web**
-    5. Double-cliquez sur le fichier **page.html**, un navigateur Web doit se lancer automatiquement et présenter le contenu de celle-ci
+    3. Enregistrez le fichier dans le dossier `SNT\web\langage_html` en le nommant `page.html`.<br>**Attention à bien choisir « Tous les fichiers (\*.\*) » comme type de fichier** :<br>
+       ![Inspecteur](images/enregistrement.png)
+    4. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
+       <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
+    5. Déplacez-vous dans le dossier `SNT\web\langage_html`
+    6. Double-cliquez sur le fichier `page.html`<br>
+       *(un navigateur Web doit se lancer automatiquement et présenter le contenu de celle-ci)*
 
 Une page web est donc un simple **fichier texte** d'extension `.html`.
 Attention à ne pas confondre les fichiers textes avec les documents textes élaborés à partir de logiciels comme
@@ -176,11 +183,11 @@ Aucune des données renseignées n'est directement visible pour l'internaute à 
 
 !!! note "Modification du titre d'une page web"
 
-    1. Retournez au **Bloc-notes** avec le fichier **page.html** ouvert
+    1. Retournez au **Bloc-notes** avec le fichier `page.html` ouvert
     2. Retrouvez le texte **« Ma page ! »** au sein du code. Il est situé au niveau des balises `#!html <title></title>`.
     3. Remplacez **« Ma page ! »** par le texte de votre choix
-    4. Enregistrez vos modifications (++ctrl+s++)
-    5. Retournez dans le **navigateur web** avec la page **page.html** ouverte
+    4. Enregistrez vos modifications <span class="keys shortcut">++ctrl+s++</span>
+    5. Retournez dans le **navigateur web** avec la page `page.html` ouverte
     6. Rechargez cette page afin de rendre visible vos modifications :
         - en appuyant sur la touche ++f5++
         - ou en utilisant le raccourci clavier ++ctrl+r++ 
@@ -215,9 +222,9 @@ navigateur Web.
     La Cigale et la Fourmi
     ```
     
-    3. Enregistrez votre fichier (++ctrl+s++)
+    3. Enregistrez votre fichier <span class="keys shortcut">++ctrl+s++</span>
     4. Retournez dans le navigateur
-    5. Actualisez la page (++f5++ ou ++ctrl+r++)
+    5. Actualisez la page <span class="keys shortcut">++f5++ ou ++ctrl+r++</span>
     6. Qu'observez-vous ?
 
 !!! tip "Explication"
@@ -263,7 +270,7 @@ navigateur Web.
 
 ### Une nouvelle page
 
-Vous allez maintenant créer une page web dédiée à la description de votre film préféré.
+Vous allez maintenant créer une page web dédiée à la description de votre film préféré (ou série préférée).
 
 !!! question "Pas de film préféré ?"
 
@@ -304,7 +311,7 @@ Vous allez maintenant créer une page web dédiée à la description de votre fi
         </body>
     </html>
     ```
-    4. Enregistrez immédiatement le fichier dans le dossier **SNT/web** en le nommant **film.html**
+    4. Enregistrez immédiatement le fichier dans le dossier `SNT\web\langage_html` en le nommant `film.html`
     5. Visualisez votre page dans un navigateur
 
 ### Les éléments de titre
@@ -320,29 +327,46 @@ En HTML, il est possible de créer des éléments de titre au sein d'une page gr
 !!! note "Définition du titre principal"
 
     1. Remplacez le texte « TITRE DU FILM » par le nom de votre film préféré
-    2. Englobez le nom de film par des balises `#!html <h1></h1>` afin de créer un élément « titre de niveau 1 » *(titre)* 
+    2. Englobez le nom du film par des balises `#!html <h1></h1>` afin de créer un élément « titre de niveau 1 » *(ou titre)* 
     3. Enregistrez vos modifications et visualisez le résultat dans le navigateur    
 
 !!! example "Exemple de titre principal"
 
-    ```html
-    <h1>La Belle et la Bête</h1>
-    ```
+    === "Avant"
+
+        ```html
+        TITRE DU FILM
+        ```
+
+    === "Après"
+
+        ```html
+        <h1>La Belle et la Bête</h1>
+        ```
 
 !!! note "Définition des titres secondaires"
 
-    1. Recherchez les textes listés ci-dessous dans le contenu de la page web et englobez chacun d'eux par des balises `#!html <h2></h2>`. 
-       Ces balises permettent de créer des éléments « titre de niveau 2 » *(sous-titres)*.
+    1. Recherchez les textes listés ci-dessous **dans le contenu** de la page web :
         - Informations générales
         - Résumé
         - Sources d'information
-    2. Visualiser le résultat *(toujors en enregistrant et actualisant)*
+    2. Englobez chacun d'eux par des balises `#!html <h2></h2>`. 
+       Ces balises permettent de créer des éléments « titre de niveau 2 » *(ou sous-titres)*.
+    3. Visualiser le résultat *(toujours en enregistrant et actualisant)*
 
 !!! example "Exemple de titre secondaire"
 
-    ```html
-    <h2>Informations générales</h2>
-    ```
+    === "Avant"
+
+        ```html
+        Informations générales
+        ```
+
+    === "Après"
+
+        ```html
+        <h2>Informations générales</h2>
+        ```
 
 ### L'élément de haute importance
 
@@ -360,10 +384,19 @@ descripteurs *(Année de sortie, Réalisateur, ...)*.
 
 !!! example "Exemple de mise en valeur"
 
-    ```html
-    <li><strong>Année de sortie :</strong> 1968</li>
-    <li><strong>Réalisateur :</strong> Stanley Kubrick</li>
-    ```
+    === "Avant"
+        
+        ```html 
+        <li>Année de Sortie :</li>
+        <li>Réalisateur :</li>
+        ```
+
+    === "Après"
+
+        ```html
+        <li><strong>Année de sortie :</strong> 1968</li>
+        <li><strong>Réalisateur :</strong> Stanley Kubrick</li>
+        ```
 
 ### L'élément paragraphe
 
@@ -454,10 +487,26 @@ suivants :
     === ":material-application-outline: Affichage"
         ![Affiche du film Intouchables](images/intouchables.jpg)
 
-
 !!! note "Insertion d'une image"
 
     1. Trouvez sur le Web une image de l'affiche de votre film au format `.jpg` ou `.png`
     2. Téléchargez l'image et enregistrez-la dans le même dossier que le fichier `film.html`
     3. Modifiez la balise `<img>` déjà présente dans la page en conséquence
     4. Visualisez le résultat
+
+## Vous avez terminé ?
+
+### Les métiers du Web
+
+Vous pouvez découvrir les métiers du Web sur le site de l'ONISEP.
+
+!!! info "Les métiers du Web"
+
+    - [:material-link: Intégrateur/trice web](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/integrateur-integratrice-web){:target="_blank"}
+    - [:material-link: Webdesigner](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/webdesigner){:target="_blank"}
+    - [:material-link: Web-ergonome](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/web-ergonome){:target="_blank"}
+    - [:material-link: Spécialiste de l'accessibilité numérique](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/specialiste-de-l-accessibilite-numerique){:target="_blank"}
+    - [:material-link: Traffic Manager](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/traffic-manager){:target="_blank"}
+    - [:material-link: Chef/fe de projet Web](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/chef-cheffe-de-projet-web-mobile){:target="_blank"}
+    - [:material-link: Webmestre](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/webmestre){:target="_blank"}
+    - [:material-link: Rédacteur/trice](https://www.onisep.fr/Ressources/Univers-Metier/Metiers/redacteur-redactrice-on-line){:target="_blank"}
