@@ -104,21 +104,13 @@ Chaque fonction dispose d'une *docstring* décrivant le comportement attendu et 
 
 Les fonctions `#!python mur()` et `#!python toit()` ne disposent que du code de positionnement de la tortue,
 le tracé reste à implémenter. Les fonctions `#!python maison()` et `#!python dessiner_paysage()` ne disposent que de
-l'instruction `#!python pass`. Chaque instruction `#!python pass` sera à remplacer par l'implémentation répondant aux
-spécifications de chaque *docstring*.
-
-!!! info "L'instruction Python `#!python pass`"
-
-    L'instruction `#!python pass` est spécifique au langage Python. Elle signifie *« ne rien faire »*.
-    Elle permet d'éviter que l'interpréteur ne signale une erreur en cas de bloc vide ou, dans le cas présent, de signaler un bloc de code à écrire.
-
-    [:material-book-open-variant: L'instruction pass](https://docs.python.org/fr/3.9/tutorial/controlflow.html?highlight=pass#pass-statements){:target="_blank"}
+leur *docstring*.
 
 ## Sous-problèmes
 
 ### Factorisation
 
-La portion de code ci-dessous permet de positionner la tortue aux coordonnées *(x, y)* :
+La portion de code ci-dessous, présent dans les fonctions `#!python mur()` et `#!python toit()`, permet de positionner la tortue aux coordonnées *(x, y)* :
 
 ```python
 turtle.penup()
@@ -126,41 +118,64 @@ turtle.goto(x, y)
 turtle.pendown()
 ```
 
-Vous constaterez que ce code est utilisé à plusieurs reprises.
-Il serait judicieux de le factoriser en créant une fonction dédiée au positionnement de la tortue.
+Ce code est donc utilisé à deux reprises.
+Il serait judicieux de le **factoriser** en créant une fonction dédiée au positionnement de la tortue.
 
 !!! note "Instructions"
 
     1. Ouvrez le fichier `paysage.py`
-    2. Exécutez-le et mémorisez le déplacement de la tortue. La tortue devra se déplacer de la même manière après vos modifications
+    2. Exécutez-le et mémorisez le déplacement de la tortue. 
+       Si tout fonctionne correctement, la tortue devra se déplacer de la même manière après vos modifications
     3. Créez la fonction `#!python positionner` ayant deux paramètres `x` et `y` correspondant aux nouvelles coordonnées de la tortue.
        Écrivez sa définition à la suite des instructions d'import.
     4. Ajoutez en *docstring* le texte suivant : « Positionne la tortue aux coordonnées (x, y). »
-    5. Remplacez l'ancien code de positionnement par un appel à la fonction `positionner()`
+    5. Remplacez l'ancien code de positionnement des fonctions `#!python mur()` et `#!python toit()` par un appel à la fonction `positionner()`
     6. Exécutez le fichier `paysage.py` et vérifiez que le déplacement de la tortue n'ait pas changé
 
 ??? success "Solution"
+    
+    
 
-    La correction ci-dessous ne comporte que le strict nécessaire. **Ne supprimez pas** les docstrings des fonctions ou le code manquant !
+    === "Avant"
 
-    ```python
-    import turtle
-    import aide
+        ```python
+        import turtle
+        import aide
 
-    def positionner(x, y):
-        """
-        Positionne la tortue aux coordonnées (x, y).
-        """
-        turtle.pu()
-        turtle.goto(x, y)
-        turtle.pd()
+        def mur(x, y, largeur, hauteur):
+            turtle.pu()
+            turtle.goto(x, y)
+            turtle.pd()
+         
+        def toit(x, y, base, hauteur):
+            turtle.pu()
+            turtle.goto(x, y)
+            turtle.pd()
+        ```
 
-    def mur(x, y, largeur, hauteur):
-        positionner(x, y)
-     
-    def toit(x, y, base, hauteur):
-        positionner(x, y)
-    ```
+    === "Après"
+
+        La correction ci-dessous ne comporte que les modifications.
+        **Ne supprimez pas les docstrings des fonctions `#!python mur()` et `#!python toit()` ni le reste du code du fichier !**
+
+        ```python
+        import turtle
+        import aide
+    
+        def positionner(x, y):
+            """
+            Positionne la tortue aux coordonnées (x, y).
+            """
+            turtle.pu()
+            turtle.goto(x, y)
+            turtle.pd()
+    
+        def mur(x, y, largeur, hauteur):
+            positionner(x, y)
+         
+        def toit(x, y, base, hauteur):
+            positionner(x, y)
+        ```
 
 ### Tracé d'un mur
 
@@ -199,10 +214,18 @@ Vous devrez donc calculer les coordonnées de chaque point du rectangle formant 
 
 ??? success "Solution"
 
-    La solution ci-dessous ne comporte que le strict nécessaire. **Ne supprimez pas** les docstrings des fonctions ou le code manquant !
+    **Ne faites pas de copier/coller, comprenez le fonctionnement, fermez la solution et codez par vous-même**
 
     ```python
     def mur(x, y, largeur, hauteur):
+        """
+        Dessine le mur d'une maison.
+    
+        x       -- position x du coin inférieur gauche du mur
+        y       -- position y du coin inférieur gauche du mur
+        largeur -- largeur du mur
+        hauteur -- hauteur du mur
+        """
         positionner(x, y)                     # Positionnement de la tortue au point A
         turtle.goto(x, y + hauteur)           # Tracé du segment AB
         turtle.goto(x + largeur, y + hauteur) # Tracé du segment BC
