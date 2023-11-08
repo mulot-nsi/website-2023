@@ -275,8 +275,7 @@ utilisant les fonctions `mur` et `toit`.
     1. Ouvrez le fichier `paysage.py`
     2. Modifiez **uniquement** le corps de la fonction `maison` pour effectuer le tracé. 
        Celui-ci devra se faire en appelant les fonctions `toit` et `mur` avec des arguments en accord avec la description des dimensions de la maison indiquées dans la *docstring*
-    3. N'oubliez pas de supprimer l'instruction `#!python pass`
-    4. Exécutez le fichier `paysage.py` pour vérifier le tracé
+    3. Exécutez le fichier `paysage.py` pour vérifier le tracé
 
 ??? success "Affichage attendu"
 
@@ -287,7 +286,6 @@ utilisant les fonctions `mur` et `toit`.
 ??? success "Solution"
 
     La solution ci-dessous ne comporte que le strict nécessaire. **Ne supprimez pas** les docstrings des fonctions ou le code manquant !
-    N'oubliez pas de supprimer l'instruction `#!python pass` qui n'est plus nécessaire maintenant que vous avez ajouté du code au corps de la fonction.
 
     ```python
     def maison(x, y):
@@ -406,8 +404,7 @@ Vous êtes libre de leur positionnement. Pour vérifier le tracé, vous exécute
 
     1. Ouvrez le fichier `paysage.py`
     2. Modifiez **uniquement** le corps de la fonction `dessiner_paysage` pour effectuer le tracé
-    3. N'oubliez pas de supprimer l'instruction `#!python pass`
-    4. Exécutez le fichier `main.py` pour vérifier le tracé
+    3. Exécutez le fichier `main.py` pour vérifier le tracé
 
 ## Évolutions
 
