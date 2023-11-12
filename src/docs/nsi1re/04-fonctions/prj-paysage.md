@@ -51,7 +51,7 @@ def maison(x, y, nb_etages, nb_fenetres):
     """
 ```
 
-Voici un exemple de paysage construit à partir de plusieurs appels d'une fonction de tracé d'une habitation à deux paramètres :
+Voici un exemple de paysage construit à partir de plusieurs appels d'une fonction de tracé d'une habitation à **deux paramètres** tracé :
 
 ```python
 def dessiner_paysage():
@@ -95,7 +95,7 @@ turtle.done()            # Boucle des événements
 - Qualité des algorithmes
 - Qualité du découpage en fonctions
 - Présence de commentaires
-- DocStrings pour chaque fonction
+- *Docstring* pour chaque fonction
 - Bonus artistique (si tous les points relatifs à la programmation sont respectés)
 
 !!! info Conseil
