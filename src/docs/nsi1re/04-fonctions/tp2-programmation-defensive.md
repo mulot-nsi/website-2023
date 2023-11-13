@@ -7,8 +7,10 @@ description: Introduction à la programmation défensive
 
 ## Introduction
 
-En programmation est sujette à l'erreur et nécessite de tester régulièrement son code.
-Il existe des methodes pour automatiser ces tests et ainsi rendre son code plus fiable
+La programmation est une activité sujette aux erreurs.
+Pour y remédier, il est nécessaire de tester régulièrement son code.
+Ces précautions peuvent cependant rapidement devenir fastidieuses.
+Il existe heureusement des techniques permettant d'automatiser ces tests et ainsi rendre les programmes plus fiables.
 
 !!! target "Objectifs"
 
