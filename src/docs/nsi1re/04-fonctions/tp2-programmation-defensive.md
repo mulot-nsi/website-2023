@@ -87,7 +87,7 @@ Vous allez maintenant implémenter la fonction `salutation` en ne prenant en com
 pour le moment. L'anglais sera pris en charge dans un second temps.
 
 Vous effectuerez l'ensemble de vos tests **uniquement** depuis la console Python.
-Le fichier `ex1_salutation.py` ne contiendra donc que la définition de la fonction `salutation` et rien d'autre.
+Le fichier `salutation.py` ne contiendra donc que la définition de la fonction `salutation` et rien d'autre.
 
 !!! note "Instructions"
 
