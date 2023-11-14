@@ -67,9 +67,9 @@ Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 Le fichier `index.html` correspond à la page web à mettre en forme.
 L'ensemble des règles de mise en forme CSS sont écrites dans le fichier `style.css`.
 Ce fichier est une **feuille de style**. Celle-ci est dite «&nbsp;externe&nbsp;» car les règles de mise en forme sont
-définies à l'extérieur de la page web.
+définies à l'extérieur de la page web `index.html`.
 
-!!! info "Culture numérique"
+??? info "Culture numérique"
 
     Pour définir la mise en forme des éléments d'une page web, il existe plusieurs méthodes :
 
@@ -93,7 +93,7 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
     4. Lancez l'application **Bloc-notes**
     5. Ouvrez le fichier `index.html` <span class="shortcut">++ctrl+o++</span>
     6. Cherchez le couple de balises `#!html <head> ... </head>`
-    7. Insérez le code HTML ci-dessous n'importe où entre les balises `#!html <head> ... </head>` : 
+    7. Insérez le code HTML ci-dessous n'importe où **entre** les balises `#!html <head> ... </head>` : 
        ``` html
        <link href="style.css" rel="stylesheet">
        ```
@@ -147,7 +147,7 @@ langage CSS.
     - Un **ensemble de règles** entre accolades `{ }`. Les règles permettent d'ajuster les **valeurs** des **propriétés** de mise en forme
 
     <figure markdown>
-        ![selecteur_type](images/css_selecteur_type.png)
+        ![selecteur_type](images/css_selecteur_type.svg)
         <figcaption>Exemple de déclaration CSS ciblant la balise </em><code>body</code></figcaption>
     </figure>
 
@@ -156,8 +156,6 @@ langage CSS.
 
 Vous allez maintenant déclarer un style CSS dont le sélecteur va cibler la balise `<h1>` de la page web.
 Celle-ci est utilisée pour structurer le titre principal de la page (*« Intouchable »*).
-
-<span style="color:red">**Mettre un visuel**</span>
 
 !!! note "Création d'un style"
 
@@ -204,8 +202,8 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
     Ce sélecteur permet de cibler toutes les balises dont l'attribut `class` a pour valeur `logo`.
 
     <figure markdown>
-        ![selecteur_type](images/css_selecteur_classe.png)
-        <figcaption>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>special</code></figcaption>
+        ![selecteur_type](images/css_selecteur_classe.svg)
+        <figcaption>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>logo</code></figcaption>
     </figure>
 
 !!! note "Application du sélecteur"
