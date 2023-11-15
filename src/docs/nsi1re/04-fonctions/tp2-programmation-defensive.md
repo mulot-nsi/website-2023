@@ -84,9 +84,12 @@ Si le code de la langue n'est pas reconnu, le formule anglaise sera renvoyée pa
 ### Implémentation initiale
 
 Vous allez maintenant implémenter la fonction `salutation` en ne prenant en compte que les langues `fr` et `es`
-pour le moment. L'anglais sera pris en charge dans un second temps.
+pour le moment. Il est donc question d'une fonction qui renvoie `'Salut'` si appelée avec l'argument `fr` 
+et `'Hola'` si appelée avec l'argument `es`. 
 
-Vous effectuerez l'ensemble de vos tests **uniquement** depuis la console Python.
+L'anglais et la valeur par défaut seront pris en charge **dans un second temps**.
+
+Vous testerez cette fonction **uniquement depuis la console Python**.
 Le fichier `salutation.py` ne contiendra donc que la définition de la fonction `salutation` et rien d'autre.
 
 !!! note "Instructions"
@@ -98,7 +101,7 @@ Le fichier `salutation.py` ne contiendra donc que la définition de la fonction 
 
 ??? success "Résultat attendu"
 
-    Voici ce que vous devriez obtenir dans la console Python :
+    Voici ce que vous devriez obtenir dans la console Python après y avoir manuellement appelé la fonction :
     
     === ":material-console: Console"
 
@@ -148,8 +151,9 @@ def salutation(langue):
 
 !!! note "Instructions"
 
-    1. Ajoutez le jeu de tests à la *doctring* de la fonction `salutation`
-    2. Ajoutez en fin de fichier le code ci-dessous d'import du module `doctest` et d'exécution des tests :
+    1. **Ajoutez** le jeu de tests à la *doctring* de la fonction `salutation`
+    2. Ajoutez  le code ci-dessous d'import du module `doctest` et d'exécution des tests en fin de fichier :<br>
+       *(Attention à l'indentation, ce code doit être en dehors du corps de la fonction `salutation`)*
         ```python
         if __name__ == "__main__":
             import doctest
@@ -200,7 +204,7 @@ Pour cela, vous devrez implémenter une nouvelle fonction, en écrire la documen
 
 !!! note "Consigne"
 
-    Écrire la fonction `initiales` prenant en paramètre un prénom et un nom et renvoyant les initiales en majuscule.
+    Écrire la fonction `initiales` ayant pour paramètres `prenom` et un `nom` et renvoyant les initiales en majuscule.
     On ne prendra en compte que la première lettre du prénom et du nom même s'il s'agit d'un prénom composé ou de 
     plusieurs noms. Voici un exemple d'appel de la fonction depuis la console Python :
 
@@ -209,11 +213,12 @@ Pour cela, vous devrez implémenter une nouvelle fonction, en écrire la documen
     'GH'
     ```
 
-    1. Implémenter la fonction `initiales`
-    2. Écrire la documentation *docstring*
-    3. Écrire des tests pertinents au format *doctest*
+    1. Créer un nouveau programme et l'enregistrer dans `NSI\chapitre_04\tp2\initiales.py`
+    2. Implémenter la fonction `initiales`
+    3. Écrire la documentation *docstring*
+    4. Écrire des tests pertinents au format *doctest*
     4. Ajouter le code d'exécution du jeu de tests
-    5. Enregistrer le programme dans le fichier `NSI\chapitre_04\tp2\initiales.py`
+    5. Enregistrer le programme
     6. Vérifiez que les tests fonctionnent
 
 ??? tip "Aide - Récupérer le premier caractère d'une chaîne"
@@ -306,7 +311,7 @@ def multiplication(x, y):
         >>> multiplication(2, 1.1)
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
-          File "ex3_multiplication.py", line 15, in multiplication
+          File "multiplication.py", line 15, in multiplication
             for _ in range(y):
         TypeError: 'float' object cannot be interpreted as an integer
         ```
@@ -376,7 +381,7 @@ def multiplication(x, y):
         >>> multiplication(2, -2)
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
-          File "ex3_multiplication.py", line 17, in multiplication
+          File "multiplication.py", line 17, in multiplication
             assert y >= 0
         AssertionError
         ```
@@ -385,7 +390,7 @@ def multiplication(x, y):
         >>> multiplication(-2, 2)
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
-          File "ex3_multiplication.py", line 15, in multiplication
+          File "multiplication.py", line 15, in multiplication
             assert x >= 0
         AssertionError
         ```
@@ -394,7 +399,7 @@ def multiplication(x, y):
         >>> multiplication(1.1, 2)
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
-          File "ex3_multiplication.py", line 14, in multiplication
+          File "multiplication.py", line 14, in multiplication
             assert isinstance(x, int)
         AssertionError
         ```
@@ -403,7 +408,7 @@ def multiplication(x, y):
         >>> multiplication(2, 1.1)
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
-          File "ex3_multiplication.py", line 16, in multiplication
+          File "multiplication.py", line 16, in multiplication
             assert isinstance(y, int)
         AssertionError
         ```
@@ -418,7 +423,7 @@ Selon le même principe que l'exercice 3, écrire la fonction `puissance` ayant 
 positifs ou nuls.
 Cette fonction renvoie la valeur de `x` élevé à la puissance `y`. Utiliser uniquement l'opérateur `*` et une boucle.
 
-- Enregistrer le code dans un fichier fichier `ex4_puissance.py`
+- Enregistrer le code dans un fichier fichier `puissance.py`
 - Écrire la documentation docstring (description de la fonction et des paramètres)
 - Écrire l'algorithme dans la doctring
 - Écrire les tests que vous jugerez pertinents au format doctest
