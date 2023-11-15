@@ -91,8 +91,10 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
 !!! note "Association d'une feuille de style à la page web"
 
     4. Lancez l'application **Bloc-notes**
-    5. Ouvrez le fichier `index.html` <span class="shortcut">++ctrl+o++</span>
-    6. Cherchez le couple de balises `#!html <head> ... </head>`
+    5. Ouvrez le fichier `index.html`<br>
+       *(Dans la fenêtre d'ouverture, bien choisir « Tous les fichiers (\*.\*) » au lieu de « Fichiers textes (\*.txt) » pour le voir)*
+
+    6. Cherchez le couple de balises `#!html <head> ... </head>` en début de fichier
     7. Insérez le code HTML ci-dessous n'importe où **entre** les balises `#!html <head> ... </head>` : 
        ``` html
        <link href="style.css" rel="stylesheet">
@@ -138,6 +140,7 @@ langage CSS.
         padding: 20px;
     }
     ```
+    4. Lisez **attentivement** les notions de cours sur le langage CSS ci-après
 
 !!! tip "Cours - Le langage CSS"
 
@@ -161,7 +164,8 @@ Celle-ci est utilisée pour structurer le titre principal de la page (*« Intouc
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. Ajoutez la déclaration CSS ci-dessous à la fin de ce fichier<br>*(les espacements et les sauts de ligne n'ont pas d'importance)* :
+    3. **Ajoutez** la déclaration CSS ci-dessous à la fin du fichier `style.css`<br>
+       *(les espacements et les sauts de ligne n'ont pas d'importance)* :
 
     ```css
     h1 {
@@ -184,7 +188,7 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. Recherchez la déclaration CSS ayant pour sélecteur `.logo` :
+    3. Recherchez et observez simplement la déclaration CSS ayant pour sélecteur `.logo` :
 
     ```css
     .logo {
@@ -193,6 +197,7 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
         justify-content: center;
     }
     ```
+    4. Lisez **attentivement** les notions de cours sur le sélecteur de classe ci-après
 
 !!! tip "Cours - Le sélecteur de classe"
 
@@ -210,11 +215,11 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `index.html`
-    3. Recherchez la ligne suivante :
+    3. Retrouvez la ligne suivante dans le fichier `index.html`:
     ```html
     <a href="https://www.imdb.com/video/vi59285529">PMDb</a>
     ```
-    4. Modifiez la balise `#!html <a>` en lui ajoutant l'attribut `#!html class="logo"` comme ceci :
+    4. **Modifiez** la balise `#!html <a>` en lui ajoutant l'attribut `#!html class="logo"` comme ceci :
     ```html
     <a class="logo" href="https://www.imdb.com/video/vi59285529">PMDb</a>
     ```
@@ -222,6 +227,7 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
     6. Retournez dans le navigateur web
     7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
        *(des changements doivent être observables)*
+    8. Lisez attentivement le bilan ci-après et assurez-vous d'avoir bien compris
 
 !!! info "Bilan"
 
@@ -253,10 +259,10 @@ permettent d'obtenir facilement ce code.
     | `background-color` | Couleur d'arrière-plan d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"} |
     | `color`            | Couleur du texte d'un élément       | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}            |
 
-!!! example "Exemple"
+??? example "Exemple"
 
-    Voici une déclaration CSS permettant de modifier la **couleur de fond** et la **couleur du texte** du
-    contenu de la balise `body` (donc de tout le document HTML).
+    Voici un exempple de déclaration CSS permettant de modifier à la fois la **couleur de fond** et la **couleur du texte**
+    du contenu de la balise `body` (donc de tout le document HTML).
 
     ```css
     body {
@@ -273,10 +279,10 @@ permettent d'obtenir facilement ce code.
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. Modifiez la déclaration CSS ciblant la balise `body` de façon à modifier **uniquement la couleur d'arrière-plan**
-       de la page web *(inspirez-vous de l'exemple d'utilisation)*
-    4. Ajoutez une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
-       sous-titre *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
+    3. **Modifiez** la déclaration CSS ciblant la balise `body` de façon à modifier **uniquement la couleur d'arrière-plan**
+       de la page web. La couleur du texte ne doit pas changer<br> *(inspirez-vous de l'exemple d'utilisation)*
+    4. **Ajoutez** une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
+       sous-titre<br> *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
     5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     6. Retournez dans le navigateur web
     7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
@@ -293,9 +299,9 @@ Les propriétés CSS `font-size` et `text-decoration` permettent respectivement 
     | `font-size`       | Taille du texte d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
     | `text-decoration` | Soulignement d'un élément    | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
 
-!!! example "Exemple"
+??? example "Exemple"
 
-    Voici une déclaration CSS permettant de grossir et souligner le texte de toute balise de classe `super`,
+    Voici un exemple de déclaration CSS permettant de grossir et souligner le texte de toute balise de classe `super`,
     c'est-à-dire ayant l'attribut `class="super"` :
     
     ```css
@@ -309,8 +315,8 @@ Les propriétés CSS `font-size` et `text-decoration` permettent respectivement 
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. Modifiez la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
-    4. Modifiez la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
+    3. **Modifiez** la déclaration CSS ciblant la balise `h1` de façon à grossir la **taille du texte** du titre principal
+    4. **Modifiez** la déclaration CSS ciblant la balise `h2` de façon à **souligner** les sous-titres
     5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     6. Retournez dans le navigateur web
     7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
@@ -326,7 +332,7 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
     | `width`   | Largeur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}  |
     | `height`  | Hauteur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height){:target="_blank"} |
 
-!!! example "Exemple"
+??? example "Exemple"
 
     Voici une déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10 pixels de large:
     
