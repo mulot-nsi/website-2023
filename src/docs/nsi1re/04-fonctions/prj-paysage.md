@@ -91,11 +91,10 @@ turtle.done()            # Boucle des événements
 
 - Envoi du projet dans les temps
 - Respect des contraintes
-- Qualité du code
-- Qualité des algorithmes
 - Qualité du découpage en fonctions
-- Présence de commentaires
-- *Docstring* pour chaque fonction
+- Caractère aléatoire du paysage
+- Qualité du code et des algorithmes
+- Présence de commentaires et *Docstring* pour chaque fonction
 - Bonus artistique (si tous les points relatifs à la programmation sont respectés)
 
 !!! info Conseil
