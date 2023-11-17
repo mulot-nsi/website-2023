@@ -37,9 +37,10 @@ travaux pratiques.
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
            <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
         2. Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
-        3. Dans le dossier `OneDrive`, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        4. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
-        5. Dans le dossier `web`, créez le dossier `langage_css`
+        4. Si une fenêtre de demande de connexion s'ouvre, **acceptez**
+        5. Dans le dossier <i class="icon onedrive"></i> **OneDrive**, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        6. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        7. Dans le dossier `web`, créez le dossier `langage_css`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
@@ -86,12 +87,12 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
        <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
     2. Placez-vous dans le dossier `SNT\web\langage_css`
     3. Double-cliquez sur le fichier `index.html` afin de l'ouvrir dans un navigateur web
-    4. Gardez le navigateur ouvert
+    4. **Gardez le navigateur ouvert**
 
 !!! note "Association d'une feuille de style à la page web"
 
     4. Lancez l'application **Bloc-notes**
-    5. Ouvrez le fichier `index.html`<br>
+    5. Depuis le Bloc-notes, Ouvrez le fichier `index.html`<br>
        *(Dans la fenêtre d'ouverture, bien choisir « Tous les fichiers (\*.\*) » au lieu de « Fichiers textes (\*.txt) » pour le voir)*
 
     6. Cherchez le couple de balises `#!html <head> ... </head>` en début de fichier
@@ -108,8 +109,9 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
        </head>
        ```
     9. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
-    10. Retournez dans le navigateur web
-    11. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
+    10. **Ne fermez pas l'application Bloc-notes**, vous allez encore beaucoup l'utiliser
+    11. Retournez dans le navigateur web
+    12. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
         *(des changements doivent être observables)*
 
 !!! tip "Cours - La feuille de style"
@@ -346,19 +348,18 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. **Ajoutez** une déclaration CSS permettant de fixer la largeur `width` de tout élément de classe `affiche`
-       à 150 pixels de large.
+    3. **Ajoutez** la classe CSS `.affiche` permettant de fixer la largeur `width` de tout élément à 150 pixels de large.
     4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     5. Toujours depuis l'application Bloc-notes, consultez le fichier `index.html`
     6. Recherchez la seule balise `<img>` présente dans la page<br>
        *(celle-ci correspond à l'élément image de l'affiche du film)*
     7. Modifiez la balise `<img>` pour lui ajouter la classe `affiche`<br>
-      *(revoir la section « [Sélecteur de classe](#selecteur-de-classe) » si vous avez des difficultés)*
+      *(revoir la section « [Sélecteur de classe](#selecteur-de-classe) » si vous avez des difficultés ou voir la solution juste après)*
     8. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     9. Retournez dans le navigateur web
     10. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
 
-??? success "Solution"
+!!! success "Solution"
 
     === ":material-file-outline: `style.css`"
         
