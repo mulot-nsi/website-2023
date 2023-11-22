@@ -34,13 +34,19 @@ travaux pratiques.
 
     === ":material-laptop: Ordinateur portable"
 
-        1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
-           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
-        2. Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
-        4. Si une fenêtre de demande de connexion s'ouvre, **acceptez**
-        5. Dans le dossier <i class="icon onedrive"></i> **OneDrive**, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        6. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
-        7. Dans le dossier `web`, créez le dossier `langage_css`
+        <h5>Étape 1 - Activation de la sauvegarde sur le cloud OneDrive</h5>
+        
+        1. Connectez-vous en cliquant sur le nuage situé en bas à droite à proximité de l'heure
+        2. Acceptez d'utiliser votre adresse **@monlycee.net**
+        3. Acceptez la synchronisation automatique des dossiers de votre ordinateur
+        4. Une fois la connection réussie, le nuage doit devenir bleu <i class="icon onedrive"></i> 
+
+        <h5>Étape 2 - Créaction des dossiers</h5>
+
+        1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
+        2. Dans le dossier `Document`, s'il n'y a pas de dossier nommé `SNT`, créez-le
+        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
+        4. Dans le dossier `web`, créez le dossier `langage_css`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
@@ -91,12 +97,16 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
 
 !!! note "Association d'une feuille de style à la page web"
 
-    4. Lancez l'application **Bloc-notes**
-    5. Depuis le Bloc-notes, Ouvrez le fichier `index.html`<br>
-       *(Dans la fenêtre d'ouverture, bien choisir « Tous les fichiers (\*.\*) » au lieu de « Fichiers textes (\*.txt) » pour le voir)*
+    <h5>Étape 1 - Ouverture du fichier `index.html`</h5>
 
-    6. Cherchez le couple de balises `#!html <head> ... </head>` en début de fichier
-    7. Insérez le code HTML ci-dessous n'importe où **entre** les balises `#!html <head> ... </head>` : 
+    1. Lancez l'application **Bloc-notes**
+    2. Depuis le Bloc-notes, ouvrez le fichier `index.html`<br>
+       :material-alert: Lors de la sélection du fichier, bien choisir **Tous les fichiers (\*.\*)** au lieu de **Fichiers texte (\*.txt)**  pour le voir
+
+    <h5>Étape 2 - Association d'une feuille de style</h5>
+
+    1. Cherchez le couple de balises `#!html <head> ... </head>` en début de fichier
+    2. Insérez le code HTML ci-dessous n'importe où **entre** les balises `#!html <head> ... </head>` : 
        ``` html
        <link href="style.css" rel="stylesheet">
        ```
@@ -108,10 +118,13 @@ Vous allez maintenant procéder à l'association d'une feuille de style à une p
            <link href="style.css" rel="stylesheet">
        </head>
        ```
-    9. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
-    10. **Ne fermez pas l'application Bloc-notes**, vous allez encore beaucoup l'utiliser
-    11. Retournez dans le navigateur web
-    12. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
+    3. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    4. **Ne fermez pas l'application Bloc-notes**, vous allez encore beaucoup l'utiliser
+
+    <h5>Étape 3 - Visualisation du résultat</h5>
+
+    1. Retournez dans le navigateur web
+    2. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
         *(des changements doivent être observables)*
 
 !!! tip "Cours - La feuille de style"
@@ -159,16 +172,24 @@ langage CSS.
     Dans le cas ci-dessus, il est question du **sélecteur** `body`.
     Il s'agit d'un **sélecteur de type**, c'est-à-dire qu'il permet de cibler la balise de type `<body>` qui se verra alors appliquer l'ensemble des règles définies (marge à 0 et couleur de fond à violet).
 
+??? example "Expérimentation"
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="vYbjZGb" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/mulot-nsi/pen/vYbjZGb">
+      Untitled</a> by Mulot NSI (<a href="https://codepen.io/mulot-nsi">@mulot-nsi</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
 Vous allez maintenant déclarer un style CSS dont le sélecteur va cibler la balise `<h1>` de la page web.
 Celle-ci est utilisée pour structurer le titre principal de la page (*« Intouchable »*).
 
-!!! note "Création d'un style"
+!!! note "Déclaration d'un nouveau style"
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
     3. **Ajoutez** la déclaration CSS ci-dessous à la fin du fichier `style.css`<br>
        *(les espacements et les sauts de ligne n'ont pas d'importance)* :
-
     ```css
     h1 {
         color: red;
@@ -178,7 +199,7 @@ Celle-ci est utilisée pour structurer le titre principal de la page (*« Intouc
     4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
     5. Retournez dans le navigateur web
     6. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
-       *(des changements doivent être observables)*
+       *(le titre du film en haut de la page doit changer de couleur)*
 
 ### Sélecteur de classe
 
@@ -186,11 +207,11 @@ Avec le sélecteur de type, il n'est pas possible de choisir précisément l'él
 un style.
 Pour résoudre ce problème, il existe un autre genre de sélecteur.
 
-!!! note "Mise en pratique"
+!!! note "Observation"
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
-    3. Recherchez et observez simplement la déclaration CSS ayant pour sélecteur `.logo` :
+    3. Recherchez et **observez simplement** la déclaration CSS ayant pour sélecteur `.logo` :
 
     ```css
     .logo {
@@ -206,14 +227,23 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
     Le sélecteur `.logo` ne correspond à aucune balise HTML. 
     Vous observerez que son nom est précédé d'un **point**.
     Cela signifie qu'il s'agit d'un **sélecteur de classe**.
-    Ce sélecteur permet de cibler toutes les balises dont l'attribut `class` a pour valeur `logo`.
+    Ce sélecteur permet de cibler tout élément dont la balise dispose l'attribut `class` avec pour valeur `logo`.
 
     <figure markdown>
         ![selecteur_type](images/css_selecteur_classe.svg)
         <figcaption>Exemple de déclaration CSS ciblant les balises disposant de la classe </em><code>logo</code></figcaption>
     </figure>
 
-!!! note "Application du sélecteur"
+??? example "Expérimentation"
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="yLZjXaM" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/mulot-nsi/pen/yLZjXaM">
+      Sélecteurs de type</a> by Mulot NSI (<a href="https://codepen.io/mulot-nsi">@mulot-nsi</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+!!! note "Utilisation d'une classe pour appliquer un style à un élément"
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `index.html`
@@ -229,7 +259,7 @@ Pour résoudre ce problème, il existe un autre genre de sélecteur.
     6. Retournez dans le navigateur web
     7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span><br> 
        *(des changements doivent être observables)*
-    8. Lisez attentivement le bilan ci-après et assurez-vous d'avoir bien compris
+    8. Lisez attentivement le bilan ci-après et **assurez-vous d'avoir bien compris**
 
 !!! info "Bilan"
 
@@ -256,10 +286,10 @@ permettent d'obtenir facilement ce code.
 
 !!! info "Propriétés CSS"
 
-    | Propriété          | Description                         | Référence                                                                                                   |
-    |--------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------|
-    | `background-color` | Couleur d'arrière-plan d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"} |
-    | `color`            | Couleur du texte d'un élément       | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}            |
+    | Propriété          | Description                         | Documentation                                                                                                            |
+    |--------------------|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+    | `background-color` | Couleur d'arrière-plan d'un élément | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-color){:target="_blank"} |
+    | `color`            | Couleur du texte d'un élément       | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/color){:target="_blank"}            |
 
 ??? example "Exemple"
 
@@ -268,26 +298,25 @@ permettent d'obtenir facilement ce code.
 
     ```css
     body {
-        background-color: yellow; /* couleur de fond jaune  */
-        color: #ffba00;           /* couleur du texte jaune */
+        background-color: yellow; 
+        color: #00ffff;
     }
     ```
 
-    Observez les textes entre `/* */`. Il s'agit de commentaires. 
-    Les commentaires sont à destination des humains, ils ne sont pas pris en compte par la machine et n'ont aucun
-    impact sur la mise en forme.
+!!! note "Modification de la couleur de la page"
 
-!!! note "Mise en pratique"
+    1. Retournez au fichier `style.css` depuis le **Bloc-notes**
+    2. **Retrouvez** la déclaration CSS ciblant la balise `body` 
+    3. Changez la couleur d'arrère plan en attributant la couleur de votre choix à la propriété `background-color`
+    3. Enregistrez vos modifications et visualisez le résultat *(la couleur de toute la page doit changer)*
 
-    1. Retournez à l'application **Bloc-notes**
-    2. Consultez le fichier `style.css`
-    3. **Modifiez** la déclaration CSS ciblant la balise `body` de façon à modifier **uniquement la couleur d'arrière-plan**
-       de la page web. La couleur du texte ne doit pas changer<br> *(inspirez-vous de l'exemple d'utilisation)*
-    4. **Ajoutez** une nouvelle déclaration CSS ciblant la balise `h2` de façon à modifier la **couleur du texte** de chaque
-       sous-titre<br> *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
-    5. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
-    6. Retournez dans le navigateur web
-    7. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
+!!! note "Modification de la couleur des sous-titres"
+
+    1. Retournez au fichier `style.css` depuis le **Bloc-notes** 
+    2. **Ajoutez une nouvelle déclaration CSS** ciblant la balise `h2`
+    3. Changez la couleur du texte en ajoutant à cette déclaration la propriété `color` et une valeur de couleur <br>
+       *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
+    4. Enregistrez vos modifications et visualisez le résultat *(la couleur des sous-titres doit changer)*
 
 ### Gestion du texte
 
@@ -296,10 +325,10 @@ Les propriétés CSS `font-size` et `text-decoration` permettent respectivement 
 
 !!! info "Propriétés CSS"
 
-    | Propriété         | Description                  | Référence                                                                                                  |
-    |-------------------|------------------------------|------------------------------------------------------------------------------------------------------------|
-    | `font-size`       | Taille du texte d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
-    | `text-decoration` | Soulignement d'un élément    | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
+    | Propriété         | Description                  | Documentation                                                                                                           |
+    |-------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+    | `font-size`       | Taille du texte d'un élément | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/font-size){:target="_blank"}       |
+    | `text-decoration` | Soulignement d'un élément    | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-decoration){:target="_blank"} |
 
 ??? example "Exemple"
 
@@ -308,12 +337,12 @@ Les propriétés CSS `font-size` et `text-decoration` permettent respectivement 
     
     ```css
     .super {
-        font-size: 150px;           /* taille en pixels */
-        text-decoration: underline; /* soulignement */
+        font-size: 150px;
+        text-decoration: underline;
     }
     ```
 
-!!! note "Mise en pratique"
+!!! note "Modification de la taille du titre et soulignement des sous-titres"
 
     1. Retournez à l'application **Bloc-notes**
     2. Consultez le fichier `style.css`
@@ -329,35 +358,40 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
 
 !!! info "Propriétés CSS"
 
-    | Propriété | Description          | Référence                                                                                         |
-    |-----------|----------------------|---------------------------------------------------------------------------------------------------|
-    | `width`   | Largeur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}  |
-    | `height`  | Hauteur d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height){:target="_blank"} |
+    | Propriété | Description          | Documentation                                                                                                  |
+    |-----------|----------------------|----------------------------------------------------------------------------------------------------------------|
+    | `width`   | Largeur d'un élément | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/width){:target="_blank"}  |
+    | `height`  | Hauteur d'un élément | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/height){:target="_blank"} |
 
 ??? example "Exemple"
 
-    Voici une déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 10 pixels de large:
+    Voici une déclaration CSS permettant de fixer la largeur de tout élément de classe `icone` à 50 pixels de large:
     
     ```css
     .icone {
-        width: 10px; /* largeur de l'élément en pixels */
+        width: 50px;
     }
     ```
 
-!!! note "Mise en pratique"
+!!! note "Modification de la taille de l'affiche"
 
-    1. Retournez à l'application **Bloc-notes**
-    2. Consultez le fichier `style.css`
-    3. **Ajoutez** la classe CSS `.affiche` permettant de fixer la largeur `width` de tout élément à 150 pixels de large.
+    <h5>Étape 1 - Création du style</h5>
+
+    1. Consultez le fichier `style.css` depuis l'application **Bloc-notes**
+    3. **Ajoutez** une déclaration CSS ayant pour sélecteur `.petite-image`
+    4. Ajoutez à cette déclaration la propriété `width: 150px;` qui fixe la largeur de l'élément à 150 pixels.
     4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
-    5. Toujours depuis l'application Bloc-notes, consultez le fichier `index.html`
-    6. Recherchez la seule balise `<img>` présente dans la page<br>
+
+    <h5>Étape 2 - Application du style</h5>
+
+    1. Consultez le fichier `index.html` depuis l'application **Bloc-notes**
+    2. Recherchez la seule balise `<img>` présente dans le code HTML<br>
        *(celle-ci correspond à l'élément image de l'affiche du film)*
-    7. Modifiez la balise `<img>` pour lui ajouter la classe `affiche`<br>
+    3. Modifiez la balise `<img>` en lui ajouter la classe `petite-image`<br>
       *(revoir la section « [Sélecteur de classe](#selecteur-de-classe) » si vous avez des difficultés ou voir la solution juste après)*
-    8. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
-    9. Retournez dans le navigateur web
-    10. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
+    4. Enregistrez vos modifications <span class="shortcut">++ctrl+s++</span>
+    5. Retournez dans le navigateur web
+    6. Actualisez la page `index.html` <span class="shortcut">++f5++ ou ++ctrl+r++</span>
 
 !!! success "Solution"
 
@@ -366,7 +400,7 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
         Déclaration à ajouter à la feuille de style :
 
         ```css
-        .affiche {
+        .petite-image {
             width: 150px;
         }
         ```
@@ -376,25 +410,8 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
         Modification à apporter à la balise `<img>` :
 
         ```html
-        <img class="affiche" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
+        <img class="petite-image" src="images/intouchable.jpg" alt="Affiche du film Intouchable"/>
         ```
-
-### Expérimentation
-
-Vous avez terminé et il reste plus de 5 minutes avant la fin de la séance ? Bravo !
-Il vous reste encore beaucoup à découvrir et d'autres propriétés peuvent se révéler intéressantes :
-
-| Propriété          | Description                       | Référence                                                                                                   |
-|--------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------|
-| `text-align`       | Alignement du texte               | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}       |
-| `border`           | Bordure autour d'un élément       | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/border){:target="_blank"}           |
-| `margin-bottom`    | Marge inférieure d'un élément     | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/margin-bottom){:target="_blank"}    |
-| `background-image` | Image d'arrière-plan d'un élément | [:material-link: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-image){:target="_blank"} |
-
-#### <PracticeTitle />
-
-Tester chacune de ces propriétés. Ne pas hésiter à s'inspirer des exemples interactifs présentés sur les pages de
-référence.
 
 ## Envoi du travail
 
@@ -409,7 +426,6 @@ au format ZIP. Suivez les instructions selon l'ordinateur utilisé :
 
         - Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
-        - Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
         - Accédez au dossier `SNT\web`
         - Effectuez un clic droit sur le dossier `langage_css` afin d'afficher son menu contextuel
         - Choisissez l'option :material-folder-zip-outline: **Compresser dans un fichier ZIP**
@@ -435,3 +451,26 @@ Une fois votre fichier ZIP créé, vous pouvez le déposer sur Pronote.
     5. Cliquez sur le bouton <span class="pronote-button">Déposer ma copie</span>
     6. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
     7. Déposez votre fichier ZIP
+
+## Expérimentation
+
+Vous avez terminé et il reste plus de 5 minutes avant la fin de la séance ? Bravo !
+Il vous reste encore beaucoup à découvrir et d'autres propriétés peuvent se révéler intéressantes :
+
+<figure markdown>
+| Propriété          | Description                       | Documentation                                                                                                            |
+|--------------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| `text-align`       | Alignement du texte               | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/text-align){:target="_blank"}       |
+| `border`           | Bordure autour d'un élément       | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/border){:target="_blank"}           |
+| `margin-bottom`    | Marge inférieure d'un élément     | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/margin-bottom){:target="_blank"}    |
+| `background-image` | Image d'arrière-plan d'un élément | [:material-book-open-variant: Mozilla](https://developer.mozilla.org/fr/docs/Web/CSS/background-image){:target="_blank"} |
+</figure>
+
+!!! example "Expérimentation"
+
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="rNPvwzp" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+      <span>See the Pen <a href="https://codepen.io/mulot-nsi/pen/rNPvwzp">
+      Sélecteurs de type</a> by Mulot NSI (<a href="https://codepen.io/mulot-nsi">@mulot-nsi</a>)
+      on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
