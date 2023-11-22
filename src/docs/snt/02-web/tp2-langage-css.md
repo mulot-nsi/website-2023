@@ -307,14 +307,14 @@ permettent d'obtenir facilement ce code.
 
     1. Retournez au fichier `style.css` depuis le **Bloc-notes**
     2. **Retrouvez** la déclaration CSS ciblant la balise `body` 
-    3. Changez la couleur d'arrère plan en attributant la couleur de votre choix à la propriété `background-color`
+    3. Changez la couleur d'arrière plan en attributant la couleur de votre choix à la propriété `background-color`
     3. Enregistrez vos modifications et visualisez le résultat *(la couleur de toute la page doit changer)*
 
 !!! note "Modification de la couleur des sous-titres"
 
     1. Retournez au fichier `style.css` depuis le **Bloc-notes** 
     2. **Ajoutez une nouvelle déclaration CSS** ciblant la balise `h2`
-    3. Changez la couleur du texte en ajoutant à cette déclaration la propriété `color` et une valeur de couleur <br>
+    3. Changez la couleur du texte en ajoutant à cette déclaration la propriété `color`<br>
        *(inspirez-vous de l'exemple d'utilisation ou de ce qui a été fait pour la balise `h1`)*
     4. Enregistrez vos modifications et visualisez le résultat *(la couleur des sous-titres doit changer)*
 
@@ -375,7 +375,7 @@ Les propriétés CSS `width` et `height` permettent d'ajuster respectivement la 
 
 !!! note "Modification de la taille de l'affiche"
 
-    <h5>Étape 1 - Création du style</h5>
+    <h5>Étape 1 - Définition du style</h5>
 
     1. Consultez le fichier `style.css` depuis l'application **Bloc-notes**
     3. **Ajoutez** une déclaration CSS ayant pour sélecteur `.petite-image`
