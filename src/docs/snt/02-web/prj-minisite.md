@@ -1,11 +1,11 @@
 ---
-title: Le Web - Projet - Mini-site zeb
-description: Création d'un mini-site web
+title: Le Web - Projet - Minisite web
+description: Création d'un minisite web
 ---
 
-# Projet mini-site web
+# Minisite web
 
-Ce projet a pour finalité la création d'un minisite Web. Il peut être réalisé seul ou en équipe (3 élèves maximum).
+Ce projet a pour finalité la création d'un minisite web. Il peut être réalisé seul ou en équipe (3 élèves maximum).
 Les contraintes techniques doivent être respectées et impliquent la présence de certaines balises.
 Le site doit disposer d'un nombre minimum de pages, variable selon la taille de l'équipe :
 
@@ -25,7 +25,8 @@ Pour en savoir plus sur les infractions potentielles, consultez la page
 
 ### Espace de travail
 
-Vous allez créer un dossier dédié à accueillir le projet de mini-site web.
+Vous allez créer les dossiers nécessaires à accueillir le projet de minisite.
+Notez que ceux-ci ont probablement tous été déjà créés dans le cadre des travaux pratiques.
 
 !!! note "Organisation de l'espace travail"
 
@@ -43,8 +44,8 @@ Vous allez créer un dossier dédié à accueillir le projet de mini-site web.
 
 ### Téléchargement des fichiers
 
-Votre site ne sera pas créé à partir de zéro. Un site d'amorçage est disponible en téléchargement.
-Il comporte une page d'accueil, une sous-page et quelques éléments mis en forme via une feuille de style CSS
+Votre minisite ne sera pas construit à partir de zéro. Une version d'amorçage est disponible en téléchargement.
+Il comporte une page d'accueil, une sous-page et quelques éléments mis en forme grâce à une feuille de style CSS
 indépendante.
 
 !!! note "Téléchargement du site d'amorçage"
@@ -54,19 +55,19 @@ indépendante.
     3. Sélectionnez le dossier `init`
     4. Copiez le dossier `init` <span class="shortcut">++ctrl+c++</span>
     5. Collez le dossier `init` dans le dossier `SNT\Web` <span class="shortcut">++ctrl+v++</span>
-    6. Renommez le dossier `SNT\Web\init` en « <em>nom</em>**_siteweb** » où *nom* correspond au nom de famille de chaque élève écrit en
+    6. Renommez le dossier `SNT\Web\init` en « <em>nom</em>**_minisite** » où *nom* correspond au nom de famille de chaque élève écrit en
       **minuscules**.<br>
-      Exemple : si le mini-site était réalisé par **Tim Berners-Lee** et **Robert Cailliau**, le dossier s'intitulerait `berners_lee_cailliau_siteweb`
+      Exemple : si le minisite était réalisé par **Tim Berners-Lee** et **Robert Cailliau**, le dossier s'intitulerait `berners_lee_cailliau_minisite`
 
 ### Fichiers d'amorce
 
-Les fichiers fournis pour créer votre mini-site web sont les suivants :
+Les fichiers fournis pour créer votre minisite sont les suivants :
 
-| Fichier             | Description                                |
-|:--------------------|:-------------------------------------------|
-| `index.html`        | contient le code HTML de la page d'accueil |
-| `style.css`         | contient le code CSS de mise en forme      |
-| `page-exemple.html` | contient le code HTML d'une sous-page      |
+| Fichier             | Description                                                              |
+|:--------------------|:-------------------------------------------------------------------------|
+| `index.html`        | contient le code HTML de la page d'accueil                               |
+| `style.css`         | contient le code CSS de mise en forme                                    |
+| `page-exemple.html` | contient le code HTML d'une sous-page. Il sera nécessaire de le renommer |
 
 ### Logiciels
 
@@ -80,27 +81,34 @@ instructions de téléchargement.
     1. Téléchargez [:material-download: Notepad++ v8.6 **version portable** (zip)](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6/npp.8.6.portable.x64.zip)
     2. Rendez-vous dans le dossier où le fichier téléchargé a été enregistré
     3. Faites un **clic-droit** sur celui-ci et choisir l'option **Extraire tout...**
-    4. Lancez l'application depuis le **dossier décompressé**
-    5. Passez l'application en français en allant dans **Settings** puis **Preferences...** et choisir *Français* au niveau du champ **Localization**
+    4. Supprimez le fichier ZIP
+    5. Lancez l'application depuis le **dossier décompressé**
+    6. Passez l'application en français en allant dans **Settings** puis **Preferences...** et choisir *Français* au niveau du champ **Localization**
 
 ## Développement
 
 ### Page d'accueil
 
-La page d'accueil de votre site correspond au fichier `index.html`.
+La page d'accueil de votre minisite correspond au fichier `index.html`.
 Vous êtes libre de la modifier entièrement. Elle devra cependant contenir au minimum les éléments suivants :
 
 !!! info "Balises obligatoires sur la page d'accueil"
 
     - Un titre de page (visible au niveau de l'onglet du navigateur et géré par la balise `#!html <title>`)
     - Un titre principal (balise `#!html <h1>`)
-    - Au moins un paragraphe de texte (balises `#!html <p>`)
+    - Au moins un paragraphe de texte (balise `#!html <p>`)
     - Un ou plusieurs liens vers d'autres pages de votre site (balise `#!html <a>`)
     - Un ou plusieurs liens vers des sites externes (balise `#!html <a>`)
-    - Au moins une image (balise `#!html <img>`).<br>
-      :material-alert: Attention, les images doivent être locales. Vous devez les télécharger et les placer dans le même dossier que votre page web pour l'utiliser.
+    - Au moins une image (balise `#!html <img>`)
     - Indiquer le nom de chaque des auteurs de la page via la métadonnée `author`<br>
       (balise `#!html <meta name="author" content="nom des auteurs">` située dans `#!html <head>`)
+
+!!! danger "Attention à la gestion des images"
+    
+    Les images doivent être locales. Vous devez les télécharger et les placer dans le même dossier que votre page web pour l'utiliser.
+    Vous devez les renommer pour passer leur nom de fichier en minuscules.
+    
+    Pour insérer une image sur une page web, il suffira simplement d'écrire le nom du fichier dans l'attribut `src` de la balise `#!html <img>`. 
 
 ### Sous-pages
 
@@ -160,19 +168,25 @@ au format ZIP. Suivez les instructions selon l'ordinateur utilisé :
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
         2. Accédez au dossier `SNT\web`
-        3. Effectuez un clic droit sur le dossier `xxx_website` afin d'afficher son menu contextuel
-        4. Choisissez l'option :material-folder-zip-outline: **Compresser dans un fichier ZIP**
-        5. Nommez votre fichier ZIP `prive.zip` si vous ne souhaitez pas que votre site soit mis en ligne, ou `public.zip` si 
-           vous souhaitez qu'il soit potentiellement mis en ligne    
+        3. Ajoutez le mot-clé **public** au dossier de votre minisite si vous souhaitez qu'il soit potentiellement mis en ligne.<br>
+           Exemple: `berners_lee_cailliau_minisite` deviendrait `berners_lee_cailliau_minisite_public` 
+        4. Effectuez un clic droit sur le dossier `xxx_minisite` afin d'afficher son menu contextuel
+        5. Choisissez l'option :material-folder-zip-outline: **Compresser dans un fichier ZIP**
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
         2. Depuis votre dossier personnel, accédez au dossier `SNT\web`
-        3. Effectuez un clic droit sur le dossier `xxx_website` afin d'afficher son menu contextuel
-        4. Choisissez l'option **Envoyer vers ▸ Dossier compressé**
-        5. Nommez votre fichier ZIP `prive.zip` si vous ne souhaitez pas que votre site soit mis en ligne, ou `public.zip` si 
-           vous souhaitez qu'il soit potentiellement mis en ligne
+        3. Ajoutez le mot-clé **public** au dossier de votre minisite si vous souhaitez qu'il soit potentiellement mis en ligne.<br>
+           Exemple: `berners_lee_cailliau_minisite` deviendrait `berners_lee_cailliau_minisite_public` 
+        4. Effectuez un clic droit sur le dossier `xxx_minisite` afin d'afficher son menu contextuel
+        5. Choisissez l'option **Envoyer vers ▸ Dossier compressé**
+
+!!! danger "Attention au poids du fichier ZIP"
+
+    Attention, votre fichier ZIP doit faire **4 Mo maximum** sans quoi il ne vous sera pas possible de le déposer sur Pronote.
+    Vous devez donc être attentif au poids des médias (images, vidéos, sons) ajoutés à votre minisite.
+
 
 ### Envoi du fichier ZIP
 
@@ -186,3 +200,24 @@ Une fois votre fichier ZIP créé, vous pouvez le déposer sur Pronote.
     5. Cliquez sur le bouton <span class="pronote-button">Déposer ma copie</span>
     6. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
     7. Déposez votre fichier ZIP
+
+### Critères d'évaluation
+
+!!! success "Livrable"
+
+    - Déposé sur Pronote à l'heure
+    - Envoyé sous forme d'un fichier ZIP
+    - Nom du dossier du minisite correct
+
+!!! success "Équipe"
+
+    - Nom de chaque membre indiqué en méta-données des pages (indiqué même si vous travaillez seul)
+    - Respect de la contrainte du nombre de pages
+
+!!! success "Programmation"
+
+    - Suppression des fichiers exemple (`earth.jpg` et `page-exemple.html`)
+    - Nom de tout fichier en minuscules et sans accents
+    - Qualité du code HTML
+    - Qualité du code CSS
+    - Investissement général 

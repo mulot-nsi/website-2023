@@ -19,7 +19,7 @@ nav:
       - Chapitre 2 - Le Web:
           - TP1 - Langage HTML: snt/02-web/tp1-langage-html.md
           - TP2 - Langage CSS: snt/02-web/tp2-langage-css.md
-          - Projet - Mini-site web: snt/02-web/prj-minisite.md
+          - Projet - Minisite web: snt/02-web/prj-minisite.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
