@@ -21,6 +21,14 @@ Vous êtes libres du choix du sujet traité par votre site sous réserve qu'il n
 Pour en savoir plus sur les infractions potentielles, consultez la page
 [:material-link: Responsabilité des contenus publiés sur internet : quelles sont les règles ?](https://www.service-public.fr/particuliers/vosdroits/F32075)
 
+!!! info "Un peu d'inspiration ?"
+
+    Pour avoir un aperçu du travai attendu,
+    vous pouvez consulter les minisites réalisés par les élèves des précédentes années à l'adresse :
+    [:material-link: https://minisites.mulot-nsi.fr](https://minisites.mulot-nsi.fr/){:target="_blank"}
+
+
+
 ## Préparation
 
 ### Espace de travail
