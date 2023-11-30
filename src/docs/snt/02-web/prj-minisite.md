@@ -87,13 +87,24 @@ instructions de téléchargement.
 !!! note "Installation du logiciel Notepad++"
 
     1. Téléchargez [:material-download: Notepad++ v8.6 **version portable** (zip)](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6/npp.8.6.portable.x64.zip)
-    2. Rendez-vous dans le dossier où le fichier téléchargé a été enregistré
-    3. Faites un **clic-droit** sur celui-ci et choisir l'option **Extraire tout...**
-    4. Supprimez le fichier ZIP
-    5. Lancez l'application depuis le **dossier décompressé**
+    2. Rendez-vous dans le dossier `Téléchargenment`
+    3. Faites un **clic-droit** sur `npp.8.6.portable.x64.zip` et choisir l'option **Extraire tout...**
+    4. Supprimez le fichier `npp.8.6.portable.x64.zip`
+    5. Lancez l'application `notepad++.exe` depuis le le dossier `npp.8.6.portable.x64`
     6. Passez l'application en français en allant dans **Settings** puis **Preferences...** et choisir *Français* au niveau du champ **Localization**
 
 ## Développement
+
+### Ouverture des fichiers
+
+Vous allez maintenant ouvrir les fichiers du projet avec **notepad++**
+
+!!! note "Démarrage des développements"
+
+    1. Lancez **Notepad++**
+    2. Ouvrez les fichiers `index.html`, `page-exemple.html` et `style.css`
+    3. Visualisez la page  `index.html` dans un navigateur
+    4. Commencez votre minisite sur le thème de votre choix ! Vous êtes libres de tout modifier, effacer, ajouter...
 
 ### Page d'accueil
 

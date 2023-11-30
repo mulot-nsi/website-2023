@@ -18,3 +18,4 @@
 <h3>Travaux pratiques</h3>
 - [TP1 - Langage HTML](02-web/tp1-langage-html.md)
 - [TP2 - Langage CSS](02-web/tp2-langage-css.md)
+- [Projet minisite](02-web/prj-minisite.md)
