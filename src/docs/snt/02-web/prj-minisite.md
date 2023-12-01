@@ -63,7 +63,7 @@ indépendante.
     3. Sélectionnez le dossier `init`
     4. Copiez le dossier `init` <span class="shortcut">++ctrl+c++</span>
     5. Collez le dossier `init` dans le dossier `SNT\Web` <span class="shortcut">++ctrl+v++</span>
-    6. Renommez le dossier `SNT\Web\init` en « <em>nom</em>**_minisite** » où *nom* correspond au nom de famille de chaque élève écrit en
+    6. Renommez le dossier `init` en « <em>nom</em>**_minisite** » où *nom* correspond au nom de famille de chaque élève écrit en
       **minuscules**.<br>
       Exemple : si le minisite était réalisé par **Tim Berners-Lee** et **Robert Cailliau**, le dossier s'intitulerait `berners_lee_cailliau_minisite`
 
