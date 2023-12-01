@@ -58,18 +58,22 @@ indépendante.
 
 !!! note "Téléchargement du site d'amorçage"
 
+    <h5>Étape 1 - Récupération du site d'amorçage</h5>
+
     1. Téléchargez le fichier ZIP contenant les fichiers d'amorçe du projet : [:material-download: télécharger](assets/SNT02_PRJ_MINISITE.zip){:download="SNT02_PRJ_MINISITE.zip"}
     2. Ouvrez le fichier ZIP<br>*(le navigateur l'ouvre automatiquement ou cliquez sur le fichier téléchargé)*
     3. Sélectionnez le dossier `init`
     4. Copiez le dossier `init` <span class="shortcut">++ctrl+c++</span>
     5. Collez le dossier `init` dans le dossier `SNT\Web` <span class="shortcut">++ctrl+v++</span>
-    6. Renommez le dossier `init` en « <em>nom</em>**_minisite** » où *nom* correspond au nom de famille de chaque élève écrit en
-      **minuscules**.<br>
-      Exemple : si le minisite était réalisé par **Tim Berners-Lee** et **Robert Cailliau**, le dossier s'intitulerait `berners_lee_cailliau_minisite`
 
-### Fichiers d'amorce
+    <h5>Étape 2 - Renommage du dossier</h5>
 
-Les fichiers fournis pour créer votre minisite sont les suivants :
+    <p>Renommez le dossier `init` en « <em style="color:green">nom</em>**_minisite** »<br>
+    où <em style="color:green">nom</em> correspond au nom de famille de chaque élève du projet écrit en **minuscules**.</p>
+    <p>Exemple : si le minisite était réalisé par **Tim Berners-Lee** et **Robert Cailliau**, 
+          le dossier s'intitulerait `berners_lee_cailliau_minisite`</p>
+
+Les fichiers fournis comme point de départ pour la création de votre minisite sont les suivants :
 
 | Fichier             | Description                                                              |
 |:--------------------|:-------------------------------------------------------------------------|
@@ -85,26 +89,56 @@ Ce n'est cependant pas l'application la plus ergonomique et on lui préfèrera l
 instructions de téléchargement.
 
 !!! note "Installation du logiciel Notepad++"
+    
+    <h5>Étape 1 - Récupération du logiciel</h5>
 
     1. Téléchargez [:material-download: Notepad++ v8.6 **version portable** (zip)](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.6/npp.8.6.portable.x64.zip)
-    2. Rendez-vous dans le dossier `Téléchargenment`
-    3. Faites un **clic-droit** sur `npp.8.6.portable.x64.zip` et choisir l'option **Extraire tout...**
-    4. Supprimez le fichier `npp.8.6.portable.x64.zip`
-    5. Lancez l'application `notepad++.exe` depuis le le dossier `npp.8.6.portable.x64`
-    6. Passez l'application en français en allant dans **Settings** puis **Preferences...** et choisir *Français* au niveau du champ **Localization**
+    2. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
+    3. Rendez-vous dans le dossier `Téléchargenment`
+    4. Faites un **clic-droit** sur `npp.8.6.portable.x64.zip` et choisir l'option **Extraire tout...**
+    5. Supprimez le fichier `npp.8.6.portable.x64.zip`
+    
+    <h5>Étape 2 - Lancement et configuration du logiciel</h5>
 
-## Développement
+    1. Lancez l'application `notepad++.exe` depuis le dossier `npp.8.6.portable.x64`
+    2. Passez l'application en français en allant dans **Settings** puis **Preferences...** et choisir *Français* au niveau du champ **Localization**
 
-### Ouverture des fichiers
+### Développement
 
-Vous allez maintenant ouvrir les fichiers du projet avec **notepad++**
+Vous allez maintenant ouvrir les fichiers du projet avec **notepad++** et visualiser la page d'accueil dans un navigateur.
+L'objectif est de commencer la réalisation de votre minisite.
 
-!!! note "Démarrage des développements"
+!!! note "Ouverture des fichiers"
+
+    <h5>Étape 1 - Ouverture des fichiers sources</h5>
 
     1. Lancez **Notepad++**
-    2. Ouvrez les fichiers `index.html`, `page-exemple.html` et `style.css`
-    3. Visualisez la page  `index.html` dans un navigateur
-    4. Commencez votre minisite sur le thème de votre choix ! Vous êtes libres de tout modifier, effacer, ajouter...
+    2. Cliquez sur **Fichier > Ouvrir...** <span class="shortcut">++ctrl+o++</span>
+    3. Rendez-vous dans le dossier de votre minisite
+    4. Ouvrez les fichiers `index.html`, `page-exemple.html` et `style.css`
+    5. Gardez Notepad++ ouvert
+
+    <h5>Étape 2 - Visualisation de la page d'accueil</h5>
+    
+    1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
+    2. Rendez-vous dans le dossier de votre minisite
+    3. Double-cliquez sur le fichier `index.html` pour qu'il s'ouvre dans un navigateur
+    '. Gardez le navigateur ouvert
+
+!!! danger "Démarrage des développements"
+
+    Vous formerez les groupes de projet en dehors cette séance.
+    En attendant, commencez votre minisite sur le thème de votre choix ! 
+    Vous êtes libres de tout modifier, effacer, ajouter...
+
+    L'objectif est maintenant de vous familiariser avec la programmation web avant de travailler en autonomie :
+
+    1. Commencez par changer le titre de la page
+    2. Ajoutez du texte et supprimez des éléments qui ne vous interessent pas
+    3. Modifiez l'image et sa taille
+    4. Modifiez les couleurs et les styles
+
+## Contraintes à respecter
 
 ### Page d'accueil
 
