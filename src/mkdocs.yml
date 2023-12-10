@@ -36,6 +36,8 @@ nav:
           - TP2 - Programmation défensive : nsi1re/04-fonctions/tp2-programmation-defensive.md
           - Projet - Paysage généré: nsi1re/04-fonctions/prj-paysage.md
           - Remédiation : nsi1re/04-fonctions/remediation.md
+      - Chapitre 6 - Les tableaux:
+          - TP1 - Tableaux : nsi1re/06-tableaux/tp1-tableaux.md
 
 # Configuration du thème
 theme:
