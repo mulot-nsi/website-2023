@@ -7,19 +7,16 @@ description: Manipulation de tableaux et premiers algorithmes
 
 ## Introduction
 
-Vous avez jusqu'à présent travaillé uniquement avec les **types primitifs** du langage Python : les booléens, les entiers, les flottants et les chaînes de caractères.
+Vous avez jusqu'à présent travaillé uniquement avec les **types primitifs** du langage Python à savoir : les booléens, les entiers, les flottants et les chaînes de caractères.
 Vous allez maintenant étudier votre premier **type construit** : les tableaux.
 
-!!! info "Type construit"
+!!! info "Définition"
     
     Un type construit est un type de données capable de contenir plusieurs valeurs.
 
 !!! danger "Important"
 
-    Les productions réalisées dans le cadre de ce TP seront à rendre en fin de séance :
-    
-    - Envoyer **obligatoirement** vos fichiers sous forme d'une archive au format ZIP (et non 7zip ou 7z)
-    - Effectuer le rendu **uniquement** depuis l'application **Exercices** de l'ENT, via l'exercice intitulé **[6TP1] Rendu**
+    Les productions réalisées dans le cadre de ce TP seront à rendre en fin de séance.
 
 ## Préparation
 
@@ -32,8 +29,7 @@ travaux pratiques.
 
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
            <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
-        2. Accédez à votre dossier <i class="icon onedrive"></i> **OneDrive**
-        3. Dans le dossier `OneDrive`, s'il n'y a pas de dossier `NSI`, créez-le
+        2. Dans le dossier `Document`, s'il n'y a pas de dossier nommé `NSI`, créez-le
         4. Dans le dossier `NSI`, s'il n'y a pas de dossier `chapitre_06`, créez-le
         5. Dans le dossier `chapitre_06` créez le dossier `tp1`
 
@@ -61,22 +57,23 @@ Pour réaliser ces travaux pratiques, il est nécessaire de disposer de certains
 
 ### 1.1. Expérimentation
 
-Dans la console Python, identifier les commandes permettant de répondre aux points listés ci-après.
-Les **commandes** trouvées devront être reportées dans le fichier `ex1_console.py`.
+Dans une [:material-link: console Python](https://console.basthon.fr/){:target="_blank"}, identifier les commandes permettant de répondre aux points listés ci-après.
+Les **commandes** trouvées devront être reportées dans le fichier `ex11_console.py`.
 
 !!! note "Instructions"
 
-    1. Affectez à une variable nommée `premiers`, un tableau contenant les nombres premiers de 2 à 17 inclus
+    1. Affectez à une variable nommée `premiers`, un tableau contenant les nombres premiers de 2 à 11 inclus
     2. Vérifiez le contenu de la variable `premiers`
     3. Récupérez la taille du tableau `premiers`
-    4. Récupérez la valeur d'indice 2 du tableau `premiers`
-    5. Récupérez la valeur du 4<sup>ème</sup> élément du tableau `premiers`
-    6. Récupérez la valeur du dernier élément du tableau `premiers` en utilisant la fonction `#!python len()`
-    7. Affecter la valeur `#!python 101` au premier élément du tableau `premiers`
+    4. Récupérez la première valeur du tableau `premiers`
+    5. Récupérez la valeur d'indice 2 du tableau `premiers`
+    6. Récupérez la valeur du 4<sup>ème</sup> élément du tableau `premiers`
+    7. Récupérez la valeur du dernier élément du tableau `premiers` en utilisant la fonction `#!python len()`
+    8. Affectez la valeur `#!python 101` au premier élément du tableau `premiers`
 
 ### 1.2. Génération d'un tableau
 
-Vos observations et conclusions seront à rédiger sous forme de commentaires Python dans le fichier nommé `ex2_generation.py`.
+Vos observations et conclusions seront à rédiger sous forme de commentaires Python dans le fichier nommé `ex12_generation.py`.
 
 !!! note "Instructions"
 
@@ -90,7 +87,7 @@ Vos observations et conclusions seront à rédiger sous forme de commentaires Py
     [0, 1] * 4
     ```
 
-!!! question "Question 1"
+!!! question "Question"
 
     Quel est l'effet de l'opérateur `*` entre un tableau et un entier ?
 
@@ -98,7 +95,7 @@ Vos observations et conclusions seront à rédiger sous forme de commentaires Py
 
 ### 1.3. Stockage en mémoire
 
-Écrire dans le fichier `ex3_stockage.py` le programme Python correspondant aux instructions ci-dessous.
+Écrire dans le fichier `ex13_stockage.py` le programme Python correspondant aux instructions ci-dessous.
 **Attention, n'exécuter le programme que lorsque cela est explicitement demandé**.
 
 !!! note "Instructions"
@@ -107,10 +104,10 @@ Vos observations et conclusions seront à rédiger sous forme de commentaires Py
     2. Affectez à une variable `v2` la variable `v1`
     3. Affectez la chaîne de caractères `#!python "B"` à la variable `v2`
     4. Affichez la valeur des variables `v1` et `v2` à l'aide d'un unique appel à la fonction `#!python print()`
-    5. Ajoutez en commentaire la réponse à la **question 2**
+    5. Ajoutez en commentaire la réponse à la **question 1**
     6. Exécutez le programme
 
-!!! question "Question 2"
+!!! question "Question 1"
     
     Quelles valeurs anticipez-vous pour les variables `v1` et `v2` ?
 
@@ -118,20 +115,20 @@ Vos observations et conclusions seront à rédiger sous forme de commentaires Py
 
     1. Continuez le programme en affectant à une variable `t1` le tableau `#!python ['A', 'B', 'C']`
     2. Affectez à la variable `t2` la variable `t1`
-    3. Affectez la chaîne de caractères `"D"` au premier élément de la variable `t2`
+    3. Affectez la chaîne de caractères `#!python "D"` au premier élément de la variable `t2`
     4. Affichez la valeur des variables `t1` et `t2` à l'aide d'un unique appel à la fonction `print()`
-    5. Ajoutez en commentaire la réponse à la **question 3**
+    5. Ajoutez en commentaire la réponse à la **question 2**
     6. Exécutez le programme
 
-!!! question "Question 3"
+!!! question "Question 2"
     
     Quelles valeurs anticipez-vous pour les variables `t1` et `t2` ?
 
 
 ### 1.4. Visualisation de la mémoire
 
-Vous n'arrivez pas à interpréter le résultat de l'exercice précédent ?
-Afin de comprendre ce qui se déroule en mémoire, vous avez deux possibilités :
+Vous n'arrivez pas à comprendre le résultat de l'exercice précédent ?
+Afin de découvrir ce qui se déroule en mémoire, vous avez deux possibilités :
 
 ??? note "Python Tutor"
 
@@ -149,7 +146,7 @@ Afin de comprendre ce qui se déroule en mémoire, vous avez deux possibilités 
         ```
 
     4. Cliquez sur **Visualize Execution**
-    5. Cliquez sur **Next** pour voir l'évolution de la mémoire après l'exécution de chaque instruction du programme
+    5. Cliquez sur **Next** pour exécuter le programme pas-à-pas et observer l'évolution de la mémoire
 
 ??? note "Thonny"
 
@@ -168,8 +165,8 @@ Afin de comprendre ce qui se déroule en mémoire, vous avez deux possibilités 
 
 !!! question "Question 4"
 
-    Quelle explication donnez-vous maintenant au phénomène observé de l'exercice 3 ?
-    Répondez via un commentaire à la fin du fichier `ex3_stockage.py`.
+    Quelle explication donnez-vous maintenant au phénomène observé de l'exercice 1.3 ?
+    Répondez par un commentaire à la fin du fichier `ex13_stockage.py`.
 
 
 
@@ -188,13 +185,38 @@ t3 = ["  __", "<(o )___", " ( ._> /", "  `---'"]
 
 Nous souhaitons afficher le contenu de ces tableaux selon trois parcours différents :
 le parcours par valeur, le parcours par indice à l'aide d'une boucle bornée et une boucle non bornée.
-Le code devra être saisi dans le fichier `ex5_parcours.py`, les tableaux y sont déjà présents.
+Le code devra être saisi dans le fichier `ex21_parcours.py`, les tableaux y sont déjà présents.
 
 !!! note "Instructions"
 
     1. Affichez les valeurs du tableau `t1` en utilisant un **parcours par valeur**
     2. Affichez les valeurs du tableau `t2` en utilisant un parcours par indice à l'aide d'une **boucle bornée**
     3. Affichez les valeurs du tableau `t3` en utilisant un parcours par indice à l'aide d'une **boucle non bornée**
+
+??? info "Parcours d'un tableau"
+
+    === "Parcours par valeur"
+        
+        ```python
+        for valeur in tableau :
+            ...
+        ```
+
+    === "Parcours par indice (borné)"
+
+        ```python
+        for i in range(len(tableau)) :
+            ...
+        ```
+
+    === "Parcours par indice (non borné)"
+
+        ```python
+        i = 0
+        while i < len(tableau) :
+            ...
+            i = i + 1
+        ```
 
 ### 2.2. Fonction somme
 
@@ -208,10 +230,11 @@ Cette fonction calcule et renvoie la somme des entiers du tableau.
 
 !!! note "Instructions"
 
-    1. Écrivez le code de la fonction dans le fichier `ex6_fonction.py`
+    1. Écrivez le code de la fonction dans le fichier `ex22_somme.py`
     2. Écrivez la *docstring* de la fonction
-    3. Écrivez le(s) *doctest(s)* que vous jugerez pertinents
-    4. Écrivez le code de lancement des *doctests* (*le reprendre des précédents travaux pratiques*)
+    3. Écrivez les *doctest* que vous jugerez pertinents
+       *(voir [:material-link: Chapitre 4 - Programmation défensive](../04-fonctions/tp2-programmation-defensive.md){:target="_blank"})*
+    4. Testez la fonction en utilisant uniquement les *doctests*
 
 
 ## Problème
@@ -260,9 +283,10 @@ Nous souhaitons étudier ces données en Python. Pour cela, les températures se
 
 !!! note "Instructions"
 
-    1. Créez un nouveau fichier Python
-    2. Créez le tableau `temperatures_2021` contenant l'ensemble des températures moyenne de 2021.
-    3. Enregistrez votre code dans un fichier nommé `meteo.py`
+    1. Lancez Thonny
+    2. Ouvrez le fichier `meteo.py`
+    3. Complétez le tableau `temperatures_2021` avec l'ensemble des températures moyennes de 2021
+    4. Lancez le programme et vérifiez le contenu de la variable `temperatures_2021`
 
 
 ### 3.2. Rapport des températures
@@ -277,24 +301,55 @@ Novembre : 7.3
 Décembre : 5.2
 ```
 
+<h4>Affichage des mois</h4>
+
 !!! note "Instructions"
-
-    1. Écrivez une fonction `rapport` prenant un tableau `temperatures` en paramètre
-    2. Ajoutez au corps de la fonction `rapport`, le tableau `mois` contenant le nom de chaque mois de l'année :<br> 
-       `#!python ["Janvier", "Février", ..., "Novembre", "Décembre"]`
-    3. Ajouter un appel à la fonction `rapport` avec pour argument le tableau des températures de l'année 2021
-    4. Ajoutez au corps de la fonction rapport le code nécessaire à l'affichage des mois de l'année :
-        ```
-        Janvier
-        Février
-        ...
-        Novembre
-        Décembre
-        ```
+    1. Écrivez une fonction `rapport` ayant pour paramètre un tableau `temperatures`
+    2. Ajoutez au corps de la fonction `rapport`, le tableau `mois` contenant le nom de chaque mois de l'année :
+       ```python
+       ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
+       ```
+    3. Ajoutez au corps de la fonction `rapport` le code nécessaire à l'affichage des mois de l'année
+    4. Ajouter un appel à la fonction `rapport` avec pour argument le tableau des températures de l'année 2021
     5. Vérifiez le bon fonctionnement de l'ensemble
-    6. Modifiez le code d'affichage des mois pour y ajouter la température propre à chacun.
-       L'affichage doit être similaire à celui présenté en début d'exercice.
 
+??? success "Résultat attendu"
+    ```
+    Janvier
+    Février
+    Mars
+    Avril
+    Mai
+    Juin
+    Juillet
+    Août
+    Septembre
+    Octobre
+    Novembre
+    Décembre
+    ```
+
+<h4>Affichage des moyennes par mois</h4>
+
+!!! note "Instructions"
+    Modifiez la fonction `rapport` de façon à afficher la température moyenne en face de chaque mois.
+    L'affichage doit être similaire à celui présenté en début d'exercice.
+
+??? success "Résultat attendu"
+    ```
+    Janvier : 4.6
+    Février : 6.5
+    Mars : 5.6
+    Avril : 10.0
+    Mai : 11.3
+    Juin : 14.4
+    Juillet : 15.7
+    Août : 17.6
+    Septembre : 14.5 
+    Octobre : 10.3
+    Novembre : 7.3
+    Décembre : 5.2
+    ```
 
 ### 3.3. Moyenne annuelle
 
@@ -320,11 +375,28 @@ Fin
     1. Écrivez la fonction `moyenne` implémentant cet algorithme.
     2. Modifiez la fonction `rapport` pour à ajouter la ligne « Température moyenne annuelle : *t* » où *t* est la température moyenne renvoyée par la fonction `moyenne`
 
+??? success "Résultat attendu"
+
+    ```
+    Janvier : 4.6
+    Février : 6.5
+    Mars : 5.6
+    Avril : 10.0
+    Mai : 11.3
+    Juin : 14.4
+    Juillet : 15.7
+    Août : 17.6
+    Septembre : 14.5 
+    Octobre : 10.3
+    Novembre : 7.3
+    Décembre : 5.2
+    Température moyenne annuelle : 10.249999999999998
+    ```
 
 ### 3.4. Maximum
 
 Nous souhaitons connaître la température moyenne la plus élevée sur l'année.
-Pour cela nous aurions besoin d'une fonction renvoyant le maximum (la plus grande valeur) d'un tableau dont l'algorithme reste à définir :
+Pour cela, nous aurions besoin d'une fonction renvoyant le maximum (la plus grande valeur) d'un tableau dont l'algorithme reste à définir :
 
 ```
 Entrée : un tableau d'entiers ou de flottants tab
@@ -343,6 +415,26 @@ Fin
     - Écrivez un algorithme permettant de trouver la plus grande valeur d'un tableau non vide d'entiers ou de flottants
     - Écrivez une fonction `maximum` implémentant votre algorithme en ajoutant votre algorithme à la *docstring*
     - Modifiez la fonction rapport de façon à ajouter la ligne « Température moyenne maximale : *t* » où *t* est la température maximale renvoyée par la fonction `maximum`
+
+??? success "Résultat attendu"
+
+    ```
+    Janvier : 4.6
+    Février : 6.5
+    Mars : 5.6
+    Avril : 10.0
+    Mai : 11.3
+    Juin : 14.4
+    Juillet : 15.7
+    Août : 17.6
+    Septembre : 14.5 
+    Octobre : 10.3
+    Novembre : 7.3
+    Décembre : 5.2
+    Température moyenne annuelle : 10.249999999999998
+    Température moyenne maximale : 17.6
+    ```
+
 
 ## Conclusion
 
