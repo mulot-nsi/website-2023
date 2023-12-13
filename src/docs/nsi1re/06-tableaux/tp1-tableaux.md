@@ -57,8 +57,14 @@ Pour réaliser ces travaux pratiques, il est nécessaire de disposer de certains
 
 ### 1.1. Expérimentation
 
-Dans une [:material-link: console Python](https://console.basthon.fr/){:target="_blank"}, identifier les commandes permettant de répondre aux points listés ci-après.
+Dans la **console Thonny** ou une [:material-link: console Python en ligne](https://console.basthon.fr/){:target="_blank"},
+identifiez les commandes permettant de répondre aux points listés ci-après.
 Les **commandes** trouvées devront être reportées dans le fichier `ex11_console.py`.
+
+!!! warning "Important"
+
+    Vous indiquerez dans les champs dédiés en en-tête du fichier, l'heure à laquelle vous avez commencé l'exercice puis l'heure à laquelle vous l'avez terminé.
+    Il en sera de même pour les autres exercices.
 
 !!! note "Instructions"
 
@@ -95,39 +101,46 @@ Vos observations et conclusions seront à rédiger sous forme de commentaires Py
 
 ### 1.3. Stockage en mémoire
 
-Écrire dans le fichier `ex13_stockage.py` le programme Python correspondant aux instructions ci-dessous.
-**Attention, n'exécuter le programme que lorsque cela est explicitement demandé**.
+<h4>Anticipation des valeurs stockées</h4>
+
+Soit le code Python suivant :
+
+```python
+v1 = 'A'
+v2 = v1
+v2 = 'B'
+```
 
 !!! note "Instructions"
 
-    1. Affectez à une variable `v1` la chaîne de caractères `"A"`
-    2. Affectez à une variable `v2` la variable `v1`
-    3. Affectez la chaîne de caractères `#!python "B"` à la variable `v2`
-    4. Affichez la valeur des variables `v1` et `v2` à l'aide d'un unique appel à la fonction `#!python print()`
-    5. Ajoutez en commentaire la réponse à la **question 1**
-    6. Exécutez le programme
+    1. Ouvrez le fichier `ex13_stockage.py`
+    2. **Sans exécuter le programme**, indiquez en commentaire la valeur qu'auront les variables `v1` et `v2`
 
-!!! question "Question 1"
-    
-    Quelles valeurs anticipez-vous pour les variables `v1` et `v2` ?
+Soit le code Python suivant :
+
+```python
+t1 = ['A', 'B', 'C']
+t2 = t1
+t2[0] = 'D'
+```
 
 !!! note "Instructions"
 
-    1. Continuez le programme en affectant à une variable `t1` le tableau `#!python ['A', 'B', 'C']`
-    2. Affectez à la variable `t2` la variable `t1`
-    3. Affectez la chaîne de caractères `#!python "D"` au premier élément de la variable `t2`
-    4. Affichez la valeur des variables `t1` et `t2` à l'aide d'un unique appel à la fonction `print()`
-    5. Ajoutez en commentaire la réponse à la **question 2**
-    6. Exécutez le programme
+    1. Ouvrez le fichier `ex13_stockage.py`
+    2. **Sans exécuter le programme**, indiquez en commentaire la valeur qu'auront les variables `t1` et `t2`
 
-!!! question "Question 2"
-    
-    Quelles valeurs anticipez-vous pour les variables `t1` et `t2` ?
+<h4>Vérification des valeurs en mémoire</h4>
 
+Vous avez écrit en commentaire la valeur qu'aura chacune des variables `v1`, `v2`, `t1`, `t2`.
+Vous allez maintenant le vérifier.
 
-### 1.4. Visualisation de la mémoire
+!!! note "Instructions"
 
-Vous n'arrivez pas à comprendre le résultat de l'exercice précédent ?
+    1. Ouvrez le fichier `ex13_stockage.py`
+    2. Exécutez le programme
+    3. Vérifiez dans la console la valeur de chaque variable
+
+Le résultat obtenu est-il cohérent avec les valeurs que vous aviez anticipées ?
 Afin de découvrir ce qui se déroule en mémoire, vous avez deux possibilités :
 
 ??? note "Python Tutor"
@@ -163,9 +176,9 @@ Afin de découvrir ce qui se déroule en mémoire, vous avez deux possibilités 
     2. Affichez les fenêtres **Allocation mémoire** et **Variables**
     3. Lancez le programme et observez les adresses mémoire des variables `t1` et `t2`
 
-!!! question "Question 4"
+!!! question "Question"
 
-    Quelle explication donnez-vous maintenant au phénomène observé de l'exercice 1.3 ?
+    Comment expliquuez-vous que la variable `t1` ait finalement la même valeur que la variable `t2` ?
     Répondez par un commentaire à la fin du fichier `ex13_stockage.py`.
 
 
@@ -193,11 +206,13 @@ Le code devra être saisi dans le fichier `ex21_parcours.py`, les tableaux y son
     2. Affichez les valeurs du tableau `t2` en utilisant un parcours par indice à l'aide d'une **boucle bornée**
     3. Affichez les valeurs du tableau `t3` en utilisant un parcours par indice à l'aide d'une **boucle non bornée**
 
-??? info "Parcours d'un tableau"
+??? info "Cours - Parcours d'un tableau"
 
     === "Parcours par valeur"
         
         ```python
+        tableau = [..., ..., ...]
+
         for valeur in tableau :
             ...
         ```
@@ -205,6 +220,8 @@ Le code devra être saisi dans le fichier `ex21_parcours.py`, les tableaux y son
     === "Parcours par indice (borné)"
 
         ```python
+        tableau = [..., ..., ...]
+
         for i in range(len(tableau)) :
             ...
         ```
@@ -212,7 +229,9 @@ Le code devra être saisi dans le fichier `ex21_parcours.py`, les tableaux y son
     === "Parcours par indice (non borné)"
 
         ```python
+        tableau = [..., ..., ...]
         i = 0
+
         while i < len(tableau) :
             ...
             i = i + 1
@@ -230,12 +249,28 @@ Cette fonction calcule et renvoie la somme des entiers du tableau.
 
 !!! note "Instructions"
 
-    1. Écrivez le code de la fonction dans le fichier `ex22_somme.py`
+    1. Écrivez le code de la fonction dans le fichier `ex22_somme.py` *(voir l'algorithme en cas de difficulté)*
     2. Écrivez la *docstring* de la fonction
     3. Écrivez les *doctest* que vous jugerez pertinents
        *(voir [:material-link: Chapitre 4 - Programmation défensive](../04-fonctions/tp2-programmation-defensive.md){:target="_blank"})*
     4. Testez la fonction en utilisant uniquement les *doctests*
 
+??? success "Algorithme"
+
+    ```
+    Entrée : un tableau d'entiers ou de flottants tab
+    Sortie : le résultat du calcul de la somme
+    
+    Début
+     |  total ← 0
+     |
+     |  pour chaque valeur v du tableau tab faire
+     |   |  total ← total + v
+     |  fin pour chaque
+     |
+     |  renvoyer total
+    Fin
+    ```
 
 ## Problème
 
