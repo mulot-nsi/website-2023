@@ -5,6 +5,23 @@ description: Création d'un minisite web
 
 # Minisite web - Questions fréquentes
 
+## Création du minisite
+
+!!! info "Comment ajouter des pages à mon minisite web ?"
+
+    Pour créer une page supplémentaire à votre site, vous devez : 
+    
+    - Créer un nouveau fichier HTML
+    - Créer un lien hypertexte vers ce nouveau fichier depuis la page d'accueil (fichier `index.html`)
+
+    C'est ce qui vous est proposé en exemple avec le fichier `page-exemple.html` et le lien hypertexte présent sur la page d'accueil dont voici le code pour rappel :
+    
+    ```html
+     <a href="page-exemple.html">Lien hypertexte</a> vers une page intérieure.
+    ```
+    
+## Envoi du minisite
+
 !!! info "Comment créer un fichier ZIP ?"
 
     Tout est détaillé dans l'énoncé du projet : 
@@ -36,18 +53,9 @@ description: Création d'un minisite web
 
     ![Redimensionner l'image](images/application-photo.png){:style="width:80%;display:block;margin:0 auto;"}
 
-    :material-alert: Si vous êtes bloqué, vous pouvez toujours déposer votre minisite dans le casier de l'ENT mais vous perdrez des points. 
-
-!!! info "Comment ajouter des pages à mon minisite web ?"
-
-    Pour créer une page supplémentaire à votre site, vous devez : 
+    :material-alert: Si vous êtes bloqué, vous pouvez toujours transmettre votre minisite autrement mais **vous perdrez des points**. 
+    Vous pouvez :
     
-    - Créer un nouveau fichier HTML
-    - Créer un lien hypertexte vers ce nouveau fichier depuis la page d'accueil (fichier `index.html`)
+    - Déposer le fichier ZIP dans le casier de l'ENT
+    - Ajouter le fichier ZIP en pièce jointe d'un email *(20 Mo maximum)*
 
-    C'est ce qui vous est proposé en exemple avec le fichier `page-exemple.html` et le lien hypertexte présent sur la page d'accueil dont voici le code pour rappel :
-    
-    ```html
-     <a href="page-exemple.html">Lien hypertexte</a> vers une page intérieure.
-    ```
-    
