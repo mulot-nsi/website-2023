@@ -39,6 +39,11 @@ nav:
       - Chapitre 6 - Les tableaux:
           - TP1 - Tableaux : nsi1re/06-tableaux/tp1-tableaux.md
 
+not_in_nav: |
+  snt/02-web/prj-minisite-faq.md
+  
+
+
 # Configuration du thème
 theme:
   name: material
@@ -97,6 +102,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      toc_depth: 3
 
 extra_javascript:
   - assets/js/katex.js
