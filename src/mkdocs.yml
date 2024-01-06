@@ -38,6 +38,7 @@ nav:
           - Remédiation : nsi1re/04-fonctions/remediation.md
       - Chapitre 6 - Les tableaux:
           - TP1 - Tableaux : nsi1re/06-tableaux/tp1-tableaux.md
+          - TP2 - Images : nsi1re/06-tableaux/tp2-images.md
 
 not_in_nav: |
   snt/02-web/prj-minisite-faq.md
