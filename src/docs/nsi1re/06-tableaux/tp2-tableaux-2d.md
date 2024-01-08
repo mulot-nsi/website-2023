@@ -3,7 +3,7 @@ title: TP2 - Tableaux 2D
 description: Génération d'images à part d'un tableau à deux dimensions
 ---
 
-# Les images
+# Les tableaux à deux dimensions
 
 ## Introduction
 
