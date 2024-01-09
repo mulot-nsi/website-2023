@@ -17,8 +17,8 @@ afin de modifier le moteur de recherche par défaut ou contrôler les cookies.
     dans les différents exercices
 
     - Le navigateur **Firefox** créé par [:material-link: Mozilla](https://www.mozilla.org/fr/){:target="_blank"}, une fondation sans but lucratif
-    - Le navigateur **Chrome** créé par la société [:material-link: Google](https://about.google/intl/ALL_fr/)
-    - Le navigateur **Edge** créé par la société Microsoft
+    - Le navigateur **Chrome** créé par la société [:material-link: Google](https://about.google/intl/ALL_fr/){:target="_blank"}
+    - Le navigateur **Edge** créé par la société [:material-link: Microsoft](https://www.microsoft.com/fr-tn/){:target="_blank"}
 
 ## Préparation
 
@@ -49,7 +49,7 @@ Pour effectuer ce TP, il est nécessaire de télécharger certains fichiers :
 
 !!! note "Récupération des fichiers"
 
-    1. Téléchargez le document de comptre rendu : [:material-download: télécharger](assets/SNT02_TP_confidentialité.docx){:download="SNT02_TP_confidentialité.docx"}
+    1. Téléchargez le document de comptre rendu : [:material-download: télécharger](assets/SNT02_TP_confidentialite.docx){:download="SNT02_TP_confidentialité.docx"}
     2. Déplacez le document dans le dossier `Confidentialité`
     3. Ouvrez le document afin de pouvoir répondre aux questions tout au long des travaux pratiques
 
@@ -140,7 +140,7 @@ propriétaires de ces moteurs.
 
 !!! info "Qwant - Politique de Confidentialité"
 
-    Se rendre sur la page [:material-link: Politique de Confidentialité](https://about.qwant.com/legal/confidentialite/)
+    Se rendre sur la page [:material-link: Politique de Confidentialité](https://about.qwant.com/legal/confidentialite/){:target="_blank"}
     et lire les parties suivantes :
 
     - Un moteur de recherche qui respecte votre vie privée
@@ -172,7 +172,7 @@ Cependant, ils se révèlent indispensables dans d'autres situations.
 
 !!! note "Instructions"
 
-    - Connectez-vous à l'ENT : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr/)
+    - Connectez-vous à l'ENT : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr/){:target="_blank"}
     - Consultez les cookies déposés par l'ENT en suivant l'aide ci-dessous correspondant à votre navigateur 
 
 !!! help "Aide - Consulter les cookies"
@@ -213,7 +213,7 @@ Essayons de découvrir pour quelle raison en observant les conséquences de sa s
 
 !!! note "Instructions"
 
-    - Rendez-vous sur [www.lemonde.fr](https://www.lemonde.fr)
+    - Rendez-vous sur [:material-link: www.lemonde.fr](https://www.lemonde.fr){:target="_blank"}
     - Acceptez tous les cookies
     - Consultez les cookies présents sur le site
 
@@ -236,12 +236,12 @@ Vous pouvez contrôler la présence de ces cookies tiers de plusieurs façons :
 - Modification les paramètres relatifs à la confidentialité de votre navigateur
 
 Vous allez modifier les paramètres de confidentialité de votre navigateur et observer les résultats sur le site 
-[www.lemonde.fr](https://www.lemonde.fr).
+[www.lemonde.fr](https://www.lemonde.fr){:target="_blank"}.
 
 !!! note "Instructions"
 
     - Modifiez les paramètres de confidentialité selon l'aide ci-après
-    - Rafraichissez la page [www.lemonde.fr](https://www.lemonde.fr)
+    - Rafraichissez la page [:material-link: www.lemonde.fr](https://www.lemonde.fr){:target="_blank"}
     - Consultez les cookies présents sur le site<br>
       (Si vous utilisez **Firefox** cliquez cette-fois sur le :materiel-shield-outline: de la barre d'adresse)
     - Répondez aux questions ci-après
@@ -298,7 +298,7 @@ utilisé.
 
 !!! note "Dépôt d'une copie sur Pronote"
 
-    1. Connectez-vous à l'**ENT** : [https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
+    1. Connectez-vous à l'**ENT** : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
     2. Accédez à l'application **Pronote**
     3. Un *travail à faire* en SNT a été créé par votre enseignant. Il est identifiable sur la page d'accueil par un bouton :<br /> 
        **Déposer ma copie**{:style="display:inline-block;color:#4a1b7f;background-color:#ebdbff;padding:5px 20px;border-radius:10px;"}
