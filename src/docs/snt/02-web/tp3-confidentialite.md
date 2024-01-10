@@ -59,9 +59,12 @@ Pour effectuer ces travaux pratiques, il est nécessaire de télécharger certai
 
 Vous allez commencer par simplement faire le choix d'un navigateur web et effectuer une recherche sur le web.
 
-!!! target "Objectif"
+!!! target "Objectifs"
 
-    Savoir reconnaître et distinguer le navigateur web et le moteur de recherche.
+    - Savoir faire la distinction entre le navigateur web et le moteur de recherche
+    - Savoir identifier le navigateur web
+    - Savoir identifier le moteur de recherche
+    
 
 !!! note "Instructions"
     
