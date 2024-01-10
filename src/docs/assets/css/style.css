@@ -60,17 +60,17 @@ Target admonition
 
 .md-typeset .admonition.target,
 .md-typeset details.target {
-    border-color: #64dd17;
+    border-color: #C51162;
 }
 
 .md-typeset .target > .admonition-title,
 .md-typeset .target > summary {
-    background-color: #64dd171a;
+    background-color: #C511621a;
 }
 
 .md-typeset .target > .admonition-title::before,
 .md-typeset .target > summary::before {
-    background-color: #64dd17;
+    background-color: #C51162;
     -webkit-mask-image: var(--md-admonition-icon--target);
     mask-image: var(--md-admonition-icon--target);
 }
@@ -109,17 +109,17 @@ Help admonition
 
 .md-typeset .admonition.help,
 .md-typeset details.help {
-    border-color: #64dd17;
+    border-color: #00bfa5;
 }
 
 .md-typeset .help > .admonition-title,
 .md-typeset .help > summary {
-    background-color: #64dd171a;
+    background-color: #00bfa51a;
 }
 
 .md-typeset .help > .admonition-title::before,
 .md-typeset .help > summary::before {
-    background-color: #64dd17;
+    background-color: #00bfa5;
     -webkit-mask-image: var(--md-admonition-icon--help);
     mask-image: var(--md-admonition-icon--help);
 }
