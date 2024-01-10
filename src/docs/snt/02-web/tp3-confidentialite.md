@@ -91,7 +91,6 @@ vous allez modifier le moteur de recherche utilisé par défaut par votre naviga
        *(Consulter l'aide :material-lightbulb-on-outline: ci-après en suivant les instructions correspondant à votre navigateur)*
     2. Faites une recherche quelconque **depuis la barre d'adresse**<br>
        *(Cette fois-ci c'est Qwant qui doit avoir été appelé par votre navigateur web)*
-    3. Faites une capture d'écran et ajoutez-la à votre compte rendu
 
 !!! help "Changer de moteur de recherche pour Qwant"
 
@@ -213,8 +212,8 @@ propriétaires de ces moteurs.
 
 !!! question "Questions"
 
-    - **En résumant**, quelles sont les informations collectées par Google et comment le justifie-t-il ?
-    - Quelle sont les données collectées par Qwant et comment le justifie-t-il ?
+    - **En résumant**, quelles sont les données collectées par Google et comment le justifie-t-il ?
+    - Quelles sont les données collectées par Qwant et comment le justifie-t-il ?
     - Quels avantages et inconvénients voyez-vous à utiliser l'un ou l'autre de ces moteurs de recherche ?
 
 ## Les cookies
@@ -234,7 +233,7 @@ Enfin, les cookies sont renvoyés au serveur lors de chaque requête HTTP.
 
 !!! question "Question"
 
-    Selon vos connaissaces, quelle est l'utilité des cookies ? À quoi servent-ils lorsque vous naviguez sur le web ?
+    Selon vos connaissances, quelle est l'utilité des cookies ? À quoi servent-ils lorsque vous naviguez sur le web ?
 
 ### Les cookies nécessaires
 
