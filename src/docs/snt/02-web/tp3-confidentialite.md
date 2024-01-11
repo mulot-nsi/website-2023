@@ -1,6 +1,6 @@
 ---
-title: Le langage CSS
-description: Découverte du langage CSS
+title: La confidentialité
+description: Savoir configurer son navigateur web
 ---
 
 # La confidentialité
