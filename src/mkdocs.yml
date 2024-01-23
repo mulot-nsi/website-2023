@@ -12,6 +12,7 @@ nav:
           - Windows: snt/tutoriels/windows.md
           - Saisie de texte: snt/tutoriels/saisie-de-texte.md
           - ENT: snt/tutoriels/ent.md
+          - Python: snt/tutoriels/python.md
       - Chapitre 1 - Internet:
           - snt/01-internet/index.md
           - TP1 - Naissance d'Internet: snt/01-internet/tp1-naissance-internet.md
@@ -100,6 +101,8 @@ markdown_extensions:
         control: Ctrl
         option: Opti
         up: Haut
+        space: Espace
+        enter: Entrée
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:

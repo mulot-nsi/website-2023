@@ -1,0 +1,373 @@
+---
+sidebar_position: 4
+sidebar_label: Python
+slug: /tutoriels/python
+description: Le langage de programmation Python
+---
+
+# Le langage Python
+
+## Introduction
+
+Ces travaux pratiques ont pour objectif de vous introduire le langage programmation Python.
+
+Python est un langage **interprété**.
+Cela signifie qu'un programme écrit en Python n'est pas autonome et ne fonctionnera qu'en utilisant un logiciel capable de le lire.
+Ce logiciel, ou interpréteur, lira et exécutera chaque instruction de votre programme.
+
+!!! info "Les interpréteurs Python"
+
+    Il existe de nombreux interpréteurs Python.
+    La calculatrice « TI-83 Premium CE Edition Python » recommandée par le lycée dispose par exemple d'un interpréteur Python. 
+    Nous ne l'utiliserons pas dans le cadre de ces travaux pratiques et lui préfèrerons l'interpréteur en ligne [:material-link: Basthon](https://console.basthon.fr/){:target="_blank"}.
+
+### Préparation
+
+**Basthon** est une interface de développement Python accessible depuis le Web.
+C'est le moyen le plus simple et rapide de disposer d'un interpréteur Python.
+Vous devez cependant disposer d'une connexion Internet.
+
+!!! note "Instruction"
+
+    1. Rendez-vous sur la page [:material-link: https://console.basthon.fr](https://console.basthon.fr){:target="_blank"}
+    <figure markdown>
+    ![Basthon](images/basthon.png)
+    </figure>
+
+    2. Lisez **attentivement** le principe de fonctionnement ci-après
+
+!!! info "Principe de fonctionnement"
+
+    - La zone de saisie de **gauche** correspond au **mode programme**.<br>
+      Le principe est d'y saisir l'ensemble des instructions de votre programme et de lancer celui-ci en cliquant sur le bouton **Exécuter**
+    - La zone de saisie de **droite** correspond au **mode interactif**. Elle est généralement appelée **console**.<br>
+      Le principe est de saisir une instruction Python qui sera interprétée immédiatement après avoir appuyé sur entrée.
+      C'est un peu comme un dialogue direct avec l'interpréteur.
+
+
+
+
+## Premiers pas
+
+### Le mode interactif
+
+Vous allez commencer par utiliser l'interpréteur Python comme une calculatrice en saisissant vos calculs dans la **console** (la zone de saisie de **droite**).
+
+!!! danger "Important"
+    
+    Les trois chevrons `>>>` sont appelés **invite de commandes**. Ils indiquent que l'interpréteur Python attend une instruction de votre part.
+    
+    Si vous veniez à faire des copier/coller depuis les exemples de ces travaux pratiques, vous ne devez **jamais** les recopier.
+    Ils n'ont aucune signification dans le langage Python et ne servent qu'à indiquer où écrire votre instruction dans la console.
+
+#### Premier calcul
+
+!!! note "Instructions"
+
+    - Retournez sur [:material-link: Basthon](https://console.basthon.fr){:target="_blank"}
+    - Saisissez la valeur `#!python 2` et appuyez sur ++enter++
+    - Saisissez l'expression `#!python 2 + 2` et appuyez sur ++enter++
+    - Saisissez l'expression `#!python 2.5 + 2.5` et appuyez sur ++enter++.
+    - Vous devez obtenir l'affichage suivant :
+
+        ```
+        >>> 2
+        2
+        >>> 2 + 2
+        4
+        >>> 2.5 + 2.5
+        5.0
+        ```
+
+!!! info "Explication"
+
+    - À la soumission d'une **expression** à l'interpréteur Python, celui-ci l'évalue et affiche sa **valeur**
+    - L'interpréteur attend ensuite une nouvelle saisie de la part de l'utilisateur
+    - Notez l'usage du point et non de la virgule comme séparateur décimal
+
+#### Les opérateurs arithmétiques
+
+!!! note "Instructions"
+
+    Testez dans la console, une expression Python correspondant à chacune des descriptions suivantes :
+
+    - Une addition entre un nombre entier et un nombre décimal
+    - Une soustraction (opérateur `-`)
+    - Une multiplication (opérateur `*`)
+    - Une division (opérateur `/`)
+    - Une puissance (opérateur `**`)
+
+#### Les variables
+
+Une **variable** est un emplacement mémoire nommé dans lequel il est possible d'enregistrer toute valeur.
+L'opération consistant à enregistrer une valeur dans une variable s'appelle une **affectation**.
+Celle-ci s'effectue en utilisant l'opérateur `=`.
+
+!!! example "Exemple"
+
+    ```
+    >>> n = 10
+    >>> n
+    10
+    >>> carre = n ** 2
+    >>> carre
+    100
+    ```
+
+    1. On enregistre la valeur `#!python 10` dans `n`. En programmation, on dit qu'on affecte `#!python 10` à la variable `n`
+    2. On récupère la valeur enregistrée dans une variable en écrivant simplement son nom
+    3. On affecte le résulat du calcul `#!python n ** 2` à la variable `carre`<br>
+      Ce que fait Python : `#!python n ** 2` → `#!python 10 ** 2` → `#!python 100` → affectation de la valeur `#!python 100` à la variable `carre`
+    4. On accède à la valeur de la variable `carre`
+
+!!! note "Instructions"
+
+    Nous souhaitons calculer la moyenne de notes sur 20. Pour cela, effectuez les opérations décrites ci-dessous dans la console Python :
+
+    1. Affectez le calcul `#!python 15 + 18.5 + 12` à la variable `total` 
+    2. Affectez le nombre de notes à la variable `nb_notes`, 
+    3. Affectez le calcul de la moyenne à la variable `moyenne`
+    4. Accédez au résultat du calcul en écrivant simplement le nom de la variable `moyenne`
+
+??? success "Solution"
+
+    ```
+    >>> total = 15 + 18.5 + 12
+    >>> nb_notes = 3
+    >>> moyenne = total / nb_notes
+    >>> moyenne
+    15.166666666666666
+    ```
+
+
+### Le mode programme
+
+!!! danger "Attention"
+    
+    Vous allez maintenant utiliser l'interpréteur Python en **mode programme** (c'est-à-dire la zone de saisie de **gauche**).
+
+
+#### Les chaînes de caractères
+
+En programmation, tout texte est appelé **chaîne de caractères**. 
+Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou simples `'`.
+
+!!! example "Exemple"
+
+    ```python
+    "Ceci est une chaîne de caractères"
+    'Ceci est aussi une chaîne de caractères'
+    ```
+
+!!! note "Instruction"
+
+    1. Copiez/collez le code à ci-dessous dans l'éditeur *(pour rappel, la zone de gauche)* :
+        ```python
+        prenom = ...
+        phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
+        print(phrase)
+        ```
+    2. Complétez le code en remplaçant **uniquement** les `...` par la chaîne de caractères de votre prénom
+    3. Lancez le programme et observez le résultat dans la console *(la zone de droite)*
+
+??? success "Une solution possible"
+
+    
+    ```python
+    prenom = "Ginette"
+    phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
+    print(phrase)
+    ```
+
+!!! info "Explication du programme"
+
+    - L'opérateur `+` est utilisé pour assembler des chaînes de caractères. Cette opération est appelée **concaténation**.
+    - La fonction `print` permet l'affichage d'un texte dans la console.
+
+
+### Demande d'une saisie utilisateur
+
+#### Découverte de la fonction `input`
+
+!!! note "Instructions"
+
+    1. Remplacez le code de l'éditeur par le code suivant :
+        ```python
+        prenom = input("Saisir votre prénom : ")
+        phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
+        print(phrase)
+        ```
+    2. Exécutez le programme
+    3. Saisissez votre prénom dans la **console** et appuyez sur ++enter++
+
+!!! info "Explication"
+
+    `input` est une fonction Python qui permet de demander à l'utilisateur de saisir du texte.
+    La saisie s'effectue dans la **console** *(zone de saisie de droite)* et est transmise au programme en appuyant sur ++enter++.
+    
+    <figure markdown>
+    ![Saisie de texte sous Basthon](images/basthon_input.png)
+    </figure>
+
+
+#### Programmer un calculateur d'âge
+
+!!! note "Instructions"
+
+    1. Remplacez le code de l'éditeur par le code suivant :
+        ```python
+        prenom = input("Saisir votre prénom : ")
+        annee_naissance = int(input("Votre annee de naissance : "))
+        age = 2023 - ...
+        
+        phrase = "Bonjour " + prenom + " ! Vous avez " + str(...) + " ans."
+        print(phrase)
+        ```
+
+    2. Complétez l'expression `#!python age = 2023 - ...` en remplaçant `...` par la variable adéquate
+    3. Compléter l'expression `#!python " ! Vous avez " + str(...) + " ans."` en remplaçant `...` par la variable adéquate
+    4. Exécutez le programme
+    5. Effectuez les saisies demandées par le programme depuis **console** et appuyez sur ++enter++ à chaque fois
+
+??? success "Solution"
+
+    ```python
+    prenom = input("Saisir votre prénom : ")
+    annee_naissance = int(input("Votre annee de naissance : "))
+    age = 2023 - annee_naissance
+    
+    phrase = "Bonjour " + prenom + " ! Vous avez " + str(age) + " ans."
+    print(phrase)
+    ```
+
+!!! info "Explication du programme"
+
+    - La fonction `input` renvoie toujours une chaîne de caractères
+    - La fonction `int` permet la conversion de la valeur renvoyée par `input` en un nombre entier.
+    - La fonction `str` permet la conversion d'une valeur numérique en une chaîne de caractères.
+
+
+
+### Les boucles
+
+Les boucles sont des instructions Python permettant de répéter certaines portions de code.
+Elles ouvrent la voie à l'automatisation des traitements.
+
+!!! note "Instructions"
+
+    1. Remplacer le code de l'éditeur par le code suivant :
+        ```python
+        print('\nAvant la boucle : la variable "n" n\'existe pas')
+        
+        for n in range(10):
+            print('Dans la boucle  : "n" vaut ' + str(n) + ' et son carré vaut ' + str(n**2))
+        
+        print('Après la boucle : la variable "n" vaut ' + str(nombre) + '\n')
+        ```
+
+!!! info "Explication du code"
+
+    - L'instruction `#!python for n in range(10):` est une boucle. Elle permet la répétition d'un bloc de code
+    - Le bloc de code appartenant à la boucle correspond aux instructions « décalées » vers la droite (on dit **indentées**) et situées juste en dessous de l'instruction de boucle
+    - Toutes les instructions d'un même bloc doivent avoir la même indentation(utilisez la touche ++tab++ et non ++space++ pour indenter)
+
+
+#### Affichage d'une table de multiplication
+
+!!! note "Instructions"
+
+    En utilisant une boucle, écrire le code Python permettant d'obtenir l'affichage suivant :
+
+    ```
+    8 x 0 = 0
+    8 x 1 = 8
+    8 x 2 = 16
+    8 x 3 = 24
+    8 x 4 = 32
+    8 x 5 = 40
+    8 x 6 = 48
+    8 x 7 = 56
+    8 x 8 = 64
+    8 x 9 = 72
+    8 x 10 = 80
+    ```
+
+??? help "Aide"
+
+    Remplacez uniquement les `...` par les expressions Python adéquates :
+
+    ```python
+    for n in range(...):
+        print("8 x " + str(...) + " = " + str(...))
+    ```
+
+??? success "Solution"
+
+    ```python
+    for n in range(11):
+        print("8 x " + str(n) + " = " + str(8*n))
+    ```
+
+    Faites preuve de curiosité et ne recopiez pas simplement la solution.
+    Essayez une autre table de multiplication, allez au delà de 10 ou essayez une autre opération !
+
+
+## Turtle
+
+La tortue graphique (ou *Turtle*) est un module d'initiation à la programmation.
+Son fonctionnement consiste à réaliser des dessins en déplaçant une tortue virtuelle dotée d'un stylo.
+
+|   Fonction    | Description                                                                                    |
+|:-------------:|:-----------------------------------------------------------------------------------------------|
+| `forward(n)`  | Avancer la tortue de *n* pixel                                                                 |
+| `backward(n)` | Reculer la tortue de *n* pixel                                                                 |
+|   `left(n)`   | Effectuer une rotation de la tortue d'un angle de *n* degrés vers la gauche (sens antihoraire) |
+|  `right(n)`   | Effectuer une rotation de la tortue d'un angle de *n* degrés vers la droite (sens horaire)     |
+| `goto(x, y)`  | Déplacer la tortue aux coordonnées *(x, y)*                                                    |
+|   `penup()`   | Lever le crayon                                                                                |
+|  `pendown()`  | Baisser le crayon                                                                              |
+
+Vous pouvez consulter la documentation de ces fonctions et en découvrir bien d'autres sur le site officiel de Python :
+[:material-link: https://docs.python.org/fr/3/library/turtle.html](https://docs.python.org/fr/3/library/turtle.html){:target="_blank"}
+
+### Expérimentation
+
+
+!!! note "Instructions"
+
+    1. Remplacez le code de l'éditeur par le code ci-dessous
+        ```python
+        import turtle
+        
+        # Tracé de démonstration
+        turtle.forward(50)
+        turtle.left(90)
+        turtle.forward(50)
+        turtle.right(90)
+        turtle.forward(50)
+        
+        turtle.penup()
+        turtle.goto(0, 0)
+        turtle.left(90)
+        turtle.pendown()
+        turtle.backward(100)
+        
+        # Boucle des événements
+        # Nécessaire pour activer l'affichage de votre tracé
+        turtle.mainloop()
+        ```
+    2. Exécutez le code et observez le résultat
+    3. Modifiez le code à votre guise pour expérimenter chacune des fonctions
+
+### Tracé de figures géométriques
+
+!!! note "Instructions"
+    
+    Écrire le code Python permettant de tracer les figures géométriques suivantes :
+
+    - Un carré
+    - Un triangle équilatéral
+    - Un pentagone
+    - Un carré en utilisant une boucle
+    - Un pentagone en utilisant une boucle
+    - Un polygone à *n* sommets
