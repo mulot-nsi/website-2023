@@ -150,7 +150,7 @@ Celle-ci s'effectue en utilisant l'opérateur `=`.
 #### Les chaînes de caractères
 
 En programmation, tout texte est appelé **chaîne de caractères**. 
-Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou simples `'`.
+Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` ou simples `'`.
 
 !!! example "Exemple"
 
@@ -164,10 +164,9 @@ Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou s
     1. Copiez/collez le code à ci-dessous dans l'éditeur *(pour rappel, la zone de gauche)* :
         ```python
         prenom = ...
-        phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
-        print(phrase)
+        print("Bonjour", prenom, "! Comment vas-tu ?")
         ```
-    2. Complétez le code en remplaçant **uniquement** les `...` par la chaîne de caractères de votre prénom
+    2. Complétez le code en remplaçant **uniquement** les `...` par la **chaîne de caractères** de votre prénom
     3. Lancez le programme et observez le résultat dans la console *(la zone de droite)*
 
 ??? success "Une solution possible"
@@ -175,14 +174,13 @@ Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou s
     
     ```python
     prenom = "Ginette"
-    phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
-    print(phrase)
+    print("Bonjour", prenom, "! Comment vas-tu ?")
     ```
 
 !!! info "Explication du programme"
 
-    - L'opérateur `+` est utilisé pour assembler des chaînes de caractères. Cette opération est appelée **concaténation**.
-    - La fonction `print` permet l'affichage d'un texte dans la console.
+    - La chaîne de caractères de votre prénom est stockée dans la variable `prenom`
+    - La fonction `print` permet l'affichage d'un texte dans la console
 
 
 ### Demande d'une saisie utilisateur
@@ -194,8 +192,7 @@ Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou s
     1. Remplacez le code de l'éditeur par le code suivant :
         ```python
         prenom = input("Saisir votre prénom : ")
-        phrase = "Bonjour " + prenom + " ! Comment allez-vous ?"
-        print(phrase)
+        print("Bonjour", prenom, "! Comment vas-tu ?")
         ```
     2. Exécutez le programme
     3. Saisissez votre prénom dans la **console** et appuyez sur ++enter++
@@ -218,26 +215,23 @@ Celle-ci se définit en délimitant le texte par des guillemets doubles `"` ou s
         ```python
         prenom = input("Saisir votre prénom : ")
         annee_naissance = int(input("Votre annee de naissance : "))
-        age = 2023 - ...
+        age = 2024 - ...
         
-        phrase = "Bonjour " + prenom + " ! Vous avez " + str(...) + " ans."
-        print(phrase)
+        print("Bonjour", prenom, "! Vous avez", age, "ans.")
         ```
 
-    2. Complétez l'expression `#!python age = 2023 - ...` en remplaçant `...` par la variable adéquate
-    3. Compléter l'expression `#!python " ! Vous avez " + str(...) + " ans."` en remplaçant `...` par la variable adéquate
-    4. Exécutez le programme
-    5. Effectuez les saisies demandées par le programme depuis **console** et appuyez sur ++enter++ à chaque fois
+    2. Complétez l'expression `#!python age = 2024 - ...` en remplaçant `...` par la **variable** adéquate
+    3. Exécutez le programme
+    4. Effectuez les saisies demandées par le programme depuis **console** et appuyez sur ++enter++ à chaque fois
 
 ??? success "Solution"
 
     ```python
     prenom = input("Saisir votre prénom : ")
     annee_naissance = int(input("Votre annee de naissance : "))
-    age = 2023 - annee_naissance
+    age = 2024 - annee_naissance
     
-    phrase = "Bonjour " + prenom + " ! Vous avez " + str(age) + " ans."
-    print(phrase)
+    print("Bonjour", prenom, "! Vous avez", age, "ans.")
     ```
 
 !!! info "Explication du programme"
@@ -260,9 +254,9 @@ Elles ouvrent la voie à l'automatisation des traitements.
         print('\nAvant la boucle : la variable "n" n\'existe pas')
         
         for n in range(10):
-            print('Dans la boucle  : "n" vaut ' + str(n) + ' et son carré vaut ' + str(n**2))
+            print('  Dans la boucle  : "n" vaut', n, ' et son carré vaut ', n**2)
         
-        print('Après la boucle : la variable "n" vaut ' + str(nombre) + '\n')
+        print('Après la boucle : la variable "n" vaut', n)
         ```
 
 !!! info "Explication du code"
@@ -298,14 +292,14 @@ Elles ouvrent la voie à l'automatisation des traitements.
 
     ```python
     for n in range(...):
-        print("8 x " + str(...) + " = " + str(...))
+        print("8 x", ..., "=", 8*...)
     ```
 
 ??? success "Solution"
 
     ```python
     for n in range(11):
-        print("8 x " + str(n) + " = " + str(8*n))
+        print("8 x", n, "=", 8*n)
     ```
 
     Faites preuve de curiosité et ne recopiez pas simplement la solution.
