@@ -89,7 +89,8 @@ Vous allez commencer par utiliser l'interpréteur Python comme une calculatrice 
 
 !!! note "Instructions"
 
-    Testez dans la console, une expression Python correspondant à chacune des descriptions suivantes :
+    Testez dans la console, une expression Python correspondant à chacune des descriptions ci-dessous.
+    Vous êtes libre d'utiliser les nombres que vous voulez.
 
     - Une addition entre un nombre entier et un nombre décimal
     - Une soustraction (opérateur `-`)
@@ -305,6 +306,51 @@ Elles ouvrent la voie à l'automatisation des traitements.
     Faites preuve de curiosité et ne recopiez pas simplement la solution.
     Essayez une autre table de multiplication, allez au delà de 10 ou essayez une autre opération !
 
+### Jeu du nombre secret
+
+!!! notes "Instructions"
+
+    1. Remplacer le code de l'éditeur par le code suivant :
+
+    ```python
+    import random
+    
+    print("\n "*2)
+    print("             *** Jeu du nombre secret ***")
+    print(" ")
+    print("La machine va mémoriser un nombre, à vous de le trouver !")
+    print("       Attention, le nombre d'essais est limité")
+    print("\n "*2)
+    
+    
+    print("Vous avez 5 tentatives pour trouver un nombre entre 0 et 1000")
+    
+    nombre_secret = random.randint(0, 1000)
+    print(nombre_secret)
+    tentatives = 0
+    
+    
+    while tentatives < 5:
+        choix = int(input("Votre nombre : "))
+        tentatives = tentatives + 1
+        
+        if choix > nombre_secret :
+            print("Trop grand !")
+        elif choix < nombre_secret :
+            print("Trop petit")
+        else:
+            break
+
+    if choix == nombre_secret:
+        print("Bravo vous avez gagné")
+    else:
+        print("Vous avez perdu, le nombre secret était", nombre_secret)
+    ```
+
+    2. Testez le programme
+    3. Votre professeur de SNT a fait un jeu beaucoup trop difficile ! Modifiez-le de façon à :
+        - Chercher un nombre entre 0 et 100 *(au lieu de 0 et 1000)*
+        - Avoir 8 tentatives pour chercher le nombre *(au lieu de 5)*
 
 ## Turtle
 
