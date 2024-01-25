@@ -326,7 +326,6 @@ Elles ouvrent la voie à l'automatisation des traitements.
     print("Vous avez 5 tentatives pour trouver un nombre entre 0 et 1000")
     
     nombre_secret = random.randint(0, 1000)
-    print(nombre_secret)
     tentatives = 0
     
     
