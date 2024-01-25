@@ -64,10 +64,10 @@ Vous allez commencer par utiliser l'interpréteur Python comme une calculatrice 
 
 !!! note "Instructions"
 
-    - Retournez sur [:material-link: Basthon](https://console.basthon.fr){:target="_blank"}
-    - Saisissez la valeur `#!python 2` et appuyez sur ++enter++
-    - Saisissez l'expression `#!python 2 + 2` et appuyez sur ++enter++
-    - Saisissez l'expression `#!python 2.5 + 2.5` et appuyez sur ++enter++.
+    - Retournez sur [:material-link: Basthon](https://console.basthon.fr){:target="_blank"} et préparez vous à saisir dans la **console** (zone de **droite**)
+    - Saisissez la valeur `#!python 2` et appuyez sur la touche ++enter++
+    - Saisissez l'expression `#!python 2 + 2` et appuyez sur sur la touche ++enter++
+    - Saisissez l'expression `#!python 2.5 + 2.5` et appuyez sur sur la touche ++enter++.
     - Vous devez obtenir l'affichage suivant :
 
         ```
@@ -102,24 +102,30 @@ Vous allez commencer par utiliser l'interpréteur Python comme une calculatrice 
 
 Une **variable** est un emplacement mémoire nommé dans lequel il est possible d'enregistrer toute valeur.
 L'opération consistant à enregistrer une valeur dans une variable s'appelle une **affectation**.
-Celle-ci s'effectue en utilisant l'opérateur `=`.
+Celle-ci s'effectue en utilisant l'opérateur `=`. 
 
 !!! example "Exemple"
 
-    ```
-    >>> n = 10
-    >>> n
+    ``` python
+    >>> n = 10 # (1)!
+    >>> n # (2)!
     10
-    >>> carre = n ** 2
-    >>> carre
+    >>> carre = n ** 2 # (3)!
+    >>> carre # (4)!
     100
     ```
 
-    1. On enregistre la valeur `#!python 10` dans `n`. En programmation, on dit qu'on affecte `#!python 10` à la variable `n`
+    1. On enregistre la valeur `#!python 10` dans `n`.<br>En programmation, on dit qu'on affecte `#!python 10` à la variable `n`
     2. On récupère la valeur enregistrée dans une variable en écrivant simplement son nom
-    3. On affecte le résulat du calcul `#!python n ** 2` à la variable `carre`<br>
-      Ce que fait Python : `#!python n ** 2` → `#!python 10 ** 2` → `#!python 100` → affectation de la valeur `#!python 100` à la variable `carre`
+    3. On affecte le calcul `#!python n ** 2` à la variable `carre`<br><br>
+       Ce que fait Python :
+       <ul>
+         <li>effectue le calcul `#!python n ** 2` → `#!python 10 ** 2` → `#!python 100`</li>
+         <li>enregistre le résultat du calcul à la variable `carre`</li>
+       </ul>
     4. On accède à la valeur de la variable `carre`
+
+    Cliquez sur les **+** pour avoir les explications de chacune des commandes saisies dans la console.
 
 !!! note "Instructions"
 
@@ -190,10 +196,10 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 
 !!! note "Instructions"
 
-    1. Remplacez le code de l'éditeur par le code suivant :
+    1. Remplacez l'intégralité du code de l'éditeur par le code suivant :
         ```python
-        prenom = input("Saisir votre prénom : ")
-        print("Bonjour", prenom, "! Comment vas-tu ?")
+        texte_saisie = input("Votre prénom : ")
+        print("Bonjour", texte_saisie, "! Comment vas-tu", texte_saisie, "?")
         ```
     2. Exécutez le programme
     3. Saisissez votre prénom dans la **console** et appuyez sur ++enter++
@@ -202,6 +208,7 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 
     `input` est une fonction Python qui permet de demander à l'utilisateur de saisir du texte.
     La saisie s'effectue dans la **console** *(zone de saisie de droite)* et est transmise au programme en appuyant sur ++enter++.
+    La valeur saisie par l'utilisateur est alors enregistrée dans la variable `texte_saisie`.
     
     <figure markdown>
     ![Saisie de texte sous Basthon](images/basthon_input.png)
@@ -212,18 +219,18 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 
 !!! note "Instructions"
 
-    1. Remplacez le code de l'éditeur par le code suivant :
+    1. Remplacez l'intégralité du code de l'éditeur par le code suivant :
         ```python
-        prenom = input("Saisir votre prénom : ")
+        prenom = input("Votre prénom : ")
         annee_naissance = int(input("Votre annee de naissance : "))
         age = 2024 - ...
         
         print("Bonjour", prenom, "! Vous avez", age, "ans.")
         ```
 
-    2. Complétez l'expression `#!python age = 2024 - ...` en remplaçant `...` par la **variable** adéquate
+    2. Remplaçant les `...` par le **nom de la variable** qui permettrait le calcul de l'age
     3. Exécutez le programme
-    4. Effectuez les saisies demandées par le programme depuis **console** et appuyez sur ++enter++ à chaque fois
+    4. Fournissez les informations demandées par le programme depuis la **console** en appuyant sur la touche ++enter++ après chaque saisie
 
 ??? success "Solution"
 
@@ -238,8 +245,9 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 !!! info "Explication du programme"
 
     - La fonction `input` renvoie toujours une chaîne de caractères
-    - La fonction `int` permet la conversion de la valeur renvoyée par `input` en un nombre entier.
-    - La fonction `str` permet la conversion d'une valeur numérique en une chaîne de caractères.
+    - La fonction `int` permet la conversion de la valeur renvoyée par `input` en un nombre entier
+    - Le programme demande donc des informations à l'utilisateur, effectue un calcul et affiche le résultat
+
 
 
 
@@ -250,14 +258,10 @@ Elles ouvrent la voie à l'automatisation des traitements.
 
 !!! note "Instructions"
 
-    1. Remplacer le code de l'éditeur par le code suivant :
+    1. Remplacez l'intégralité du code de l'éditeur par le code suivant :
         ```python
-        print('\nAvant la boucle : la variable "n" n\'existe pas')
-        
         for n in range(10):
-            print('  Dans la boucle  : "n" vaut', n, ' et son carré vaut ', n**2)
-        
-        print('Après la boucle : la variable "n" vaut', n)
+            print('la variable n vaut', n, 'et son carré vaut', n**2)
         ```
 
 !!! info "Explication du code"
@@ -321,15 +325,13 @@ Elles ouvrent la voie à l'automatisation des traitements.
     print("La machine va mémoriser un nombre, à vous de le trouver !")
     print("       Attention, le nombre d'essais est limité")
     print("\n "*2)
-    
-    
-    print("Vous avez 5 tentatives pour trouver un nombre entre 0 et 1000")
+     
+    print("3 tentatives pour trouver un nombre entre 0 et 1000")
     
     nombre_secret = random.randint(0, 1000)
     tentatives = 0
-    
-    
-    while tentatives < 5:
+
+    while tentatives < 3:
         choix = int(input("Votre nombre : "))
         tentatives = tentatives + 1
         
@@ -347,9 +349,9 @@ Elles ouvrent la voie à l'automatisation des traitements.
     ```
 
     2. Testez le programme
-    3. Votre professeur de SNT a fait un jeu beaucoup trop difficile ! Modifiez-le de façon à :
-        - Chercher un nombre entre 0 et 100 *(au lieu de 0 et 1000)*
-        - Avoir 8 tentatives pour chercher le nombre *(au lieu de 5)*
+    3. Votre professeur de SNT a fait un jeu beaucoup trop difficile :expressionless:. Modifiez-le de façon à :
+        - Chercher un nombre entre 0 et 100
+        - Avoir 8 tentatives pour chercher le nombre
 
 ## Turtle
 
@@ -385,15 +387,8 @@ Vous pouvez consulter la documentation de ces fonctions et en découvrir bien d'
         turtle.right(90)
         turtle.forward(50)
         
-        turtle.penup()
-        turtle.goto(0, 0)
-        turtle.left(90)
-        turtle.pendown()
-        turtle.backward(100)
-        
-        # Boucle des événements
-        # Nécessaire pour activer l'affichage de votre tracé
-        turtle.mainloop()
+        # Indique que le tracé est terminé
+        turtle.done()
         ```
     2. Exécutez le code et observez le résultat
     3. Modifiez le code à votre guise pour expérimenter chacune des fonctions
@@ -405,8 +400,22 @@ Vous pouvez consulter la documentation de ces fonctions et en découvrir bien d'
     Écrire le code Python permettant de tracer les figures géométriques suivantes :
 
     - Un carré
-    - Un triangle équilatéral
-    - Un pentagone
-    - Un carré en utilisant une boucle
-    - Un pentagone en utilisant une boucle
-    - Un polygone à *n* sommets
+    - Un carré *(en utilisant une boucle)*
+    - Un pentagone *(en modifiant le nombre de répétition de la boucle et l'angle)*
+    - Un polygone à *n* sommets *(trouver une formule pour calculer l'angle en fonction du nombre de sommets)*
+
+!!! note "Instructions"
+    
+    Testez ces tracés et essayez d'en imaginer d'autres :
+
+    ```python
+    for n in range(50):
+        turtle.forward(10+2*n)
+        turtle.right(90)
+    ```
+
+    ```python
+    for n in range(50):
+        turtle.forward(10+2*n)
+        turtle.right(45)
+    ```
