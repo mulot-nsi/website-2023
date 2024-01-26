@@ -400,22 +400,38 @@ Vous pouvez consulter la documentation de ces fonctions et en découvrir bien d'
     Écrire le code Python permettant de tracer les figures géométriques suivantes :
 
     - Un carré
-    - Un carré *(en utilisant une boucle)*
-    - Un pentagone *(en modifiant le nombre de répétition de la boucle et l'angle)*
+    - Un carré *(en utilisant une boucle et éviter d'écrire 4 fois le même code)*
+    - Un pentagone *(en modifiant le nombre de répétitions de la boucle et l'angle)*
     - Un polygone à *n* sommets *(trouver une formule pour calculer l'angle en fonction du nombre de sommets)*
 
 !!! note "Instructions"
     
     Testez ces tracés et essayez d'en imaginer d'autres :
 
+    <h4>Premier tracé</h4>
     ```python
+    import turtle
+
+    turtle.speed(0)
+
     for n in range(50):
-        turtle.forward(10+2*n)
+        turtle.forward(2*n)
         turtle.right(90)
+
+    turtle.done()
     ```
 
+    <h4>Second tracé</h4>
     ```python
-    for n in range(50):
-        turtle.forward(10+2*n)
-        turtle.right(45)
+    import turtle
+    
+    turtle.speed(0)
+    
+    for n in range(255):
+        couleur = "#33cc" + hex(n)[2:].zfill(2)
+        turtle.pencolor(couleur)        
+        turtle.forward(n)
+        turtle.right(70)
+    
+    turtle.done()
     ```
