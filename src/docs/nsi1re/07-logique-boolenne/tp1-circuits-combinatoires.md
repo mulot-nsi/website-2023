@@ -5,7 +5,7 @@ description: Création de circuits logiques
 
 # Les circuits combinatoires
 
-Rendez-vos sur le site [:material-link: logic.ly](lhttps://logic.ly/demo/) et construisez les circuits logiques suivants :
+Rendez-vos sur le site [:material-link: logic.ly](https://logic.ly/demo/) et construisez les circuits logiques suivants :
 
 - `A ET B`
 - `NON(A ET B)`
