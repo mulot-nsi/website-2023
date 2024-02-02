@@ -107,23 +107,27 @@ Celle-ci s'effectue en utilisant l'opérateur `=`.
 !!! example "Exemple"
 
     ``` python
-    >>> n = 10 # (1)!
+    >>> n = 9 # (1)!
     >>> n # (2)!
+    9
+    >>> n += 1 # (3)!
+    >>> n
     10
-    >>> carre = n ** 2 # (3)!
-    >>> carre # (4)!
+    >>> carre = n ** 2 # (4)!
+    >>> carre # (5)!
     100
     ```
 
-    1. On enregistre la valeur `#!python 10` dans `n`.<br>En programmation, on dit qu'on affecte `#!python 10` à la variable `n`
+    1. On enregistre la valeur `#!python 9` dans `n`.<br>En programmation, on dit qu'on **affecte** `#!python 9` **à la variable** `n`
     2. On récupère la valeur enregistrée dans une variable en écrivant simplement son nom
-    3. On affecte le calcul `#!python n ** 2` à la variable `carre`<br><br>
+    3. On ajoute 1 à la variable `n` grâce à l'opérateur `+=`
+    4. On peut affecter le résultat d'un calcul à une variable.<br>Ici on affecte `#!python n ** 2` à la variable `carre`<br><br>
        Ce que fait Python :
        <ul>
          <li>effectue le calcul `#!python n ** 2` → `#!python 10 ** 2` → `#!python 100`</li>
-         <li>enregistre le résultat du calcul à la variable `carre`</li>
+         <li>enregistre le résultat du calcul dans la variable `carre`</li>
        </ul>
-    4. On accède à la valeur de la variable `carre`
+    5. On accède à la valeur de la variable `carre`
 
     Cliquez sur les **+** pour avoir les explications de chacune des commandes saisies dans la console.
 
@@ -131,19 +135,27 @@ Celle-ci s'effectue en utilisant l'opérateur `=`.
 
     Nous souhaitons calculer la moyenne de notes sur 20. Pour cela, effectuez les opérations décrites ci-dessous dans la console Python :
 
-    1. Affectez le calcul `#!python 15 + 18.5 + 12` à la variable `total` 
-    2. Affectez le nombre de notes à la variable `nb_notes`, 
-    3. Affectez le calcul de la moyenne à la variable `moyenne`
-    4. Accédez au résultat du calcul en écrivant simplement le nom de la variable `moyenne`
+    1. Vous disposez des notes 15, 12  et 18,5.
+       Affectez le calcul `#!python 15 + 12 + 18.5` à la variable `total`
+    2. Affichez le total
+    3. Calculez la moyenne
+    4. Vous obtenez la nouvelle note 16. Ajoutez cette note au total en utilisant l'opérateur `+=`
+    5. Affichez le nouveau total
+    6. Calculez la nouvelle moyenne
 
 ??? success "Solution"
-
+    **Attention**, ne copiez/collez pas toute la solution dans la console, ça ne fonctionnera pas !
+    
     ```
-    >>> total = 15 + 18.5 + 12
-    >>> nb_notes = 3
-    >>> moyenne = total / nb_notes
-    >>> moyenne
+    >>> total = 15 + 12 + 18.5
+    >>> total
+    45.5
+    >>> total / 3
     15.166666666666666
+    >>> total += 16
+    61.5
+    >>> total / 4
+    15.375
     ```
 
 
@@ -196,19 +208,24 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 
 !!! note "Instructions"
 
-    1. Remplacez l'intégralité du code de l'éditeur par le code suivant :
+    1. Effacez le code de l'exercice précédent
+    2. Copiez l'intégralité du code ci-dessous dans l'éditeur **sans le modifier** :
         ```python
         texte_saisie = input("Votre prénom : ")
-        print("Bonjour", texte_saisie, "! Comment vas-tu", texte_saisie, "?")
+        
+        print(" ")
+        print("Bonjour", texte_saisie)
+        print("Félicitations", texte_saisie, "!")
+        print("Vous avez correctement lu l'énoncé 👏")
         ```
     2. Exécutez le programme
     3. Saisissez votre prénom dans la **console** et appuyez sur ++enter++
 
 !!! info "Explication"
 
-    `input` est une fonction Python qui permet de demander à l'utilisateur de saisir du texte.
-    La saisie s'effectue dans la **console** *(zone de saisie de droite)* et est transmise au programme en appuyant sur ++enter++.
-    La valeur saisie par l'utilisateur est alors enregistrée dans la variable `texte_saisie`.
+    - `input` est une instruction permettant d'afficher un message pour demander à l'utilisateur de saisir du texte
+    - La saisie s'effectue dans la **console** et est transmise au programme en appuyant sur la tocuhe ++enter++
+    - La valeur saisie est alors enregistrée dans la variable `texte_saisie` et est utilisable dans le programme
     
     <figure markdown>
     ![Saisie de texte sous Basthon](images/basthon_input.png)
@@ -221,16 +238,22 @@ Celle-ci se définit en **délimitant le texte** par des guillemets doubles `"` 
 
     1. Remplacez l'intégralité du code de l'éditeur par le code suivant :
         ```python
+        # Demande de saisies à l'utilisateur
         prenom = input("Votre prénom : ")
         annee_naissance = int(input("Votre annee de naissance : "))
+        
+        # Calcul de l'age approximatif
         age = 2024 - ...
         
-        print("Bonjour", prenom, "! Vous avez", age, "ans.")
+        # Affichage de l'age
+        print("Bonjour", prenom, "! Vous avez entre", age-1, "et", age, "ans.")
         ```
 
-    2. Remplaçant les `...` par le **nom de la variable** qui permettrait le calcul de l'age
+    2. Remplacez **uniquement** les `...` par le **nom de la variable** qui permettrait le calcul de l'age
     3. Exécutez le programme
-    4. Fournissez les informations demandées par le programme depuis la **console** en appuyant sur la touche ++enter++ après chaque saisie
+    4. Lorsque le programme vous le demande, fournissez votre prémom et votre année de naissance
+    5. Exécutez une seconde fois le programme
+    6. Lorsque le programme vous le demande, fournissez votre prémom et l'année de naissance **1950**
 
 ??? success "Solution"
 
@@ -263,6 +286,7 @@ Elles ouvrent la voie à l'automatisation des traitements.
         for n in range(10):
             print('la variable n vaut', n, 'et son carré vaut', n**2)
         ```
+    2. Exécutez le programme et observez l'affichage dans la console
 
 !!! info "Explication du code"
 
@@ -275,7 +299,7 @@ Elles ouvrent la voie à l'automatisation des traitements.
 
 !!! note "Instructions"
 
-    En utilisant une boucle, écrire le code Python permettant d'obtenir l'affichage suivant :
+    **En modifiant le code utilisé précédemment**, essayez d'obtenir l'affichage suivant :
 
     ```
     8 x 0 = 0
@@ -400,9 +424,11 @@ Vous pouvez consulter la documentation de ces fonctions et en découvrir bien d'
     Écrire le code Python permettant de tracer les figures géométriques suivantes :
 
     - Un carré
-    - Un carré *(en utilisant une boucle et éviter d'écrire 4 fois le même code)*
+    - Un carré *(en utilisant une boucle et éviter d'écrire 4 fois le même code : `#!python for n in range(4):`)*
     - Un pentagone *(en modifiant le nombre de répétitions de la boucle et l'angle)*
     - Un polygone à *n* sommets *(trouver une formule pour calculer l'angle en fonction du nombre de sommets)*
+
+### Tracé de figures libres
 
 !!! note "Instructions"
     
