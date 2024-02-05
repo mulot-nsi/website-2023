@@ -21,3 +21,9 @@
 - [TP2 - Langage CSS](02-web/tp2-langage-css.md)
 - [TP3 - Confidentialité](02-web/tp3-confidentialite.md)
 - [Projet minisite](02-web/prj-minisite.md)
+
+## Chapitre 3 - Les réseaux sociaux
+
+<h3>Travaux pratiques</h3>
+
+- [TP1 - Modélisation](03-reseaux-sociaux/tp1-modelisation.md)
