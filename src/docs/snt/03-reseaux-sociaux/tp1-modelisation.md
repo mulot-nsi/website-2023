@@ -35,15 +35,13 @@ travaux pratiques.
 
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
         2. Dans le dossier `Document`, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
-        4. Dans le dossier `Réseaux sociaux`, créez le dossier `Modélisation`
+        3. Dans le dossier `SNT`, créez-le dossier `Réseaux sociaux`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
         2. Dans la **zone personnelle**, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `web`, créez-le
-        4. Dans le dossier `Réseaux sociaux`, créez le dossier `Modélisation`
+        3. Dans le dossier `SNT`, créez-le `Réseaux sociaux`
 
 ## Graphe d'un réseau social
 
@@ -72,8 +70,11 @@ trois personnes se connaissent.
     et dont les arêtes représentent le fait que deux acteurs **se connaissent** (c'est-à-dire qu'ils ont joué au moins une fois dans le même film).
 
     1. Téléchargez l'amorce de graphe : [:material-download: télécharger](assets/SNT03_graphe.odp){:download="SNT03_graphe.odp"}
-    2. Ouvrez le fichier avec **LibreOffice Impress** (ou à défaut, *Microsoft PowerPoint*)
-    3. Complétez le graphe après avoir lu l'*aide à la construction du graphe* ci-après
+    2. Déplacez le fichier `SNT03_graphe.odp` téléchargé dans le dossier `Réseaux sociaux`
+    3. Ouvrez le fichier avec **LibreOffice Impress** (ou à défaut, *Microsoft PowerPoint*) :
+        - *Christian B.* et *Michael C.* sont liés car ils se connaissent pour avoir joué dans *Le Prestige*
+        - *Michael C.* et *Anne H.* sont liés car ils se connaissent pour avoir joué dans *Interstellar*
+    4. Complétez le graphe après avoir lu le bloc **:material-lightbulb-on-outline: aide à la construction du graphe** ci-après
 
 !!! help "Aide à la construction du graphe"
 
@@ -119,9 +120,12 @@ Une fois le(s) centre(s) trouvé(s), il vous restera à préciser le rayon et le
     qu'il vous faut compléter avec l'ensemble des acteurs et des caractéristiques demandées.
     Pensez à consulter l'aide pour voir ce à quoi doit ressembler votre tableau une fois terminé.
 
-    1. Téléchargez l'amorce du tableau de distances : [:material-download: télécharger](assets/SNT03_caractéristiques.ods){:download="SNT03_caractéristiques.ods"}
-    2. Ouvrez le fichier avec **LibreOffice Calc** (ou à défaut, *Microsoft Excel*)
-    3. Complétez le tableau après avoir lu l'*aide à la construction du tableau des distances* ci-après
+    1. Téléchargez l'amorce du tableau des caractéristiques : [:material-download: télécharger](assets/SNT03_caractéristiques.ods){:download="SNT03_caractéristiques.ods"}
+    2. Déplacez le fichier `SNT03_caractéristiques.ods` téléchargé dans le dossier `Réseaux sociaux`
+    3. Ouvrez le fichier avec **LibreOffice Calc** (ou à défaut, *Microsoft Excel*) :
+        - Il y a une distance de 2 entre *Christian B.* et *Cillian M.* car deux arêtes les séparent sur le graphe  
+        - Il y a une distance de 1 entre *Cillian M.* et *Tom H.* car ils sont directement liés par une arête
+    4. Complétez le tableau après avoir lu le bloc **:material-lightbulb-on-outline: aide à la construction du tableau des distances** ci-après
 
 !!! help "Aide à la construction du tableau des distances"
 
