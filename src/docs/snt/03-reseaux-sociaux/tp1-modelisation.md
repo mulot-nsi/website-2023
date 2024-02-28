@@ -163,18 +163,18 @@ au format ZIP. Suivez les instructions selon l'ordinateur utilisé :
 
         - Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers** 
           <span class="keys shortcut"><kbd>:fontawesome-brands-windows:</kbd><span>+</span><kbd>E</kbd></span>
-        - Accédez au dossier `SNT\Réseaux sociaux`
-        - Effectuez un clic droit sur le dossier `Modélisation` afin d'afficher son menu contextuel
+        - Accédez au dossier `SNT`
+        - Effectuez un clic droit sur le dossier `Réseaux sociaux` afin d'afficher son menu contextuel
         - Choisissez l'option :material-folder-zip-outline: **Compresser dans un fichier ZIP**
-        - Conservez `Modélisation.zip` comme nom de fichier
+        - Conservez `Réseaux sociaux.zip` comme nom de fichier
     
     === ":material-desktop-tower: Ordinateur fixe"
 
         - Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
-        - Depuis votre dossier personnel, accédez au dossier `SNT\Réseaux sociaux`
-        - Effectuez un clic droit sur le dossier `Modélisation` afin d'afficher son menu contextuel
+        - Depuis votre dossier personnel, accédez au dossier `SNT`
+        - Effectuez un clic droit sur le dossier `Réseaux sociaux` afin d'afficher son menu contextuel
         - Choisissez l'option **Envoyer vers ▸ Dossier compressé**
-        - Conservez `Modélisation.zip` comme nom de fichier
+        - Conservez `Réseaux sociaux.zip` comme nom de fichier
 
 ### Envoi du fichier ZIP
 
