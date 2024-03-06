@@ -27,3 +27,7 @@
 <h3>Travaux pratiques</h3>
 
 - [TP1 - Modélisation](03-reseaux-sociaux/tp1-modelisation.md)
+
+## Chapitre 4 - Les données structurées
+
+- [TP1 - Données ouvertes](04-donnees-structurees/tp1-donnees-ouvertes.md)

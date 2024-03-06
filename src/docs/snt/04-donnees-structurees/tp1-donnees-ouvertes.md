@@ -147,7 +147,7 @@ travaux pratiques.
 ??? success "Réponses"
 
     - Le film ayant fait le plus d'entrées en 2020 est **Tenet**
-    - Le film français ayant fait le plus d'entrées en 2013 est **Moi, Moche et Méchant 2**
+    - Le film français ayant fait le plus d'entrées en 2013 est **Les Profs**
     - Le film ayant fait le plus d'entrées en 2005 est **américain** 
 
 
@@ -300,7 +300,8 @@ travaux pratiques.
     3. Accédez au jeu de données **Les salles de cinéma en Île-de-France**<br>
        *:material-comment-alert: celui fourni par la région Ile-de-France et mis à jour le 6 décembre 2021*
     4. Téléchargez le fichier au format `csv` et ouvrez-le avec un tableur
-    5. En vous inspirant des exercices précédents, répondez aux questions ci-après
+    5. **En utilisant les fonctionnalités de filtrage et de calcul**, répondez aux questions ci-après<br>
+        *:material-comment-alert: conservez cette fois vos réponses dans un fichier texte*
 
 !!! danger "Le téléchargement ne fonctionne pas ?"
 
