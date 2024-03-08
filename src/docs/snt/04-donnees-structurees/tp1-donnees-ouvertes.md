@@ -318,4 +318,10 @@ travaux pratiques.
 
 !!! note "Consigne"
     
-    Une fois que vous avez notez vos réponses dans un fichier texte, connectez-vous à Pronote et répondez au QCM dédié à cette séance de travaux pratiques.
+    Une fois que vous avez notez vos réponses dans un fichier texte, vérifiez vos résultats avec Pronote : 
+    
+    1. Connectez-vous à Pronote
+    2. Accédez au **Cahier de textes**
+    3. Accédez à **Contenu et ressources**
+    4. Affichez le contenu des séances de **SC.NUMERIQ.TECHNOL.**
+    5. Trouvez la séance **Chapitre 4 - TP1 - Données ouvertes** et exécuter le QCM
