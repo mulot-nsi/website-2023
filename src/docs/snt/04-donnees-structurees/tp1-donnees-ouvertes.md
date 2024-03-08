@@ -314,3 +314,8 @@ travaux pratiques.
     - Combien d'écrans et de fauteuils dispose l'unique cinéma de Chelles ?
     - Combien de cinémas « Art et Essai » y a-t-il en Île-de-France ?
     - Combien de fauteuils ont l'ensemble des dix plus gros cinémas d'Île-de-France (en nombre de fauteuils) ?
+    - Combien de fauteuils ont l'ensemble des cinémas « Art et Essai » à Paris ?
+
+!!! note "Consigne"
+    
+    Une fois que vous avez notez vos réponses dans un fichier texte, connectez-vous à Pronote et répondez au QCM dédié à cette séance de travaux pratiques.
