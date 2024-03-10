@@ -1,4 +1,9 @@
-# Projet - Présentez-vous
+---
+title: Projet 1 - Présentez-vous
+description: Projet de création d'une page web de présentation 
+---
+
+# Présentez-vous
 
 ## Introduction
 

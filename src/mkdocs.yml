@@ -30,7 +30,6 @@ nav:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
           - TP1 - Création d'une page web: nsi1re/01-langages-web/tp1-creation-page-web.md
-          - Projet - Présentez-vous: nsi1re/01-langages-web/prj-presentez-vous.md
       - Chapitre 2 - Architecture des ordinateurs:
           - TP1 - Interpréteur de commandes: nsi1re/02-ordinateurs/tp1-cli.md
       - Chapitre 3 - Bases de la programmation:
@@ -40,13 +39,20 @@ nav:
       - Chapitre 4 - Les fonctions:
           - TP1 - Décomposition : nsi1re/04-fonctions/tp1-decompostion-en-sous-problemes.md
           - TP2 - Programmation défensive : nsi1re/04-fonctions/tp2-programmation-defensive.md
-          - Projet - Paysage généré: nsi1re/04-fonctions/prj-paysage.md
           - Remédiation : nsi1re/04-fonctions/remediation.md
       - Chapitre 6 - Les tableaux:
           - TP1 - Tableaux : nsi1re/06-tableaux/tp1-tableaux.md
           - TP2 - Tableaux 2D : nsi1re/06-tableaux/tp2-tableaux-2d.md
       - Chapitre 7 - Logique booléenne:
           - TP1 - Circuits combinatoires: nsi1re/07-logique-boolenne/tp1-circuits-combinatoires.md
+      - Chapitre 11 - Les dictionnaires:
+          - TP1 - Les données EXIF: nsi1re/11-dictionnaires/tp1-donnees-exif.md
+          - TP2 - Compteur de mots: nsi1re/11-dictionnaires/tp2-compteur-mots.md
+          - TP3 - Format JSON: nsi1re/11-dictionnaires/tp3-format-json.md
+      - Projets:
+          - Projet 1 - Présentez-vous: nsi1re/projets/prj-presentez-vous.md
+          - Projet 2 - Paysage aléatoire: nsi1re/projets/prj-paysage.md
+          - Projet 3 - Tableau 2D: nsi1re/projets/prj-tableau-2d.md
 not_in_nav: |
   snt/02-web/prj-minisite-faq.md
   

@@ -1,10 +1,9 @@
 ---
-sidebar_position: 3
-sidebar_label: Projet
-slug: /nsi-1re/fonctions/projet-paysage-aleatoire
+title: Projet 2 - Paysage aléatoire
+description: Projet de génération d'un paysage urbain aléatoire 
 ---
 
-# Génération d'un paysage aléatoire
+# Paysage aléatoire
 
 ## Objectif
 Le projet consiste en la génération d'un paysage urbain aléatoire.
