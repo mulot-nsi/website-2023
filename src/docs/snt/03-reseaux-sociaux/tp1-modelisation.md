@@ -120,7 +120,7 @@ Une fois le(s) centre(s) trouvé(s), il vous restera à préciser le rayon et le
     qu'il vous faut compléter avec l'ensemble des acteurs et des caractéristiques demandées.
     Pensez à consulter l'aide pour voir ce à quoi doit ressembler votre tableau une fois terminé.
 
-    1. Téléchargez l'amorce du tableau des caractéristiques : [:material-download: télécharger](assets/SNT03_caractéristiques.ods){:download="SNT03_caractéristiques.ods"}
+    1. Téléchargez l'amorce du tableau des caractéristiques : [:material-download: télécharger](assets/SNT03_caracteristiques.ods){:download="SNT03_caractéristiques.ods"}
     2. Déplacez le fichier `SNT03_caractéristiques.ods` téléchargé dans le dossier `Réseaux sociaux`
     3. Ouvrez le fichier avec **LibreOffice Calc** (ou à défaut, *Microsoft Excel*) :
         - Il y a une distance de 2 entre *Christian B.* et *Cillian M.* car deux arêtes les séparent sur le graphe  
