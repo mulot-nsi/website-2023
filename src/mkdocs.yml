@@ -26,6 +26,7 @@ nav:
           - TP1 - Modélisation: snt/03-reseaux-sociaux/tp1-modelisation.md
       - Chapitre 4 - Les données structurées:
           - TP1 - Données ouvertes: snt/04-donnees-structurees/tp1-donnees-ouvertes.md
+          - TP2 - Les métadonnées:  snt/04-donnees-structurees/tp2-metadonnees.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
