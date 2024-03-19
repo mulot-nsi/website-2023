@@ -114,7 +114,10 @@ Ces informations sont potentiellement renseignées dans les métadonnées du fic
         1. Rendez-vous sur [:material-link: www.pic2map.com](https://www.pic2map.com/){:target="_blank"}
         2. Chargez la photo
 
+!!! info "Explications"
 
+    Les métadonnées d'une image sont générées automatiquement par l'outil de capture (un appareil photo, un téléphone).
+    Elles sont intégrées directement aux données de l'image au moyen du format [:material-link: EXIF](https://fr.wikipedia.org/wiki/Exchangeable_image_file_format){:target="_blank"}.
 
 
 ### Métadonnées d'un PDF
@@ -153,8 +156,10 @@ Cette information est potentiellement renseignée dans les métadonnées du fich
 
         <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/efd3d7b6de654db6936301d60c50586e?sid=c1d30e0f-d3f0-465a-8b0e-43d0494657b5" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+!!! info "Explications"
 
-
+    Certaines métadonnées comme l'auteur ou les dates de création et modification sont générées automatiquement par les logiciels tableur ou de traitement de texte
+    Vous avez cependant la possibilité de les modifier et ou renseigner d'autres.
 
 ### Métadonnées d'un document
 
@@ -257,10 +262,9 @@ Celui que vous allez utiliser dans le cadre de ces travaux pratique permet notam
 
 ## Questionnaire
 
-!!! note "Instruction"
+!!! note "Instructions"
 
     1. Connectez-vous à l'ENT : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
     3. Accédez à l'application **Pronote**
     4. Depuis l'accueil, recherchez le devoir **SNT04 - TP2 - Métadonnées**
-    5. Cliquez sur le bouton <span class="pronote-button">Déposer ma copie</span>
-    7. Répondre au QCM
+    5. Répondre au QCM *(10 questions et pas de retour arrière possible)*
