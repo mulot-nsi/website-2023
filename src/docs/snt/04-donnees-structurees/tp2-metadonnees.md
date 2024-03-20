@@ -12,12 +12,12 @@ L'objectif de ces travaux pratiques est d'apprendre à consulter les métadonné
 
 !!! warning "Attention - QCM noté"
 
-    Soyez attentifs aux questions, les réponses seront à saisir **15 minutes** avant la fin de travaux pratiques dans un QCM Pronote.
-    Pour vous-même et en vue de répondre au QCM, vous avez le choix entre :
+    Soyez attentifs aux explications et aux questions. Un QCM Pronote sera à compléter **15 minutes** avant la fin de la séance.
+    En attendant, vous pouvez gérer les réponses aux questions en :
 
-    - mémoriser vos réponses
-    - les noter sur une feuille de brouillon
-    - les noter dans un fichier texte en utilisant le bloc-notes Windows
+    - les mémorisant
+    - les notant sur une feuille de brouillon
+    - les notant dans un fichier texte en utilisant le bloc-notes Windows
 
     Attention, vous ne pourrez répondre au QCM que pendant la séance, vous ne pourrez pas y répondre chez vous.
 
@@ -236,7 +236,7 @@ Nous souhaitons consulter les métadonnées d'une page web. Pour ce faire, vous 
     2. Affichez le code source de la page
      <span class="keys shortcut">++ctrl+u++</span>
     3. Repérez la métadonnée `description` et lisez simplement sa valeur
-    4. Repérez la métadonnée `og:image` et copiez-collez l'URL associée dans un nouvel onglet du navigateur pour visualiser l'image
+    4. Repérez la métadonnée `og:image` et copiez-collez l'URL associée dans un nouvel onglet du navigateur pour simplement visualiser l'image
 
 !!! info "Les services libres de *La digitale*"
 
