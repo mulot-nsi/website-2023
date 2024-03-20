@@ -45,7 +45,7 @@ travaux pratiques.
 
 
 
-## Lecture des métadonnées
+## Exercices
 
 ### Métadonnées d'une musique
 
@@ -260,7 +260,9 @@ Celui que vous allez utiliser dans le cadre de ces travaux pratique permet notam
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/64ce068a23ba4e828ad7aea4326f7a84?sid=2ebb7738-60ec-49f6-8bb0-1f6f8b03364f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-## Questionnaire
+## Bilan
+
+### Questionnaire
 
 !!! note "Instructions"
 
@@ -268,3 +270,16 @@ Celui que vous allez utiliser dans le cadre de ces travaux pratique permet notam
     3. Accédez à l'application **Pronote**
     4. Depuis l'accueil, recherchez le devoir **SNT04 - TP2 - Métadonnées**
     5. Répondre au QCM *(10 questions et pas de retour arrière possible)*
+
+### Mise en pratique
+
+Vous allez maintenant tester votre maîtrise d'accès aux métadonnées en réalisant les tâches ci-dessous.
+
+!!! note "Instructions"
+
+    - Vérifiez les métadonnées d'une photo prise avec votre téléphone portable<br>
+      *:material-comment-alert: vous pouvez utiliser l'application « Espace documentaire » de l'ENT pour le transfert*
+    - Modifiez les métadonnées du fichier PDF étudié dans le cadre de ces travaux pratiques en utilisant l'application [https://digipdf.app/](https://digipdf.app/){:target="_blank"}<br>
+      *:material-comment-alert: l'un des outils permets de modifier les métadonnées, trouvez-le*<br>
+      *:material-comment-alert: vérifiez la bonne modification des métadonnées en utilisant l'une des techniques enseignées*
+    - Vérifiez et modifiez des métadonnées d'un document bureautique (Word, Excel, ...) réalisé pour une autre matière
