@@ -83,7 +83,7 @@ Ces informations sont potentiellement renseignées dans les métadonnées du fic
 ### Métadonnées d'une image
 
 Nous disposons d'une photographie numérique au format [:material-link: JPEG](https://fr.wikipedia.org/wiki/JPEG){:target="_blank"}.
-Nous souhaitons connaître l'appareil utilisé ainsi que la date et lieu de la prise de vue.
+Nous souhaitons connaître l'appareil utilisé ainsi que la date et le lieu précis de la prise de vue.
 Ces informations sont potentiellement renseignées dans les métadonnées du fichier.
 
 !!! note "Instructions"
@@ -278,7 +278,7 @@ Vous allez maintenant tester votre maîtrise d'accès aux métadonnées en réal
 !!! note "Instructions"
 
     - Vérifiez les métadonnées d'une photo prise avec votre téléphone portable<br>
-      *:material-comment-alert: vous pouvez utiliser l'application « Espace documentaire » de l'ENT pour le transfert*
+      *:material-comment-alert: vous pouvez envoyer l'image originale à vous-même par email pour le transfert*
     - Modifiez les métadonnées du fichier PDF étudié dans le cadre de ces travaux pratiques en utilisant l'application [https://digipdf.app/](https://digipdf.app/){:target="_blank"}<br>
       *:material-comment-alert: l'un des outils permets de modifier les métadonnées, trouvez-le*<br>
       *:material-comment-alert: vérifiez la bonne modification des métadonnées en utilisant l'une des techniques enseignées*
