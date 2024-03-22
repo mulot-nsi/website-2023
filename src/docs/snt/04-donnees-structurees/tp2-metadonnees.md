@@ -221,7 +221,7 @@ Vous pouvez définir les métadonnées d'une page HTML en utilisant la balise `#
     ```
     
     Cette métadonnée permet de renseigner un résumé du contenu d'une page.
-    Invible des internautes, cette information est très utile pour :
+    Invisible des internautes, cette information est très utile pour :
 
     - les moteurs de recherche afin d'utiliser cette description pour décrire la page dans les résultats de recherche
     - les réseaux sociaux pour décrire la page lors d'un partage
@@ -236,7 +236,7 @@ Nous souhaitons consulter les métadonnées d'une page web. Pour ce faire, vous 
     2. Affichez le code source de la page
      <span class="keys shortcut">++ctrl+u++</span>
     3. Repérez la métadonnée `description` et lisez simplement sa valeur
-    4. Repérez la métadonnée `og:image` et copiez-collez l'URL associée dans un nouvel onglet du navigateur pour simplement visualiser l'image
+    4. Repérez la métadonnée `og:image` et copiez-collez l'URL associée dans un nouvel onglet du navigateur afin de simplement visualiser l'image
 
 !!! info "Les services libres de *La digitale*"
 
@@ -275,11 +275,21 @@ Celui que vous allez utiliser dans le cadre de ces travaux pratique permet notam
 
 Vous allez maintenant tester votre maîtrise d'accès aux métadonnées en réalisant les tâches ci-dessous.
 
-!!! note "Instructions"
+!!! note "Instructions - Modification des métadonnées d'un fichier PDF"
 
-    - Vérifiez les métadonnées d'une photo prise avec votre téléphone portable<br>
-      *:material-comment-alert: vous pouvez envoyer l'image originale à vous-même par email pour le transfert*
-    - Modifiez les métadonnées du fichier PDF étudié dans le cadre de ces travaux pratiques en utilisant l'application [https://digipdf.app/](https://digipdf.app/){:target="_blank"}<br>
-      *:material-comment-alert: l'un des outils permets de modifier les métadonnées, trouvez-le*<br>
-      *:material-comment-alert: vérifiez la bonne modification des métadonnées en utilisant l'une des techniques enseignées*
-    - Vérifiez et modifiez des métadonnées d'un document bureautique (Word, Excel, ...) réalisé pour une autre matière
+    1. Rendez-vous sur le site [https://digipdf.app/](https://digipdf.app/){:target="_blank"}
+    2. Trouvez-y l'outil de modification des métadonnées d'un fichier PDF
+    3. Modifier les métadonnées de l'un de vos devoirs au format PDF<br>
+       *:material-comment-alert: à défaut, modifiez les métadonnées du fichier PDF de ces travaux pratiques*
+
+!!! note "Instructions - Modification des métadonnées d'un fichier Word ou Excel"
+
+    1. Trouvez un devoir au format Word ou Excel
+    2. Modifiez les métadonnés pour lui ajouter un titre, une description et à vérifiez que vous en soyez bien l'auteur
+
+!!! note "Instructions - Vérification des métadonnées d'une photographie"
+
+    1. Transférez une photo prise avec votre téléphone vers l'ordinateur<br>
+       *:material-comment-alert: utilisez un câble ou trouvez un moyen de la transérer via Internet*
+    2. Vérifiez les métadonnées de la photo<br>
+       *:material-comment-alert: vous devez au moins voir indiqué le nom du modèle de téléphone utilisé pour la prise de vue*
