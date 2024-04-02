@@ -125,8 +125,8 @@ Vous allez maintenant vous connecter au service.
     
     Accéder à vos documents stockés sur le *cloud* depuis n'importe quel appareil.
 
-Imaginons que vous utilisiez un ordinateur sur lequel vous est impossible d'installer le service OneDrive.
-Pour contourner ce problème, les services de stockage sur le *cloud* proposent généralement un accès via une interface web.
+Imaginons que vous utilisiez un ordinateur sur lequel il vous est impossible d'installer le service OneDrive.
+Pour contourner ce problème, les services de stockage sur le *cloud* fournissent un accès depuis une interface web.
 
 !!! note "Instructions"
 
@@ -144,15 +144,15 @@ Pour contourner ce problème, les services de stockage sur le *cloud* proposent 
     
     Apprécier le principe de synchronisation entre tous vos appareils.
 
-Que vous utilisiez le service de stockage *cloud* sur votre ordinateur ou sur votre téléphone, toute action aboutit à modifier l'état des données sur le *cloud*.
-Ces changements d'état sont ensuite répercutés sur tous les appareils utilisant le service de stockage *cloud*, c'est la **synchronisation**.
+Que vous utilisiez le service de stockage sur le *cloud* depuis votre ordinateur ou votre téléphone, toute action aboutit à modifier l'état des données sur le *cloud*.
+Ces changements d'état sont ensuite répercutés sur tous les appareils utilisant le service, c'est la **synchronisation**.
  
 !!! note "Instructions"
 
-    1. Utilisez maintenant votre ordinateur portable
+    1. Utilisez maintenant votre **ordinateur portable**
     2. Déposez une image quelconque dans le dossier `Images`
     3. Consultez l'image depuis l'applicaion OneDrive de votre téléphone
-    4. Consultez l'image depuis l'interface web de l'ordinateur du lycée
+    4. Consultez l'image depuis l'interface web de l'ordinateur fixe du lycée
 
 ### Partage
 
@@ -160,19 +160,20 @@ Ces changements d'état sont ensuite répercutés sur tous les appareils utilisa
     
     Partager un fichier ou un dossier à un autre utilisateur.
 
-Les services de stockage *cloud* offrent généralement la possibilité de partager des dossiers et des fichiers.
+Les services de stockage *cloud* disposent généralement de fonctions de partage des dossiers et des fichiers.
 Vous pouvez également autoriser des utilisateurs à modifier les dossiers et les fichiers partagés.
 
 !!! note "Instructions"
 
-    1. Connectez-vous à l'interface web de OneDrive depuis l'ordinateur du lycée ou votre ordinateur portable
-    2. Créez un dossier intitulé `Test partage` dans le dossier `Documents`
-    3. Survolez le dossier `Test partage` et cliquez sur l'icone de paramétrage :material-dots-horizontal:
-    4. Cliquez sur **Gérer l'accès**
-    5. Accordez l'accès à un camarade à proximité de vous en lui autorisant les droits de modification et en décochant l'option **Avertir les utilisateurs**
-    6. Demandez à votre camarade d'accéder à l'interface web et d'accéder à la section **Partagé**<br> 
+    1. Connectez-vous à l'**interface web** de OneDrive depuis l'ordinateur du lycée ou votre ordinateur portable
+    2. Accédez au dossier `Documents`
+    3. Créez-y un dossier intitulé `Test partage`
+    4. Survolez le dossier `Test partage` et cliquez sur l'icone de paramétrage :material-dots-horizontal:
+    5. Cliquez sur **Gérer l'accès**
+    6. Accordez l'accès à un camarade à proximité de vous en lui autorisant les droits de modification et en décochant l'option **Avertir les utilisateurs**
+    7. Demandez à votre camarade d'accéder à l'interface web et d'accéder à la section **Partagé**<br> 
        *:material-comment-alert: Votre camarade doit voir un dossier appelé `Test partage` dont vous êtes propriétaire.*
-    7. Demandez à votre camarade d'y créer ou déposer un document quelconque
+    8. Demandez à votre camarade d'y créer ou déposer un document quelconque
 
 ??? help "Aide - Partager un dossier"
     
