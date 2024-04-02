@@ -259,4 +259,4 @@ Il existe de nombreux services de stockage sur le cloud dont voici une liste non
 - [:material-link: Mega](https://mega.io/){:target="_blank"}
 - [:material-link: Ice Drive](https://icedrive.net/){:target="_blank"}
 
-Lequel choisiriez-vous et pourquoi ?
+Connectez-vous à l'application formulaire de l'ENT et répondre au questionnaire **Stockage sur le cloud**.
