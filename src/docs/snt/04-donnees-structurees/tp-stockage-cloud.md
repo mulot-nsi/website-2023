@@ -8,7 +8,7 @@ description: Travaux pratiques d'étude du fonctionnement d'un service de stocka
 ## Introduction
 
 Ces travaux pratiques ont pour objectif l'étude du fonctionnement d'un service de stockage de fichiers sur le Cloud.
-Nous utiliserons le service **OneDrive** de la société Microsoft pour lequel tout élève de la région Île-de-France dispose d'un accès et d'un espace de stockage de 100 Go.
+Nous utiliserons le service **OneDrive** de la société Microsoft pour lequel tout élève de la région Île-de-France dispose d'un accès et d'un espace de stockage de **1 To**.
 
 ## Préparation
 
@@ -233,18 +233,6 @@ Maintenant que vous vous êtes familiarisé avec un service de stockage sur le *
     2. Accédez au dossier `Documents`
     3. Ajoutez un nouveau contenu de type **:material-web: Lien** en le faisant pointer vers `https://www.mulot-nsi.fr`
     4. Vérifiez le bon fonctionnement du lien depuis votre ordinateur portable
-
-!!! note "Instructions - Désactiver un partage"
-
-    1. Utilisez l'interface web
-    2. Accédez au dossier `Documents`
-    3. Trouvez comment désactiver le partage du dossier `Test partage`
-
-!!! note "Instructions - Supprimer un dossier"
-
-    1. Utilisez l'ordinateur portable
-    2. Accédez au dossier `Documents`
-    3. Supprimez le dossier `Test partage`
 
 !!! note "Instructions - Création d'un document Word"
 
