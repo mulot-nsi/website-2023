@@ -51,6 +51,8 @@ nav:
           - TP1 - Les données EXIF: nsi1re/11-dictionnaires/tp1-donnees-exif.md
           - TP2 - Compteur de mots: nsi1re/11-dictionnaires/tp2-compteur-mots.md
           - TP3 - Format JSON: nsi1re/11-dictionnaires/tp3-format-json.md
+      - Chapitre 12 - Données en table:
+          - Cours: nsi1re/12-tables/cours.md
       - Projets:
           - Projet 1 - Présentez-vous: nsi1re/projets/prj-presentez-vous.md
           - Projet 2 - Paysage aléatoire: nsi1re/projets/prj-paysage.md
