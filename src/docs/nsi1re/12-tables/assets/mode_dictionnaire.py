@@ -1,30 +1,36 @@
 import csv
 
 # Lecture du fichier CSV
-fichier = open("jo_beijing_2022.csv")
-tableau = list(csv.DictReader(fichier, delimiter=','))
+fichier = open('jo_beijing_2022.csv')
+medailles = list(csv.DictReader(fichier, delimiter=','))
 fichier.close()
 
-# Filtrage des données
-tableau_filtre = []
+# Filtrage des lignes
+medailles_or = []
 
-for ligne in range(1, len(tableau)):
-    if int(tableau[ligne]['or']) > 0:
-        tableau_filtre.append({'pays': tableau[ligne]['pays'], 'or': tableau[ligne]['or']})
+for i in range(len(medailles)):
+    if int(medailles[i]['or']) > 0:
+        medailles_or.append(medailles[i])
+
+# Filtrage des colonnes
+pays = []
+
+for i in range(len(medailles_or)):
+    pays.append({'pays': medailles_or[i]['pays'], 'or': medailles_or[i]['or']})
 
 
 # Tri du tableau
-def trier_par_medaille(item):
-    return int(item['or'])
+def trier_par_medaille(ligne):
+    return int(ligne['or'])
 
 
-tableau_filtre.sort(key=trier_par_medaille, reverse=True)
+pays.sort(key=trier_par_medaille, reverse=True)
 
 # Écriture des données dans un nouveau fichier CSV
-fichier = open("medailles_or.csv", "w")
+fichier = open('medailles_or.csv', 'w')
 
 w = csv.DictWriter(fichier, fieldnames=['pays', 'or'])
 w.writeheader()
-w.writerows(tableau_filtre)
+w.writerows(pays)
 
 fichier.close()

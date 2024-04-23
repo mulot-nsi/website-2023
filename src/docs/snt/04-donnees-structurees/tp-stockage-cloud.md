@@ -169,7 +169,6 @@ Ces changements d'état sont ensuite répercutés sur tous les appareils utilisa
     3. Consultez l'image depuis l'applicaion OneDrive de votre téléphone
     4. Consultez l'image depuis l'interface web de l'ordinateur fixe du lycée
 
-<!-- Ne fonctionne pas
 ### Partage
 
 !!! target "Objectif"
@@ -186,15 +185,13 @@ Vous pouvez également autoriser des utilisateurs à modifier les dossiers et le
     3. Créez-y un dossier intitulé `Test partage`
     4. Survolez le dossier `Test partage` et cliquez sur l'icone de paramétrage :material-dots-horizontal:
     5. Cliquez sur **Gérer l'accès**
-    6. Accordez l'accès à un camarade à proximité de vous en lui autorisant les droits de modification et en décochant l'option **Avertir les utilisateurs**
-    7. Demandez à votre camarade d'accéder à l'interface web et d'accéder à la section **Partagé**<br> 
-       *:material-comment-alert: Votre camarade doit voir un dossier appelé `Test partage` dont vous êtes propriétaire.*
+    6. Accordez l'accès à un camarade à proximité de vous en lui autorisant les droits de modification et en **gardant cochée** l'option **Avertir les utilisateurs**
+    7. Demandez à votre camarade de consultrer sa messagerie ENT, il devrait avoir reçu un lien d'accès à votre dossier
     8. Demandez à votre camarade d'y créer ou déposer un document quelconque
 
 ??? help "Aide - Partager un dossier"
     
     <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/527b26ae3eb34fa18f4db6d2864516d6?sid=e8550187-bba0-4e85-8807-cdd1052cb36a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
--->
 
 ## Mise en pratique
 
