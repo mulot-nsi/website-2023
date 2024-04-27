@@ -28,6 +28,8 @@ nav:
           - TP1 - Données ouvertes: snt/04-donnees-structurees/tp1-donnees-ouvertes.md
           - TP2 - Les métadonnées:  snt/04-donnees-structurees/tp2-metadonnees.md
           - TP3 - Stockage sur le Cloud: snt/04-donnees-structurees/tp-stockage-cloud.md
+      - Chapitre 5 - Photographie numérique:
+          - TP1 - Manipulation d'une image: snt/05-photographie-numerique/tp1-couleurs.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
@@ -53,6 +55,8 @@ nav:
           - TP3 - Format JSON: nsi1re/11-dictionnaires/tp3-format-json.md
       - Chapitre 12 - Données en table:
           - Cours: nsi1re/12-tables/cours.md
+      - Chapitre 14 - Le Web:
+          - TP1 - Formulaire HTML: nsi1re/14-web/tp1-formulaire-html.md
       - Projets:
           - Projet 1 - Présentez-vous: nsi1re/projets/prj-presentez-vous.md
           - Projet 2 - Paysage aléatoire: nsi1re/projets/prj-paysage.md
