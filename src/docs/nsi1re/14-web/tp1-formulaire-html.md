@@ -17,17 +17,26 @@ Pour l'acquisition des données, nous faisons le choix de développer un formula
 - Indication des autres options suivies par l'élève, parmi la liste exhaustive des options disponibles au lycée
 - Indication de la poursuite ou non de l'option en classe de Terminale
 
-Les données du formulaire seront transmises à un script de traitement chargé de l'enregistrement des données *(persistance)*.
-Voici le nom des paramètres attendus pour chaque champ :
+!!! target "Aperçu du formulaire"
 
-| Libellé                | Attribut `name`  |
-|:-----------------------|:-----------------|
-| Nom de l'élève         | `nom`            |
-| Prénom de l'élève      | `prenom`         |
-| Année scolaire         | `annee_scolaire` |
-| Classe                 | `classe`         |
-| Autres options suivies | `options`        |
-| Poursuite en terminale | `poursuite`      |
+    <figure class="illustration" markdown>
+    ![Formulaire une fois terminé](images/formulaire.png)
+    <em>Formulaire de saisie des informations d'un élève</em>
+    </figure>
+
+!!! target "Caractéristiques des champs"
+
+    Les données du formulaire seront transmises à un script de traitement chargé de l'enregistrement des données.
+    Voici le nom des paramètres attendus pour chaque champ :
+
+    | Libellé                | Balise            | Attribut `type` | Attribut `name`  |
+    |:-----------------------|:------------------|:----------------|:-----------------|
+    | Nom                    | `#!html <input>`  | `text`          | `nom`            |
+    | Prénom                 | `#!html <input>`  | `text`          | `prenom`         |
+    | Année scolaire         | `#!html <input>`  | `text`          | `annee_scolaire` |
+    | Classe                 | `#!html <select>` | -               | `classe`         |
+    | Autres options suivies | `#!html <input>`  | `checkbox`      | `options`        |
+    | Poursuite en terminale | `#!html <input>`  | `submit`        | `poursuite`      |
 
 ## Préparation
 
@@ -67,10 +76,10 @@ Pour réaliser ces travaux pratiques, il est nécessaire de disposer de certains
 
 ## Partie 1 - création du formulaire
 
-<figure class="illustration" markdown>
-![Formulaire une fois terminé](images/formulaire.png)
-<em>Formulaire de saisie des informations d'un élève</em>
-</figure>
+
+
+
+
 
 ### Formulaire
 
@@ -98,104 +107,76 @@ Les saisies possibles et le comportement de l'élément `#!html <input>` dépend
 
 !!! example "Exemple"
 
-    <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="GRLeVPj" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="GRLeVPj" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
 
-    Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input){:target="_blank"}
+    :material-book-open-variant: Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input){:target="_blank"}
 
 !!! note "Instructions"
 
-    1. Créez le champ de saisie du **nom de l’élève**
-    2. Créez le champ de saisie du **prénom de l’élève**
+    1. Créez le champ de saisie du **nom**
+    2. Créez le champ de saisie du **prénom**
     3. Créez le champ de saisie de **l'année scolaire**
 
-!!! danger "Attention"
-    
-    Pensez à bien renseigner l'attribut `name`, en accord avec le tableau de la section **objectif**
+    **:material-alert: Attention**, pensez à bien renseigner l'attribut `name` de chaque balise `#!html <input>` en respectant les spécifications données en introduction.
 
 
 
 
 ### Liste d'options
 
-L’élément HTML `#!html <select>` représente un contrôle qui fournit une liste d’options parmi lesquelles l’utilisateur pourra faire un choix.
+L'élément HTML `#!html <select>` représente un contrôle qui fournit une liste d'options parmi lesquelles l'utilisateur pourra faire un choix.
 
 !!! example "Exemple"
 
-    <p class="codepen" data-height="300" data-theme-id="light" data-default-tab="html,result" data-slug-hash="MWRRggz" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="MWRRggz" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
 
-    Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/select){:target="_blank"}
+    :material-book-open-variant: Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/select){:target="_blank"}
 
 !!! note "Instructions"
 
-    1. Créez le champ de sélection de la **classe de l’élève** en utilisant l'élément **liste de choix**.
-    2. Pensez à bien renseigner l'attribut `name`, en accord avec le tableau de la section **objectif**
+    1. Créez le champ de sélection de la **classe de l'élève** en utilisant l'élément **liste de choix**.
+    2. Saisissez en option toutes les classes de la première 1 à la première 10    
 
+    **:material-alert: Attention**, pensez à bien renseigner l'attribut `name` de chaque balise `#!html <input>` en respectant les spécifications données en introduction.
 
 
 
 
 ### Cases à cocher
 
-#### Principe
+L'élément `#!html <input type="checkbox">` correspond à une case à cocher qui permet de sélectionner/déselectionner une valeur.
 
-L’élément `<input type="checkbox">` correspond à une case à cocher qui permet de sélectionner/déselectionner une valeur.
+!!! example "Exemple"
 
-:::tip Documentation
-Consulter la page **[&lt;input type="checkbox"&gt;](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/checkbox)**
-:::
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNOOgYV" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
+    
+    :material-book-open-variant: Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/checkbox){:target="_blank"}
 
-#### Exemple
+!!! note "Instructions"
 
-```html
-<input type="checkbox" name="options" value="option1" />Libellé Option 1<br />
-<input type="checkbox" name="options" value="option2" />Libellé Option 2
-```
+    1. Créez le champ d'indication des **autres options suivies** par l'élève en utilisant plusieurs occurrences de l'élément **case à cocher**
 
-<div style={{"text-align":"center", marginBottom:"3em"}}>
-<input type="checkbox" name="options" value={"option1"}/>Libellé option 1<br />
-<input type="checkbox" name="options" value={"option2"}/>Libellé option 2
-</div>
-
-#### <PracticeTitle />
-Créer le champ d’indication des **autres options suivies** par l’élève en utilisant plusieurs occurrences de l’élément **case à cocher**.
-
-:::caution Attention
-Ne pas oublier de renseigner correctement l'attribut `name`, en accord avec le tableau de la section **objectif**
-:::
-
+    **:material-alert: Attention**, pensez à bien renseigner l'attribut `name` de chaque balise `#!html <input>` en respectant les spécifications données en introduction.
 
 
 
 
 ### Boutons radio
 
-#### Principe
-L’élément `<input type="radio">` correspond à un bouton radio qui permet de sélectionner une seule valeur parmi un groupe de valeurs.
+L'élément `<input type="radio">` correspond à un bouton radio qui permet de sélectionner une seule valeur parmi un groupe de valeurs.
 
-:::tip Documentation
-Consulter la page **[&lt;input type="radio"&gt;](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/radio)**
-:::
+!!! example "Exemple"
 
-#### Exemple
+    <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="jORREBw" data-editable="true" data-user="mulot-nsi" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"></p>
 
-```html
-    <input type="radio" value="1" name="reponse">Oui
-    <input type="radio" value="0" name="reponse">Non
-```
+    :material-book-open-variant: Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/radio){:target="_blank"}
 
-<div style={{"text-align":"center", marginBottom:"3em"}}>
-    <input type="radio" value="1" name="reponse" />Oui
-    <input type="radio" value="0" name="reponse" />Non
-</div>
+!!! note "Mise en pratique"
 
+    1. Créez le champ d'indication de **poursuite de l'option** en utilisant plusieurs occurrences de l'élément **bouton radio**.
 
-#### <PracticeTitle />
+    **:material-alert: Attention**, pensez à bien renseigner l'attribut `name` de chaque balise `#!html <input>` en respectant les spécifications données en introduction.
 
-Créer le champ d’indication de **poursuite de l’option** en utilisant plusieurs occurrences de l’élément **bouton radio**.
-
-:::caution Attention
-Ne pas oublier de renseigner correctement l'attribut `name`, en accord avec le tableau de la section **objectif**
-:::
 
 
 
@@ -208,28 +189,19 @@ Ne pas oublier de renseigner correctement l'attribut `name`, en accord avec le t
 
 ### Bouton de soumission
 
-#### Principe
 Afin de pouvoir transmettre le formulaire pour traitement, celui-ci doit disposer d'un bouton d'envoi.
-L'élément HTML permettant la création de ce bouton est `<input type="submit">`
+L'élément HTML permettant la création de ce bouton est `#!html <input type="submit">`
 
-:::tip Documentation
-Consulter la page **[&lt;input type="submit"&gt;](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/submit)**
-:::
+!!! example "Exemple"
 
-#### Exemple
+    :material-book-open-variant: Pour en savoir plus, consultez la documentation sur le site [:material-link: mozilla.org](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/submit){:target="_blank"}
 
-```html
-    <input type="submit" value="Texte du bouton" />
-```
+!!! note "Instructions"
 
-<div style={{"text-align":"center", marginBottom:"3em"}}>
-    <input type="submit" value="Texte du bouton" />
-</div>
+    1. Créez le bouton d'envoi du formulaire
+    2. Cliquez sur le bouton d'envoi du formulaire. Qu'observez-vous ?
 
-#### <PracticeTitle />
 
-1. Créer le bouton d'envoi du formulaire
-2. Cliquer sur le bouton d'envoi du formulaire. Qu'observez-vous ?
 
 
 ### Destination du formulaire
@@ -237,31 +209,33 @@ Consulter la page **[&lt;input type="submit"&gt;](https://developer.mozilla.org/
 Il est possible de spécifier une URL à laquelle transmettre les données du formulaire.
 Nous souhaiterions les transmettre à l'URL suivante :
 
-<div style={{"text-align":"center"}}>
-<code>https://europe-west1-mulot-nsi.cloudfunctions.net/handle-get</code>
-</div>
+```
+https://europe-west1-mulot-nsi.cloudfunctions.net/handle-get
+```
 
-#### <PracticeTitle />
+!!! note "instructions"
 
-1. Modifier l'attribut `action` du formulaire de façon à transmettre les données à l'URL indiquée
-2. Saisir des données et envoyer le formulaire. Qu'observez-vous ?
-3. Que se passe-t-il si vous modifiez les données directement depuis l'URL ?
-4. Est-il sécurisé d'avoir les données visibles depuis l'URL ?
+    1. Modifier l'attribut `action` du formulaire de façon à transmettre les données à l'URL indiquée
+    2. Saisir des données et envoyer le formulaire. Qu'observez-vous ?
+    3. Que se passe-t-il si vous modifiez les données directement depuis l'URL ?
+    4. Est-il sécurisé d'avoir les données visibles depuis l'URL ?
+
+
 
 
 ### Méthode de transmission du formulaire
 
 Il existe une autre méthode de transmission des données du formulaire.
 
-#### <PracticeTitle />
-1. Modifier la balise ouvrante du formulaire comme suit **(attention l'URL de l'action change)** :
+!!! note "Instructions"
 
-```html
-<form method="POST" action="https://europe-west1-mulot-nsi.cloudfunctions.net/handle-post">
-```
+    1. Modifier la balise ouvrante du formulaire comme suit **(attention l'URL de l'action change)** :
+    ```html
+    <form method="POST" action="https://europe-west1-mulot-nsi.cloudfunctions.net/handle-post">
+    ```
+    2. Saisir des données et envoyer le formulaire. Qu'observez-vous ?
+    3. Où sont les données selon vous ? Essayer de les retrouver en activant le **mode développeur** du navigateur et en consultant les échanges réseau.
 
-2. Saisir des données et envoyer le formulaire. Qu'observez-vous ?
-3. Où sont les données selon vous ? Essayer de les retrouver en activant le **mode développeur** du navigateur et en consultant les échanges réseau.
 
 
 
