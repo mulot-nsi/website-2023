@@ -29,7 +29,7 @@ nav:
           - TP2 - Les métadonnées:  snt/04-donnees-structurees/tp2-metadonnees.md
           - TP3 - Stockage sur le Cloud: snt/04-donnees-structurees/tp-stockage-cloud.md
       - Chapitre 5 - Photographie numérique:
-          - TP1 - Manipulation d'une image: snt/05-photographie-numerique/tp1-couleurs.md
+          - TP1 - Manipulation d'une image: snt/05-photographie-numerique/tp1-manipulation-image.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:

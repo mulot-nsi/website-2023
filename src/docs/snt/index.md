@@ -31,4 +31,4 @@
 
 ## Chapitre 5 - La photographie numérique
 
-- [TP1 - Manipulation d'une image](05-photographie-numerique/tp1-couleurs.md)
+- [TP1 - Manipulation d'une image](05-photographie-numerique/tp1-manipulation-image.md)
