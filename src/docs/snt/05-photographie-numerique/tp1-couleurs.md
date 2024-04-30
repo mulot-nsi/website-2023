@@ -25,14 +25,14 @@ travaux pratiques.
 
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
         2. Dans le dossier `Document`, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, créez-le dossier `Données structurées`
+        3. Dans le dossier `SNT`, créez-le dossier `Photographie`
         4. Dans le dossier `Photographie`, créez-le dossier `TP1 - Manipulation`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
         2. Dans la **zone personnelle**, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, créez-le dossier `Données structurées`
+        3. Dans le dossier `SNT`, créez-le dossier `Photographie`
         4. Dans le dossier `Photographie`, créez-le dossier `TP1 - Manipulation`
 
 !!! note "Préparation du document de compte rendu"
@@ -58,7 +58,7 @@ plus de deux millions de pixels.
     === ":material-web: Basthon"
 
         1. Téléchargez le fichier [:material-download: smiley.png](assets/smiley.png){:download="smiley.png"} sans l'ouvrir
-        2. Rendez-vous sur [:material-link: Basthon](https://console.basthon.fr/?script=eJw9jU0KgzAUhPeB3OERNwpV6AG67EJwUXqDEJ_6wPzwTMD2Rp7DizVWcDfDfDNTFAXUdQ3PFdmQQbgfVoqBvYVX2wHZ4DlCa_WIUkhRQIcmJkboEwxkJkLO0D8lO8LjRBsf0JVqsTTjpwluVNXZfu-bSWHfWEfyDjCCHo6Z3IEeYdbQ79tAjo5YilnziIlvMOkUs8j7-aVZ6Jv_ApOL5YWoVV1c9QPsmkd1)
+        2. Rendez-vous sur [:material-link: Basthon](https://console.basthon.fr/?script=eJw9jU0KgzAUhPeB3OERNwpV6AG67EJwUXqDEJ_6wPzwTMD2Rp7DizVWcDfDfDNTFAXUdQ3PFdmQQbgfVoqBvYVX2wHZ4DlCa_WIUkhRQIcmJkboEwxkJkLO0D8lO8LjRBsf0JVqsTTjpwluVNXZfu-bSWHfWEfyDjCCHo6Z3IEeYdbQ79tAjo5YilnziIlvMOkUs8j7-aVZ6Jv_ApOL5YWoVV1c9QPsmkd1){:target="_blank"}
            <br>*:material-comment-alert: cliquez sur le lien afin de disposer du code Python nécessaire à cet exercice*
         3. Dans Basthon, cliquez sur le bouton représentant un dossier et qui sert à importer un fichier
         4. Importez le fichier `smiley.png` téléchargé précédemment
@@ -80,6 +80,9 @@ plus de deux millions de pixels.
         print(largeur, "x", hauteur)
         ```
 
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/0601dc53f37c428cbadd9e33b4ec30a8?sid=4942ffdc-71d6-4db9-8a06-aff3c2aade25" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
 !!! note "Instructions de travail"
 
     1. Cliquez sur le bouton **Exécuter**
@@ -100,7 +103,7 @@ Vous devez trouver où se trouve le point de coordonnées `(0, 0)` *(l'origine)*
     === ":material-web: Basthon"
 
         1. Si vous l'avez perdu, téléchargez de nouveau le fichier [:material-download: smiley.png](assets/smiley.png){:download="smiley.png"} sans l'ouvrir
-        2. Lancez **de nouveau** [:material-link: Basthon](https://console.basthon.fr/?script=eJxtkE1OwzAQhfeWfIdRs4gtJVaIYMGiC0RZVEKCGyCTTJIR_glOQtMjcQ4uRkyKhGg3M7Lf8zfPkyQJ5HkODzOGiiqEMh45a4K38Lx_BLK9DyPsrW4xW9su6ANnnCXwNH1gGKeAUCOYlKLKGdkWtqtV-R6d2AyWDB5V79qNXF_eex9q79zXJw4g5uwoI6Lq9PuE4JEMZ7G-tHqqOlxw4qooMygLeRLq4GmM9zdFBte3J-wOh4Ec1BP0NKM5Y9ZL9N9s8RsqFrEElqumek9uFH9GZ9CQMdv01ejqLb1g-wly5oph7pqGFkL4vxw1dP4g5DfCAXXI)
+        2. Lancez **de nouveau** [:material-link: Basthon](https://console.basthon.fr/?script=eJxtkE1OwzAQhfeWfIdRs4gtJVaIYMGiC0RZVEKCGyCTTJIR_glOQtMjcQ4uRkyKhGg3M7Lf8zfPkyQJ5HkODzOGiiqEMh45a4K38Lx_BLK9DyPsrW4xW9su6ANnnCXwNH1gGKeAUCOYlKLKGdkWtqtV-R6d2AyWDB5V79qNXF_eex9q79zXJw4g5uwoI6Lq9PuE4JEMZ7G-tHqqOlxw4qooMygLeRLq4GmM9zdFBte3J-wOh4Ec1BP0NKM5Y9ZL9N9s8RsqFrEElqumek9uFH9GZ9CQMdv01ejqLb1g-wly5oph7pqGFkL4vxw1dP4g5DfCAXXI){:target="_blank"}
            <br>*:material-comment-alert: cliquez sur le lien afin de disposer du code Python nécessaire à cet exercice*
         3. Dans Basthon, cliquez sur le bouton représentant un dossier et qui sert à importer un fichier
         4. Importez le fichier `smiley.png` téléchargé précédemment
@@ -130,6 +133,9 @@ Vous devez trouver où se trouve le point de coordonnées `(0, 0)` *(l'origine)*
         # Afficher de l'image
         img.show()
         ```
+    
+    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/84738957fc5f41559b05b6f5c4283bb3?sid=55815f37-d543-4364-aacb-15d3bfa879e9" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 !!! note "Instructions de travail"
 
@@ -151,7 +157,7 @@ Chaque intensité est codée sous forme d'une valeur entière comprise entre 0 e
 
     === ":material-web: Basthon"
     
-        1. Lancez de  nouveau [Basthon](https://console.basthon.fr/?script=eJxNjksLgzAQhO-C_2HAgwoqYvHYQytSBA_FU6-hrg_w0Sax_v1u1EIhJMzk29lxEIYh8kdeZUWW42SkbTVyHnEvSvTja5YaxShasi3bclCSYuo584cSk2ZVu8tE7CwDLXJDBD7CCNTsd-K90N-AIUjpzZG9ItCkJSEGaSRpaltHEs7w4gDm-PvqS9P0HNeSyR3cfi-1PQxvHaOJVs-tblc3gJfEPMyXH_za-QceqW5ePf8Lzl9KIw)
+        1. Lancez de  nouveau [:material-link: Basthon](https://console.basthon.fr/?script=eJxNjksLgzAQhO-C_2HAgwoqYvHYQytSBA_FU6-hrg_w0Sax_v1u1EIhJMzk29lxEIYh8kdeZUWW42SkbTVyHnEvSvTja5YaxShasi3bclCSYuo584cSk2ZVu8tE7CwDLXJDBD7CCNTsd-K90N-AIUjpzZG9ItCkJSEGaSRpaltHEs7w4gDm-PvqS9P0HNeSyR3cfi-1PQxvHaOJVs-tblc3gJfEPMyXH_za-QceqW5ePf8Lzl9KIw){:target="_blank"}
            <br>*:material-comment-alert: cliquez sur le lien afin de disposer du code Python nécessaire à cet exercice*
         2. Cliquez sur le bouton **Exécuter**
         3. Cliquez sur le bouton représentant une image
@@ -176,8 +182,9 @@ Chaque intensité est codée sous forme d'une valeur entière comprise entre 0 e
 
 !!! note "Instructions de travail"
 
-    1. Testez `(255,0, 0)`, `(0, 255, 0)`, `(0, 0, 255)` et reportez les couleurs trouvées dans votre compte rendu
-    2. Complétez votre compte rendu en effectuant les tâches suivantes :
+    1. Testez `(255,0, 0)`, `(0, 255, 0)`, `(0, 0, 255)` en modifiant la ligne `#!python couleur = (0, 0, 0)` 
+    2. Reportez les couleurs trouvées dans votre compte rendu
+    3. Complétez votre compte rendu en effectuant les tâches suivantes :
         - Trouvez et reportez le code couleur du blanc, du jaune et du magenta *(rose/violet vif)*
         - Recherchez sur le web le nombre de couleurs visibles par l'œil humain
         - Calculez le nombre total de couleurs possibles sachant que chacune des 3 intensités peut prendre 256 valeurs. Notez le calcul et la valeur trouvée dans le compte rendu
@@ -192,8 +199,8 @@ Vous commencerez par suivre quelques instructions d'expérimentation avant de la
 
     === ":material-web: Basthon"
 
-        1. Téléchargez le fichier [:material-download: fraise.jpg](assets/ fraise.jpg){:download=" fraise.jpg"} sans l'ouvrir
-        2. Lancez de nouveau [Basthon](https://console.basthon.fr/?script=eJxtkU1qwzAQhfcG32GIF7VB9qqrQhaFdhFoaegNVHvsTJAlMbISpzfKOXKxyn-YptVmEG_eN0-aJEkgz3N47ZFLKhEeh2sc1Wxa2O_egFpruINdKxsUU3lheY6jOErgw5-QO88IFYJ6oEGNI2ob2E6thbGo003NkhwWR9tsssm5l1waz24wdsY7UOjAUo_K_WKVRhmt0QlQ1IQawAFfOPoOYm0YeiANLHWD6dKbPcURhDPIl1WeAIs4nAQ-b9fS29uVZUdGj5MlhGAKPUPlp0SrwRpHY-MW0l7AJVslFnAS8DXna7AbreniGJ-9zn2XmqxX_0xdu5YYYdYMv4eYimoqZ8ifsEMO6-9yiAU77-G5DoRD-Or7DRbuYM5p9gP2jKNd)
+        1. Téléchargez le fichier [:material-download: fraise.jpg](assets/fraise.jpg){:download="fraise.jpg"} sans l'ouvrir
+        2. Lancez de nouveau [:material-link: Basthon](https://console.basthon.fr/?script=eJxtkU1qwzAQhfcG32GIF7VB9qqrQhaFdhFoaegNVHvsTJAlMbISpzfKOXKxyn-YptVmEG_eN0-aJEkgz3N47ZFLKhEeh2sc1Wxa2O_egFpruINdKxsUU3lheY6jOErgw5-QO88IFYJ6oEGNI2ob2E6thbGo003NkhwWR9tsssm5l1waz24wdsY7UOjAUo_K_WKVRhmt0QlQ1IQawAFfOPoOYm0YeiANLHWD6dKbPcURhDPIl1WeAIs4nAQ-b9fS29uVZUdGj5MlhGAKPUPlp0SrwRpHY-MW0l7AJVslFnAS8DXna7AbreniGJ-9zn2XmqxX_0xdu5YYYdYMv4eYimoqZ8ifsEMO6-9yiAU77-G5DoRD-Or7DRbuYM5p9gP2jKNd){:target="_blank"}
            <br>*:material-comment-alert: cliquez sur le lien afin de disposer du code Python nécessaire à cet exercice*
         3. Dans Basthon, cliquez sur le bouton représentant un dossier et qui sert à importer un fichier
         4. Importez le fichier `fraise.jpg`
