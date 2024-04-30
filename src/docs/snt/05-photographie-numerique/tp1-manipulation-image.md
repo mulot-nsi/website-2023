@@ -271,7 +271,7 @@ Vous commencerez par suivre quelques instructions d'expérimentation avant de la
     1. Enregistrez votre compte rendu et exportez-le au **format PDF**
     1. Connectez-vous à l'ENT : [:material-link: https://ent.iledefrance.fr](https://ent.iledefrance.fr){:target="_blank"}
     3. Accédez à l'application **Pronote**
-    4. Depuis l'accueil, recherchez le devoir **SNT04 - TP - Manipulation d'une image**
+    4. Depuis l'accueil, recherchez le devoir **SNT05 - TP - Manipulation d'une image**
     5. Cliquez sur le bouton <span class="pronote-button">Déposer ma copie</span>
     6. Cliquez sur le bouton **Un seul fichier (*.pdf, *.doc, ...)**
     7. Déposez votre fichier PDF
