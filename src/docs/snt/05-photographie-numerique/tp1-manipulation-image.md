@@ -12,7 +12,7 @@ langage de programmation Python.
 
 !!! danger "Travail à rendre"
 
-    Un compte rendu sera à réfiger et à transmettre en fin de séance.
+    Un compte rendu sera à rédiger et à transmettre en fin de séance.
 
 ## Préparation
 
@@ -95,7 +95,7 @@ plus de deux millions de pixels.
 ### 2. Manipuler les pixels
 
 Vous allez maintenant placer des pixels sur l'image afin de reconstituer les yeux du smiley.
-L'objectif est de comprendre le système de coordonnées de l'image.
+L'objectif est de **comprendre le système de coordonnées** de l'image.
 Vous devez trouver où se trouve le point de coordonnées `(0, 0)` *(l'origine)* et comment sont orientés les axes X et Y.
 
 !!! info "Instructions de préparation"
@@ -147,6 +147,12 @@ Vous devez trouver où se trouve le point de coordonnées `(0, 0)` *(l'origine)*
         - Les nouvelles coordonnées des yeux
         - La position de l'origine sur l'image, c'est-à-dire où se trouve le point de coordonnées `(0, 0)`
           <br>*(au centre de l'image ? en bas et au milieu ? en bas à gauche ? indiquez le bon endroit)*
+        - L'orientation de l'axe des abscisses et de l'axe des ordonnées
+
+    <figure markdown>
+    ![plan](images/plan.png){:style="max-width:100%;border:1px solid black"}
+    </figure>
+
 
 ### 3. Manipuler la couleur
 
@@ -182,13 +188,16 @@ Chaque intensité est codée sous forme d'une valeur entière comprise entre 0 e
 
 !!! note "Instructions de travail"
 
-    1. Testez `(255,0, 0)`, `(0, 255, 0)`, `(0, 0, 255)` en modifiant la ligne `#!python couleur = (0, 0, 0)` 
+    1. Modifiez la ligne `#!python couleur = (0, 0, 0)` afin de tester les couleurs :
+        - `(255,0, 0)`
+        - `(0, 255, 0)`
+        - `(0, 0, 255)`
     2. Reportez les couleurs trouvées dans votre compte rendu
     3. Complétez votre compte rendu en effectuant les tâches suivantes :
         - Trouvez et reportez le code couleur du blanc, du jaune et du magenta *(rose/violet vif)*
         - Recherchez sur le web le nombre de couleurs visibles par l'œil humain
         - Calculez le nombre total de couleurs possibles sachant que chacune des 3 intensités peut prendre 256 valeurs. Notez le calcul et la valeur trouvée dans le compte rendu
-        - Comparez sur le nombre de couleurs qu'il est possible de générer avec le nombre de couleurs visibles par l'œil humain et conclure
+        - Comparez sur le nombre de couleurs qu'il est possible de générer avec le nombre de couleurs visibles par l'œil humain et conclure. Que pouvez-vous conclure de la capacité du numérique à représenter les couleurs du monde.
 
 ### 4. Manipuler une image
 
@@ -249,6 +258,8 @@ Vous commencerez par suivre quelques instructions d'expérimentation avant de la
 
 !!! note "Instructions d'expérimentation"
 
+    Les éléments d'expérimentation ne sont pas à intégrer au compte rendu. Vous devez cependant tout essayer.
+
     1. Modifiez les couleurs telles que : `couleur = (b, r, v)`
     2. Modifiez les couleurs telles que : `couleur = (v, v, b)`
     3. Supprimez la composante rouge : `couleur = (0, v, b)`
@@ -261,7 +272,7 @@ Vous commencerez par suivre quelques instructions d'expérimentation avant de la
 !!! note "Instructions de travail"
 
     1. Inventez votre propre "filtre" de couleurs et copier/coller votre "formule" et l'image générée dans votre compte rendu
-    2. Testez un traitement sur l'image de votre choix (au format jpg ou png) et copiez/collez l'image obtenue dans votre comte rendu
+    2. Testez un traitement sur l'image de votre choix récupérée sur le Web (au format jpg ou png) et copiez/collez l'image obtenue dans votre comte rendu
        <br>*:material-comment-alert: trouver une image de faible définition afin que les traitements ne provoquent pas d'anomalies*
 
 ## Envoi du travail
