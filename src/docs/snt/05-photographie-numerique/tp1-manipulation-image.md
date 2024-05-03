@@ -39,6 +39,7 @@ travaux pratiques.
 
     1. Créez un document texte en utilisant un logiciel de traitement de texte *(LibreOffice Writer, Microsoft Word, ...)*
     2. Ajoutez un titre, une date, votre classe, votre prénom et votre nom
+    3. Enregistrez immédiatement le document dans le dossier `TP1 - Manipulation`
 
 ## Exercices
 
@@ -49,7 +50,8 @@ Le pixel est un point coloré qui constitue le plus petit élément d'une image.
 Une des caractéristiques d'une image numérique est sa **définition**.
 
 La définition correspond au nombre de pixels d'une image numérique en largeur et en hauteur.
-Elle est exprimée sous la forme *LARGEUR*x*HAUTEUR*.
+Elle est exprimée sous la forme `LARGEUR`x`HAUTEUR`.
+
 À titre d'exemple, une télévision Full HD est capable d'afficher une image de définition 1920x1080 comportant un peu
 plus de deux millions de pixels.
 
@@ -62,7 +64,7 @@ plus de deux millions de pixels.
            <br>*:material-comment-alert: cliquez sur le lien afin de disposer du code Python nécessaire à cet exercice*
         3. Dans Basthon, cliquez sur le bouton représentant un dossier et qui sert à importer un fichier
         4. Importez le fichier `smiley.png` téléchargé précédemment
-           <br>*:material-comment-alert: le nom du fichier est important, et doit être impérativement `smiley.png` ou `smiley`*
+           <br>**:material-alert: Attention**, le nom du fichier doit être impérativement `smiley.png` ou `smiley`
 
     === ":material-code-block-parentheses: Code Python"
 
@@ -91,6 +93,7 @@ plus de deux millions de pixels.
         - Largeur en pixels
         - Hauteur en pixels
         - Nombre total de pixels que contient l'image *(à calculer)*
+    4. Fermez l'onglet contenant Basthon
 
 ### 2. Manipuler les pixels
 
@@ -143,14 +146,11 @@ Vous devez trouver où se trouve le point de coordonnées `(0, 0)` *(l'origine)*
        <br>*:material-comment-alert: ce sont les pixels représentant les yeux du smiley et ceux-ci sont mal placés*
     2. Modifiez les coordonnées des pixels afin de les placer correctement sur le smiley pour lui rendre ses yeux 
        <br>*:material-comment-alert: faites plusieurs essais afin de comprendre l'orientation des axes X et Y*
-    3. Complétez votre compte rendu en ajoutant les informations suivantes :
-        - Les nouvelles coordonnées des yeux
-        - La position de l'origine sur l'image, c'est-à-dire où se trouve le point de coordonnées `(0, 0)`
-          <br>*(au centre de l'image ? en bas et au milieu ? en bas à gauche ? indiquez le bon endroit)*
-        - L'orientation de l'axe des abscisses et de l'axe des ordonnées
+    4. Ajoutez les nouvelles coordonnées des pixels des yeux au compte rendu
+    5. Par déduction des déplacements que vous avez appliqués aux pixels, ajoutez au compte rendu la proposition correspondant à la position de l'origine et l'orientation des axes du plan représenté par l'image :
 
     <figure markdown>
-    ![plan](images/plan.png){:style="max-width:100%;border:1px solid black"}
+    ![plan](images/plans.png){:style="max-width:100%;"}
     </figure>
 
 
@@ -272,8 +272,9 @@ Vous commencerez par suivre quelques instructions d'expérimentation avant de la
 !!! note "Instructions de travail"
 
     1. Inventez votre propre "filtre" de couleurs et copier/coller votre "formule" et l'image générée dans votre compte rendu
-    2. Testez un traitement sur l'image de votre choix récupérée sur le Web (au format jpg ou png) et copiez/collez l'image obtenue dans votre comte rendu
+    2. Testez un nouveau filtre sur l'image de votre choix récupérée sur le Web (au format jpg ou png)
        <br>*:material-comment-alert: trouver une image de faible définition afin que les traitements ne provoquent pas d'anomalies*
+    3. Copiez/collez l'image obtenue dans votre compte rendu
 
 ## Envoi du travail
 
