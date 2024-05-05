@@ -9,7 +9,7 @@ description: Installation de l'interpréteur PHP
 
 !!! note "Téléchargement"
 
-    1. Téléchargez le fichier ZIP de [PHP 8.3 (8.3.6)](https://windows.php.net/downloads/releases/php-8.3.6-nts-Win32-vs16-x64.zip)
+    1. Téléchargez [:material-download: PHP 8.3 (8.3.6)](https://windows.php.net/downloads/releases/php-8.3.6-nts-Win32-vs16-x64.zip)
     2. Décompressez le fichier ZIP
     3. Renommez le dossier `php-8.3.6-nts-Win32-vs16-x64` en `php`
 
@@ -65,9 +65,31 @@ description: Installation de l'interpréteur PHP
     2. Dans le dossier `chapitre_14` créez le dossier `demo_php`
     3. Dans le dossier `demo_php` créez le fichier `index.php` avec le contenu suivant :
 
-    ```php
-    <?php
-        print("Bonjour !");
+    ```html+php
+    <?php 
+        if (isset($_GET['nom'])) {
+            $nom = $_GET['nom'];
+        }
+        else {
+            $nom = 'toi';
+        }
+    ?>
+    <!DOCTYPE html>
+    <html lang="fr">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Première page dynamique</title>
+      </head>
+      <body>
+        <p>
+        <?php for ($i=0 ; $i<10 ; $i++) { ?>
+            Bonjour <?php echo $nom ?> !<br>
+        <?php } ?>
+        </p>
+      </body>
+    </html>
     ```
 
 !!! note "Lancement du serveur HTTP"
@@ -82,4 +104,5 @@ description: Installation de l'interpréteur PHP
     ```        
     
     2. Depuis l'explorateur de fichier, double-cliquez sur le fichier `serveur.bat` pour le lancer 
-    3. Accéder à la page [:material-link: http://localhost:8080](http://localhost:8080){:target=_blank}
+    3. Accédez à la page [:material-link: http://localhost:8080](http://localhost:8080){:target=_blank}
+    4. Trouvez comment afficher votre nom (sans modifier au code PHP)
