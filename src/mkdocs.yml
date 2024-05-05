@@ -56,6 +56,7 @@ nav:
       - Chapitre 12 - Données en table:
           - Cours: nsi1re/12-tables/cours.md
       - Chapitre 14 - Le Web:
+          - Installation de PHP: nsi1re/14-web/langage-php.md
           - TP1 - Formulaire HTML: nsi1re/14-web/tp1-formulaire-html.md
       - Projets:
           - Projet 1 - Présentez-vous: nsi1re/projets/prj-presentez-vous.md
