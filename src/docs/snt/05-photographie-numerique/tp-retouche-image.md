@@ -49,6 +49,10 @@ Pour réaliser ces travaux pratiques, il est nécessaire de disposer de certains
     4. Copiez tous les fichiers et dossiers <span class="shortcut">++ctrl+c++</span>
     5. Collez les fichiers dans le dossier `SNT\Photographie\TP2 - Retouche` <span class="shortcut">++ctrl+v++</span>
 
+    ??? help "Aide vidéo"
+
+        <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/fb39b9fdd7184179a05bab2c9534c088?sid=9fa4d6f6-2dac-4f83-aa3b-7e1add8dcc90" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 ### Compte rendu
 
 Un compte rendu est à rédiger et à déposer sur Pronote au format PDF en fin de séance.
@@ -96,8 +100,8 @@ Pour une profondeur de couleurs de 8 bits, les valeurs vont de 0 *(luminosité m
 
 !!! note "Activité 1"
     
-    Observez l'histogramme de La Joconde. Que pouvez-vous conclure sur la luminosité globale de l'image (claire, sombre, neutre) ?
-    Justifiez votre réponse.
+    Observez l'histogramme de l'image de *La Joconde* et déduisez-en la luminosité globale de l'image *(claire, neutre ou sombre)*.
+    Écrivez votre réponse dans le compte rendu **en justifiant**.
 
 #### Construction d'un histogramme
 
@@ -128,6 +132,12 @@ Celle-ci a une profondeur de couleurs de 8 bits, mais ses pixels n'ont finalemen
     3. Faites une capture d'écran de l'histogramme obtenu  <span class="shortcut">++win+shift+s++</span>
     4. Collez la capture dans votre compte rendu
 
+    ??? help "Aide vidéo"
+        
+        Exemple pour une image contenant 60 pixels noirs (intensité de 0) et 4 pixels gris (intensité de 150) :
+
+        <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/8fbaf0b9522648b89ddb657d3f511280?sid=962af908-8d4c-4a3d-9b24-6c54bc410691" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 #### Interprétation
 
 Le dossier `histogramme_interpretation` comporte 3 images et 3 histogrammes :
@@ -145,8 +155,8 @@ Le dossier `histogramme_interpretation` comporte 3 images et 3 histogrammes :
 
     Lancez une application de retouche d'image et vérifiez les histogrammes de chaque image. Vous pouvez utiliser au choix :
 
-    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Niveaux...
     - [:material-link: Pixlr](https://pixlr.com/fr/editor/){:target=_blank} *(application en ligne)* : Ajustement ▶ Niveaux...
+    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Niveaux...
 
 ## Traitement d'image
 
@@ -206,8 +216,8 @@ Soit les courbes tonales suivantes :
 
     Pour modifier la courbe tonale, vous pouvez utiliser au choix :
 
-    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Courbes...
     - [:material-link: Pixlr](https://pixlr.com/fr/editor/){:target=_blank} *(application en ligne)* : Ajustement ▶ Courbes...
+    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Courbes...
 
 ### Contraste
 
@@ -242,8 +252,15 @@ Soit les courbes tonales suivantes :
 
     Pour modifier les courbes, vous pouvez utiliser au choix :
 
-    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Courbes...
     - [:material-link: Pixlr](https://pixlr.com/fr/editor/){:target=_blank} *(application en ligne)* : Ajustement ▶ Courbes...
+    - Gimp *(uniquement sur les ordinateurs du lycée)* : Couleurs ▶ Courbes...
+
+    ??? help "Aide vidéo"
+        
+        Exemple de reproduction de la courbe 1 sous Pixlr
+
+        <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/5e1b6ab79b104423ad3fbd52f6986ec6?sid=80af98a8-d07c-4e6a-8342-698f1ffdc4b7" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
 
 ## Envoi du travail
 
