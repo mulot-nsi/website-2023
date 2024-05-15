@@ -9,9 +9,9 @@ description: Installation de l'interpréteur PHP
 
 !!! note "Téléchargement"
 
-    1. Téléchargez [:material-download: PHP 8.3 (8.3.6)](https://windows.php.net/downloads/releases/php-8.3.6-nts-Win32-vs16-x64.zip)
+    1. Téléchargez [:material-download: PHP 8.3.7](https://windows.php.net/downloads/releases/php-8.3.7-nts-Win32-vs16-x64.zip)
     2. Décompressez le fichier ZIP
-    3. Renommez le dossier `php-8.3.6-nts-Win32-vs16-x64` en `php`
+    3. Renommez le dossier `php-8.3.7-nts-Win32-vs16-x64` en `php`
 
 !!! note "Configuration de la commande PHP"
 
