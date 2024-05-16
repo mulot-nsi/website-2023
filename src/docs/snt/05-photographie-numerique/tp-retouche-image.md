@@ -26,15 +26,15 @@ travaux pratiques.
     === ":material-laptop: Ordinateur portable"
 
         1. Lancez l'application <i class="icon file-explorer"></i> **Explorateur de fichiers**
-        2. Dans le dossier `Document`, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, créez-le dossier `Photographie`
+        2. Dans le dossier `Document`, s'il n'y a pas de dossier `SNT`, créez-le
+        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `Photographie`, créez-le
         4. Dans le dossier `Photographie`, créez-le dossier `TP2 - Retouche`
 
     === ":material-desktop-tower: Ordinateur fixe"
 
         1. Depuis le bureau, double-cliquez sur l'icône intitulée **Zone personnelle**
-        2. Dans la **zone personnelle**, s'il n'y a pas de dossier nommé `SNT`, créez-le
-        3. Dans le dossier `SNT`, créez-le dossier `Photographie`
+        2. Dans la **zone personnelle**, s'il n'y a pas de dossier `SNT`, créez-le
+        3. Dans le dossier `SNT`, s'il n'y a pas de dossier `Photographie`, créez-le
         4. Dans le dossier `Photographie`, créez-le dossier `TP2 - Retouche`
 
 ### Téléchargement
