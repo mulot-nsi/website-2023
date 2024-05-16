@@ -92,6 +92,7 @@ Plus ce nombre est élevée, plus le nombre de nuances de gris sera grand.
 
 Un histogramme est un graphique qui indique le nombre de pixels dans l'image pour chaque valeur de luminosité.
 Pour une profondeur de couleurs de 8 bits, les valeurs vont de 0 *(luminosité minimale)* à 255 *(luminosité maximale)*.
+Chaque pic correspond au nombre de pixels pour une de luminosité donnée. Plus il est haut, plus sont nombreux les pixels pour cette luminosité. 
 
 <figure markdown>
 ![Histogramme de la Joconde](images/joconde_histogramme.png){:style="max-width:100%;"}
