@@ -147,8 +147,8 @@ Le dossier `histogramme_interpretation` comporte 3 images et 3 histogrammes :
 </figure>
 
 !!! note "Activité 3"
-
-    Associez chaque histogramme à la bonne image. Vous répondrez en faisant des phrases :<br>
+    - Visualisez les images et les histogrammes depuis le dossier `histogramme_interpretation`
+    - Associez chaque histogramme à la bonne image. Vous répondrez en faisant des phrases :<br>
     *"L'histogramme numéro ... correspond à celui de l'image ... car ..."*
 
 !!! note "Activité 4"
