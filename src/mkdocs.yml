@@ -59,6 +59,7 @@ nav:
       - Chapitre 14 - Le Web:
           - Installation de PHP: nsi1re/14-web/langage-php.md
           - TP1 - Formulaire HTML: nsi1re/14-web/tp1-formulaire-html.md
+          - TP2 - Tkinter: nsi1re/14-web/tp2-tkinter.md
       - Projets:
           - Projet 1 - Présentez-vous: nsi1re/projets/prj-presentez-vous.md
           - Projet 2 - Paysage aléatoire: nsi1re/projets/prj-paysage.md
