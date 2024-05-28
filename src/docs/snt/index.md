@@ -33,3 +33,7 @@
 
 - [TP1 - Manipulation d'une image](05-photographie-numerique/tp1-manipulation-image.md)
 - [TP2 - Retouche d'une image](05-photographie-numerique/tp-retouche-image.md)
+
+## Chapitre 6 - La cartographie
+
+- [TP1 - Cartes numériques](06-cartographie/tp1-cartes-numeriques.md)

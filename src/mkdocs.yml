@@ -31,6 +31,8 @@ nav:
       - Chapitre 5 - Photographie numérique:
           - TP1 - Manipulation d'une image: snt/05-photographie-numerique/tp1-manipulation-image.md
           - TP2 - Retouche d'une image: snt/05-photographie-numerique/tp-retouche-image.md
+      - Chapitre 6 - Cartographie:
+          - TP1 - Cartes numériques: snt/06-cartographie/tp1-cartes-numeriques.md
   - NSI 1RE:
       - nsi1re/index.md
       - Chapitre 1 - Langages du Web:
