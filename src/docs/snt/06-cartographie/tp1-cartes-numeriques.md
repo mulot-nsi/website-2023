@@ -47,7 +47,7 @@ Vous avez la possibilité de controller le niveau de zoom en cliquant sur les bo
     <h5>Observer le niveau de détail de la carte en fonction du niveau de zoom</h5>
 
     1. Dézoomez progressivement la carte
-    2. Relevez l'échelle à partir de laquelle le nom du lycée n'est affiché sur la carte
+    2. Relevez l'échelle à partir de laquelle le nom du lycée n'est plus affiché sur la carte
 
 
 Une carte est composée de nombreux tracés de différentes couleurs et styles, comme des lignes continues ou pointillées, chacun représentant des informations spécifiques.
@@ -69,7 +69,7 @@ Géoportail permet d'afficher des données thématiques qui se superposent à la
 
 !!! note "Instructions"
 
-    <h5>Les établissements du supérieur</h5>
+    <h5>Étape 1 - Les établissements du supérieur</h5>
 
     1. Cliquez sur **Cartes**
     2. Dans la section **Données thématiques**, cliquez sur la rubrique **Éducation et recherche**
@@ -77,7 +77,7 @@ Géoportail permet d'afficher des données thématiques qui se superposent à la
     4. Dézoomez afin de mieux apprécier la répartition des établissements
     5. Identifiez la ville à proximité de Chelles et dans laquelle se trouvent de nombreux établissements du supérieur
 
-    <h5>Données culturelles</h5>
+    <h5>Étape 2 - Données culturelles</h5>
     
     1. Masquez le jeux de données des établissements du supérieur
     2. Dans la section **Données thématiques**, cliquez sur la rubrique **Culture et patrimoine** 
@@ -85,7 +85,7 @@ Géoportail permet d'afficher des données thématiques qui se superposent à la
     4. Identifiez le musée le plus proche du lycée
     5. Identifiez le musée le plus proche de votre domicile
 
-    <h5>Données économiques</h5>
+    <h5>Étape 3 - Données économiques</h5>
 
     1. Masquez le jeux de données des musées
     2. Dans la section **Données thématiques **, cliquez sur la rubrique **Économie et statistique**
@@ -102,25 +102,39 @@ Il peut s'agir de simples représentations géométriques des rues et des zones 
 
 !!! note "Instructions"
 
-    <h5>Affichage de deux fonds de carte</h5>
+    <h5>Étape 1 - Affichage de deux fonds de carte</h5>
 
     1. Cliquez sur **Cartes**
     2. Activez le fond de carte **Photographies aériennes**
-    3. Superposez le fond de carte **Plan IGN** par dessus la vue aérienne en suivant les instructions de la vidéo
+    3. Testez la fonction de superposition de fonds de carte en reproduisant les actions de la vidéo
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/e141f4816dcc4dc6b4fd470c1b938d78?sid=3f41a685-680d-44c6-b19f-a18153e39d25" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-    <h5>Voyage dans le temps</h5>
+    <h5>Étape 2 - Voyage dans le temps</h5>
 
     1. Cliquez sur **Cartes**
     2. Cliquez sur **Voir tous les fonds de carte**
     3. Activez les fonds de carte **Photographies aériennes** et **Photographies aériennes 1950-1965**
-    4. En utilisant le principe de superposition, qu'y avait-il à l'emplacement du lycée en 1950 ?
-    5. En utilisant le principe de superposition, qu'y avait-il à l'emplacement de votre domicile 1950 ?
-    6. En utilisant le principe de superposition, qu'y avait-il à l'emplacement de l'aéroport de Paris-Charles de Gaulle en 1950 ?
+    4. En utilisant le principe de superposition *(voir vidéo ci-après)*, observez ce qu'il y avait : 
+        - à l'emplacement du lycée en 1950 
+        - à l'emplacement de votre domicile 1950
+        - à l'emplacement de l'aéroport de Paris-Charles de Gaulle en 1950
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/832934fd543b4edc8e75b1fd74f8bd05?sid=7f856b0a-4fb9-4bea-be99-0df0e65ee371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
+### Outils
+
+Les cartes numériques proposent des outils tels que la mesure d'une distance ou d'une surface.
+
+!!! note "Instructions"
+
+    1. Retournez sur [:material-link: https://www.geoportail.gouv.fr](https://www.geoportail.gouv.fr/carte){:target=_blank}
+    2. Cliquez sur l'icône en forme de clé à molette pour accéder aux outils
+    3. Effectuez les mesutes suivantes :
+        - En vue *Photographies aériennes*, mesurez la longueur de l'un des terrains de tennis à proximité du gymnase du lycée. A-t-il la longueur règlementaire ?
+        - Mesurez la distance à pied entre chez vous et le lycée
+        - Voyagez un peu en vous rendant au nord du Canada. Trouvez un icenerg et mesurer sa superficie. Trouvez sur le Web celle de votre ville et comparez.
+        - À quelle altitude se trouve le lycée ? Quelle est la hauteur de la *Montage de Chelles* ? Testez l'outil **Établir un profil altimétrique**
 
 ## OpenStreeMap
 
@@ -131,22 +145,22 @@ Tout utilisateur peut modifier, ajouter, et améliorer les cartes en fonction de
 
 !!! note "Instructions"
 
-    Inscrivez-vous à [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} et ajoutez une **vraie** contribution pour un lieu que vous connaissez ou une observation depuis la vue aérienne.
+    <h5>Étape 1 - Comparaison</h5>
+
+    Rendez-vous sur [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} et retrouvez le lycée.
+    Comparez le niveau de détail des informations entre OpenStreetMap et Google Maps. Comment expliquez-vous cette différence ?
+
+
+    <h5>Étape 2 - Contribution</h5>
+
+    1. Inscrivez-vous à [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"}
+    2. Suivez le tutoriel jusqu'au bout
+    3. Ajoutez une **vraie** contribution pour un lieu que vous connaissez ou une observation depuis la vue aérienne.
     Il n'y a pas de petites contributions ! Tout est utile comme par exemple :
 
-    - la présence d'un parking vélo 
-    - la présence d'un arbre    
-    - la présence d'une poubelle
-    - la présence d'un point d'eau
+        - la présence d'un parking vélo 
+        - la présence d'un arbre    
+        - la présence d'une poubelle
+        - la présence d'un point d'eau
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/66c5768b6cc243438bf310942c3be4bd?sid=90172a51-0ef5-42f2-822a-e2851a987dbd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-!!! danger "Vous avez terminé ?"
-
-    1. Rendez-vous sur [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} et retrouvez le lycée.
-       Comparez le niveau de détail des informations entre OpenStreetMap et Google Maps. Comment expliquez-vous cette différence ?
-    2. Rendez-vous sur [:material-link: https://www.geoportail.gouv.fr](https://www.geoportail.gouv.fr/){:target=_blank} et trouvez les outils de mesures :
-        - En vue *Photographies aériennes*, mesurez la longueur de l'un des terrains de tennis à proximité du gymnase du lycée. A-t-il la longueur règlementaire ?
-        - Mesurez la distance à pied entre chez vous et le lycée
-        - Voyagez un peu en vous rendant au nord du Canada. Trouvez un icenerg et mesurer sa superficie. Trouvez sur le Web celle de votre ville et comparez.
-        - À quelle altitude se trouve le lycée ? Quelle est la hauteur de la *Montage de Chelles* ?
