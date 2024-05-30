@@ -131,6 +131,22 @@ Tout utilisateur peut modifier, ajouter, et améliorer les cartes en fonction de
 
 !!! note "Instructions"
 
-    Ajoutez une contribution à [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} en indiquant par exemple tout simplement la présence d'une poubelle, d'un emplacement vélo ou même d'un arbre !
+    Inscrivez-vous à [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} et ajoutez une **vraie** contribution pour un lieu que vous connaissez ou une observation depuis la vue aérienne.
+    Il n'y a pas de petites contributions ! Tout est utile comme par exemple :
+
+    - la présence d'un parking vélo 
+    - la présence d'un arbre    
+    - la présence d'une poubelle
+    - la présence d'un point d'eau
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/66c5768b6cc243438bf310942c3be4bd?sid=90172a51-0ef5-42f2-822a-e2851a987dbd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+!!! danger "Vous avez terminé ?"
+
+    1. Rendez-vous sur [:material-link: OpenStreeMap](https://www.openstreetmap.org/){:target="_blank"} et retrouvez le lycée.
+       Comparez le niveau de détail des informations entre OpenStreetMap et Google Maps. Comment expliquez-vous cette différence ?
+    2. Rendez-vous sur [:material-link: https://www.geoportail.gouv.fr](https://www.geoportail.gouv.fr/){:target=_blank} et trouvez les outils de mesures :
+        - En vue *Photographies aériennes*, mesurez la longueur de l'un des terrains de tennis à proximité du gymnase du lycée. A-t-il la longueur règlementaire ?
+        - Mesurez la distance à pied entre chez vous et le lycée
+        - Voyagez un peu en vous rendant au nord du Canada. Trouvez un icenerg et mesurer sa superficie. Trouvez sur le Web celle de votre ville et comparez.
+        - À quelle altitude se trouve le lycée ? Quelle est la hauteur de la *Montage de Chelles* ?
