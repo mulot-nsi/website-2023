@@ -133,8 +133,8 @@ Les cartes numériques proposent des outils tels que la mesure d'une distance ou
     3. Effectuez les mesutes suivantes :
         - En vue *Photographies aériennes*, mesurez la longueur de l'un des terrains de tennis à proximité du gymnase du lycée. A-t-il la longueur règlementaire ?
         - Mesurez la distance à pied entre chez vous et le lycée
-        - Voyagez un peu en vous rendant au nord du Canada. Trouvez un icenerg et mesurer sa superficie. Trouvez sur le Web celle de votre ville et comparez.
-        - À quelle altitude se trouve le lycée ? Quelle est la hauteur de la *Montage de Chelles* ? Testez l'outil **Établir un profil altimétrique**
+        - Voyagez un peu en vous rendant au nord du Canada. Trouvez un iceberg et mesurer sa superficie. Trouvez sur le Web celle de votre ville et comparez.
+        - À quelle altitude se trouve le lycée ? Quelle est la hauteur de la *Montagne de Chelles* ? Testez l'outil **Établir un profil altimétrique**
 
 ## OpenStreeMap
 
